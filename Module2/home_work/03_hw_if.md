@@ -21,7 +21,30 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print('Введи координаты 1 клетки')
+x1 = int(input('x = '))
+y1 = int(input('y = '))
+print('Введи координаты 2 клетки')
+x2 = int(input('x = '))
+y2 = int(input('y = '))
+
+if (x1 % 2 == 1 and y1 % 2 == 1) or (x1 % 2 == 0 and y1 % 2 == 0):
+    color1 = 'белая'
+    #print(color1)
+else:
+    color1 = 'черная'
+    #print(color1)
+if (x2 % 2 == 1 and y2 % 2 == 1) or (x2 % 2 == 0 and y2 % 2 == 0):
+    color2 = 'белая'
+    #print(color2)
+else:
+    color2 = 'черная'
+    #print(color2)
+
+if color1 == color2:
+    print('цвет одинаковый')
+else:
+    print('цвет разный')
 ```
 
 ---
