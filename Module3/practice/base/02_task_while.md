@@ -20,6 +20,11 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
+while a <= b:
+    if a % 2 != 1:
+        print(a)
+    a += 1
+
 # TODO: you code here...
 ```
 
