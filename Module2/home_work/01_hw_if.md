@@ -18,7 +18,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+m = int(input("m: "))
+k = int(input("k: "))
+
+if k != n * m:
+    if k == n or k == m:
+        print("да")
+    elif k < n or k < m:
+        print("нет")
+    elif k > n and k > m:
+        print("нет")
+    else:
+        print("да")
 ```
 
 ---
