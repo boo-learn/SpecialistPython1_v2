@@ -28,7 +28,18 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Enter n: "))
+y_count = 1
+while y_count <= n:
+    x_count = 1
+    string = 0
+    string_x = ""
+    while x_count <= n:
+        string = x_count * y_count
+        string_x += str(string) + " "
+        x_count += 1
+    print(string_x)
+    y_count += 1
 ```
 
 ---
