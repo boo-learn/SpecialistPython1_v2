@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("enter number: "))
+
+if n % 10 == 5:
+    print("Да, оканчивается на 5")
+else:
+    print("Нет")
+
 ```
 
 ---
