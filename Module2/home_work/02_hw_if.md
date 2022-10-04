@@ -21,7 +21,17 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+last_digit = n % 10
+penult_digit = n // 10 % 10
+
+if penult_digit != 1  and last_digit == 1: 
+    print (f"На лугу пасется {n} корова")
+elif penult_digit != 1 and 0 < last_digit <= 4:
+    print (f"На лугу пасется {n} коровы")
+else:
+    print (f"На лугу пасется {n} коров")
+
 ```
 
 ---
