@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("A: "))
+b = int(input("B: "))
+c = int(input("C: "))
+if a + b > c and a + c > b and c + b > a:
+    print("Треугольник существует!")
+else:
+    print("Не существует")
 ```
 
 ---
