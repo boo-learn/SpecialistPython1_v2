@@ -15,7 +15,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+month = int(input("Введите порядковый номер месяца: "))
+
+if 3 <= month <= 5:
+    print("Это весна")
+elif 6 <= month <= 8:
+    print("Это лето")
+elif 9 <= month <= 11:
+    print("Это осень")
+else:
+    print("Это зима")
+
 ```
 
 ---
