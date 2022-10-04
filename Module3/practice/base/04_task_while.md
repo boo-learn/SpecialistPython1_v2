@@ -17,7 +17,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 0
+num_pos = 0
+while i < n:
+    number = int(input("number: "))
+    if number > 0:
+        num_pos += 1
+    n -= 1
+print("Было введено", num_pos, "положительных чисел")
 ```
 
 ---
