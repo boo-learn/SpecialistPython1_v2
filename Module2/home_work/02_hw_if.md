@@ -21,10 +21,16 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
-
----
+cows = int(input("Введите количество: "))
+cows_fin = cows % 10
+if cows_fin == 5 or cows_fin == 9 or cows_fin == 0:
+    print(cows, "коров")
+elif cows_fin == 1:
+    print(cows, "корова")
+else:
+    print(cows, "коровы")
+    
+    
 ### Подсказки
 
 <details>
