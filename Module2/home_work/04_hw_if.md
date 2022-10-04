@@ -19,7 +19,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+k = int(input("k: "))
+if k % 5 % 3 == 0 or k % 3 % 5 == 0 == 0:
+    print("yes")
+else:
+    print("no")
 ```
 
 ---
