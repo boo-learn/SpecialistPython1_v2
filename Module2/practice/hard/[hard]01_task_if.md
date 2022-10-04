@@ -18,7 +18,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите четырехзначное число")
+number = int(input("number: "))
+n1 = number // 1000
+n2 = number % 1000 // 100
+n3 = number % 100 // 10
+n4 = number % 10
+
+if n1 == n4 and n2 == n3:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
