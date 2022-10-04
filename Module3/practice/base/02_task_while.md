@@ -20,7 +20,10 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+while a <= b:
+    if a % 2 == 0: # Если число кратно трем
+        print(a)  # то выводим его
+    a += 1
 ```
 
 ---
