@@ -20,7 +20,10 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+n = a if a % 2 == 0 else a + 1
+while n <= b:
+    print(n)
+    n += 2
 ```
 
 ---
