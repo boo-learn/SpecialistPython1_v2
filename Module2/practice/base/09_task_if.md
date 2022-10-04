@@ -15,7 +15,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+m = int(input("m: "))
+
+if 1 <= m <= 12:
+    if 3 <= m <= 5:
+        print("весна")
+    elif 6 <= m <= 8:
+        print("лето")
+    elif 9 <= m <= 11:
+        print("осень")
+    else:
+        print("зима")
+
 ```
 
 ---
