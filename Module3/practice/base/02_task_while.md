@@ -19,8 +19,13 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
-
-# TODO: you code here...
+if a % 2 == 0:
+    i = a
+else:
+    i = a + 1
+while i <= b:
+    print(i)
+    i += 2
 ```
 
 ---
