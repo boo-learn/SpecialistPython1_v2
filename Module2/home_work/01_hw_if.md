@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+chocolate_length = int(input("chocolate_length:"))
+chocolate_width = int(input("chocolate_width:"))
+required_parts = int(input("required_parts:"))
+if (chocolate_length >= required_parts) or (chocolate_length >= required_parts):
+    print("Можно отломить")
+else:
+    print("Нельзя отломить")
+
 ```
 
 ---
