@@ -18,7 +18,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("введите число: "))
+n4 = number % 10
+n1 = number // 1000
+n2 = number % 1000 // 100
+n3 = number % 100 // 10
+if n1 == n4 and n2 == n3:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
