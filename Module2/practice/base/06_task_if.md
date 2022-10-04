@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input('Введите длину 1 стороны: '))
+b = int(input('Введите длину 2 стороны: '))
+c = int(input('Введите длину 3 стороны: '))
+
+if a + b > c and a + c > b and c + b > a:
+    print('существует')
+else:
+    print('не существует')
 ```
 
 ---
