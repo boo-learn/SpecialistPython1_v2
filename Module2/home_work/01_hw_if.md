@@ -18,8 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+n = int(input("Длина: "))
+m = int(input("Ширина: "))
+k = int(input("Отломленные дольки: "))
+if k < n * m and ((k % n == 0) or (k % m == 0)):
+    print('Да')
+else:
+    print('Нет')
 
----
 
