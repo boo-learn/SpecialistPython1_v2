@@ -18,7 +18,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите длину шоколадки n: "))
+m = int(input("Введите длину шоколадки m: "))
+k = int(input("Введите количество кусочков k (k ≠ n ⋅ m): "))
+if k >= m * n:
+    print("Нет. Слишком много")
+else:
+    if k % m == 0 or k % n == 0:
+        print("Да")
+    else:
+        print("Нет")
 ```
 
 ---
