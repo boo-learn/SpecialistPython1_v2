@@ -19,11 +19,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
 
----
-
+baloon = int(input("Количество шариков: "))
+if baloon % 5 == 0 or baloon % 3 == 0 or (baloon - 5) % 3 == 0 or (baloon - 3) % 5 == 0 or baloon % 8 ==0:
+    print("Да")
+else:
+    print("Нет")
+    
 ### Данные для самопроверки
 
 
