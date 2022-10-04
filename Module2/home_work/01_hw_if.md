@@ -17,8 +17,18 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+k = int(input(' Введите целое число долек, k: '))
+m = int(input(' Введите целое число, m: '))
+n = int(input(' Введите целое число, n: '))
+
+area = n * m  # Площадь шоколадки
+
+print('Площадь шоколадки', area)
+
+if m * n > k and k % m == 0 or k % n == 0:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
