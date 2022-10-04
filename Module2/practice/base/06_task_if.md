@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+side_a = int(input("enter length of side a : "))
+side_b = int(input("enter length of side b : "))
+side_c = int(input("enter length of side c : "))
+if side_a + side_b > side_c:
+    print("exists")
+else:
+    print("not exists")
 ```
 
 ---
