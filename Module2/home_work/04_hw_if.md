@@ -19,7 +19,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+balloon_num = int(input("Введите число шариков: "))
+
+if (balloon_num % 5) % 3 == 0 or balloon_num % 3 % 5 == 0:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
