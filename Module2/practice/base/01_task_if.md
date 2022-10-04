@@ -15,10 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
-
----
+number = int(input("число: "))
+if 100 <= abs(number) <= 999:
+    print("да")
+else:
+    print("нет")
 
 ### Подсказки
 
