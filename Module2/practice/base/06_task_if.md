@@ -15,7 +15,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+side_a = int(input("Enter side a: "))
+side_b = int(input("Enter side b: "))
+side_c = int(input("Enter side c: "))
+max_side = side_a
+if max_side < side_b:
+    max_side = side_b
+if max_side < side_c:
+    max_side = side_c
+if max_side < side_a + side_b + side_c - max_side:
+    print("Существует")
+else:
+    print("Не существует")
 ```
 
 ---
