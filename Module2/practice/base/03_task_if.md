@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cash = int(input("Денег в наличии: "))
+cost = int(input("Стоимость товара: "))
+if cost > cash:
+    print("Денег недостаточно")
+else:
+    print(cash - cost)
 ```
 
 ---
