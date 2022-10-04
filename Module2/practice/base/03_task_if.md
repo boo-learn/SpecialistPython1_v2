@@ -18,10 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
-
----
+money = int(input("Сколько денег:  "))
+cost = int(input("Стоимость продукта: "))
+if money >= cost:
+    print("Остаток", money - cost)
+else:
+    print("Недостаточно средств")
 
 ### Данные для самопроверки
 
