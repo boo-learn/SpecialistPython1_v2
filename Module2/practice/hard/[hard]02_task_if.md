@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+bishop_x = int(input("х(слона):"))
+bishop_y = int(input("y(слона):"))
+fig_x = int(input("х(фигуры):"))
+fig_y = int(input("y(фигуры):"))
+if abs(fig_x - bishop_x) == abs(fig_y - bishop_y):
+    print("Слон бьет фигуру!")
+else:
+    print("Слон не бьет фигуру!")
+
 ```
 
 ---
