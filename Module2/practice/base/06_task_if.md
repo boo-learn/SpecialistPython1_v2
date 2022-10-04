@@ -14,9 +14,14 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input('Введите сторону-1: '))
+b = int(input('Ввдеите сторону-2: '))
+c = int(input('Введите сторону-3: '))
+
+if a + b > c and a + c > b and b + c > a:
+    print('Существует')
+else:
+    print('Не существует')
 
 ---
 
