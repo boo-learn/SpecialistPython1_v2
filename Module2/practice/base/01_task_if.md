@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое число: "))
+if 100 <= abs(n) < 1000:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
