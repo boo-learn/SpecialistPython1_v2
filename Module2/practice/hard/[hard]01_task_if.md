@@ -18,7 +18,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("enter any 4-digit number : "))
+str_number = str(number)
+reverse_number = str_number[::-1]
+print(str_number)
+print(reverse_number)
+if str_number == reverse_number:
+    print("symmetrical")
+else:
+    print("not symmetrical")
 ```
 
 ---
