@@ -21,7 +21,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите координаты точки")
+x = int(input("x: "))
+y = int(input("y: "))
+print("Введите координаты центра круга")
+xr = int(input("xr: "))
+yr = int(input("yr: "))
+rad = int(input("Введите радиус окружности: "))
+
+dist = ((x-xr)**2+(y-yr)**2)**0.5
+if dist <= rad:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
