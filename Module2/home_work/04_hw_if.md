@@ -19,7 +19,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите количество шариков: "))
+
+if n >= 8 or n % 3 == 0 or n == 5:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
