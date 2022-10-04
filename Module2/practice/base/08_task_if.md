@@ -21,10 +21,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
-
----
+point_x = int(input("Координата точки по оси х: "))
+point_y = int(input("Координата точки по оси у: "))
+centre_x = int(input("Координата центра окружности по оси х: "))
+centre_y = int(input("Координата центра окружности по оси у: "))
+radius = int(input("Радиус окружности: "))
+distance = ((point_x - centre_x)**2 + (point_y - centre_y)**2)**0.5
+if distance <= radius:
+    print("Принадлежит")
+else:
+    print("Не принадлежит")
 
 ### Данные для самопроверки
 
