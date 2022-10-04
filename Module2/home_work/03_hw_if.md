@@ -21,7 +21,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+c1x = int(input("c1x: "))
+c1y = int(input("c1y: "))
+c2x = int(input("c2x: "))
+c2y = int(input("c2y: "))
+
+if (c1x+c1y+c2x+c2y)%2 == 0:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
