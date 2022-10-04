@@ -17,9 +17,16 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+cash = int(input("Введите сколько у Вас денег: "))
+
+price = int(input("Введите стоимость товара: "))
+
+ostatok = cash - price
+
+if cash >= price:
+    print("Денег достаточно, остаток: ", ostatok)
+else:
+    print("Денег недостаточно")
 
 ---
 
