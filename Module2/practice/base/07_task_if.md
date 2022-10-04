@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("A: "))
+b = int(input("B: "))
+c = int(input("C: "))
+if a + b > c and a + c > b and c + b > a:
+    if a==b or a==c or b==c:
+        print("Треугольник равноедренный!")
+    else:
+        print ("не равнобедренный")
+else:
+    print("Не существует")
 ```
 
 ---
