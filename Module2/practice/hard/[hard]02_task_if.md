@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x_elephant = int(input("Введите x_eleph сторону треугольника: "))
+y_elephant = int(input("Введите y_eleph сторону треугольника: "))
+x = int(input("Введите x: "))
+y = int(input("Введите y: "))
+if abs(x_elephant - x) == abs(y_elephant - y):
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
