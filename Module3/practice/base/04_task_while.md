@@ -17,7 +17,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n_num = int(input('Сколько чисел будете вводить?: '))
+i = 0
+n_positive = 0
+while i < n_num:
+    entered_num = int(input('Введите число: '))
+    if entered_num > 0:
+        n_positive += 1
+    i += 1
+print('Количество чисел больше 0:', n_positive)
 ```
 
 ---
