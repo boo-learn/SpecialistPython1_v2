@@ -20,7 +20,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+count = 0
+while n > 0:
+    count = count + n * n
+    n -= 1
+print(count)
 ```
 
 ---
