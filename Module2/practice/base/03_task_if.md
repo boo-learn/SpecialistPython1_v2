@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+money_in_pocket = int(input("enter your money : "))
+price = int(input("enter price : "))
+if money_in_pocket >= price:
+    print(money_in_pocket - price)
+else:
+    print("dont have enough money")
 ```
 
 ---
