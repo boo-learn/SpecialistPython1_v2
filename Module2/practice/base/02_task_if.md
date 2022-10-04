@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число:"))
+if  number/3 <= number//3 or number/5 <= number//5:
+    print("кратное 3 или 5")
+else:
+    print("Нет")
+
 ```
 
 ---
