@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("enter n: "))
+
+if 100 <= abs(n) <= 999:
+    print("Да, трехзначное")
+else:
+    print("Нет")
+
 ```
 
 ---
