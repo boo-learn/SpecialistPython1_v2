@@ -32,5 +32,18 @@ n = 3
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+i = 1
+while i <= n:
+    j = 1
+    current_string = ""
+    while j <= n:
+        if i == j or n - i + 1 == j:
+            current_string += "X"
+        else:
+            current_string += " "
+        j += 1
+    print(current_string)
+    i += 1
+
 ```
