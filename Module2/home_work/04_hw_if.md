@@ -19,7 +19,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+baloons_num = int(input("baloons_num:"))
+if (baloons_num == 1) or (baloons_num == 2) or \
+        (baloons_num == 4) or (baloons_num == 7):
+    print("нельзя!")
+else:
+    print("можно!")
+
 ```
 
 ---
