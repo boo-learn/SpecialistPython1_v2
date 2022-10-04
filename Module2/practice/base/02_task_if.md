@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+sum = float(input("Введите количество денег: "))
+price = float(input("Введите стоимость покупки: "))
+if price>sum:
+    print("Денег недостаточно")
+else:
+    rest=sum-price
+    print(rest)
 ```
 
 ---
