@@ -21,7 +21,17 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("number: "))
+
+if 5 <= number % 100 <= 19:
+    print(number, "коров")
+elif number % 10 == 1:
+    print(number, "корова")
+elif 2 <= number % 10 <= 4:
+    print(number, "коровы")
+else:
+    print(number, "коров")
+
 ```
 
 ---
