@@ -19,7 +19,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+n1 = n % 3
+n2 = n % 5
+print("n1", n1)
+print("n2", n2)
+if n % 3 == 0 and n % 5 != 0:
+    print("Foo")
+elif n % 3 != 0 and n % 5 == 0:
+    print("Bar")
+else:
+    print("Foobar")
 ```
 
 ---
