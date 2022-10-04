@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("number:"))
+if 100 <= abs(number) < 999:
+    print("трехзначное")
+else:
+    print("не трехзначное")
 ```
 
 ---
