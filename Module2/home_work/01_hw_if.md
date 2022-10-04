@@ -18,7 +18,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+length = int(input("Введите длину шоколадки: "))
+width = int(input("Введите ширину шоколадки: "))
+
+piece_num = int(input("Введите желаемое количество кусочков: "))
+
+if piece_num % length == 0 or piece_num % width == 0:
+    if piece_num < length * width:
+        print('Да')
+    else:
+        print('Шоколадка маловата')
+else:
+    print('Нет')
 ```
 
 ---
