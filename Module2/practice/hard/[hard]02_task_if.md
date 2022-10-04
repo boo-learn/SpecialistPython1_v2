@@ -15,7 +15,31 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print('Введи координаты слона')
+x_el = int(input('x = '))
+y_el = int(input('y = '))
+print('Введи координаты фигуры')
+x_fig = int(input('x = '))
+y_fig = int(input('y = '))
+
+if x_fig == x_el + 2 and y_fig == y_el + 1:
+    print('бьет')
+elif x_fig == x_el + 2 and y_fig == y_el - 1:
+    print('бьет')
+elif x_fig == x_el - 2 and y_fig == y_el + 1:
+    print('бьет')
+elif x_fig == x_el - 2 and y_fig == y_el - 1:
+    print('бьет')
+elif y_fig == y_el + 2 and x_fig == x_el + 1:
+    print('бьет')
+elif y_fig == y_el + 2 and x_fig == x_el - 1:
+    print('бьет')
+elif y_fig == y_el - 2 and x_fig == x_el + 1:
+    print('бьет')
+elif y_fig == y_el - 2 and x_fig == x_el - 1:
+    print('бьет')
+else:
+    print('не бьет')
 ```
 
 ---
