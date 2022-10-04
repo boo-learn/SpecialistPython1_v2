@@ -18,7 +18,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите четырёхзначное положительное число: "))
+
+if number // 1000 == number % 10 and number // 100 % 10 == number // 10 % 10:
+    print("Число симметричное")
+else:
+    print("Число несимметричное")
+
+# print(number // 1000, number // 100 % 10, number // 10 % 10, number % 10)
+
 ```
 
 ---
