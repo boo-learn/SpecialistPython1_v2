@@ -19,7 +19,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+k = int(input("k: "))
+
+if k % 3 == 0 or k % 5 == 0 or k % (3 + 5) == 0 or k % (3 + 5 + 5) == 0:
+    print("да")
+else:
+    print("нет")
+
 ```
 
 ---
