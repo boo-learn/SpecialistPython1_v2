@@ -16,7 +16,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+side_a = int(input("a="))
+side_b = int(input("b="))
+side_c = int(input("c="))
+if (side_a + side_b >= side_c) and (side_b + side_c >= side_a) and \
+        (side_a + side_c >= side_b):
+    print("Такой треугольник существует!")
+    if (side_a == side_b) or (side_b == side_c) or (side_a == side_c):
+        print("Треугольник равнобедренный!")
+    else:
+        print("Треугольник не равнобедренный!")
+else:
+    print("Такой треугольник не существует!")
+
 ```
 
 ---
