@@ -21,7 +21,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x1 = int(input("x1: "))
+y1 = int(input("y1: "))
+x2 = int(input("x2: "))
+y2 = int(input("y2: "))
+
+xy1_0 = (x1 + y1) % 2
+xy2_0 = (x2 + y2) % 2
+
+if xy1_0 == xy2_0:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
