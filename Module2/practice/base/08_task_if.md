@@ -21,7 +21,21 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print('Введи координаты точки')
+x_p = int(input('x = '))
+y_p = int(input('y = '))
+print('Введи координаты центра круга')
+x_c = int(input('x = '))
+y_c = int(input('y = '))
+r = int(input('Введите радиус: '))
+
+dx = x_p - x_c
+dy = y_p - y_c
+dist = (dx * dx + dy * dy) ** 0.5
+if dist <= r:
+    print('да')
+else:
+    print('нет')
 ```
 
 ---
