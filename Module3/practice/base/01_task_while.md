@@ -16,8 +16,10 @@
 
 ```python
 n = int(input("n: "))
-
-# TODO: you code here...
+i = 0
+while i < n:
+    print('Я учу питон')
+    i += 1
 ```
 
 ---
