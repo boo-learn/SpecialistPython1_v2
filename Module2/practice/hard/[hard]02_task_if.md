@@ -15,7 +15,21 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите положение слона:")
+x_bs = int(input("x: "))
+y_bs = int(input("y: "))
+print("Введите положение другой фигуры:")
+x_f = int(input("x: "))
+y_f = int(input("y: "))
+
+dist_x = abs(x_bs-x_f)
+dist_y = abs(y_bs-y_f)
+
+if (dist_x == 1 and dist_y == 2) or (dist_x == 2 and dist_y == 1):
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
