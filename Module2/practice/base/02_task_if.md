@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("enter number: "))
+
+if n%3 == 0 or n%5 == 0:
+    print("Да, кратно")
+else:
+    print("Нет")
+
 ```
 
 ---
