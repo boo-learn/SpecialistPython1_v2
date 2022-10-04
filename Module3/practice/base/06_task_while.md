@@ -20,7 +20,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+i = 1
+sum_ij = 0
+while i <= n:
+    j = 1
+    while j <= i:
+        sum_ij += i
+        j += 1
+    i += 1
+print(sum_ij)
+
 ```
 
 ---
