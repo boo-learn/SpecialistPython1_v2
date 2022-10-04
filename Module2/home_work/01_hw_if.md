@@ -18,7 +18,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+k = int(input("Число долек: "))
+m = int(input("m: "))
+n = int(input("n: "))
+
+if k != m * n:
+    if k % n == 0 or k % m == 0:
+        print("Yes")
+    else:
+        print("No")
+else:
+    print("No")
 ```
 
 ---
