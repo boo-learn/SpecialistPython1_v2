@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Number: "))
+
+if number % 3 == 0 or number % 5 == 0:
+    print("Yes")
+else:
+    print("No")
+
 ```
 
 ---
