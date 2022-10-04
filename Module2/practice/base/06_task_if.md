@@ -15,7 +15,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите длины трех отрезков")
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+
+if a+b-c > 0 and a+c-b > 0 and b+c-a > 0:
+    print("Существует")
+else:
+    print("Не существует")
+
 ```
 
 ---
