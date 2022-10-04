@@ -21,7 +21,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Координаты точки:")
+x = int(input("x: "))
+y = int(input("y: "))
+print("Координаты центра круга:")
+xr = int(input("xr: "))
+yr = int(input("yr: "))
+print("Радиус круга:")
+r = int(input("r: "))
+if ((x - xr) ** 2 + (y - yr) ** 2) ** 0.5 <= r:
+    print("да")
+else:
+    print("нет")
 ```
 
 ---
