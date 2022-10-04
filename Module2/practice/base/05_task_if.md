@@ -19,7 +19,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("целое число:"))
+output_string = ""
+if number % 3 == 0:
+    output_string = output_string + "Foo"
+if number % 5 == 0:
+    output_string = output_string + "Bar"
+print(output_string)
+
 ```
 
 ---
