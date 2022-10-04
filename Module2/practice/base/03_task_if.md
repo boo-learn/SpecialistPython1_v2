@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+rubles = int(input("Количество денег: "))
+price = int(input("Цена товара: "))
+
+if rubles >= price:
+    print(rubles - price)
+else:
+    print("Денег недостаточно")
+
 ```
 
 ---
