@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число: "))
+if 99 < abs(number) < 1000:
+    print('Да')
+else:
+    print('Нет')
+
 ```
 
 ---
