@@ -19,7 +19,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('Введите число шариков: '))
+n3 = 0
+n5 = 0
+flag = 0
+
+while n3 <= n // 3:
+    while n5 <= n // 5:
+        if n == n3 * 3 + n5 * 5:
+            flag = 1
+            print(n3, '* 3 + ', n5, '* 5 = ', n)
+        n5 += 1
+    n5 = 0
+    n3 += 1
+
+if flag == 0:
+    print('нельзя купить')
 ```
 
 ---
