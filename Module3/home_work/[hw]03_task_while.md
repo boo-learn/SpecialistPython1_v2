@@ -27,11 +27,15 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = 1
+while a <= 10:
+    b = 1
+    while b <= 10:
+        c = a * b
+        print(c, end=" ")
+        b = b + 1
+    a = a + 1
 
----
 
 <details>
 <summary>Подсказка-1</summary>
