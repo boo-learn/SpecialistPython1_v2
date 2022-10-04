@@ -23,14 +23,24 @@
 ### Решение задачи
 
 ```python
+
 a = int(input("a: "))
 b = int(input("b: "))
 c = int(input("c: "))
+if a > b and a > c and b > c:
+    print(c, b, a)
+elif a > b and a > c and c > b:
+    print(b, c, a)
+elif b > a and b > c and c > a:
+    print(a, c, b)
+elif b > a and b > c and a > c:
+    print(c, a, b)
+elif c > a and c > b and b > a:
+    print(a, b, c)
+else:
+    print(b, a, c)
 
-# TODO: you code here...
 
-print(a, b, c)
-```
 
 ---
 
