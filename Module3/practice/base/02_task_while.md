@@ -17,10 +17,18 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
-
-# TODO: you code here...
+a = int(input("Введите число a: "))
+b = int(input("Введите число b: "))
+if a < b:
+    start = a
+    fin = b
+else:
+    start = b
+    fin = a
+while start <= fin:
+    if start % 2 == 0:
+        print(start)
+    start += 1
 ```
 
 ---
