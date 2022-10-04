@@ -16,7 +16,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите длины сторон треугольника")
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+
+if a+b-c > 0 and a+c-b > 0 and b+c-a > 0:
+    if a == b or a == c or b == c:
+        print("Равнобедренный")
+    else:
+        print("Не равнобедренный")
+else:
+    print("Не существует")
 ```
 
 ---
