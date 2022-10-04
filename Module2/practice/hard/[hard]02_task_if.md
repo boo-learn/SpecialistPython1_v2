@@ -15,7 +15,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# "Шахматы: слон"
+
+xs = int(input('Введи х слона [1,8]: '))
+ys = int(input('Введи  у слона [1,8]: '))
+xf = int(input('Введи  х фигуры [1,8]: '))
+yf = int(input('Введи  у фигуры [1,8]: '))
+
+if abs(xs - xf) == abs(ys - yf):
+    print('Бьёт!')
+else:
+    print('Не бьёт')
+
 ```
 
 ---
