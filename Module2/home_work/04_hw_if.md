@@ -19,7 +19,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите число шариков: "))
+
+if n % 3 == 0 or n % 5 == 0:
+    print("Да, можно")
+elif n % 3 == 5 or n % 5 == 3:
+    print("ДА, можно")
+else:
+    print("Нет, нельзя")
 ```
 
 ---
