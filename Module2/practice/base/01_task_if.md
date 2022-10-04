@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("enter any number : "))
+if 100 <= abs(number) <= 999:
+    print("3-digit")
+else:
+    print("NOT 3-digit")
+
 ```
 
 ---
