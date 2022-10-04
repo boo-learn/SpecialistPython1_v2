@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+customer_cash = int(input("customer_cash:"))
+prize_cost = int(input("prize_cost:"))
+if customer_cash < prize_cost:
+    print("not enough cash!")
+else:
+    change = customer_cash - prize_cost
+    print("change =", change)
+
 ```
 
 ---
