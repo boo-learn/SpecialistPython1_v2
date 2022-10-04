@@ -14,11 +14,12 @@
 
 ### Решение задачи
 
-```python
-n = int(input("n: "))
+n = int(input('Введите целое положительное число: '))
+count = 0
 
-# TODO: you code here...
-```
+while count < n:
+    print("count = ", "Я учу Питон")
+    count = count + 1 # count += 1
 
 ---
 
