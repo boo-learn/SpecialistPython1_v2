@@ -21,7 +21,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input("введите число x: "))
+y = int(input("введите число y: "))
+xr = int(input("введите число xr: "))
+yr = int(input("введите число yr: "))
+radius = int(input("введите радиус: "))
+
+point = ((x - xr) ** 2 + (y - yr) ** 2) ** 0.5
+if point <= radius:
+    print('Да')
+else:
+    print('Нет')
+
 ```
 
 ---
