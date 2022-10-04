@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+divider = 2
+dividers_counter = 0
+print("Поиск делителей ..")
+while divider <= n / 2:
+    if n % divider == 0:
+        dividers_counter += 1
+        print(dividers_counter, "-й:", divider)
+    divider += 1
+if dividers_counter == 0:
+    print("Завершено. Делители не найдены, число", n, "- простое!")
+else:
+    print("Завершено.")
+
 ```
 
 ---
