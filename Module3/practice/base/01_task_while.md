@@ -15,9 +15,12 @@
 ### Решение задачи
 
 ```python
-n = int(input("n: "))
+n = int(input("Сколько раз Вы хотите увидеть эту фразу?"))
 
-# TODO: you code here...
+while n > 0:
+    print("Я учу питон")
+    n -= 1
+
 ```
 
 ---
