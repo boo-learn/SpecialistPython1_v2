@@ -21,7 +21,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x1 = int(input("Введите Х координату 1 ячейки: "))
+y1 = int(input("Введите Y координату 1 ячейки: "))
+
+x2 = int(input("Введите Х координату 2 ячейки: "))
+y2 = int(input("Введите Y координату 2 ячейки: "))
+
+test_color_1 = (x1 % 2 == 1 and y1 % 2 == 1) or (x1 % 2 == 0 and y1 % 2 == 0)
+test_color_2 = (x2 % 2 == 1 and y2 % 2 == 1) or (x2 % 2 == 0 and y2 % 2 == 0)
+
+if test_color_1 == test_color_2:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
