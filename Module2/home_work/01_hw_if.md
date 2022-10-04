@@ -18,7 +18,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите размеры шоколадки")
+n = int(input("n: "))
+m = int(input("m: "))
+k = int(input("Сколько долек отломить: "))
+
+if k < n*m and (k % n == 0 or k % m == 0):
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
