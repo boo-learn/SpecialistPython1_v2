@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("число:"))
+ending_number = number - (number // 10) * 10
+if ending_number == 5:
+    print("число заканчивается на 5")
+else:
+    print("число не заканчивается на 5")
 ```
 
 ---
