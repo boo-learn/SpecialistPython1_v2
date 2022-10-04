@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cash = int(input('Сумма денег в наличии: '))
+prise = int(input('Стоимость товара: '))
+if prise > cash:
+    print('Денег недостаточно')
+else:
+    print('Сдача:', cash - prise)
 ```
 
 ---
