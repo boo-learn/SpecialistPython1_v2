@@ -15,7 +15,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+ax = int(input("введите координаты слона А(х) от 1 до 8: "))
+ay = int(input("введите координаты слона А(у) от 1 до 8: "))
+bx = int(input("введите координаты фигуры под риском B(х) от 1 до 8: "))
+by = int(input("введите координаты фигуры под риском B(у) от 1 до 8: "))
+delta_x = bx - ax
+delta_y = by - ay
+if abs(delta_x) == abs(delta_y):
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
