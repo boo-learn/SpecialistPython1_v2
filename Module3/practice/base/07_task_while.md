@@ -22,7 +22,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+number = 1
+while number <= n:
+    output_number = 0
+    curr_number = 1
+    while curr_number <= number:
+        output_number = output_number * 10 + curr_number
+        curr_number += 1
+    number += 1
+    print(output_number)
+
 ```
 
 ---
