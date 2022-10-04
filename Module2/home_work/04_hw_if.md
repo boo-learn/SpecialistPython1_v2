@@ -19,7 +19,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("number: "))
+
+if number >= 8:
+    print("Да")
+elif number % 3 == 0 or number % 5 == 0:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
