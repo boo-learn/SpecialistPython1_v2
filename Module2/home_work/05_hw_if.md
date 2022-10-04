@@ -23,12 +23,20 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
-c = int(input("c: "))
-
-# TODO: you code here...
-
+a = int(input("Введите число a: "))
+b = int(input("Введите число b: "))
+c = int(input("Введите число c: "))
+m=a
+n=b
+k=c
+c=max(m,n,k)
+a=min(m,n,k)
+if m!=a and m!=c:
+    b=m
+elif n!=a and n!=c:
+    b=n
+else:
+    b=k
 print(a, b, c)
 ```
 
