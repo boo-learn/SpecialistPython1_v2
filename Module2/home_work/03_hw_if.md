@@ -21,10 +21,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
-
----
+point_x = int(input("Координаты первой точки по оси х: "))
+point_y = int(input("Координаты первой точки по оси у: "))
+scndpoint_x = int(input("Координаты второй точки по оси х: "))
+scndpoint_y = int(input("Координаты второй точки по оси у: "))
+if (point_x+point_y+scndpoint_x+scndpoint_y)%2 == 0:
+    print ("На одинаковых клетках")
+else:
+    print("На разных клетках")
 
 ### Подсказки
 
