@@ -16,7 +16,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+
+if n == 1:
+    print(0)
+elif n == 2:
+    print(1)
+else:    
+    F_n_1 = 1
+    F_n_2 = 0
+    i = 3
+    while i <= n:
+        Fn = F_n_1 + F_n_2
+        F_n_2 = F_n_1
+        F_n_1 = Fn
+        i += 1
+    print(Fn)
 ```
 
 ### Данные для самопроверки
