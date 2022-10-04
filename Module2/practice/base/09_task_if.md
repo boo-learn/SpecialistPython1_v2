@@ -14,9 +14,18 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+m = int(input('Номер месяца: '))
+
+if 0 <= m <= 1:
+    print('Зима')
+elif 2 < m <= 5:
+    print('Весна')
+elif 5 < m <= 6:
+    print('Лето')
+elif 6 < m <= 11:
+    print('Осень')
+elif 11 < m <= 12:
+    print('Зима')
 
 ---
 
