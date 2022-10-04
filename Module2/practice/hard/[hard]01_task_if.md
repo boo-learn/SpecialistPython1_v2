@@ -18,7 +18,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+first_digit = n // 1000
+second_digit = n // 100 % 10
+third_digit = n // 10 % 10
+last_digit = n % 10 
+
+if first_digit == last_digit and second_digit == third_digit:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
