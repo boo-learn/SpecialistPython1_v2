@@ -21,7 +21,15 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n_cow = int(input('Введите количество коров: '))
+if 11 <= n_cow % 100 <= 19:
+    print(n_cow, ' коров')
+elif n_cow % 10 == 1:
+    print(n_cow, ' корова')
+elif 2 <= n_cow % 10 <= 4:
+    print(n_cow, 'коровы')
+elif 5 <= n_cow % 10 <= 9 or n_cow % 10 == 0:
+    print(n_cow, 'коров')
 ```
 
 ---
