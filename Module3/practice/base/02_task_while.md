@@ -20,7 +20,11 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+count = a
+while count <= b:
+    if count % 2 == 0:
+        print(count)
+    count += 1
 ```
 
 ---
