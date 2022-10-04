@@ -21,7 +21,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+point_x = int(input("point_x : "))
+point_y = int(input("point_y : "))
+circle_x = int(input("circle_x : "))
+circle_y = int(input("circle_y : "))
+r = int(input("radius : "))
+line = ((circle_x - point_x) ** 2 + (circle_y - point_y) ** 2) ** 0.5
+if line <= r:
+    print("belong")
+else:
+    print("not belong")
 ```
 
 ---
