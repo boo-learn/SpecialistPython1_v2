@@ -21,7 +21,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x_1 = int(input("x_1: "))
+y_1 = int(input("y_1: "))
+x_2 = int(input("x_2: "))
+y_2 = int(input("y_2: "))
+
+total_1 = x_1 + y_1
+total_2 = x_2 + y_2
+
+if total_1 % 2 == 0 and total_2 % 2 == 0:
+    print("yes")
+elif total_1 % 2 != 0 and total_2 % 2 != 0:
+    print("yes")
+else:
+    print("no")
 ```
 
 ---
