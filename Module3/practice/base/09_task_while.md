@@ -16,7 +16,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+divider = 2
+dividers_sum = 1
+while divider <= n / 2:
+    if n % divider == 0:
+        dividers_sum += divider
+    divider += 1
+if dividers_sum == n:
+    print("Число", n, "- совершенное!")
+else:
+    print("Число", n, "- не совершенное!")
+
 ```
 
 ---
