@@ -14,9 +14,11 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input('Введите  число: '))  # n = 4
+
+while n >= 0:
+    print(n)
+    n = n - 1  # n-=1
 
 ---
 
