@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cash1 = int(input("Введите сколько есть денелг:"))
+value = int(input("Введите сколько стоит:"))
+if  cash1-value>0:
+    cash=cash1-value
+    print("у вас осталось:",cash)
+else:
+    print("Нехватает денег")
 ```
 
 ---
