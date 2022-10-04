@@ -15,7 +15,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+month_num = int(input("month_num="))
+if 1 <= month_num <= 12:
+    if 3 <= month_num <= 5:
+        print("Весна!")
+    elif 6 <= month_num <= 8:
+        print("Лето!")
+    elif 9 <= month_num <= 11:
+        print("Осень!")
+    elif 1 <= month_num <= 2 or month_num == 12:
+        print("Зима!")
+else:
+    print("<1 или > 12")
+
 ```
 
 ---
