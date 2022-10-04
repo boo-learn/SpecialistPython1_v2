@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+money = int(input('Сколько денег: '))
+coast = int(input('Введите цену: '))
+
+if coast > money:
+    print('Денег недостаточно')
+else:
+    print('У вас осталось', money - coast, 'рублей')
+
 ```
 
 ---
