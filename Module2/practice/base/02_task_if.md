@@ -14,11 +14,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+umber = int(input("Введите целое число: "))
 
----
+if number % 3 == 0 or number % 5 == 0:
+
+    print("Делится на 3, 5 ")
+else:
+    print(" Не делится ")
 
 ### Данные для самопроверки
 
