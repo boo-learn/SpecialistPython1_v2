@@ -15,7 +15,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+el_x = int(input("el_x : "))
+el_y = int(input("el_y : "))
+other_x = int(input("other_x : "))
+other_y = int(input("other_y : "))
+line = ((other_x - el_x)**2 + (other_y - el_y)**2)**0.5
+print(line)
+hit = 2.23606797749979
+if line == hit:
+    print("yes")
+else:
+    print("no")
 ```
 
 ---
