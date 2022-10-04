@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+
+if 999 < abs(n) < 10000:
+    if n // 1000 == n % 10 and n // 100 % 10 == n // 10 % 10:
+        print("yes")
+    else:
+        print("no")
 ```
 
 ---
