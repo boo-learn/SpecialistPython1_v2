@@ -21,7 +21,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+p_x = float(input("p_x="))
+p_y = float(input("p_y="))
+c_x = float(input("c_x="))
+c_y = float(input("c_y="))
+c_r = float(input("c_r="))
+dist_cp = ((p_x - c_x) ** 2 + (p_y - c_y) ** 2) ** 0.5
+if dist_cp > c_r:
+    print("Точка не принадлежит кругу!")
+else:
+    print("Точка принадлежит кругу!")
+
 ```
 
 ---
