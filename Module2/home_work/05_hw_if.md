@@ -27,7 +27,18 @@ a = int(input("a: "))
 b = int(input("b: "))
 c = int(input("c: "))
 
-# TODO: you code here...
+if a > b:
+    d = a
+    a = b
+    b = d
+if a > c:
+    d = a
+    a = c
+    c = d
+if b > c:
+    d = b
+    b = c
+    c = d
 
 print(a, b, c)
 ```
