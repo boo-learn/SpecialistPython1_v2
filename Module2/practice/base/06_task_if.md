@@ -15,7 +15,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+side_a = int(input("a="))
+side_b = int(input("b="))
+side_c = int(input("c="))
+p = (side_a + side_b + side_c)/2
+S = (p*(p-side_a)*(p-side_b)*(p-side_c))**0.5
+print("S=", S)
+print("type(S) == float", type(S) == float)
+if type(S) == float:
+    print("Такой треугольник существует!")
+else:
+    print("Такой треугольник не существует!")
+
 ```
 
 ---
