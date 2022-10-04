@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите целое число: "))
+
+if number % 3 == 0 or number % 5 == 0:
+    print("Число кратно трём или пяти")
+else:
+    print("Число не кратно ни трём, ни пяти")
+
 ```
 
 ---
