@@ -16,7 +16,23 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a:"))
+b = int(input("b:"))
+current_number = a
+perfect_number_counter = 0
+while current_number <= b:
+    divider = 2
+    dividers_sum = 1
+    while divider <= current_number / 2:
+        if current_number % divider == 0:
+            dividers_sum += divider
+        divider += 1
+    if dividers_sum == current_number and current_number != 1:
+        print("Число", current_number, "- совершенное!")
+        perfect_number_counter += 1
+    current_number += 1
+print("Количество совершенных в интервале [", a, ", ", b, "]:", perfect_number_counter)
+
 ```
 
 ---
