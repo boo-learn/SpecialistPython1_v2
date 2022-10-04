@@ -21,7 +21,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input("x: "))
+y = int(input("y: "))
+xr = int(input("xr: "))
+yr = int(input("yr: "))
+r = int(input("r: "))
+
+if ( (x - xr)**2 + (y - yr)**2 )**0.5 <= r:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
