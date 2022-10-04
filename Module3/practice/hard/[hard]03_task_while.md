@@ -17,7 +17,31 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+number_1 = 2
+while number_1 <= n:
+
+    divider = 2
+    dividers_sum = 1
+    while divider <= number_1 / 2:
+        if number_1 % divider == 0:
+            dividers_sum += divider
+        divider += 1
+
+    number_2 = dividers_sum
+
+    divider = 2
+    dividers_sum = 1
+    while divider <= number_2 / 2:
+        if number_2 % divider == 0:
+            dividers_sum += divider
+        divider += 1
+
+    if (dividers_sum == number_1) and (number_1 < number_2):
+        print(number_1, number_2)
+
+    number_1 += 1
+
 ```
 
 ---
