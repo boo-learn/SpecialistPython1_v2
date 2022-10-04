@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое число: "))
+if n % 10 == 5:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
