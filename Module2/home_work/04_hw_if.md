@@ -19,7 +19,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+if number >= 8 or number % 5 % 3 == 0 or number % 3 % 5 == 0:
+    print("Покупайте!")
+else:
+    print("Тут не получится. Купите в другом месте.")
 ```
 
 ---
