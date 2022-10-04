@@ -28,7 +28,19 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+i = 1
+while i <= n:
+    j = 1
+    output_string = ""
+    while j <= n:
+        if i * j // 10 < 1:
+            output_string += " "
+        output_string += str(i * j) + " "
+        j += 1
+    print(output_string)
+    i += 1
+
 ```
 
 ---
