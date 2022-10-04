@@ -15,7 +15,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x1 = int(input("Фигура координата x: "))
+y1 = int(input("Фигура координата y: "))
+x2 = int(input("Слон координата x: "))
+y2 = int(input("Слон координата y: "))
+
+dist2 = (x2 - x1) ** 2 + (y2 - y1) ** 2
+
+if dist2 == 5:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
