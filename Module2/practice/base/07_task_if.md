@@ -15,9 +15,16 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input('Введите сторону-1: '))
+b = int(input('Ввдеите сторону-2: '))
+c = int(input('Введите сторону-3: '))
+
+if a + b <= c or a + c <= b or b + c <= a:
+    print('Не Существует')
+elif a==b or b==c or a==c:
+    print('Равнобедренный')
+else:
+    print("Не равнобедренные")
 
 ---
 
