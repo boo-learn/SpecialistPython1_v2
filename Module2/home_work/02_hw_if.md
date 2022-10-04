@@ -21,7 +21,16 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n=int(input('input n: '))
+
+if n>10 and n<20:
+    print('коров')
+elif n%10==1:
+    print('корова')
+elif n%10>1 and n%10<5:
+    print('коровы')
+else:
+    print('коров')
 ```
 
 ---
