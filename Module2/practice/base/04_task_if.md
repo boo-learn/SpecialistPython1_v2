@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите целое число: "))
+
+if number % 10 == 5:
+    print("Последняя цифра - '5'")
+else:
+    print("Последняя цифра не '5'")
+
 ```
 
 ---
