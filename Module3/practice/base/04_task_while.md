@@ -34,16 +34,17 @@
 Воспользуйтесь заготовкой кода, дописав недостающие строки:
 
 ```python
-n = int(input("n: "))
-i = 0
-num_positive = 0  # Счетчик положительных чисел
-while i < n:
-    number = int(input("number: "))
-    ...
-    ...
-    # TODO: you code here...
+n = int(input("Введите количество чисел: "))
+i = 1
+count = 0
+
+while i <= n:
+    cur = int(input("Введите число: "))
+    if cur > 0:
+        count += 1
     i += 1
-print("Было введено", num_positive, "положительных чисел")
+print('количество положительных чисел ', count)
+
 ```
 </details>
 
