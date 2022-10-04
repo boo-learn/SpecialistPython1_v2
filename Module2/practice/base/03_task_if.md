@@ -18,7 +18,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cash = int(input("cash amount: "))
+price = int(input("Price: "))
+
+if cash >= price:
+    spare = cash - price
+    print("spare is:", spare)
+else:
+    print("Not enough money")
+
 ```
 
 ---
