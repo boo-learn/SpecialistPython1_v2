@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('input n: '))
+m = int(input('input m: '))
+k = int(input('input k: '))
+
+if n % k == 0 or m % k == 0:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
