@@ -17,7 +17,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+i = 1
+positive_num_counter = 0
+while i <= n:
+    print("enter ", i, "num:")
+    curr_num = int(input())
+    if curr_num > 0:
+        positive_num_counter += 1
+    i += 1
+print("positive_num_counter=", positive_num_counter)
 ```
 
 ---
