@@ -21,7 +21,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input("Точка координата x: "))
+y = int(input("Точка координата y: "))
+xr = int(input("Центр круга координата x: "))
+yr = int(input("Центр круга координата y: "))
+r = int(input("Радиус круга r: "))
+
+length = ((xr - x) ** 2 + (yr - y) ** 2) ** 0.5
+
+if length <= r:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
