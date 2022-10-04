@@ -19,7 +19,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+k = int(input("Введите число k:"))
+if k == 1 or k == 2 or k == 4 or k == 7:
+    print("Нет")
+else:
+    print("Да")
 ```
 
 ---
