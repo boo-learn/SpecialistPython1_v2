@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+money = int(input('Деньги: '))
+cost = int(input('Стоимость: '))
+
+if money - cost >= 0:
+    print(money - cost)
+else:
+    print('Денег недостаточно')
 ```
 
 ---
