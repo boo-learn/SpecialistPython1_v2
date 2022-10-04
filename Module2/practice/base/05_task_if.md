@@ -19,10 +19,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+number = int(input("число: "))
+if number % 3 == 0 and number % 5 == 0:
+    print("Foobar")
+else:
+    print("")
+if number % 5 == 0 and number % 3 != 0:
+    print("Bar")
+else:
+    print("")
+if number % 3 == 0 and number % 5 != 0:
+    print("Foo")
+else:
+    print("")
 
----
 
 ### Данные для самопроверки
 
