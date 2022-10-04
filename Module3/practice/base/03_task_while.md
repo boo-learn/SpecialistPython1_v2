@@ -17,7 +17,21 @@ _Сумма четных чисел от 0 до 7 = 12_
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое положительное число: "))
+total = 0
+
+if n % 2 != 0:
+    temp_n = n - 1
+else:
+    temp_n = n
+# temp_n - временная переменная для цикла
+
+while temp_n > 0:
+    total += temp_n
+    temp_n -= 2
+
+print("Сумма четных чисел от 0 до", n, "=", total)
+
 ```
 
 ---
