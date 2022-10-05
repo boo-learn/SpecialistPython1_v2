@@ -33,7 +33,17 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Число ступеней: "))
+
+
+i = 1  # счетчик ступеней
+
+while i <= n:
+    s = str("*")
+    s = s * i
+    i = i + 1
+    print(s)
+
 ```
 
 ---
