@@ -33,7 +33,14 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('Введи размер лесенки: '))
+i = 1
+out = '*'
+while i <= n:
+    print(out)
+    out += '*'
+    i += 1
+
 ```
 
 ---
