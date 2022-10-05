@@ -15,9 +15,17 @@
 ### Решение задачи
 
 ```python
-text = "В теории, теория и практика неразделимы. На практике это не так."
-vowels = "ауоыэяюёие"
-# TODO: you code here...
+string = input("String: ")
+string = string.lower()
+
+number_of_vowels = 0
+vowels = ['а', 'ё', 'у', 'е', 'ы', 'я', 'о', 'э', 'и', 'ю']
+
+for letter in vowels:
+    number_of_vowels += string.count(letter)
+
+print(number_of_vowels)
+
 ```
 
 ---
