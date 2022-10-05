@@ -20,7 +20,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 1
+total_num = 0
+while i <= n:
+    total_num += i * i
+    i += 1
+print(total_num)
+
 ```
 
 ---
