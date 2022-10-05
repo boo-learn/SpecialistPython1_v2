@@ -16,7 +16,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое положительное число: "))
+count = 2
+
+if n < 4:
+    print("Число простое")
+else:
+    number_of_dividers = 0
+    while count < n:
+        if n % count == 0:
+            print(count, end=" ")
+            number_of_dividers += 1
+        count += 1
+
+    if number_of_dividers == 0:
+        print("Число простое")
+
 ```
 
 ---
