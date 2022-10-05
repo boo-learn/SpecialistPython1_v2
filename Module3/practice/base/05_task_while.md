@@ -33,7 +33,17 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое положительное число (количество ступенек): "))
+count = 1
+
+while count <= n:
+    count_intern = 1
+    while count_intern <= count:
+        print("*", end="")
+        count_intern += 1
+    print("")
+    count += 1
+
 ```
 
 ---
