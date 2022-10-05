@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+string = input('Enter string: ')
+if string[:3] == 'id:' and len(string) >= 4 and string[3:].isdigit():
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
