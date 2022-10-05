@@ -17,7 +17,13 @@
 ```python
 text = "В теории, теория и практика неразделимы. На практике это не так."
 vowels = "ауоыэяюёие"
-# TODO: you code here...
+text = text.lower()
+i = 0
+count = 0
+while i <= len(vowels) - 1:
+    count += text.count(vowels[i])
+    i += 1
+print("Число гласных: ", count)
 ```
 
 ---
