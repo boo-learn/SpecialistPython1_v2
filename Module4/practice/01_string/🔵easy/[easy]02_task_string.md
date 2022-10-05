@@ -16,10 +16,12 @@
 
 ### Решение задачи
 
-```python
 name = input("Имя: ")
 surname = input("Фамилия: ")
-# TODO: you code here...
+
+n1 = name.capitalize()
+n2 = surname.capitalize()
+print(n1, n2)
 ```
 
 ---
