@@ -28,7 +28,18 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое положительное число n. 1 < n < 9: "))
+
+i = 1
+while i <= n:
+    j = 1
+    while j < n:
+        ends = "  " if i * (j + 1) < 10 else " "
+        print(i * j, end=ends)
+        j += 1
+    print(i * j)
+    i += 1
+
 ```
 
 ---
