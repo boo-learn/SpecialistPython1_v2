@@ -16,7 +16,8 @@
 
 ```python
 string = input("Введите произвольный текст: ")
-# TODO: you code here...
+s="Первый и последний символ"
+print("first: ",s[0], "last_simbol:",s[-1])
 ```
 
 ---
