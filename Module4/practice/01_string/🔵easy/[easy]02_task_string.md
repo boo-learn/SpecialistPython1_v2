@@ -17,9 +17,11 @@
 ### Решение задачи
 
 ```python
-name = input("Имя: ")
-surname = input("Фамилия: ")
-# TODO: you code here...
+f_name = input("Введите имя: ")
+l_name = input("Введите фамилию: ")
+
+print(f_name.title(), l_name.title())
+
 ```
 
 ---
