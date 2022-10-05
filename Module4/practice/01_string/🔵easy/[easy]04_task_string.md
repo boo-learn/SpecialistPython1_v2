@@ -15,8 +15,12 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
+text = input("Введите текст: ")
+
+b_count = text.count("б")
+
+print(f"В тексте {b_count} букв \"б\"")
+
 ```
 
 ---
