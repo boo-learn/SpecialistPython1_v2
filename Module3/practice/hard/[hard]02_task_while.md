@@ -32,5 +32,23 @@ n = 3
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 1
+if n % 2 == 1:
+    half = n // 2 + 1
+else:
+    half = n // 2
+
+while i <= n:
+    if i < half:
+        print(' ' * (i - 1), '#', ' ' * (n - 2 * (i - 1) - 2), '#', ' ' * (i - 1), sep='')
+    elif i == half:
+        if n % 2 == 0:
+            print(' ' * (i - 1), '#', ' ' * (n - 2 * (i - 1) - 2), '#', ' ' * (i - 1), sep='')
+        else:
+            print(' ' * (i - 1), '#', ' ' * (i - 1), sep='')
+    elif i > half:
+        print(' ' * (n - i), '#', ' ' * (n - 2 * (n - i) - 2), '#', ' ' * (n - i), sep='')
+    i += 1
+
 ```
