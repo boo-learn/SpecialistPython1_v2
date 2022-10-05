@@ -16,7 +16,26 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+
+number_of_perfect_numbers = 0
+if a == 1:
+    current_number = 2
+else:
+    current_number = a
+while current_number <= b:
+    denominator = 2
+    sum_of_denominators = 1
+    while denominator < int(current_number / 2) + 1:
+        if current_number % denominator == 0:
+            sum_of_denominators += denominator
+        denominator += 1
+    if sum_of_denominators == current_number:
+        print(current_number)
+        number_of_perfect_numbers += 1
+    current_number += 1
+print(f"Кол-во совершенных чисел = {number_of_perfect_numbers}")
 ```
 
 ---
