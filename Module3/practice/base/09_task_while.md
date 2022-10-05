@@ -16,7 +16,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 1
+dividers_flag = False
+total = 0
+while i <= n:
+    if (n % i == 0) and i != n:
+        dividers_flag = True
+        total += i
+    i += 1
+
+if not dividers_flag:
+    print('Нет')
+if n == total:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
