@@ -22,7 +22,12 @@
 
 ```python
 password = input("Enter password: ")
-# TODO: you code here...
+
+if password[0].istitle() and len(password) > 5 and password.find("#"):  # [0] - первый индекс, т.е первая буква
+    print("безопасный")
+else:
+    print("не безопасный")
+
 ```
 
 ---
