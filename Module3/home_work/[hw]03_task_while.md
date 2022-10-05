@@ -28,7 +28,17 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое положительное число из интервала от 1 до 9: "))
+count = 1
+
+while count <= n:
+    count_intern = 1
+    while count_intern <= n:
+        print(count * count_intern, end=" ")
+        count_intern += 1
+    print("")
+    count += 1
+
 ```
 
 ---
