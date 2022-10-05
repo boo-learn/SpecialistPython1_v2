@@ -18,10 +18,12 @@
 ```python
 string1 = input("Первая строка:")
 string2 = input("Вторая строка:")
-# TODO: you code here...
-```
-
----
+strng1 = len(string1)
+strng2 = len(string2)
+if strng1 > strng2:
+    print(string1)
+else:
+    print(string2)
 
 ### Данные для самопроверки
 
