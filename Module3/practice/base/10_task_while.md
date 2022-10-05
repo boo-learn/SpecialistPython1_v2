@@ -16,7 +16,31 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input('Введи  начало диапазона: '))
+b = int(input('Введи  конец диапазона: '))
+
+j = a
+sum_perf = 0
+
+while j <= b:
+    num = j
+    i = 1
+    flag = 0
+    sum_div = 0
+
+    while i < num:
+        if num % i == 0:
+            sum_div += i
+            flag = 1
+        i += 1
+    if sum_div == num:
+        print('Совершенное число: ', num)
+        sum_perf += 1
+
+    j += 1
+
+print('Количество совершенных чисел:', sum_perf)
+
 ```
 
 ---
