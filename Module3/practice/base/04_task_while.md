@@ -17,7 +17,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+
+even_numbers = 0
+i = 0
+while i < n:
+    if int(input("number: ")) % 2 == 0:
+        even_numbers += 1
+    i += 1
+print(f"количество положительных чисел = {even_numbers}")
+
 ```
 
 ---
