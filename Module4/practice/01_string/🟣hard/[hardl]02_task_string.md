@@ -15,7 +15,23 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+string = input('Первая строка (словарь): ')
+string2 = input('Вторая строка: ')
+
+i = 0
+can_flag = False
+while i < len(string2):
+    if string.find(string2[i]) != -1:
+        string = string.replace(string2[i], '', 1)
+        can_flag = True
+    else:
+        can_flag = False
+        break
+    i += 1
+if can_flag:
+    print('Можно')
+else:
+    print('Нельзя')
 ```
 
 ---
