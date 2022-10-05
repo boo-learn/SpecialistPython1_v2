@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('Введи  целое положительное число: '))
+i = 2
+flag = 0
+out = ''
+while i < n:
+    if n % i == 0:
+        out += ' ' + str(i)
+        flag = 1
+    i += 1
+if flag == 1:
+    print(out)
+else:
+    print('Число простое')
+
 ```
 
 ---
