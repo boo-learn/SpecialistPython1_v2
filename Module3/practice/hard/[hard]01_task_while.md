@@ -16,7 +16,23 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+n1 = 0  # Первое число
+n2 = 1  # Второе число
+i = 3  # Счетчик чисел
+
+if n == 1:
+    print(n1)
+elif n == 2:
+    print(n2)
+else:
+    while i <= n:
+        n3 = n1 + n2
+        n1 = n2
+        n2 = n3
+        i += 1
+    print(n2)
+
 ```
 
 ### Данные для самопроверки
