@@ -16,8 +16,11 @@
 ### Решение задачи
 
 ```python
-text = "Вася самый умный! Вася лучше всех! И ждет его успех!"
-# TODO: you code here...
+s = input("text: ")
+
+res = s.replace('!', '.')
+print(res)
+
 ```
 
 ---
