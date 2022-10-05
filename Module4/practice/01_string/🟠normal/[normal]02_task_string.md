@@ -17,10 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
-
----
+spcl_id = input("Введите: ")
+part_id = spcl_id [3:]
+if part_id.isdigit():
+    print("yes")
+else:
+    print("no")
 
 ### Данные для самопроверки
 
