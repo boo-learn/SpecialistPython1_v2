@@ -5,7 +5,13 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+fruits = ["яблоко", "банан", "киви", "ананас", "груша", "абрикос"]
+len_word=0
+for val in fruits:
+    if len(val)>len_word:
+        len_word=len(val)
+for val in fruits:
+    print(fruits.index(val)+1,". ", val.rjust(len_word," "),sep="")
 
 # Пример вывода:
 # 1. яблоко
