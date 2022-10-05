@@ -20,7 +20,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+count = 0
+while n >= 1:
+    count += n * n
+    n -= 1
+print('Сумма: ', count)
+
 ```
 
 ---
