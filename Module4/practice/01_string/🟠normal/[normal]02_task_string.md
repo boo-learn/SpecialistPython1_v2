@@ -17,7 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+input_str = input("input_str: ")
+if (input_str[:3] == "id:") and input_str[4:].isdigit():
+    print("да")
+else:
+    print("нет")
+
 ```
 
 ---
