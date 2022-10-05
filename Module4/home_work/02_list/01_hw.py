@@ -3,7 +3,14 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+total = ""
+i = 0
+while i < len(names):
+    total += names[i]
+    if i + 1 < len(names):
+        total += ", "
+    i += 1
+print(total)
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
