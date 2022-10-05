@@ -18,8 +18,14 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
+a = int(input('Введи начало диапазона: '))
+b = int(input('Введи конец диапазона: '))
+if a > b:
+    a, b = b, a
+i = a
+while i <= b:
+    if i % 5 == 0:
+        print(i)
+    i += 1
 
-# TODO: you code here...
 ```
