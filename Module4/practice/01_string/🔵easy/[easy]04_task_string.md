@@ -15,8 +15,8 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
+text = input()
+print(text.count('b'))
 ```
 
 ---
