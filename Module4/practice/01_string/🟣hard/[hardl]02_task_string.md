@@ -15,7 +15,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+s1="iuwerygkf,dfshn,vsd"
+s2="iuwerygkf,dfshn,vsv"
+i=0
+while i<len(s2):
+    if s2.count(s2[i])>s1.count(s2[i]):
+        k="Нет"
+        i=len(s2)+1
+    else:
+        k="Да"
+        i+=1
+print(k)
 ```
 
 ---
