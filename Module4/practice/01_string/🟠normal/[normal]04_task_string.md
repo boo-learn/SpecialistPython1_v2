@@ -21,8 +21,15 @@
 ### Решение задачи
 
 ```python
-password = input("Enter password: ")
-# TODO: you code here...
+password = input("Пароль: ")
+if len(password)<=6:
+    print("короткий пароль")
+elif password.istitle()!=True:
+    print("пароль должен начираться с заглавной буквы")
+elif password.find("#")==-1:
+    print("пароль должен содержать #")
+else:
+    print("Пароль - ok")
 ```
 
 ---
