@@ -33,7 +33,11 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+step = int(input("Enter number of steps: "))
+i = 1
+while i <= step:
+    print("*" * i)
+    i += 1
 ```
 
 ---
