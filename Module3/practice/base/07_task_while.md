@@ -22,7 +22,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите количество ступенек: "))
+count = 1
+
+while count <= n:
+    count_intern = 1
+    while count_intern <= count:
+        print(count_intern, end="")
+        count_intern += 1
+    print("")
+    count += 1
+
 ```
 
 ---
