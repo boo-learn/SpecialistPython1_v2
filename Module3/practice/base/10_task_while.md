@@ -16,7 +16,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+simple_num = 0
+while a <= b:
+    n = a
+    count = 0
+    i = 1
+    while n >= i:
+        if n % i == 0 and n != i:
+            count += i
+        i += 1
+    if count == n:
+        print(count)
+        simple_num+=1
+    a += 1
+print('Число чисел: ', simple_num)
 ```
 
 ---
