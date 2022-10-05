@@ -15,8 +15,10 @@
 ### Решение задачи
 
 ```python
-text = "Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете."
-# TODO: you code here...
+input_str = input("input_str: ")
+output_str = input_str.replace(",", "")
+print(output_str)
+
 ```
 
 ---
