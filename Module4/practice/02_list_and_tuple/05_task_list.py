@@ -4,8 +4,16 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
-
-# TODO: your code here
+i = 1
+max_len = 0
+delta_len = 0
+sep = ' '
+for el in fruits:
+    if len(el) > max_len:
+        max_len = len(el)
+for el in fruits:
+    print(f'{i}. {sep * (max_len - len(el))}{el}')
+    i += 1
 
 # Пример вывода:
 # 1. яблоко
