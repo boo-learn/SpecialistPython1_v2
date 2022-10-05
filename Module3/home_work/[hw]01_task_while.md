@@ -36,6 +36,13 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = float(input("cost: "))
+n = int(input("n: "))
+i = 1  # Счетчик уровней
+
+while i <= n:
+    print(i, cost * i, "рублей")
+    i += 1
+
 ```
 
