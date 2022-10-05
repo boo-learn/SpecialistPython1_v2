@@ -16,7 +16,26 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+num_perf = 0  # Счетчик совершенных чисел
+string = ""
+
+while a <= b:
+    total = 0  # Счетчик суммы
+    i = 1  # Счетчик чисел-делителей
+    while i < a:
+        if a % i == 0:
+            total = total + i
+        i += 1
+    if total == a:
+        string = string + str(a) + " "
+        num_perf += 1
+    a += 1
+
+print(string)
+print(num_perf)
+
 ```
 
 ---
