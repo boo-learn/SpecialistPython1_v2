@@ -15,8 +15,10 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
+text = str(input("Введите строку: "))
+
+print("В строке", text.count("б") + text.count("Б"), "букв 'Б'")
+
 ```
 
 ---
