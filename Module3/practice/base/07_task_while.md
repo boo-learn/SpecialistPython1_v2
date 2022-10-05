@@ -22,7 +22,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('Введи высоту пирамиды: '))
+i = 1
+while i <= n:
+    k = 1
+    out = ''
+    while k <= i:
+        out += str(k)
+        k += 1
+    print(out)
+    i += 1
 ```
 
 ---
