@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('Введи  номер числа Фибоначчи: '))
+if n == 1:
+    print ('0')
+else:
+    i = 2
+    num_cur = 1
+    num_priv = 0
+    trash = 0
+    while i <= n-1:
+        trash = num_cur
+        num_cur += num_priv
+        num_priv = trash
+        i += 1
+    print(num_cur)
 ```
 
 ### Данные для самопроверки
