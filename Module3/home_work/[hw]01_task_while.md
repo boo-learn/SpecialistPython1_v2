@@ -36,6 +36,12 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+price = float(input("Введите цену товара в рублях: "))
+amount = int(input("Введите количество единиц товара: "))
+count = 1
+
+while count <= amount:
+    print(count, count * price, "рублей")
+    count +=1
 ```
 
