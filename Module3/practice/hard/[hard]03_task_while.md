@@ -17,7 +17,34 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+def sum_of_denominators(x):
+    result = 1
+    i = 2
+    while i < int(x / 2) + 1:
+        if x % i == 0:
+            result += i
+        i += 1
+    return result
+
+
+def is_friendly(n1, n2):
+    return n1 == sum_of_denominators(n2) and n2 == sum_of_denominators(n1)
+
+
+n = int(input("n: "))
+
+i = 1
+pairs = []
+while i < n:
+    j = sum_of_denominators(i)
+    if i == sum_of_denominators(j) and i != j:
+        if (j, i) not in pairs:
+            pairs.append((i, j))
+    i += 1
+
+for a, b in pairs:
+    print(a, b)
+
 ```
 
 ---
