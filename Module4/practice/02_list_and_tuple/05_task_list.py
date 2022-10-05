@@ -5,8 +5,13 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
-
+max_len = 0
+for elem in fruits:
+    max_len = max(max_len, len(elem))
+i = 1
+for elem in fruits:
+    print(i, (max_len - len(elem)) * " " + elem)
+    i += 1
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
