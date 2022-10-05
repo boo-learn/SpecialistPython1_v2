@@ -15,10 +15,9 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
-```
-
+text = input("Введите текст: ")
+mssg = text.count("б")
+print(mssg)
 ---
 
 ### Подсказки
