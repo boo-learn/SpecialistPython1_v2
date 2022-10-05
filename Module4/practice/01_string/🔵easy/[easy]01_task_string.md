@@ -14,10 +14,10 @@
 
 ### Решение задачи
 
-```python
-string = input("Введите произвольный текст: ")
-# TODO: you code here...
-```
+string = input('Введите текст: ')
+
+ print(string[0])  # Вывод первого 
+print(string[-1])   # Вывод последнего символа
 
 ---
 
