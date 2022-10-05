@@ -32,5 +32,16 @@ n = 3
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 1
+while 0 < i <= n:
+    j = 1
+    while 0 < j <= n:
+        if i == j or i == n + 1 - j:
+            print("#", end ="")
+        else:
+            print(" ", end ="")
+        j += 1
+    print("")
+    i += 1
 ```
