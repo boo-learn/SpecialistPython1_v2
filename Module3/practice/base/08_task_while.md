@@ -16,7 +16,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите число n: "))
+i = 2  # счетчик
+div=""
+while i < n:
+    if n%i==0:
+        div+=str(i)+" "
+    i += 1
+if div=="":
+    print("Число простое")
+else:
+    print(div)
 ```
 
 ---
