@@ -15,8 +15,8 @@
 ### Решение задачи
 
 ```python
-string = input("Введите произвольный текст: ")
-# TODO: you code here...
+s = input("Enter any string: ")
+print(s[0], s[-1])
 ```
 
 ---
