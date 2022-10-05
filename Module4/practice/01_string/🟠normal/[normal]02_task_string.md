@@ -17,7 +17,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+text = "id:12345"
+id= text[:3]
+digit= text[3:]
+if id == "id:" and digit.isdigit():
+    print("да")
+else:
+    print("нет")
 ```
 
 ---
