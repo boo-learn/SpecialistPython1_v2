@@ -22,7 +22,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите количество уровней n: "))
+i = 1  # счетчик
+step = ""
+while i <= n:
+    add = str(i)
+    step += add
+    print(step)
+    i += 1
 ```
 
 ---
