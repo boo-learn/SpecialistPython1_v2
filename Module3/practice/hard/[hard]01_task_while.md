@@ -16,7 +16,21 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+fib1 = 0
+fib2 = 1
+
+n = int(input("введите номер числа Фиббоначи: "))
+
+i = 1
+while i <= n - 2:
+    fib_sum = fib1 + fib2
+    fib1 = fib2
+    fib2 = fib_sum
+    i += 1
+if n == 1:
+    print("значение этого элемента:", fib1)
+else:
+    print("значение этого элемента:", fib2)
 ```
 
 ### Данные для самопроверки
