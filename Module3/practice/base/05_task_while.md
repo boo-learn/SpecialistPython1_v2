@@ -33,7 +33,14 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое положительное число n от 1 до 20: "))
+star="*"
+step="*"
+i=0 #счетчик
+while i<n:
+    print(step)
+    step+=star
+    i+=1
 ```
 
 ---
