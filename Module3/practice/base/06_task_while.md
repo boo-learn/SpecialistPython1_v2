@@ -20,7 +20,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+level = int(input("Enter number of levels: "))
+i = 1
+summ_numbers = 0
+while i <= level:
+    summ_numbers += i ** 2
+    i += 1
+print('Сумма всех цифр:', summ_numbers)
 ```
 
 ---
