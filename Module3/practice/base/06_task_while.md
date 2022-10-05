@@ -20,7 +20,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 1  # Счетчик уровней
+total = 0  # Счетчик суммы
+
+while i <= n:
+    total = total + i ** 2
+    i += 1
+
+print(total)
+
 ```
 
 ---
