@@ -20,7 +20,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n_level = int(input("Количество уровней пирамиды : "))
+i = 1
+total=0
+while i <= n_level:
+    total+=i**2
+    i += 1
+print('Сумма чисел на кирпичах:',total)
 ```
 
 ---
