@@ -16,7 +16,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+
+denominator = 2
+is_simple = True
+while denominator < int(n / 2) + 1:
+    if n % denominator == 0:
+        print(denominator, end=' ')
+        is_simple = False
+    denominator += 1
+
+if is_simple:
+    print("Число простое")
 ```
 
 ---
