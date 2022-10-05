@@ -16,7 +16,21 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+number = a
+while number <= b:
+    i = 1
+    dividers_flag = False
+    total = 0
+    while i <= number:
+        if (number % i == 0) and i != number:
+            total += i
+        i += 1
+
+    if number == total:
+        print(number, end=' ')
+    number += 1
 ```
 
 ---
