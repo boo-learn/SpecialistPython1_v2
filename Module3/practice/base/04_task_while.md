@@ -16,9 +16,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input('Введите количество чисел n: '))
+i = 0  # счетчик
+num_positive = 0  # переменная для накопления положительных чисел
+while i < n:
+    number = int(input("Число: "))
+    if number > 0:
+        num_positive= num_positive+1
+        i=i+1
+print("Количество положительных чисел", num_positive)
 
 ---
 
