@@ -17,7 +17,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите количество чисел: "))
+count = 1
+number_of_positive = 0
+
+while count <= n:
+    temp = int(input("Введите целое число: "))
+    if temp > 0:
+        number_of_positive += 1
+    count += 1
+
+print(number_of_positive, "положительных")
+
 ```
 
 ---
