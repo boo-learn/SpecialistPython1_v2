@@ -17,8 +17,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+text = input("Введите произвольный текст: ")
+id = text[: 3]
+digit = text[3:]
+if id == "id" and digit.isdigit():
+    print('Да')
+else:
+    print('Нет')
+
 
 ---
 
