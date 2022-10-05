@@ -15,7 +15,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+str1 = input("str1: ")
+str2 = input("str2: ")
+its_possible = True
+i = 0
+if (len(str1) == len(str2)):
+    while i < len(str1):
+        if (str2.find(str1[i]) != -1):
+            str2.replace(str1[i], "")
+        else:
+            its_possible = False
+            break
+        i += 1
+else:
+    its_possible = False
+print(its_possible)
+
 ```
 
 ---
