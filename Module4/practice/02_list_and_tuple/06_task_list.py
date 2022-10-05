@@ -4,4 +4,10 @@
 first_number = int(input())     # Первое число
 second_number = int(input())    # Второе число
 
-# TODO: your code here
+i = first_number
+my_list = []
+while i <= second_number:
+    if i % 3 == 0:
+        my_list.append(i)
+    i += 1
+print(my_list)
