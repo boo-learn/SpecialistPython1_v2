@@ -19,11 +19,14 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
+i = 1
+total = 0
+while i <= n:
+    total = total + i ** 2
+    print(total)
+    i += 1
 
----
 
 ### Данные для самопроверки
 
