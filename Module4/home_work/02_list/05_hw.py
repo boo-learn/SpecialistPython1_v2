@@ -3,4 +3,14 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+count = 0
+length = 0
+i = 0
+string = ""
+for a in names:
+    if length < len(a):
+        length = len(a)
+        count = i
+    i += 1
+    
+print(names[count])
