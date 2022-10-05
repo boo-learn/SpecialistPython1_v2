@@ -16,9 +16,12 @@
 ### Решение задачи
 
 ```python
-string1 = input("Первая строка:")
-string2 = input("Вторая строка:")
-# TODO: you code here...
+input_str1 = input("input_str1: ")
+input_str2 = input("input_str2: ")
+if len(input_str1) > len(input_str2):
+    print(input_str1)
+else:
+    print(input_str2)
 ```
 
 ---
