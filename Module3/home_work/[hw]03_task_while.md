@@ -28,7 +28,20 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('Введи размер таблицы умножения: '))
+i = 1
+while i <= n:
+    k = 1
+    out = ''
+    while k <= n:
+        if i * k < 10:
+            out += '  ' + str(i * k)
+        else:
+            out += ' ' + str(i * k)
+        k += 1
+    print(out)
+    i += 1
+
 ```
 
 ---
