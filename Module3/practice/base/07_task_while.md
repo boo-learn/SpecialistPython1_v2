@@ -22,7 +22,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 1
+j = 1
+while i <= n:
+    while j <= i:
+        print(j, sep='', end='')
+        j += 1
+    print()
+    j = 1
+    i += 1
 ```
 
 ---
