@@ -21,5 +21,14 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+if a > b:
+    current_number = b
+else:
+    current_number = a
+
+while current_number <= b:
+    if current_number % 5 == 0:
+        print(current_number)
+    current_number += 1
+
 ```
