@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('Введи  целое положительное число: '))
+i = 1
+flag = 0
+sum_div = 0
+while i < n:
+    if n % i == 0:
+        sum_div += i
+        flag = 1
+    i += 1
+if sum_div == n:
+    print('Совершенное число')
+else:
+    print('Несовершенное число')
+
 ```
 
 ---
