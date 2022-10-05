@@ -20,9 +20,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input('Введите координату 1: '))
+b = int(input('Введите координату 2: '))
+c = int(input('Введите координату 3: '))
+d = int(input('Введите координату 4: '))
+
+if 1 <= a <= 8 and 1 <= b <= 8 and 1 <= c <= 8 and 1 <= d <= 8 and a == b and c == d:
+    print('Да')
+else:
+    print('Нет')
 
 ---
 
