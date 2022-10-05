@@ -16,7 +16,24 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Введите нижнюю границу a>0: "))
+b = int(input("Введите верхнюю границу b>0: "))
+i = a  # счетчик
+count = 0  # подсчет чисел
+list=""
+while i <= b:
+    k = 1  # счетчик
+    tot = 0
+    while k < i:
+        if i % k == 0:
+            tot += k
+        k += 1
+    if tot==i:
+        list+=str(i)+" "
+        count+=1
+    i+=1
+print(list)
+print(count)
 ```
 
 ---
