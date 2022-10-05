@@ -36,6 +36,12 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = 9.99
+n = 12
+i = 0
+while i < n:
+    print(i + 1, (i + 1) * cost, "рублей")
+    i+=1
+
 ```
 
