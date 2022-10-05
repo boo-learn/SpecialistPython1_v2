@@ -16,7 +16,9 @@
 
 ```python
 text = ...
-# TODO: you code here...
+number_of_letters_b = text.count('б')
+print(number_of_letters_b)
+
 ```
 
 ---
