@@ -22,7 +22,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 1  # Счетчик уровней
+string = ""
+
+while i <= n:
+    string = string + str(i)
+    print(string)
+    i += 1
+
 ```
 
 ---
