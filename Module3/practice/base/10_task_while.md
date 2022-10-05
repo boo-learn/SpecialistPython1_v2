@@ -16,7 +16,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+i = a
+while a <= i <= b:
+    sum_ = 0
+    k = 1
+    while 1 <= k < i:
+        if i % k == 0:
+            sum_ = sum_ + k
+        k += 1
+    if sum_ == i:
+        print(i, end = " ")
+    i += 1
 ```
 
 ---
