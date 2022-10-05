@@ -17,9 +17,11 @@
 ### Решение задачи
 
 ```python
-name = input("Имя: ")
-surname = input("Фамилия: ")
-# TODO: you code here...
+name = input("Введите Имя: ")
+surname = input("Введите Фамилия: ")
+
+print(name.capitalize(), surname.capitalize())
+
 ```
 
 ---
