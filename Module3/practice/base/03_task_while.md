@@ -17,7 +17,14 @@ _Сумма четных чисел от 0 до 7 = 12_
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 0
+result = 0
+while i <= n:
+    result += i
+    i += 2
+print(result)
+
 ```
 
 ---
