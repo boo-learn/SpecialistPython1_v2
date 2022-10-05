@@ -17,7 +17,9 @@
 ```python
 text = "В теории, теория и практика неразделимы. На практике это не так."
 vowels = "ауоыэяюёие"
-# TODO: you code here...
+for simbol in text:
+    if vowels.find(simbol.lower()) != -1:
+        print(simbol, end='')
 ```
 
 ---
