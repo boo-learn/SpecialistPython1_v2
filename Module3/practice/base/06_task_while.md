@@ -20,7 +20,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите количество уровней n: "))
+i = 1  # счетчик
+count = 0  # подсчет чисел
+while i <= n:
+    count += i * i
+    i += 1
+print(count)
 ```
 
 ---
