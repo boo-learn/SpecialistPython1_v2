@@ -20,6 +20,11 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
-
-# TODO: you code here...
+start = min(a, b)
+end = max(a, b)
+i = start
+while i <= end:
+    if i % 5 == 0:
+        print(i)
+    i += 1
 ```
