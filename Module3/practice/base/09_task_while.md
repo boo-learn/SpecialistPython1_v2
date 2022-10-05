@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 1  # Счетчик чисел
+total = 0  # Счетчик суммы
+
+while i < n:
+    if n % i == 0:
+        total = total + i
+    i += 1
+
+if total == n:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
