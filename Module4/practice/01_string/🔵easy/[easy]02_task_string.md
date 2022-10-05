@@ -17,12 +17,12 @@
 ### Решение задачи
 
 ```python
+
 name = input("Имя: ")
 surname = input("Фамилия: ")
-# TODO: you code here...
-```
-
----
+n = str.capitalize(name)
+sn = str.capitalize(surname)
+print( n, sn)
 
 <details>
 <summary>Подсказка-1</summary>
