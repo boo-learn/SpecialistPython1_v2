@@ -17,7 +17,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите количество: "))
+i=0 #счетчик
+count=0 # подсчет чисел
+while i<n:
+    num = int(input("Введите целое число: "))
+    if num>0: count+=1
+    i+=1
+print(count)
 ```
 
 ---
