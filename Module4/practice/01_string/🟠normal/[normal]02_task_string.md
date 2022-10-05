@@ -17,7 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+line = "id:561"
+
+if line[:3] == 'id:' and line[3:].isdigit():
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
