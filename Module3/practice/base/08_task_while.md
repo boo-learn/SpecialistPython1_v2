@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 2  # Счетчик чисел
+string = ""
+
+while i < n:
+    if n % i == 0:
+        string = string + str(i) + " "
+    i += 1
+
+if string == "":
+    print("Число простое")
+else:
+    print(string)
+
 ```
 
 ---
