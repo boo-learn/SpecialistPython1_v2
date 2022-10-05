@@ -28,7 +28,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('Введите n: '))
+i = 1
+j = 1
+while i <= n:
+    while j <= n:
+        print('{:>3}'.format(i * j), end=' ')
+        j += 1
+    print()
+    i += 1
+    j = 1
 ```
 
 ---
