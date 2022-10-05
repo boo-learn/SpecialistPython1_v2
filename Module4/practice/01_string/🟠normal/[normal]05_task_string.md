@@ -15,9 +15,14 @@
 ### Решение задачи
 
 ```python
-text = "В теории, теория и практика неразделимы. На практике это не так."
+s="ПодсчЕт гласных бУкв"
 vowels = "ауоыэяюёие"
-# TODO: you code here...
+i=0
+tot=0
+while i<len(vowels):
+    tot+=s.lower().count(vowels[i])
+    i+=1
+print(tot)
 ```
 
 ---
