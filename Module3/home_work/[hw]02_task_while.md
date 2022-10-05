@@ -20,6 +20,12 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
+if a % 5 == 0:
+    i = a
+else:
+    i = a + 5 - a % 5
+while i <= b:
+    print(i)
+    i += 5
 
-# TODO: you code here...
 ```
