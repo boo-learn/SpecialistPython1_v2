@@ -22,7 +22,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Кол-во ступенек: "))
+i = 1
+s = str("")
+while i <= n:
+    s = s + str(i)
+    i += 1
+    print(s)
 ```
 
 ---
