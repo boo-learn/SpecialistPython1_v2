@@ -18,7 +18,8 @@
 
 ```python
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
+string = 'Мама МАМА мама мАмА'
+print(string.lower().count('мама'))
 ```
 
 ---
