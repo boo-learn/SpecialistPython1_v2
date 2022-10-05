@@ -20,7 +20,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Кол-во уровней на пирамиде: "))
+i = 1
+total = 0
+while i <= n:
+    total += i ** 2
+    i += 1
+print("Сумма чисел: ", total)
 ```
 
 ---
