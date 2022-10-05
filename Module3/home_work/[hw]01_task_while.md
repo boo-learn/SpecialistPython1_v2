@@ -36,6 +36,11 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+coast = float(input('Введи цену товара: '))
+n = int(input('Введи количество товара: '))
+i = 1
+while i <= n:
+    print(coast*i, ' рублей')
+    i += 1
 ```
 
