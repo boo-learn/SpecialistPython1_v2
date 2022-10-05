@@ -15,8 +15,14 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
+text = input("Введите произвольный текст: ")
+i = 0
+Count = 0
+while i < len(text):
+    if text[i] == "б" or text[i] == "Б":
+        Count += 1
+    i += 1
+print("Количество букв Б в слове", Count)
 ```
 
 ---
