@@ -32,9 +32,12 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input('Введите количество чисел n: '))
+i = 0  # счетчик
+
+while i<n:
+    i=i+1
+    print('*'*i)
 
 ---
 
