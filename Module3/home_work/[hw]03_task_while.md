@@ -28,7 +28,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+k=1
+while k<=n:
+    unit=""
+    i = 1
+    while i<=n:
+        unit+=str(k*i).rjust(2, " ").ljust(3, " ")
+        i+=1
+    print(unit)
+    k+=1
 ```
 
 ---
