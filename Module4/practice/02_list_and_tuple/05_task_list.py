@@ -3,9 +3,17 @@
 # выровненного по правой стороне - слева короткие слова дополняем символами пробела
 
 # Исходные данные:
-fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+i = 1
+maximum = 0
+for fruit in fruits:
+    if len(fruit) > maximum:
+        maximum = len(fruit)
+for fruit in fruits:
+    print(f'{i}. {fruit.rjust(maximum)}')
+    i += 1
+
 
 # Пример вывода:
 # 1. яблоко
