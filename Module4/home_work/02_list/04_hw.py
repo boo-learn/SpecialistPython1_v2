@@ -5,3 +5,18 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+import random
+n = int(input("n="))
+numbers = []
+i = 0
+while i < n:
+    numbers.append(random.randint(-100, 100))
+    i += 1
+
+sq_roots = []
+for elem in numbers:
+        if (elem ** 0.5).imag == 0:
+            if (elem ** 0.5) % 1 == 0:
+                sq_roots.append(round(elem ** 0.5))
+print(numbers)
+print(sq_roots)
