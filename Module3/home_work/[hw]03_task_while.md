@@ -28,7 +28,18 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+mnozitel_1 = 1
+while mnozitel_1 <= n:
+    mnozitel_2 = 1
+    while mnozitel_2 <= n:
+        if mnozitel_1 * mnozitel_2 > 9:
+            print(mnozitel_1 * mnozitel_2, end=" ")
+        else:
+            print(mnozitel_1 * mnozitel_2, end="  ")
+        mnozitel_2 += 1
+    mnozitel_1 += 1
+    print('')
 ```
 
 ---
