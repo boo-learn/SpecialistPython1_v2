@@ -3,7 +3,40 @@
 # Если по заданным точкам треугольник построить нельзя, выведите соответствующее сообщение.
 # Подсказка: для нахождения площади используйте Теорему Герона
 
-# TODO: your code here
+def distance(x1, y1, x2, y2):
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
+
+
+def can_triangle(p1, p2, p3):
+    a = distance(p1[0], p1[1], p2[0], p2[1])
+    b = distance(p2[0], p2[1], p3[0], p3[1])
+    c = distance(p1[0], p1[1], p3[0], p3[1])
+    if a + b > c and b + c > a and a + c > b:
+        return True
+    else:
+        return False
+
+def perimeter(p1, p2, p3):
+    a = distance(p1[0], p1[1], p2[0], p2[1])
+    b = distance(p2[0], p2[1], p3[0], p3[1])
+    c = distance(p1[0], p1[1], p3[0], p3[1])
+    p = a + b + c
+    return p
+
+def square(p1, p2, p3):
+    a = distance(p1[0], p1[1], p2[0], p2[1])
+    b = distance(p2[0], p2[1], p3[0], p3[1])
+    c = distance(p1[0], p1[1], p3[0], p3[1])
+    p = (a + b + c) / 2
+    return (p * (p - a) * (p - b) * (p - c)) ** 0.5
+
+
+
+# Пример вызова функции
+if can_triangle((10, 12), (14, 18), (12, 12)):
+    print("S = ", "%.2f"%square((10, 12), (14, 18), (12, 12)),"P=", "%.2f"%perimeter((10, 12), (14, 18), (12, 12)))
+else:
+    print("Треугольник построить нельзя")
 
 
 # Не забудьте протестировать вашу функцию
