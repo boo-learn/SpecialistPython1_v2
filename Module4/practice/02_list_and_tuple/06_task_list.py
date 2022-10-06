@@ -4,4 +4,12 @@
 first_number = int(input())     # Первое число
 second_number = int(input())    # Второе число
 
-# TODO: your code here
+a = int(input("Введите число: "))     # Первое число
+b = int(input("Введите число: "))    # Второе число
+(a,b)=(a,b) if a>b else (b,a)
+num_list=[]
+while b <= a:
+    if b % 3 == 0:
+        num_list+=[b]
+    b+=1
+print(num_list)
