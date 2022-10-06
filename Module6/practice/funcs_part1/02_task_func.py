@@ -4,10 +4,16 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
-    pass
+    s = str(number)
+    s_rev = ""
+    for word in s:
+        s_rev = word + s_rev
+    if s_rev == s:
+        return True
+    else:
+        return False
 
 
-# Тестируем функцию
 print(palindrome(3454))
 print(palindrome(3443))
 print(palindrome(1234541))
