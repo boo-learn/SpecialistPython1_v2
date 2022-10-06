@@ -3,7 +3,20 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
+
+# Вариант1
+string = ""
+for name in names:
+    string += name + ", "
+string = string[:-2]
+print(string)
+
+# Вариант2
+string2=", ".join(names)
+print(string2)
+
+# Вариант3
+print(*names, sep=", ")
