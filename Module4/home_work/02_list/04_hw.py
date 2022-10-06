@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+numbers = [2, -5, 8, 9, -25, 25, 4]
+new_numbers = []
+
+for num in numbers:
+    if num > 0 and num ** 0.5 % 1 == 0:
+        new_numbers.append(int(num ** 0.5))
+print(new_numbers)
