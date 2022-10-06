@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+a = [2, -5, 8, 9, -25, 25, 4]
+print(a)
+b = []
+for num in a:
+    if num > 0 and num ** 0.5 == round(num ** 0.5):
+        b.append(int(num ** 0.5))
+
+print(b)
