@@ -5,7 +5,18 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+max_length = 0
+for fruit in fruits:
+    if len(fruit) > max_length:
+        max_length = len(fruit)
+for fruit in fruits:
+    if len(fruit) < max_length:
+        fruits[fruits.index(fruit)] = " " * (max_length - len(fruit)) + fruit
+i = 0
+for fruit in fruits:
+    i += 1
+    print(i,"." , fruit)
 
 # Пример вывода:
 # 1. яблоко
