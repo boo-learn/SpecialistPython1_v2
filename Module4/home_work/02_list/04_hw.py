@@ -5,3 +5,8 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+root_of_x = []
+for x_i in x:
+    if x_i >= 0 and int(x_i ** 0.5) == x_i ** 0.5:
+        root_of_x.append(int(x_i ** 0.5))
+print(root_of_x)
