@@ -4,10 +4,19 @@
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
-def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+def distance(x1, y1,x2, y2):
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
 
+def min(p1, p2, p3):
+    ab = distance(*p1, *p2)
+    bc = distance(*p2, *p3)
+    ac = distance(*p1, *p3)
+    if (ab >= bc) and (ab >= ac):
+        return "AB"
+    if ( bc>= ab) and (bc >= ac):
+        return "BC"
+    if (ac >= ab) and (ac >= bc):
+        return "AC"
 
-# TODO: your code here
+print("Самый короткий отрезок:", min((5, 6), (3, 3), (4, 4) )) # Выводим название отрезка, например “АС”.
 print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
