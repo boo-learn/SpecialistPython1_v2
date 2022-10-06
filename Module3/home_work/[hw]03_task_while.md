@@ -50,9 +50,15 @@ while ...:  # внешний цикл
 Чтобы выводить значение print'ами на одной строке, используйте:
 
 ```python
-print(1, end=" ")
-print(2, end=" ")
-print(3, end=" ")
+n = int(input("n: "))
+count = 1
+while count <= n:
+    count_line = 1
+    while count_line <= n:
+        print(count * count_line, end=" ")
+        count_line += 1
+    print("")
+    count += 1
 ...
 ```
 </details>
