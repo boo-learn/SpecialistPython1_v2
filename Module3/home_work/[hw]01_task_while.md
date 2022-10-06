@@ -36,6 +36,12 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Количество товаров: "))
+i = 1  # счетчик
+cost = 9.99
+while i <= n:
+    step = cost * i
+    i = i + 1
+    print(step)
 ```
 
