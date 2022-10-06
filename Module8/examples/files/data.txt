@@ -1,0 +1,4 @@
+Hello world
+Second string...
+Secret symbol is "@"
+Привет мир!!!

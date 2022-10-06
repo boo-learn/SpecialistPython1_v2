@@ -1,0 +1,6 @@
+fruits:45.10 bread:25.10 icecream:120.90 juice:80 vegetables:72.40
+bread:42.20 juice:42 meat:280.20
+vegetables:28.10 fruits:142.80
+icecream:40.75 juice:24.50 canned_food:137
+bread:78.40 meat:450.20
+fruits:58.54
