@@ -15,7 +15,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+string1 = input("string1: ")
+string2 = input("string2: ")
+
+for letter in string1:
+    string2 = string2.replace(letter, '', 1)
+
+if len(string2) == 0:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
