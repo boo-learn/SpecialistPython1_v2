@@ -5,3 +5,15 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+
+import math
+
+numbers = [2, -5, 8, 9, -25, 25, 4]
+# Результат: [3, 5, 2]
+numbers_sqrt = []
+for num in numbers:
+    if num >= 0:
+        if math.isqrt(num) == math.sqrt(num):
+            numbers_sqrt.append(math.isqrt(num))
+print(numbers_sqrt)
