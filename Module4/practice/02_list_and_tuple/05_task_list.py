@@ -5,8 +5,9 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
-
+for num, fruit in enumerate(fruits, 1):
+    print("{}.{:>20}".format(num, fruit))
+    
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
