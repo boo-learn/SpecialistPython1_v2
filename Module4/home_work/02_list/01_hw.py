@@ -2,8 +2,11 @@
 # Выведите все имена в одну строку через запятую
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
-
-# TODO: your code here
+for name in names:
+    if names.index(name) != len(names) - 1:
+        print(name + ",", end = " ")
+    else:
+        print(name, end=" ")
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
