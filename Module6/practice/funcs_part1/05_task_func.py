@@ -3,7 +3,20 @@
 # Если по заданным точкам треугольник построить нельзя, выведите соответствующее сообщение.
 # Подсказка: для нахождения площади используйте Теорему Герона
 
-# TODO: your code here
+def distance(x1, y1, x2, y2):
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+
+
+def can_triangle_w_p_s(p1, p2, p3):
+    dist_1 = distance(*p1, *p2)
+    dist_2 = distance(*p1, *p3)
+    dist_3 = distance(*p2, *p3)
+    half_p = (dist_1 + dist_2 + dist_3) / 2
+    if (dist_1 + dist_2) <= dist_3:
+        return "нельзя построить треугольник"
+    else:
+        return f"Периметр треугольника равен {dist_1 + dist_2 + dist_3}, его площадь " \
+               f" составляет {(half_p * (half_p - dist_1) * (half_p - dist_2) * (half_p - dist_3)) ** 0.5}"
 
 
 # Не забудьте протестировать вашу функцию
