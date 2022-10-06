@@ -18,8 +18,17 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
+a = int(input("Введите целое число а: "))
+b = int(input("Введите целое число b: "))
 
-# TODO: you code here...
+if a > b:
+    a = a + b
+    b = a - b
+    a = a - b
+
+print("Числа в указанном интервале, кратные пяти: ")
+while a <= b:
+    if a % 5 == 0:
+        print(a)
+    a += 1
 ```
