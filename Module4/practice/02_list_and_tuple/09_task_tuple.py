@@ -2,3 +2,13 @@
 # Найдите количество элементов, которые встречаются во всех трех кортежах.
 
 # TODO: your code here
+tup1 = [5, 1, 3, 2, 8, 4, 10]
+tup2 = [6, 66, 7, 3, 77]
+tup3 = []
+for a in tup1:
+    for b in tup2:
+        if a == b:
+            tup3.append(a)
+            break
+
+print(tup3)
