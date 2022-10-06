@@ -4,8 +4,13 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
+max_length = 0
+for element in fruits:
+    if len(element) > max_length:
+        max_length = len(element)
 
-# TODO: your code here
+for i, element in enumerate(fruits):
+    print(f"{i + 1} {element:>{max_length}}")
 
 # Пример вывода:
 # 1. яблоко
