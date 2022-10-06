@@ -4,6 +4,6 @@
 keys = ['name', 'surname', 'age', 'rate']
 values = ['Петр', 'Первый', 42, 1300]
 
-# TODO: your code here
+my_dict = {key: values[i] for i, key in enumerate(keys)}
 # Нужно получить словарь:
 # {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
