@@ -3,4 +3,10 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+max_length = 0
+s = ""
+for name in names:
+    if len(name) > max_length:
+        max_length = len(name)
+        s = name
+print(s)
