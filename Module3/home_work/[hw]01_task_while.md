@@ -36,6 +36,14 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = float(input("cost = "))
+n = int(input("n = "))
+a = 1
+total = 0  # Переменная для накопления суммы
+while a <= n:
+    total = a * cost
+    print(a, total)
+    a += 1
+
 ```
 
