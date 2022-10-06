@@ -1,4 +1,13 @@
 # Дано 3 кортежа заполненные произвольными целыми числами.
 # Найдите количество элементов, которые встречаются во всех трех кортежах.
 
-# TODO: your code here
+tup1 = (1, 2, 3, 1)
+tup2 = (2, 5, 1)
+tup3 = (3, 2, 1)
+Count = 0
+for n1 in set(list(tup1)):
+    for n2 in set(list(tup2)):
+        for n3 in set(list(tup3)):
+            if n1 == n2 and n2 == n3:
+                Count += 1
+print("Количество чисел", Count)
