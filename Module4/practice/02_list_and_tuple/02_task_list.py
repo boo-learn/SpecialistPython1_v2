@@ -2,5 +2,5 @@
 # Каждый элемент должен быть выведен с новой строки.
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
-
-# TODO: your code here
+for val in fruits:
+    print(fruits.index(val)+1, val)
