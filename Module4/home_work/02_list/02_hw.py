@@ -6,3 +6,16 @@ import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
 # TODO: your code here
+
+
+
+import random
+
+n = int(input('Введите длину списка из n элементов: '))
+numbers = []
+count = 0  # счетчик
+while count < n:
+    num2 = random.randint(-100, 100)
+    numbers = num2
+    count = count + 1
+    print(numbers)
