@@ -4,7 +4,9 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
-    pass
+    if int(str(number)[::-1])==number:
+        return 'палиндромом'
+    return 'непалиндромом'
 
 
 # Тестируем функцию
