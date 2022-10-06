@@ -2,7 +2,10 @@
 # находится строго внутри окружности с центром в точке (xc, yc) и радиусом r:
 
 def point_in_circle(x, y, xc, yc, r):
-    # TODO: your code here
-    pass
+    dist = ((xc - x) ** 2 + (yc - y) ** 2) ** 0.5
+    return dist < r
+
+
+print(point_in_circle(1, 1, 3, 3, 10))
 
 # Не забудьте протестировать вашу функцию
