@@ -30,10 +30,25 @@
 # Совет: сначала считайте все цены из файла, сохраните в список,
 # преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
 # А затем, работам с привычным списком, выполните задания
-prices = []
-```
-
----
+# Открываем файл на чтение
+f = open(path, "r", encoding="utf-8")
+# В переменную line считываем строку за стройкой из файла(f)
+total = 0
+salary = []
+for line in f:
+    salary.extend(line.split())
+print(salary)
+max_salary = float(salary[0])
+min_salary = float(salary[0])
+for price in salary:
+    total += float(price)
+    if float(price) > max_salary:
+        max_salary = float(price)
+    if float(price) < min_salary:
+        min_salary = float(price)
+print("Сумма:", total)
+print("Минимальная стоимость:", min_salary)
+print("Максимальная стоимость:", max_salary)
 
 ### Подсказки
 
