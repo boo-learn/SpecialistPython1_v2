@@ -18,14 +18,27 @@
 
 ```python
 # Задаем путь к файлу:
-path = "dir/limericks.txt"  # вместо dir подставь название папки с файлом.
+f_in_path = "../Files/limericks.txt"  # вместо dir подставь название папки с файлом.
 # Или удалите dir, если limericks.txt в той же папке, что и питоновский файл
+f_out_path = "../Files/limericks_1.txt"
 
 # Открываем файл на чтение
-f = open(path, "r")
+f_in = open(f_in_path, "r", encoding="utf-8")
+
+f_out = open(f_out_path, "w", encoding="utf-8")
+
 # В переменную line считываем строку за стройкой из файла(f)
-for line in f:
-    ...
+for line_in in f_in:
+
+    # Вариант-1
+    # f_out.write("".join(line_in.split(".")))
+
+    # Вариант 2
+    f_out.write(line_in.replace(".", ""))
+
+f_in.close()
+f_out.close()
+
 ```
 
 ---
