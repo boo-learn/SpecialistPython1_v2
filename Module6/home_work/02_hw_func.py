@@ -4,10 +4,26 @@
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
-def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+def distance(p1: tuple, p2: tuple):
+    return ((p2[0] - p1[0]) ** 2 + (p2[1] - p1[1]) ** 2) ** 0.5
 
 
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+def sides(p1, p2, p3):
+    a = distance(p1, p2)
+    b = distance(p2, p3)
+    c = distance(p3, p1)
+    return [('p1p2', a), ('p2p3', b), ('p3p1', c)]
+
+
+p1 = (0, 0)
+p2 = (0, 4)
+p3 = (3, 0)
+
+triangle = sides(p1, p2, p3)
+minside = triangle[0]
+
+for side in triangle:
+    if side[1] < minside[1]:
+        minside = side
+
+print(f"Сторона {minside[0]} - наименьшая и равна {minside[1]}")
