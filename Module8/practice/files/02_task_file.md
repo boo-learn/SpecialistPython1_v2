@@ -23,9 +23,14 @@ path = "dir/limericks.txt"  # вместо dir подставь название
 
 # Открываем файл на чтение
 f = open(path, "r")
-# В переменную line считываем строку за стройкой из файла(f)
+
+path_write = "limericks_clean.txt"
+f_write = open(path_write, "w")
+# В переменную line считываем строку за строкой из файла(f)
 for line in f:
-    ...
+    line = line.replace('.', '')
+    f_write.write(line)
+ 
 ```
 
 ---
