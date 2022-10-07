@@ -32,6 +32,21 @@
 # А затем, работам с привычным списком, выполните задания
 prices = []
 ```
+f = open("sold.txt", "r", encoding="utf-8")
+max_cost = 0
+total_cost = 0
+for line in f:
+    total = line.rstrip().split(" ")
+    print(total)
+    for el in total:
+        if el != "":
+            total_cost += float(el)
+            if max_cost < float(el):
+                max_cost = float(el)
+
+f.close()
+print("Сумма: ", total_cost)
+print("Максимум: ", max_cost)
 
 ---
 
