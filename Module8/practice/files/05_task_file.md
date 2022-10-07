@@ -30,7 +30,29 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+path = "items_sold.txt"
+f = open(path, "r")
+
+goods_revenu = {}
+for line in f:
+    for sold in line.split():
+        good, price = sold.split(":")
+        price = float(price)
+        if good in goods_revenu:
+            goods_revenu[good] += price
+        else:
+            goods_revenu[good] = price
+
+print(f"Общая выручка магазина: {sum(goods_revenu.values()):.2f}")
+print("Вручка магазина по каждому типу товаров: ")
+for good, revenu in goods_revenu.items():
+    print(f"Товар {good} - Выручка: {revenu:.2f}")
+d = sorted(goods_revenu.items(), key=lambda x: x[-1])
+print(f"На самую большую сумму продан {d[-1][0]} за {d[-1][1]:.2f}")
+print(f"За день продано {len(goods_revenu.keys())} типа(ов) товаров")
+
+f.close()
+
 ```
 
 ---
