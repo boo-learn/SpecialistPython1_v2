@@ -15,22 +15,24 @@
 Вывести сумму всех чисел и среднеарифметическое этих чисел.
 
 ### Решение задачи
-
-```python
 # Задаем путь к файлу:
-path = "dir/numbers.txt"  # вместо dir подставь название папки с файлом.
+path = "data/numbers.txt"  # вместо dir подставь название папки с файлом.
 # Или удалите dir, если numbers.txt в той же папке, что и питоновский файл
 
 # Открываем файл на чтение
 f = open(path, "r")
 sum_numbers = 0  # Переменная для подсчета суммы
+sum_middle = 0
+count = 0
 # В переменную line считываем строку за стройкой из файла(f)
 for line in f:
-    ...
-print(f"Сумма чисел = {sum_numbers}")
-print(f"Среднеарифметическое = {...}")
-```
+    sum_numbers = sum_numbers + int(line)
 
+    count = count + 1
+
+print(f"Сумма чисел = {sum_numbers}")
+print(f"Среднеарифметическое = {sum_numbers/count}")
+print(count)
 ---
 
 ### Подсказки
