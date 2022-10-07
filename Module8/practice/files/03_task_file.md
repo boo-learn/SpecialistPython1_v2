@@ -30,8 +30,25 @@
 # Совет: сначала считайте все цены из файла, сохраните в список,
 # преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
 # А затем, работам с привычным списком, выполните задания
+
+path = "sold.txt"
 prices = []
-```
+prices_str = []
+
+f = open(path, "r", encoding="utf-8")
+
+for line in f:
+    prices_str += line.split()
+for el in prices_str:
+    number = float(el)
+    prices.append(number)
+
+f.close()
+
+print(f"На какую сумму было продано товаров? - {sum(prices):.2f}")
+print(f"Цену самого дорогого товара - {max(prices)}")
+print(f"Цену самого дешевого товара - {min(prices)}")
+
 
 ---
 
