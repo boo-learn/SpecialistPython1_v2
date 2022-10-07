@@ -25,7 +25,7 @@ path = "dir/limericks.txt"  # вместо dir подставь название
 f = open(path, "r")
 # В переменную line считываем строку за стройкой из файла(f)
 for line in f:
-    ...
+    print(line.replace(".", ""))
 ```
 
 ---
