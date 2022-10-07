@@ -22,7 +22,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+path = "salaries.txt"
+f = open(path, "r")
+f.readline()
+path_write = "highly_paid.txt"
+f_write = open(path_write, "w")
+for line in f:
+    info = line.split()
+    if float(info[3]) > 60000:
+        f_write.write(f"{info[0]} {info[1][0]}.{info[2][0]}.\n")
 ```
 
 ---
