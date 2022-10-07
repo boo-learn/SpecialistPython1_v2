@@ -26,23 +26,37 @@ staff = [
         'salary': 47800
     },
 ]
-# Вычислите:
-print("Имя и Фамилию сотрудника с самой высокой зарплатой:")
 
-# TODO: your code here
+names_salary = {f"{employe['name']} {employe['surname']}": employe['salary'] for employe in staff}
 
-print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
+salaries = names_salary.values()
+max_salary = max(salaries)
+names = [name for name, salary in names_salary.items() if salary == max_salary]
+print(f"Имя и Фамилию сотрудника с самой высокой зарплатой: {', '.join(names)}")
 
-# TODO: your code here
+min_salary = min(salaries)
+names = [name for name, salary in names_salary.items() if salary == min_salary]
+print(f"Имя и Фамилию сотрудника с самой низкой зарплатой: {', '.join(names)}")
 
-print("Среднеарифметическую зарплату всех сотрудников")
+total = 0
+for salary in salaries:
+    total += salary
+print(f"Среднеарифметическая зарплата всех сотрудников: {total / len(salaries):.2f}")
 
-# TODO: your code here
+namesake = {}
+for employe in staff:
+    if employe['surname'] in namesake:
+        namesake[employe['surname']] += 1
+    else:
+        namesake[employe['surname']] = 1
 
-print("Количество однофамильцев в организации")
-
-# TODO: your code here
+namesake_number = 0
+for _ , number in namesake.items():
+    if number > 1:
+        namesake_number += number
+print(f"Количество однофамильцев в организации: {namesake_number}")
 
 print("*Список всех сотрудников(Имя и Фамилию) в порядке возрастания их зарплаты")
-
-# TODO: your code here
+names_salary_sorted = sorted(names_salary.items(), key=lambda x: x[-1])
+for name, salary in names_salary_sorted:
+    print(f"{name} {salary}")
