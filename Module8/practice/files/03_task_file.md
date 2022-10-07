@@ -32,6 +32,23 @@
 # А затем, работам с привычным списком, выполните задания
 prices = []
 ```
+prices = []
+
+sum_price = 0
+
+path = "../Files/sold.txt"
+
+with open(path, "r", encoding="utf-8") as f:
+    for line in f:
+        for elem in line.split(" "):
+            if elem != "":
+                prices.append(float(elem))
+                sum_price += float(elem)
+
+print(min(prices))
+print(max(prices))
+print(sum_price)
+
 
 ---
 
