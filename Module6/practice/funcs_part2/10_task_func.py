@@ -2,8 +2,11 @@
 # Функция должна вызываться с любым количеством аргументов
 
 def average(*args):
-    # TODO: your code here
-    pass
+    tot=0
+    for num,var in enumerate(args,1):
+        tot+=var
+    f_mean=tot/num
+    return f_mean
 
 
 print(average(3, 4, 8))
