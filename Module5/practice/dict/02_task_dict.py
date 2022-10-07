@@ -6,7 +6,11 @@ items = [
     {"name": "Чемодан", "price": "2300.85", "currency": "rub"},
 ]
 
-# 1. Выведите нумерованный список именований всех товаров
-...
-# 2. Выведите цену самого дешевого товара
-...
+n = 0
+min_cost = float(items[0]["price"])
+for item in items:
+    print(n, ":", item["name"]," ", item["price"])
+    if float(item["price"]) < min_cost:
+        min_cost = float(item["price"])
+    n += 1
+print("самый дешевый товар:", min_cost)
