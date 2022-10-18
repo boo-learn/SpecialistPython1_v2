@@ -17,7 +17,11 @@
 ```python
 n = int(input("n: "))
 
-# TODO: you code here...
+n=int(input("n="))
+text="Я учу питон"
+while n>=1:
+    print(text)
+    n-=1
 ```
 
 ---
