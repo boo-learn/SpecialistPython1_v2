@@ -17,7 +17,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Кол-во чисел"))
+i = 0
+num_positive = 0
+while i < n:
+    number = int(input("Число: "))
+    if number > 0:
+        num_positive += 1
+    i += 1
+print("Кол-во положительных ",num_positive)
 ```
 
 ---
