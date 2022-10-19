@@ -17,7 +17,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("кол-во чисел: "))
+i = 0
+num_positive = 0
+while i < n:
+    number = int(input("число "))
+    if number > 0:
+        num_positive += 1
+    i += 1
+print("кол-во положит ", num_positive)
 ```
 
 ---
