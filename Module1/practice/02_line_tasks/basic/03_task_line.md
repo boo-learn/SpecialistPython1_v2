@@ -17,11 +17,11 @@
 ### Решение задачи
 
 ```python
-number = int(input("Введите трехзначное число: "))
-first = ...
-last = ...
-print("Первая цифра числа =", first)
-print("Последняя цифра числа =", last)
+number = input("Enter int: ")
+first = number % 10
+last = number // 100
+print("First integer =", first)
+print("Last integer =", last)
 ```
 
 ---
