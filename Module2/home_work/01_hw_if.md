@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Сторона 1:"))
+m = int(input("Сторона 2:"))
+k = int(input("Хотелось бы съесть долек:"))
+if n*m>k:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
