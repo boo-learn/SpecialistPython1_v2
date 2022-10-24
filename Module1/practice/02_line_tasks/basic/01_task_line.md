@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Введите длину стороны а: "))
+b = int(input("Введите длину стороны b: "))
+p = (a + b)*2
+s = a*b
+print("S=", s)
+print("Р=", p)
+
 ```
 
 ---
