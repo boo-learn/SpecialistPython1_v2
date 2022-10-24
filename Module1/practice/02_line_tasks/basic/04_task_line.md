@@ -18,14 +18,16 @@
 
 ```python
 number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
-print(n1)
-print(n2)
-print(n3)
-print(n4)
+n1 = number//1000
+nx1 = number//100
+n2 = nx1%10
+nx2 = number%100
+n3 = nx2%10
+n4 = number%10
+print("Первая цифра числа =",n1)
+print("Вторая цифра числа =",n2)
+print("Третья цифра числа =",n3)
+print("Четвертая цифра числа =",n4)
 ```
 
 ---
