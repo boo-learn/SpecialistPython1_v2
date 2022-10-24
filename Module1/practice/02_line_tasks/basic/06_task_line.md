@@ -17,9 +17,9 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
-
+number = int(input("Введите Номер квартиры: "))
+floor= number//5+number%5
+print("Квартира", number, "Находится на этаже", floor)
 ---
 
 ### Данные для самопроверки
