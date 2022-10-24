@@ -18,8 +18,11 @@
 
 ```python
 import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
+
+R = float(input("Введите R окружности: "))
+
+S = math.pi * (R**2)
+print("Площадь окружности S= ", S)
 ```
 
 ---
