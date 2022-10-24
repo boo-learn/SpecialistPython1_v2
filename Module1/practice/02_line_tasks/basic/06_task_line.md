@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+flat = int(input("Номер квартиры: "))
+
+floor = flat//5+1
+
+print("Этаж: ", floor)
 ```
 
 ---
