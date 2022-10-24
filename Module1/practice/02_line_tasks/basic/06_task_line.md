@@ -17,7 +17,9 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+flat = int(input("Введите номер квартиры:"))
+floor= (flat-1)//5+1
+print("Номер этажа-", floor)
 ```
 
 ---
