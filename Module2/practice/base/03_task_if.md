@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+price = int(input())
+budget = int(input())
+
+if budget > price:
+    print('Сдача', budget - price)
+else:
+    print('Не достаточно денег')
 ```
 
 ---
