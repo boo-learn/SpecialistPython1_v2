@@ -18,7 +18,7 @@
 
 ```python
 number_flat = int(input("Введите номер квартиры: "))
-number_floor = num_flat / 5 + (number_flat % 5)
+number_floor = num_flat // 5 + (number_flat % 5)
 print(number_floor)
 ```
 
