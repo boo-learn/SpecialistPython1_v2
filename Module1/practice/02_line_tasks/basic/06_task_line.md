@@ -19,7 +19,10 @@
 ```python
 # TODO: you code here...
 ```
-
+import math
+number = int(input("Введите номер квартиры: "))
+floor_num = math.ceil(number/5)   
+print("Номер этажа:", floor_num)
 ---
 
 ### Данные для самопроверки
