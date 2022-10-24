@@ -19,7 +19,9 @@
 ```python
 import math
 math.pi # Число pi из библиотеки math
-# TODO: you code here...
+r= int (input ("радиус:"))
+s=r**2*math.pi
+print ("площадь круга", s)
 ```
 
 ---
