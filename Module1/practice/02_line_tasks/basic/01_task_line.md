@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a="))
+b = int(input("b="))
+
+p = (a + b)*2
+S = a * b
+
+print("Perimetr=", p)
+print("Square=", S)
 ```
 
 ---
