@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+n_3 = n%3
+n_5 = n%5
+if n_3 == 0 or n_5 == 0:
+    print("Кратно")
+else:
+    print("Не кратно")
 ```
 
 ---
