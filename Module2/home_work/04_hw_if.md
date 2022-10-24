@@ -19,7 +19,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+k = int(input("Сколько шариков хотим купить: "))
+if k%5%3==0:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
