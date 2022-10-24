@@ -18,7 +18,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+v = int (input ("скорость байкера"))
+t = int (input ("время"))
+d = (v*t)%109
+
+print (d)
 ```
 
 ---
