@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+ax = int(input("Точка а. Координата х: "))
+ay = int(input("Точка а. Координата y: "))
+
+bx = int(input("Точка b. Координата х: "))
+by = int(input("Точка b. Координата y: "))
+
+dist = ((ay-ax)**2 + (by-bx)**2)**0.5
+
+print("Расстояние между a и b = ", dist)
 ```
 
 ---
