@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+purse = int(input("Денег в кошельке:"))
+price = int(input("Цена товара:"))
+if purse>price:
+    print("Денег останется после покупки:",(purse-price))
+elif purse == price:
+    print("Кошелек пуст, но вы с покупкой")
+else:
+    print("Денег не хватает")
 ```
 
 ---
