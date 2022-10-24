@@ -18,15 +18,13 @@
 
 ```python
 number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
+n1 = number//1000 # Остаток от деления
+n2 = number//10//10%10
+n3 = number//10%10
+n4 = number%10
 print(n1)
 print(n2)
 print(n3)
 print(n4)
-```
-
 ---
 
