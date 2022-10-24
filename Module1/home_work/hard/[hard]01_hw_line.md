@@ -18,7 +18,11 @@
 
 ```python
 seconds = int(input("Прошло секунд: "))
-# TODO: you code here...
+days = seconds // 86400
+hours = (seconds - days*86400)//3600
+minutes = (seconds - days*86400 - hours*3600)//60
+remaining_seconds = seconds - days*86400 - hours*3600 - minutes*60
+print(days, "дней", hours, "часов", minutes, "минут", remaining_seconds, "секунд")
 ```
 
 ---
