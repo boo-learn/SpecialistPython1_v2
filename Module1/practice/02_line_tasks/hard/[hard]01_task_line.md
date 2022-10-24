@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+import math
+a = int(input("Улитка молодец на:"))
+b = int(input("Улитка не сдавайся на:"))
+h = int(input("Мучаться надо:"))
+h != b
+days = math.ceil((h-a)/(a-b)+1)
+print("Ты сделаешь это за", days, "дней")
 ```
 
 ---
