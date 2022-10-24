@@ -17,16 +17,14 @@
 ### Решение задачи
 
 ```python
-number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
-print(n1)
-print(n2)
-print(n3)
-print(n4)
-```
-
----
+print ("Данная программа определяет в четырехзначном числе все цифры")
+number = int(input("Ввведите четырехзначное число: "))
+first = number//1000 
+print ("Первая цифра числа: ", first)
+second = number//100%10 
+print ("Вторая цифра числа: ", second)
+third = number//10%10 
+print ("Третья цифра числа: ", third)
+last = number%10
+print ("Последняя цифра числа: ", last)
 
