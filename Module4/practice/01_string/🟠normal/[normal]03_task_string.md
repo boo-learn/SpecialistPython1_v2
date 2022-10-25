@@ -18,7 +18,9 @@
 
 ```python
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
+text_for_count = text.upper()
+number = text_for_count.count('МАМА')
+print('количество', number)
 ```
 
 ---
