@@ -26,9 +26,36 @@
 a = int(input("a: "))
 b = int(input("b: "))
 c = int(input("c: "))
-
-# TODO: you code here...
-
+max = 0
+mid = 0
+min = 0
+if a > b > c:
+    max = a
+    mid = b
+    min = c
+elif a > c > b:
+    max = a
+    mid = c
+    min = b
+elif b > a > c:
+    max = b
+    mid = a
+    min = c
+elif b > c > a:
+    max = b
+    mid = c
+    min = a
+elif c > a > b:
+    max = c
+    mid = a
+    min = b
+elif c > b > a:
+    max = c
+    mid = b
+    min = a
+a = min
+b = mid
+c = max
 print(a, b, c)
 ```
 
