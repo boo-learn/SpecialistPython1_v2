@@ -21,7 +21,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите координаты точки А(x,y)")
+x = int(input("x:"))
+y = int(input("y:"))
+print("Введите координаты центра Круга (xr,yr) и радиус*(r)")
+xr = int(input("xr:"))
+yr = int(input("yr:"))
+r = int(input("r:"))
+if (x-xr)**2+(y-yr)**2 <= r**2:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
