@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("n: "))
+b = 0
+
+while a >= b:
+    print(a)
+    a -= 1
 ```
 
 ---
