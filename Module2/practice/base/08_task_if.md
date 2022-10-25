@@ -21,7 +21,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+point_X = int(input("Координата X точки: "))
+point_Y = int(input("Координата Y точки: "))
+center_X = int(input("Координата X центра круга: "))
+center_Y = int(input("Координата Y центра круга: "))
+r = int(input("Радиус круга: "))
+l = ((center_X-point_X)**2+(center_Y-point_Y)**2)**0.5
+if r >= l:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
