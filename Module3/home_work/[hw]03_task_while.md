@@ -28,7 +28,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+count_horizon = 1
+count_vertical = 1
+while count_vertical <= n:
+    while count_horizon <= n:
+        print(count_horizon * count_vertical, end= '\t')
+        count_horizon += 1
+    print()
+    count_horizon = 1
+    count_vertical += 1
 ```
 
 ---
