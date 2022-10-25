@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Сторона а:"))
+b = int(input("Сторона b:"))
+c = int(input("Сторона с:"))
+if (a + b) > c and (a + c) > b and (c + b) > a:
+    if a == b or a == c or c == b:
+        print("Равнобедренный")
+    else:
+        print("Не равнобедренный")
+else:
+    print("Не существует")
 ```
 
 ---
