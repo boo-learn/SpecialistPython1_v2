@@ -17,7 +17,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('n: '))
+count = 0
+count_number = 0
+while count != n:
+    number = int(input("number: "))
+    count = count + 1
+    if number > 0:
+        count_number = count_number + 1
+print(count_number)
 ```
 
 ---
