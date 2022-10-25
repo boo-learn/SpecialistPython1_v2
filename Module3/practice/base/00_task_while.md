@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("введите число n "))
+b = 0
+
+count = 0
+while count < n:
+    count = count + 1
+    print(count)
+print(b)
 ```
 
 ---
