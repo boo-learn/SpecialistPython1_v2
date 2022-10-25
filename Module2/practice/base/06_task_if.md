@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input('Сторона а:'))
+b = int(input('Сторона b:'))
+c = int(input('Сторона c:'))
+
+if (a + b) > c and (b + c) > a and (a + c) > b:
+    print('Существует')
+else:
+    print('Не существует')
 ```
 
 ---
