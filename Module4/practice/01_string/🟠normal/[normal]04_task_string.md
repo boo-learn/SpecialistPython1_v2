@@ -22,7 +22,13 @@
 
 ```python
 password = input("Enter password: ")
-# TODO: you code here...
+
+count_spec_sym = password.count('#')
+upper_first = password[0].upper()
+if len(password) >= 6 and count_spec_sym > 0 and password[0] == upper_first and password[0].isalpha():
+    print('Безопасный')
+else:
+    print('Не безопасный')
 ```
 
 ---
