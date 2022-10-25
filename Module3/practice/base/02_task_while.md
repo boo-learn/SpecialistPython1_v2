@@ -17,10 +17,15 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
+a = int(input('a:'))
+b = int(input('b:'))
+count = 0
 
-# TODO: you code here...
+
+while a < b:
+    a += 1
+    if a % 2 == 0:
+        print(a)
 ```
 
 ---
