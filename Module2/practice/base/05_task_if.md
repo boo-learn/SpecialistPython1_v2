@@ -19,7 +19,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("ввести целое число "))
+if a % 3 == 0:
+    print("Foo")
+if a % 5 == 0:
+    print("Bar")
+if (a % 3 == 0) and (a % 5 == 0):
+    print("Foobar")
 ```
 
 ---
