@@ -14,13 +14,11 @@
 
 ### Решение задачи
 
-```python
-n = int(input("n: "))
-
-# TODO: you code here...
-```
-
----
+n = int(input("Введите необходимое количество раз вывода фразы: "))
+count = 0
+while count < n:
+    count += 1
+    print("Я учу Питон")
 
 ### Подсказки
 
