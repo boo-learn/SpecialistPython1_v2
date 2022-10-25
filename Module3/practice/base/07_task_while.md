@@ -22,7 +22,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('n:'))
+count = 1
+string = ''
+
+while count <= n:
+    string += str(count)
+    count += 1
+    print(string)
+
 ```
 
 ---
