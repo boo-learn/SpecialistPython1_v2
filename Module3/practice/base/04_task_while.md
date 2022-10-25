@@ -17,7 +17,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+numb_positive = 0
+while n > 0:
+    m = int(input("Введите число: "))
+    if m > 0:
+        numb_positive += 1
+    n -= 1
+print(numb_positive)
 ```
 
 ---
