@@ -17,11 +17,16 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+money = int(input("Сколько денег в кошельке: "))
+cost = int(input("Сколько стоит товар: "))
 
----
+change = money - cost
+
+if change >= 0:
+    print("Ваша сдача составляет: ", change, "рублей")
+else:
+    print("Денег не достаточно!")
+
 
 ### Данные для самопроверки
 
