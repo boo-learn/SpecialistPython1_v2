@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+string = (input('Введите id:'))
+if string[:2] == 'id' and string[3:].isnumeric():
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
