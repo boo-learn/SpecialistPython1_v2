@@ -36,6 +36,16 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = float(9.99)
+print("Стоимость товара=", cost)
+n = int(input("Количество товара n: "))
+i = 0
+cost_result = 0
+
+while i <= n:
+    i += 1
+    cost_result += cost
+    print(i, cost_result)
+
 ```
 
