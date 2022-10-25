@@ -18,7 +18,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+v = int(input("Введите скорость байкера: "))
+t = int(input("Введите время езды: "))
+l = abs(v) * t
+if v > 0 and l > 108:
+    l = l-109*(l//109)
+else: l = l
+if v < 0 and l > 108:
+    l = l*(l//109)-109*(l//109)
+else: l = l
+if v < 0 and l < 109:
+    l = l-109
+else: l = l
+print("Байкер остановился на отметке ", abs(l))
 ```
 
 ---
