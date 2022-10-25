@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input('Введите число:'))
+if number % 5 == 0 and (number // 5) % 2 > 0:
+    print('да')
+else:
+    print('Нет')
 ```
 
 ---
