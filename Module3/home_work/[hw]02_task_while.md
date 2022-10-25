@@ -21,5 +21,22 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+a = int(input("введите число a "))
+b = int(input("введите число b "))
+
+if a >= 5 and b >= 5:
+    if a < b:
+       i = a
+       while i <= b:
+           if i % 5 == 0:
+            print(i)
+           i = i + 1
+    else:
+       i = b
+       while i <= a:
+         if i % 5 == 0:
+          print(i)
+         i = i + 1
+else:
+    print("a или b меньше 5")
 ```
