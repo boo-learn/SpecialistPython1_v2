@@ -19,7 +19,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n= int(input("введите число, количество шариков, которые вы планируете купить"))
+if n == 3 or n == 5:
+    print("Да")
+else:
+    print("Нет")# TODO: you code here...
 ```
 
 ---
