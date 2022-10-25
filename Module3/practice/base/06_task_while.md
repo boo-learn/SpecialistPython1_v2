@@ -20,7 +20,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('n:'))
+count = 1
+summa = 0
+
+while count <= n:
+    summa += count**2
+    count +=1
+
+print(summa)
 ```
 
 ---
