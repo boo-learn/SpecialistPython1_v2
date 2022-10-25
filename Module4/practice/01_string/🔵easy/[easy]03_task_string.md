@@ -17,7 +17,10 @@
 
 ```python
 text = "Вася самый умный! Вася лучше всех! И ждет его успех!"
-# TODO: you code here...
+
+print(text.replace("!", "."))
+
+
 ```
 
 ---
