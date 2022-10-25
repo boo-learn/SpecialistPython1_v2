@@ -20,7 +20,13 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+
+#count = 0
+while a < b:
+    a = a + 1
+    print(a)
 ```
 
 ---
