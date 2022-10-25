@@ -18,7 +18,12 @@
 
 ```python
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
+
+text = str(input("Введите текст: "))
+text_lower = text.casefold()
+n = text_lower.count('мама')
+print(n)
+
 ```
 
 ---
