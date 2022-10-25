@@ -22,7 +22,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 1
+s = 0
+while i <= n:
+    s = str(s) + str(i)
+    print(s[1:])
+    i += 1
 ```
 
 ---
