@@ -33,7 +33,11 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input('n: '))
+count = 1
+while count <= n:
+    print('*'*count)
+    count += 1
 ```
 
 ---
