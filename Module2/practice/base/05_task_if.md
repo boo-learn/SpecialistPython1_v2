@@ -19,7 +19,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input("Целое число: "))
+
+a = num % 3
+b = num % 5
+
+if a == 0 and b == 0:
+    print("Foobar")
+else:
+    if a == 0:
+        print("Foo")
+    if b == 0:
+        print("Bar")
 ```
 
 ---
