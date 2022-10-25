@@ -19,7 +19,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input("Введите целое число:"))
+if x%3<1 and x%5<1:
+    print("Foobar")
+elif x%3<1:
+    print("Foo")
+elif x%5<1:
+    print("Bar")
+else:
+    print("")
 ```
 
 ---
