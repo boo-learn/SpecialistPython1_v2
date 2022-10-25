@@ -16,13 +16,12 @@
 
 ### Решение задачи
 
-```python
-name = input("Имя: ")
-surname = input("Фамилия: ")
-# TODO: you code here...
-```
-
----
+string1 = input("Введите свое имя: ")
+string2 = input("Введите свою фамилию: ")
+new_sting1 = string1.capitalize()
+new_sting2 = string2.capitalize()
+print("Ваше имя: ", new_sting1)
+print("Ваша фамилия: ", new_sting2)
 
 <details>
 <summary>Подсказка-1</summary>
