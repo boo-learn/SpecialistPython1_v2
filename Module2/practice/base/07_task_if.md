@@ -16,7 +16,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Введите длину отрезка a:"))
+b = int(input("Введите длину отрезка b:"))
+c = int(input("Введите длину отрезка c:"))
+if (a+b)>c and (a+c)>b and (b+c)>a and (a==b or b==c or a==c):
+    print("Ранобедренный")
+elif  (a+b)>c and (a+c)>b and (b+c)>a: 
+    print("Не Ранобедренный")
+else:
+    print("Не существует Треугольник")
 ```
 
 ---
