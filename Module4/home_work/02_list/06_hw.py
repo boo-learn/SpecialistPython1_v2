@@ -34,7 +34,10 @@ items = [
 # Найдите:
 print("Товары на складе представлены брэндами: ")
 
-# TODO: your code here
+brands = {items[0]["brand"]}
+for item in items:
+    brands.add(item["brand"])
+print(f"Товары на складе представлены брэндами: {brands}")
 
 print("На складе больше всего товаров брэнда(ов): ")
 
@@ -42,4 +45,12 @@ print("На складе больше всего товаров брэнда(о�
 
 print("На складе самый дорогой товар брэнда(ов): ")
 
-# TODO: your code here
+highest_price = 0
+highest_brands = []
+for item in items:
+    if float(item["price"]) > highest_price:
+        highest_price = float(item["price"])
+for item in items:
+    if item["price"] == highest_price:
+        highest_brands.append(item["brand"])
+print(f"На складе самый дорогой товар брэнда(ов): {highest_brands}")
