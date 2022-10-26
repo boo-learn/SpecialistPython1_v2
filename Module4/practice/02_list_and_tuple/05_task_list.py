@@ -4,8 +4,10 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
+max_num = len(max(fruits))
 
-# TODO: your code here
+for i, fruit in enumerate(fruits, 1):
+    print(f"{i}. {fruit.rjust(max_num)}")
 
 # Пример вывода:
 # 1. яблоко
