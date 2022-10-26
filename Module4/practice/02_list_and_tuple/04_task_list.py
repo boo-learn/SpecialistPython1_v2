@@ -1,4 +1,9 @@
 # Дан список из n элементов, заполненный произвольными целыми числами в диапазоне от -10 до 10.
 # Вывести на экран сумму всех положительных элементов.
 
-# TODO: your code here
+numbers = [1, 5, 1]
+sum = 0
+for element in numbers:
+    if element % 2 == 0:
+        sum += element
+print(sum)
