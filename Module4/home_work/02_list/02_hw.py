@@ -6,3 +6,11 @@ import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
 # TODO: your code here
+import random
+n=int(input("n:"))
+i=0
+numbers=str()
+while i<n:
+    numbers=numbers+str(random.randint(-100, 100))+" "
+    i+=1
+print(numbers) 
