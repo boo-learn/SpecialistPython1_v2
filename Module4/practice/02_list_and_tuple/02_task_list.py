@@ -3,4 +3,10 @@
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
-# TODO: your code here
+fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
+count = 1
+
+for fruit in fruits:
+    print(count, fruit)
+    count += 1
+
