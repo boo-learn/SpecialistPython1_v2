@@ -3,4 +3,7 @@
 
 my_list = [24, "Василий", "выхухоль", 42, -12.5]
 
-# TODO: your code here
+list = [12, "Иван", "компьютер", 23, -15.7]
+
+for name in list:
+    print(name)
