@@ -3,7 +3,14 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+# TODO: 
+names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
+i=0
+person=names[0]
+while i < len(names):
+    person=names[i]+","+person
+    i+=1
+print(person)   
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
