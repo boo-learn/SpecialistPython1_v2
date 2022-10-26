@@ -5,7 +5,13 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+i = 1
+max_num = len(max(fruits))
+
+for fruit in fruits:
+    print(f"{i}. {fruit.rjust(max_num)}")
+    i += 1
+
 
 # Пример вывода:
 # 1. яблоко
