@@ -3,4 +3,8 @@
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
-# TODO: your code here
+products = ["Хлеб", "Молоко", "Макароны", "Мясо", "Сметана"]
+count = 1
+for product in products:
+    print(f"{count}. {product}")
+    count += 1
