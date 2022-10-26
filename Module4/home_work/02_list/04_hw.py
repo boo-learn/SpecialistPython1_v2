@@ -5,3 +5,10 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+my_list = [-1,0,2,10,25,9,4,-11]
+new_list = []
+for num in my_list:
+    if num >= 0 and num**0.5 == int(num**0.5):
+        sqr_num = num**0.5
+        new_list.append(sqr_num)
+print(new_list)
