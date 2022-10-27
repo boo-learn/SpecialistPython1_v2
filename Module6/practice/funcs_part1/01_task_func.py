@@ -1,8 +1,12 @@
 # Напишите функцию, возвращающую наибольшее из четырех чисел
 
 def max4(n1, n2, n3, n4):
-    # TODO: your code here
-    pass
+    n = [n1, n2, n3, n4]
+    max = n1
+    for i in n:
+        if i > max:
+            max = i
+    return max
 
 
 # Тестируем функцию
