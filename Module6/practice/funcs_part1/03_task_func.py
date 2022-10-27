@@ -3,8 +3,8 @@
 
 def distance(x1, y1, x2, y2):
     # TODO: your code here
-    pass
-
+    distance1 = round(((x2 - y2)**2 + (y2 - y1)**2)**0.5,2)
+    return distance1
 
 # Тестируем функцию
 print(distance(2, 4, 2, 9))
