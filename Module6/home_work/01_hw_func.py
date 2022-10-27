@@ -3,11 +3,25 @@
 # Билет считается счастливым, если сумма его первых и последних цифр равны.
 
 def lucky_ticket(ticket_number):
-    # TODO: your code here
-    pass
+    tickets = str(ticket_number)
+    p1 = [*tickets[0:3]]
+    p2 = [*tickets[3:]]
+    summa1 = 0
+    summa2 = 0
+    for __ in p1:
+        summa1 += int(__)
+    for __ in p2:
+        summa2 += int(__)
+    if len(p2) != 3:
+        print("Число не шестизначное")
+    elif summa1 == summa2:
+        print("Билет счастливый")
+    else:
+        print("Билет несчастливый")
 
 
-# Тестируем функцию
-print(lucky_ticket(123006))
-print(lucky_ticket(12321))
-print(lucky_ticket(436751))
+lucky_ticket(123006)
+lucky_ticket(12321)
+lucky_ticket(436751)
+
+
