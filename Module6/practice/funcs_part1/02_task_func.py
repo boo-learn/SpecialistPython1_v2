@@ -2,9 +2,15 @@
 # Палиндром - число читающееся одинаково слева направо и справа налево.
 # Пример палиндрома: 34543
 # * попробуйте решить данную задачу не используя строки
-
 def palindrome(number):
-    pass
+    rev_num = 0
+    orig_num = number
+    while number > 0:
+        temp = number % 10
+        rev_num = rev_num * 10 + temp
+        number = number // 10
+
+    return orig_num == rev_num
 
 
 # Тестируем функцию
