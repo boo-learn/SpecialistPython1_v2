@@ -1,12 +1,16 @@
 # Даны координаты трех точек p1(x1; y1) p2(x2; y2) p3(x3; y3).
 # Напишите функцию, проверябщую можно ли построить треугольник, соединив данные точки отрезками
 
-def can_triangle(p1, p2, p3):
-    # TODO: your code here
-    pass
+def distance(p1, p2):
+    distance1 = round(((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)**0.5,2)
+    return distance1
 
+def can_triangle(p1, p2, p3):
+    if distance(p1, p2) + distance(p2,p3) > distance (p1,p3):
+        return print(("Построить треугольник можно"))
+    return print(("Построить треугольник нельзя"))
 
 # Пример вызова функции
-can_triangle((10, 12), (14, 18), (12, 12))
+can_triangle((13, 19), (14, 14), (15, 15))
 
 # Не забудьте протестировать вашу функцию
