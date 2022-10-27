@@ -4,7 +4,10 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
-    pass
+    s1 = str(number)
+    s2 = str(number)[::-1]
+    if s1 == s2:
+        return True
 
 
 # Тестируем функцию
