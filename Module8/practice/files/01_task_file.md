@@ -18,17 +18,21 @@
 
 ```python
 # Задаем путь к файлу:
-path = "dir/numbers.txt"  # вместо dir подставь название папки с файлом.
-# Или удалите dir, если numbers.txt в той же папке, что и питоновский файл
+import os
+
+path = os.path.join('git_repo/Python_course/data', 'numbers.txt')
 
 # Открываем файл на чтение
 f = open(path, "r")
-sum_numbers = 0  # Переменная для подсчета суммы
+sum_numbers = 0     # Переменная для подсчета суммы
+count_num = 0       # Переменная для подсчёта количества чисел
 # В переменную line считываем строку за стройкой из файла(f)
 for line in f:
-    ...
+    sum_numbers += int(line.rstrip())
+    count_num +=1
 print(f"Сумма чисел = {sum_numbers}")
-print(f"Среднеарифметическое = {...}")
+print(f"Среднеарифметическое = {round(sum_numbers/count_num, 2)}")
+f.close()
 ```
 
 ---
