@@ -31,7 +31,25 @@ print(f"Сумма чисел = {sum_numbers}")
 print(f"Среднеарифметическое = {...}")
 ```
 
----
+
+
+
+#Дан файл data/numbers.txt с целыми числами
+#Найдите сумму всех чисел в файле и их среднеарифметическое
+
+path = "numbers.txt" # Задаем путь к файлу
+f = open(path, "r") # Открываем файл на чтение
+
+sum_numbers = 0  # Переменная для подсчета суммы
+
+
+for line in f: # В переменную line считываем строку за стройкой из файла(f)
+    sum_numbers = sum_numbers + int(line)
+
+arithmetic_mean = sum_numbers / int(line)
+
+print(f"Сумма чисел = {sum_numbers}")
+print(f"Среднеарифметическое = {arithmetic_mean}")
 
 ### Подсказки
 
