@@ -18,14 +18,14 @@
 
 ```python
 # Задаем путь к файлу:
-path = "dir/limericks.txt"  # вместо dir подставь название папки с файлом.
-# Или удалите dir, если limericks.txt в той же папке, что и питоновский файл
+import os
+path = os.path.join('git_repo/Python_course/data', 'limericks.txt')
 
 # Открываем файл на чтение
-f = open(path, "r")
-# В переменную line считываем строку за стройкой из файла(f)
-for line in f:
-    ...
+with open(path, 'r', encoding='UTF-8') as f:    
+    for line in f:
+        print(line.rstrip('\n.'))
+
 ```
 
 ---
