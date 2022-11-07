@@ -17,6 +17,12 @@
 
 ### Решение задачи
 
+v = int(input("Скорость "))
+t = int(input("Время "))
+
+point = t * v % 108
+print(point)
+
 ```python
 # TODO: you code here...
 ```
