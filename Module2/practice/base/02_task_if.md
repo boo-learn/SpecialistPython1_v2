@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите целое число: "))
+if number % 5 == 0 and number % 3 == 0:
+    print("Число", number, "кратно 3 и 5")
+else:
+    print("Число", number, "не кратно 3 и 5")
 ```
 
 ---
