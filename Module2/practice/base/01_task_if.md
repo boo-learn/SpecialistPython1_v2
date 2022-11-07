@@ -15,8 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+number = int(input("Трехзначное ли число: "))
+if number<999:
+    print ("Да")
+
+else: 
+    print( "нет" )    
 
 ---
 
