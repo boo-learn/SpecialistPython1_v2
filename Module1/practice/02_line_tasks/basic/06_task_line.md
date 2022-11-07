@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число: "))
+
+n1 = (number-1)//5+1
+
+print(n1)
 ```
 
 ---
