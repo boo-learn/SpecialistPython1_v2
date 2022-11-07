@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+pillar_height = int(input("Введите высоту столба, по которому ползет улитка: "))
+snail_day_distance = int(input("Введите дистанцию, которую улитка проползает за день по столбу: "))
+snail_night_drop_distance = int(input("Введите дистанцию, которую улитка проползает за день по столбу: "))
+
+pillar_day_rest = pillar_height - snail_day_distance
+snail_day_way = snail_day_distance - snail_night_drop_distance
+snail_finish_day = (pillar_day_rest - 1) // snail_day_way + 1 + 1
+print("Чтобы доползти до вершины столба улитке потребуется дней:", snail_finish_day)
 ```
 
 ---
