@@ -19,7 +19,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+var = int(input("число "))
+res = ""
+if var%3 == 0:
+	res = "Foo"
+if var%5 == 0:
+	res = res + "Bar"
+print(res)
 ```
 
 ---
