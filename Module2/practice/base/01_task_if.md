@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number =  int(input("Введите целое число: "))
+if number > 99 and number <= 999:
+
+    print("Да: ")
+else:
+    print("Нет:")
+
 ```
 
 ---
