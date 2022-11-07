@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("введите сторону треугольника "))
+b = int(input("введите сторону треугольника "))
+c = int(input("введите сторону треугольника "))
+if a+b>c and a+c>b and b+c>a :
+	if a==b or a==c or b==c :
+		print("Равнобедренный")
+	else:
+		print("Существует")
+else:
+	print("Не существует")
 ```
 
 ---
