@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+xA = int(input("xA: "))
+yA = int(input("yA: "))
+xB = int(input("xB: "))
+yB = int(input("yB: "))
+
+d = ((xA - xB) ** 2 - (yA - yB) ** 2) ** 0.5
+
+print("d = ", d)
 ```
 
 ---
