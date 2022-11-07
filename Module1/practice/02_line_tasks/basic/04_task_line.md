@@ -17,15 +17,11 @@
 ### Решение задачи
 
 ```python
-number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
-print(n1)
-print(n2)
-print(n3)
-print(n4)
+a = int(input("введите число XXXX - "))
+print(a//1000)
+print(a%1000//100)
+print(a%100//10)
+print(a%10)
 ```
 
 ---
