@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+h = int(input("Высота: "))
+d = int(input("за день: "))
+n = int(input("за ночь: "))
+t1 = (h-d+(d-n-1))//(d-n) + 1
+res = t1
+print("дней всего",res)
 ```
 
 ---
