@@ -17,6 +17,15 @@
 
 ### Решение задачи
 
+money = int(input("Мой бюджет "))
+price = int(input("Стоимость товара"))
+
+delt = money - price
+
+if delt < 0:
+    print("Не хватает", -delt)
+else:
+    print("Остаток", delt)
 ```python
 # TODO: you code here...
 ```
