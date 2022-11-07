@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input("Введите число"))
+if x > 99:
+  print("Да")
+else:
+  print("нет")
 ```
 
 ---
