@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+h = int(input("h: "))
+h_remain = h - a
+d_day = a-b
+days = (h_remain-1) // d_day + 1 + 1
+print(days)
 ```
 
 ---
