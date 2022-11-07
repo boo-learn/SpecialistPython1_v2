@@ -16,6 +16,16 @@
 
 ### Решение задачи
 
+sec = int(input("Введите кол-во секунд "))
+
+mins = sec // 60
+mins = mins % 60
+hours = sec // 3600
+hours = hours % 24
+days = sec // 86400
+last_sec = sec % 60
+
+print(days,hours,mins,last_sec)
 ```python
 seconds = int(input("Прошло секунд: "))
 # TODO: you code here...
