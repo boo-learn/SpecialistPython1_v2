@@ -16,6 +16,11 @@
 
 ### Решение задачи
 
+import math
+radius = float(input("radius "))
+
+s = math.pi * radius ** 2
+print(s)
 ```python
 import math
 math.pi # Число pi из библиотеки math
