@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Точка 1")
+a1 = int(input("x: "))
+a2 = int(input("y: "))
+print("Точка 2")
+b1 = int(input("x: "))
+b2 = int(input("y: "))
+print("Расстояние:",((a1-b1)**2+(a2-b2)**2)**0.5)
+
 ```
 
 ---
