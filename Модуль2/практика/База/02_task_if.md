@@ -14,6 +14,11 @@
 
 ### Решение задачи
 
+numb = int(input("Число "))
+if numb % 3 == 0 or numb % 5 ==0:
+    print("Да")
+else:
+    print("Нет")
 ```python
 # TODO: you code here...
 ```
