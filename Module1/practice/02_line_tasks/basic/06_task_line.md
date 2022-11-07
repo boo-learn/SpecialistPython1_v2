@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+flats_in_floor = int(input("Квартир в этаже: "))
+flat_number = int(input("Номер квартиры: "))
+
+flat_in_floor = (flat_number - 1) //  flats_in_floor + 1
+print ("Квартира ", flat_number, " располагается на ", flat_in_floor, " этаже")
 ```
 
 ---
