@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int (input("Первая сторона: "))
+b = int (input("Вторая сторона: "))
+
+p = (a+b) * 2
+
+s = a * b
+
+print("P=", p)
+print("S=", s)
 ```
 
 ---
