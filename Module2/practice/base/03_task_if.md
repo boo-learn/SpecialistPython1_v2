@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cash = int(input("Enter cash: "))
+goods = int(input("Enter goods: "))
+if cash >= goods:
+    print(cash - goods)
+else:
+    print("Денег недостаточно")
 ```
 
 ---
