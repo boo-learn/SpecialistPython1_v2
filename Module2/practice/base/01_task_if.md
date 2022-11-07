@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+var1 = int(input("введите число "))
+if var1 > 99 and var1 < 1000 :
+	print("Да")
+else:
+	print("Нет")
 ```
 
 ---
