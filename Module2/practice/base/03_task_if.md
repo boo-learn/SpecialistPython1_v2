@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+gold = int(input("количество золота "))
+price = int(input("цена "))
+if price > gold:
+	print("Денег недостаточно")
+else:
+	print(gold - price)
 ```
 
 ---
