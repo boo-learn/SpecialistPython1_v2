@@ -16,7 +16,21 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Enter first number: "))
+b = int(input("Enter last number: "))
+perfect = 0
+while a <= b:
+    i = 2
+    divider = 0
+    while i < a:
+        if a % i == 0:
+            divider += i
+        i += 1
+    if a == (divider + 1):
+        perfect += 1
+        print(a)
+    a += 1
+print('Совершенных чисел:', perfect)
 ```
 
 ---
