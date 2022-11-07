@@ -15,7 +15,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+Мое решение: 
+a=int(input("Первая сторона: "))
+b=int(input("Вторая сторона: "))
+
+p=2*(a+b)
+s=a*b
+
+
+print("P= ",p)
+print("S= ",s)
+
 ```
 
 ---
