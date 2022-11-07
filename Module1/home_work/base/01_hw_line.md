@@ -17,7 +17,9 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+tempc = int(input("Введите температуру в C: "))
+tempf = float(tempc * (9/5) +32)
+print("Температура в фаренгейтах: ", tempf)
 ```
 
 ---
