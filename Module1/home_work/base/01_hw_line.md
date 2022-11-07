@@ -17,7 +17,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("| Перевод температуры из градусов Цельсия в градусы Фаренгейта |")
+temperature_C = int(input("Введите температуру в Цельсиях: "))
+temperature_F = temperature_C * 9/5 + 32
+print("Температура", temperature_C, "градусов Цельсия равна", temperature_F, "градусам Фаренгейта")
 ```
 
 ---
