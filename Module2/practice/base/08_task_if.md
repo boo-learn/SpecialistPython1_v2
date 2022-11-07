@@ -21,7 +21,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#circle_x = int(input("центр круга x "))
+circle_y = int(input("центр круга y "))
+circle_r = int(input("круг радиус "))
+point_x = int(input("точка x "))
+point_y = int(input("точка y "))
+print("Да" if ((circle_x-point_x)**2+(circle_y-point_y)**2)**0.5 <= circle_r else "Нет")
 ```
 
 ---
