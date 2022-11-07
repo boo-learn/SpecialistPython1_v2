@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Enter number: "))
+if a // 100 == 0:
+    print("Нет")
+else:
+    print("Да")
 ```
 
 ---
