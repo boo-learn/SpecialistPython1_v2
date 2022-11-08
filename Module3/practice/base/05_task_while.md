@@ -33,7 +33,12 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("чиосло ступенек "))
+stars = ""
+while n > 0:
+    stars += "*"
+    print(stars)
+    n -= 1
 ```
 
 ---
