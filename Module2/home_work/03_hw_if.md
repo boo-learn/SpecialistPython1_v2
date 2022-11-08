@@ -21,7 +21,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x1 = int(input("Координата x клетки 1: "))
+y1 = int(input("Координата y клетки 1: "))
+x2 = int(input("Координата x клетки 2: "))
+y2 = int(input("Координата y клетки 2: "))
+
+if (x1 + y1) % 2 == 0 and (x2 + y2) % 2 == 0:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
