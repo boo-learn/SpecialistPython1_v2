@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input("Введите целое число: "))
+last_digit = num % 10
+
+if last_digit == 5:
+    print("Да, число оканчивается на 5")
+else:
+    print("Нет, число не оканчивается на 5")
 ```
 
 ---
