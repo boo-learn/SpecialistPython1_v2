@@ -19,7 +19,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+count_ball = int(input("Введите количество шариков: "))
+
+if count_ball < 3 or count_ball == 4 or count_ball == 7:
+    print("Нельзя купить")
+else:
+    print("Можно купить")
 ```
 
 ---
