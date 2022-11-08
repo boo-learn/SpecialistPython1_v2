@@ -16,7 +16,13 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+counter = 0
+split_text = text.split(" ")  # сплит возвращает список
+
+for word in range(len(split_text)):
+    if len(split_text[word]) >= 5:
+        counter += 1
+print(counter)
 ```
 
 ---
