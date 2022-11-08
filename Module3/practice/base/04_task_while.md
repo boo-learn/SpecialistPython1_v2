@@ -17,7 +17,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+count_numbers = int(input("Введите количество чисел: "))
+count_pos_numbers = 0
+
+i = 0
+while i < count_numbers:
+    if int(input("Введите число: ")) > 0:
+        count_pos_numbers += 1
+    i += 1
+print("Количество положительных чисел:", count_pos_numbers)
 ```
 
 ---
