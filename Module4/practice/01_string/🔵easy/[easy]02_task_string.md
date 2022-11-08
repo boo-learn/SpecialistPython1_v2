@@ -19,8 +19,16 @@
 ```python
 name = input("Имя: ")
 surname = input("Фамилия: ")
-# TODO: you code here...
-```
+# TODO:
+name = input("Имя: ")
+surname = input("Фамилия: ")
+
+new_name = name.capitalize()
+print(new_name)
+
+new_surname = surname.capitalize()
+print(new_surname)
+
 
 ---
 
