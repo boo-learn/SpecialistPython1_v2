@@ -17,8 +17,10 @@
 ### Решение задачи
 
 ```python
-text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
+string = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
+string_lower = string.lower()
+
+print(string_lower.count("мама"))
 ```
 
 ---
