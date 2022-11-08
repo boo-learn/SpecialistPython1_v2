@@ -16,7 +16,11 @@
 
 ```python
 string = input("Введите произвольный текст: ")
-# TODO: you code here...
+# TODO: 
+string = input("Введите произвольный текст: ")
+
+print(string[0])
+print(string[-1])...
 ```
 
 ---
