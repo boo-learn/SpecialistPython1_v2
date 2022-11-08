@@ -15,7 +15,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+A = int(input("Введите сторону А: "))
+B = int(input("Введите сторону B: "))
+C = int(input("Введите сторону C: "))
+
+if (A + B) > C and (A + C) < B and (B + C) < A:
+    print("Треугольник существует")
+elif (A + C) > B and (A + B) < C and (B + C) < A:
+    print("Треугольник существует")
+elif (B + C) > A and (A + C) < B and (A + B) < C:
+    print("Треугольник существует")
+else:
+    print("Треугольник не существует")
 ```
 
 ---
