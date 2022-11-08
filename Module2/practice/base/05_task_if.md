@@ -19,7 +19,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input("Введите число: "))
+
+if num % 5 == 0 and num % 3 == 0:
+    print("Foobar")
+elif num % 5 == 0:
+    print("Bar")
+elif num % 3 == 0:
+    print("Foo")
+
 ```
 
 ---
