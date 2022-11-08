@@ -17,8 +17,13 @@
 ```python
 n = int(input("n: "))
 
-# TODO: you code here...
-```
+# TODO: 
+n = int(input("n: "))
+count = 0
+
+while count < n:
+    print("я учу питон")
+    count += 1
 
 ---
 
