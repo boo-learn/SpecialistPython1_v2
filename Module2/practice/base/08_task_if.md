@@ -21,7 +21,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+point_x = int(input("Введите координату 'x' точки А: "))
+point_y = int(input("Введите координату 'y' точки А: "))
+circle_x = int(input("Введите координату 'x' центра окружности: "))
+circle_y = int(input("Введите координату 'y' центра окружности: "))
+circle_radius = int(input("Введите радиус окружности: "))
+
+distance = ((point_x - circle_x) ** 2 - (point_y - circle_y) ** 2) ** 0.5
+if distance <= circle_radius:
+    print("Точка А с координатами (", point_x, ",", point_y, ") принадлежит кругу с R=", circle_radius)
+else:
+    print("Точка А с координатами (", point_x, ",", point_y, ") не принадлежит кругу с R=", circle_radius)
 ```
 
 ---
