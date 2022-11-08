@@ -16,6 +16,16 @@ _Сумма четных чисел от 0 до 7 = 12_
 
 ### Решение задачи
 
+n = int(input("Кол-во итераций"))
+count = 0
+sum = 0
+while count <= n:
+    if count % 2 == 0:
+        sum += count
+    count += 1
+print(sum)
+
+
 ```python
 # TODO: you code here...
 ```
