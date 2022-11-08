@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+chocolate_x = int(input("Длина плитки: "))
+chocolate_y = int(input("Ширина плитки: "))
+amount_dolek = int(input("Кол-во долек: "))
+
+if amount_dolek < chocolate_x * chocolate_y and (amount_dolek % chocolate_x == 0 or amount_dolek % chocolate_y == 0):
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
