@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+price = int(input())
+amount = int(input())
+change = price-amount
+if amount > price:
+    print("Сдача: ", -change)
+else:
+    print("Денег недостаточно")
 ```
 
 ---
