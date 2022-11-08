@@ -20,6 +20,15 @@ _коров_, _корова_ или _коровы_, для заданного ч
 
 ### Решение задачи
 
+cows = int(input("Кол-во коров "))
+
+if cows % 10 > 1 and cows % 10 <= 4:
+    print(cows, "коровЫ")
+elif cows % 10 >=5:
+    print(cows, "короВ")
+
+else:
+    print(cows, "КоровА")
 ```python
 # TODO: you code here...
 ```
