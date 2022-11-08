@@ -18,7 +18,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("| Отметка остановки байкера на МКАД |")
+road_length = 109
+speed_bike = int(input("Введите скорость байкера: "))
+time_bike = int(input("Введите время байкера в пути: "))
+print("Отметка на которой байкер остановится:", abs(speed_bike) * time_bike % road_length)
 ```
 
 ---
