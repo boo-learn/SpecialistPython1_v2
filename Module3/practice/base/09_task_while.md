@@ -16,7 +16,27 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Начало диапазона "))
+b = int(input("Конец диапазона "))
+range_index = a
+number_list = ""
+number_count = 0
+while range_index<=b:
+    sum = 1
+    ind = 2
+    check = range_index // 2
+    while ind <= check:
+        if range_index % ind == 0:
+            sum += ind
+        ind += 1
+    if sum == range_index:
+        number_list += str(range_index)+" "
+        number_count += 1
+    range_index += 1
+if number_count ==0 :
+    print("В диапазоне ["+str(a)+","+str(b)+"] нет совершенных чисел")
+else:
+    print("Соверенных",number_count,"штук:",number_list)
 ```
 
 ---
