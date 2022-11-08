@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите целое число : "))
+
+find_five = number % 10
+if find_five == 5:
+    print("Да: ")
+else:
+    print("Нет: ")
 ```
 
 ---
