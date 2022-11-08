@@ -17,7 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+string = input("Введите произвольный текст: ")
+
+if string.startswith("id:") and string[3:].isnumeric():
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
