@@ -16,6 +16,14 @@
 Выведите "Да", если можно отломить от шоколадки ровно k долек, и "Нет" если нельзя.
 
 ### Решение задачи
+long_chok = int(input("Длинна шоколадки"))
+with_chok = int(input("Ширина шоколадки"))
+k = int(input("Кол-во разломов"))
+
+if k < with_chok or k < long_chok:
+    print("Да")
+else:
+    print("Нет")
 
 ```python
 # TODO: you code here...
