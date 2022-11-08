@@ -15,8 +15,14 @@
 ### Решение задачи
 
 ```python
-text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+a = input("Введите текст: ").split()
+count_words = 0
+i = 0
+while i < len(a):
+    if len(a[i]) > 5:
+        count_words += 1
+    i += 1
+print((count_words))
 ```
 
 ---
