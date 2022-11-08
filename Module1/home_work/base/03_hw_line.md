@@ -18,8 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+# TODO:
+v=int(input("Скорость байкера: "))
+t=int(input("Время его движения: "))
+
+s= v*abs(t)%109
+
+print("Отметка остановки ",abs(s))
 
 ---
 
