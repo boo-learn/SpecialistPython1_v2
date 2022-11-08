@@ -19,7 +19,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+q = int (input("Введите число: "))
+
+if q % 3 == 0 and q % 5 != 0:
+    answer = "Foo"
+elif q % 3 != 0 and q % 5 == 0:
+    answer = "Bar"
+else:
+    answer = "Foobar"
+
+print (answer)
 ```
 
 ---
