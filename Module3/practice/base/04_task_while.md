@@ -17,7 +17,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Количество чисел - "))
+ind = 1
+cnt = 0
+while ind <= n:
+    number = int(input(str(ind) + ": "))
+    cnt += 1 if number > 0 else 0
+    ind += 1
+print("Положительных чисел", cnt)
 ```
 
 ---
