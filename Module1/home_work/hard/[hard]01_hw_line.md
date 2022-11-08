@@ -17,8 +17,22 @@
 ### Решение задачи
 
 ```python
-seconds = int(input("Прошло секунд: "))
-# TODO: you code here...
+sec = int(input("Прошло секудн: "))
+
+sec_in_day = 86400
+sec_in_hour = 3600
+sec_in_min = 60
+
+days = sec // sec_in_day
+sec = sec - (days * sec_in_day)
+
+hours = sec // sec_in_hour
+sec = sec - (hours * sec_in_hour)
+
+min = sec // sec_in_min
+sec = sec - (min * sec_in_min)
+
+print(days, "дней", hours, "часов", min,"минут", sec,"секунд")
 ```
 
 ---
