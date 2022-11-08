@@ -20,7 +20,14 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+# TODO: 
+a = int(input("a: "))
+b = int(input("b: "))
+while a < b:
+    if a % 2 == 0:
+        print("Четные числа :", a)
+    a += 1
+...
 ```
 
 ---
