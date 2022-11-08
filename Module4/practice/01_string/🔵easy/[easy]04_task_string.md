@@ -15,8 +15,8 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
+text = input("Текст: ")
+print("Кол-во букв б:",text.count('б'))
 ```
 
 ---
