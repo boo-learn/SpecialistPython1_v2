@@ -15,9 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+# TODO: 
+number = int(input("Заканчивается ли число на пять: "))
 
+result = number % 10
+
+if result == 5:
+    print("Да ", result)
+else:
+    print("Нет")
 ---
 
 ### Данные для самопроверки
