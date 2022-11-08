@@ -15,8 +15,9 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
+text = input("Введите произвольный текст: ")
+text_lower = text.lower()
+print(text_up.count('б'))
 ```
 
 ---
