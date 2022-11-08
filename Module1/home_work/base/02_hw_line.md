@@ -19,7 +19,16 @@
 ```python
 import math
 math.pi # Число pi из библиотеки math
-# TODO: you code here...
+# TODO: 
+r=float(input("Радиус окружности: "))
+
+import math
+math.pi
+
+s= math.pi*abs(r)**2
+
+print("Площадь окружности ",s)
+
 ```
 
 ---
