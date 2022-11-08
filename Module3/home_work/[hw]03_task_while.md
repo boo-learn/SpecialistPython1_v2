@@ -28,7 +28,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i1 = 1
+while i1 <= n:
+    line = ""
+    i2 = 1
+    while i2 <= n:
+        line += str(i2*i1) + " "
+        i2 += 1
+    print(line)
+    i1 += 1
 ```
 
 ---
