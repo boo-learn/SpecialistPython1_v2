@@ -20,7 +20,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Кол-во уровней в пирамиде: "))
+level = 1
+sum_blocks = 0
+
+while level <= n:
+    sum_blocks += level * level
+    level += 1
+print("Сумма чисел на блоках пирамиды", sum_blocks)
 ```
 
 ---
