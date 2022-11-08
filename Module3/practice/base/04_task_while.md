@@ -19,7 +19,16 @@
 ```python
 # TODO: you code here...
 ```
+number = int(input("Введите количество вводимых чисел: "))
+count = 0
+count_positive = 0
 
+while count < number:
+    number_positive = int(input("Введите целое число: "))
+    if number_positive > 0:
+        count_positive += 1
+    count += 1
+print("Количество введенных положительных чисел равно", count_positive)
 ---
 
 ### Подсказки
