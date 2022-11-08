@@ -15,7 +15,23 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+text1 = "qqqwwwt" 
+#text1 = input("Текст 1: ")
+text2 = "qwqtwqw" 
+#text1 = input("Текст 2: ")
+index = 0
+flag = True
+while index < len(text1):
+    if text2.find(text1[index]) >= 0:
+        text2 = text2.replace(text1[index], '', 1)
+    else:
+        flag = False
+    index += 1
+if flag and len(text2) == 0:
+    print('Можно')
+else:
+    print('Нельзя')
+
 ```
 
 ---
