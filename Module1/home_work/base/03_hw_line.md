@@ -18,7 +18,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+speed_move = int(input("Введите скорость движения байкера: "))
+time_move: int = int(input("Введите время движения байкера: "))
+road_km = 109
+
+if speed_move > 0:
+    result = speed_move * time_move
+elif speed_move < 0:
+    result = (-speed_move * time_move) % road_km
+    result = road_km - result
+
+print(result % road_km)
 ```
 
 ---
