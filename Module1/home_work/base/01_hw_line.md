@@ -17,7 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+degrees_сelsius = int(input("Введите градус Цельсия: "))
+
+degrees_fahrenheit = (degrees_сelsius * 9/5) + 32
+
+print("Градус Фареньгейта=", degrees_fahrenheit)
+
 ```
 
 ---
