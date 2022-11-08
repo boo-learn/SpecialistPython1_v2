@@ -21,7 +21,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+dot_x = int(input("Введите координату х для точки: "))
+dot_y = int(input("Введите координату y для точки: "))
+round_center_x = int(input("Введите координату х центра круга: "))
+round_center_y = int(input("Введите координату y центра круга: "))
+round_radius = int(input("Введите длину радиуса круга: "))
+distance = ((dot_x - round_center_x)**2 + (dot_y - round_center_y) **2) ** 0.5
+if distance <= round_radius:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
