@@ -17,7 +17,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 0
+count_positive = 0  # Счетчик положительных чисел
+
+while i < n:
+    number = int(input("number: "))
+    if number > 0:
+        count_positive += 1
+    i += 1
+print("Было введено", count_positive, "положительных чисел")
 ```
 
 ---
