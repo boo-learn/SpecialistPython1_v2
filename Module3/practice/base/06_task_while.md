@@ -20,7 +20,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите количество уровней: "))
+counter = 0
+count_in_level = 0
+while n >= 1:
+    count_in_level = n * n
+    counter += count_in_level
+    n -= 1
+print (counter)
 ```
 
 ---
