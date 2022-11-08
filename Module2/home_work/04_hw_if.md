@@ -19,7 +19,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = 3
+b = 5
+c = int(input("Введите кол-во шариков для покупки: "))
+if c % a == 0 or c % a % b == 0 or c % b == 0 or c % b % a == 0:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
