@@ -15,10 +15,15 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
-```
+text = input("Введите текст: ")
+count = 0
+count_words = 0
 
+while count <= len(text) - 1:
+    if text[count] == "б":
+        count_words += 1
+    count += 1
+print("Количество букв 'б' в тексте равно:", count_words)
 ---
 
 ### Подсказки
