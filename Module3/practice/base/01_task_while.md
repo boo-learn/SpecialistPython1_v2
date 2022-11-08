@@ -15,9 +15,11 @@
 ### Решение задачи
 
 ```python
-n = int(input("n: "))
-
-# TODO: you code here...
+number = int(input("Введите число: "))
+count = 0
+while count < number:
+    print("Я учу питон")
+    count += 1
 ```
 
 ---
