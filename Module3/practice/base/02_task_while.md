@@ -22,7 +22,12 @@ b = int(input("b: "))
 
 # TODO: you code here...
 ```
+number_a = int(input("Введите число a: "))
+number_b = int(input("Введите число b: "))
 
+while number_a <= number_b:
+    print(number_a)
+    number_a += 1
 ---
 
 ### Подсказки
