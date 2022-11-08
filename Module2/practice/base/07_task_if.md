@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+side1 = int(input("Введите длину стороны A: "))
+side2 = int(input("Введите длину стороны B: "))
+side3 = int(input("Введите длину стороны C: "))
+
+if side1 + side2 > side3 and side1 + side3 > side2 and side2 + side3 > side1:
+    if side1 == side2 or side1 == side3 or side3 == side3:
+        print("Треугольник равнобедренный")
+
+else:
+    print("Треугольник не существует")
 ```
 
 ---
