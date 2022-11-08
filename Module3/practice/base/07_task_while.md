@@ -22,7 +22,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите максимальное количество ступенек: "))
+i = 1
+while i <= n:
+    j = 0
+    while j <= i-1:
+        print(i, end='')
+        j += 1
+    i += 1
+    print()
 ```
 
 ---
