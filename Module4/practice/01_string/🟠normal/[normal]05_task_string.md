@@ -16,8 +16,15 @@
 
 ```python
 text = "В теории, теория и практика неразделимы. На практике это не так."
-vowels = "ауоыэяюёие"
-# TODO: you code here...
+text_lower = text.lower()
+vowels = ["а", "у", "о", "ы", "э", "я", "ю", "ё", "и", "е"]
+vowels_count = 0
+
+for i in text:
+    if i in vowels:
+        vowels_count += 1
+
+print(vowels_count)
 ```
 
 ---
