@@ -15,7 +15,25 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+s1 = input("Введите строку s1: ")
+s2 = input("Введите строку s2: ")
+result = ""
+
+i = 0
+j = 0
+
+while i < len(s2) and result == "":
+    if s1.find(s2[i]) == -1:
+        result = "Нет"
+    while j < len(s1):
+        if s2.count(s2[i]) > s1.count(s2[i]):
+            result = "Нет"
+        j += 1
+    i += 1
+if result == "":
+    print("Да")
+else:
+    print(result)
 ```
 
 ---
