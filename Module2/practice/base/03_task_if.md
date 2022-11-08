@@ -18,8 +18,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+# TODO: 
+rub = int(input("Всего рублей: "))
+cost = int(input("Цена товара: "))
+
+result = rub - cost
+if rub > cost:
+    print("Результат ", result)
+else:
+    print("Денег недостаточно")
+
+
 
 ---
 
