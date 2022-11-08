@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+side1 = int(input("Введите длину стороны 1: "))
+side2 = int(input("Введите длину стороны 2: "))
+side3 = int(input("Введите длину стороны 3: "))
+
+if side1 + side2 > side3 and side1 + side3 > side2 and side2 + side3 > side1:
+    print("Треугольник существует")
+
+else:
+    print("Треугольник не существует")
 ```
 
 ---
