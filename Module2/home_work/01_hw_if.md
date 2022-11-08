@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+m = int(input("m: "))
+k = abs(int(input("k: ")))
+
+if k <= n * m:
+    print("От плитки", n, "на", m, "можно отломить", k, "долек")
+else:
+    print("От плитки", n, "на", m, "нельзя отломить", k, "долек")
 ```
 
 ---
