@@ -16,7 +16,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+ab = int(input("Введите длину стороны AB: "))
+bc = int(input("Введите длину стороны BC: "))
+ac = int(input("Введите длину стороны AC: "))
+
+if ab + bc > ac and ab + ac > bc and bc + ac > ab:
+    if ab == bc or bc == ac or ab == ac:
+        print("Равнобедренный")
+    else:
+        print("Не равнобедренный")
+else:
+    print("Не существует")
 ```
 
 ---
