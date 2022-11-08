@@ -15,7 +15,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+text1 = "qqqwwwt"
+text2 = "qwqtwqw"
+index = 0
+flag = True
+while index < len(text1):
+    if text2.count(text1[index]) != text1.count(text1[index]):
+        flag = False
+    index += 1
+if flag:
+    print('Можно')
+else:
+    print('Нельзя')
 ```
 
 ---
