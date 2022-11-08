@@ -22,7 +22,14 @@
 ```python
 # TODO: you code here...
 ```
+lvl_pyramid = int(input("Введите количество уровней пирамиды: "))
+count = 1
+sum_numbers = 0
 
+while count <= lvl_pyramid:
+    sum_numbers += count ** 2
+    count += 1
+print("Сумма чисел написанных на кирпичах равна", sum_numbers)
 ---
 
 ### Данные для самопроверки
