@@ -15,6 +15,19 @@
 
 ### Решение задачи
 
+a = int(input("Введите сторону А: "))
+b = int(input("Введите сторону В: "))
+c = int(input("Введите сторону С: "))
+
+if a + b > c and a + c > b and b + c > a:
+    if a == b or b == c or a == c:
+        print("Равнобедренный")
+    else:
+        print("Не равнобедренный")
+else:
+    print("Не существует")
+    
+
 ```python
 # TODO: you code here...
 ```
