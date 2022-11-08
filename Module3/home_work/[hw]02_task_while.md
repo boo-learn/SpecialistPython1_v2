@@ -20,6 +20,8 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
-
-# TODO: you code here...
+point = ((a + 4) // 5) * 5
+while point <= b:
+    print(point)
+    point += 5
 ```
