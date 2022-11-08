@@ -18,7 +18,12 @@
 string = input("Введите произвольный текст: ")
 # TODO: you code here...
 ```
+string = input("Введите произвольный текст: ")
+first_symbol = string[0]
+last_symbol = string[len(string) - 1]
 
+print("Первый символ в строке '" + string + "' равен '" + first_symbol + "'")
+print("Последний символ в строке '" + string + "' равен '" + last_symbol + "'")
 ---
 
 ### Подсказки
