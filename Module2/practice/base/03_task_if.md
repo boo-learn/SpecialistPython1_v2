@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost_goods = int(input("Введите стоимость товара: "))
+cash = int(input("Введите количество имеющихся рублей: "))
+
+if cost_goods > cash:
+    print("Для покупки товара денег не достаточно")
+else:
+    money_rest = cash - cost_goods
+    print("После покупки товара останется", money_rest, "рублей")
 ```
 
 ---
