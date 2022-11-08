@@ -15,9 +15,12 @@
 ### Решение задачи
 
 ```python
+my_string = "Я учу питон"
 n = int(input("n: "))
-
-# TODO: you code here...
+i = 0
+while i < n:
+    print(my_string)
+    i += 1
 ```
 
 ---
