@@ -15,7 +15,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Координаты слона")
+eleph_x = int(input("x: "))
+eleph_y = int(input("y: "))
+print("Координаты атакуемой фигуры")
+piece_x = int(input("x: "))
+piece_y = int(input("y: "))
+dx = abs(eleph_x - piece_x)
+dy = abs(eleph_y - piece_y)
+if dy == 2 and dx == 1 or dy == 1 and dx == 2:
+    print("Слон бьет фигуру")
+else:
+    print("Слон не может так ходить")
 ```
 
 ---
