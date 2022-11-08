@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+count_money = int(input("Кол-во денег покупателя : "))
+cost_product = int(input("цена товара: "))
+count_money_result = count_money - cost_product
+if count_money_result < 0:
+    print("Денег недостаточно: ")
+else:
+    print("Денег осталось: ", count_money_result).
 ```
 
 ---
