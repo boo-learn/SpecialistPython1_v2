@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+budget = int(input("Ваш бюджет:"))
+unit_price = int(input("Стоимость товара:"))
+budget_left = budget - unit_price
+
+if budget >= unit_price:
+    print("Денег осталось: ", budget_left)
+else:
+    print("Недостаточно денег")
 ```
 
 ---
