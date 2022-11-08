@@ -16,6 +16,13 @@
 
 ### Решение задачи
 
+a = int(input("Число А "))
+b = int(input("Число Б "))
+
+while a <= b:
+    if a % 2 == 0:
+        print(a)
+    a += 1
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
