@@ -20,6 +20,19 @@
 
 ### Решение задачи
 
+x = int(input("x:"))
+y = int(input("y:"))
+xr = int(input("xr:"))
+yr = int(input("yr:"))
+r = int(input("r:"))
+
+distance = ((x-xr)**2 + (y-yr)**2)**0.5
+
+if xr != x and yr != y and distance > r:
+    print("no")
+else:
+    print("yes")
+
 ```python
 # TODO: you code here...
 ```
