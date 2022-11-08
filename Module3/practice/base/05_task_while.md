@@ -33,7 +33,15 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Кол-во ступенек: "))
+step = ""
+count_steps = 0
+
+if 1 < n < 20:
+    while count_steps < n:
+        print(step + "*")
+        step = step + "*"
+        count_steps += 1
 ```
 
 ---
