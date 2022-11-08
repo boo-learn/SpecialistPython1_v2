@@ -19,7 +19,8 @@
 ```python
 name = input("Имя: ")
 surname = input("Фамилия: ")
-# TODO: you code here...
+print("Имя: ",name[0].upper()+name[1:])
+print("Фамилия: ",surname[0].upper()+name[1:])
 ```
 
 ---
