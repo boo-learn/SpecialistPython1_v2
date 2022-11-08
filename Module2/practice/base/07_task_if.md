@@ -16,7 +16,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a + b > c and b + c > a and a + c > b:
+    if a == b or b == c or a == c:
+        print("Равнобедренный")
+    else:
+        print("Не равнобедренный")
+else:
+    print("Не существует")
+
 ```
 
 ---
