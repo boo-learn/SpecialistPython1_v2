@@ -28,7 +28,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a=1
+n = int(input("Введите диапазон таблицы: "))
+while a<=n:
+    b=1
+    while b<=n:
+        c=a*b
+        print("%2d" % c, end=" ")
+        b+=1
+    print(" ")
+    a+=1
 ```
 
 ---
