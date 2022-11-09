@@ -6,7 +6,11 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
-
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+for fruit in enumerate(fruits):
+    print(str(fruit[0] + 1) + ". " + fruit[1])
+    
+    
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
