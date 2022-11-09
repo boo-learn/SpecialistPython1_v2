@@ -35,6 +35,13 @@ n = 12
 ```
 ### Решение задачи
 
+k = int(input("Кол-во товара "))
+coast = 9.99
+total = coast
+while k > 0:
+    print(total)
+    total += coast
+    k -= 1
 ```python
 # TODO: you code here...
 ```
