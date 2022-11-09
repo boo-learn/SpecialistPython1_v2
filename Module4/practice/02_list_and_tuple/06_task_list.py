@@ -8,6 +8,9 @@ n = int(input("Кол-во элементов в диапазоне: "))        
 num_range = []
 final_list = []
 
+if first_number > second_number:
+    first_number, second_number = second_number, first_number
+
 for i in range(n):
     random_numbers = random.randint(first_number, second_number)
     num_range.append(random_numbers)
