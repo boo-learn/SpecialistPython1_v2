@@ -4,8 +4,8 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
-
-# TODO: your code here
+for index, value in enumerate(fruits):
+    print('{} {:>6}'.format(str(index + 1) + '.', value))
 
 # Пример вывода:
 # 1. яблоко
