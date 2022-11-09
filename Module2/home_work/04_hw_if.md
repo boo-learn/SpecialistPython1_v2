@@ -19,7 +19,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+condition_ball_1 = 3
+condition_ball_2 = 5
+ball_number = int(input("Введите желаемое кол-во шариков к покупке: "))
+if ball_number % condition_ball_1 == 0 \
+        or ball_number % condition_ball_1 % condition_ball_2 == 0 \
+        or ball_number % condition_ball_2 == 0 \
+        or ball_number % condition_ball_2 % condition_ball_1 == 0:
+    print("Можно купить шарики")
+else:
+    print("Нельзя купить шарики")
+
 ```
 
 ---
