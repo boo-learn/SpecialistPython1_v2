@@ -21,7 +21,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Координаты первой клетки")
+pont1_x = int(input("x: "))
+pont1_y = int(input("y: "))
+print("Координаты второй клетки")
+pont2_x = int(input("x: "))
+pont2_y = int(input("y: "))
+if (pont1_x+pont1_y) % 2 == (pont2_x+pont2_y) % 2:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
