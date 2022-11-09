@@ -21,7 +21,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input())
+y = int(input())
+x_x = int(input())
+y_y = int(input())
+if (x+x_x+y+y_y)%2==0:
+    print("Да")
+else:
+    print(("Нет"))
 ```
 
 ---
