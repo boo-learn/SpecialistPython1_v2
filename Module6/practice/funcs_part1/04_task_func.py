@@ -2,8 +2,24 @@
 # Напишите функцию, проверябщую можно ли построить треугольник, соединив данные точки отрезками
 
 def can_triangle(p1, p2, p3):
-    # TODO: your code here
-    pass
+    def can_triangle(x1, y1, x2, y2, x3, y3):
+    AB = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+    BC = ((x3 - x3) ** 2 + (y3 - y2) ** 2) ** 0.5
+    AC = ((x1 - x3) ** 2 + (y1 - y3) ** 2) ** 0.5
+    if AB + BC > AC and AB + AC > BC and BC + AC > AB:
+        return ("Можно построить")
+    else:
+        return ("Нельзя построить")
+
+
+x1 = int(input("координата x1= "))
+y1 = int(input("координата y1= "))
+x2 = int(input("координата x2= "))
+y2 = int(input("координата y2= "))
+x3 = int(input("координата x3= "))
+y3 = int(input("координата y3= "))
+print(can_triangle(x1, y1, x2, y2, x3, y3))
+
 
 
 # Пример вызова функции
