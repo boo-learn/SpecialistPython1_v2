@@ -2,8 +2,14 @@
 # Выведите все имена в одну строку через запятую
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
+count = 1
 
-# TODO: your code here
+for name in names:
+    if count == len(names):
+        print(name, end="")
+    else:
+        print(name, end=", ")
+    count += 1
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
