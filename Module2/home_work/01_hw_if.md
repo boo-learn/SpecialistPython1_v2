@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите число n:"))
+m = int(input("Введите число m:"))
+k = int(input("Введите число k:"))
+if k != n * m and (k % m == 0 or k % n == 0):
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
