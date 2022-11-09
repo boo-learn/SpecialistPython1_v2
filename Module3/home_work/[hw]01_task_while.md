@@ -36,6 +36,12 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = float(input("Цена товара: "))
+units = int(input("Единиц товара: "))
+counter = 1
+
+while counter <= units:
+    print(counter, "шт. стоит", cost * counter, "рублей")
+    counter += 1
 ```
 
