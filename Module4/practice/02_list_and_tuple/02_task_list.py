@@ -3,4 +3,10 @@
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
-# TODO: your code here
+# TODO: 
+
+fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
+total = 0
+for fruit in fruits:
+    total += 1
+    print(total, fruit)
