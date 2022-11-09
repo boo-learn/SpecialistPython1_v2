@@ -6,6 +6,16 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
+fruits = ["яблоко", "банан", "киви", "арбуз", "виноград"]
+max_len = 0
+gap = " "
+for fruit in fruits:
+    if len(fruit) > max_len:
+        max_len = len(fruit)
+print(max_len)
+for i, fruit in enumerate(fruits, 1):
+    print(f"{i}.{gap * (max_len - len(fruit))}{fruit}")
+
 
 # Пример вывода:
 # 1. яблоко
