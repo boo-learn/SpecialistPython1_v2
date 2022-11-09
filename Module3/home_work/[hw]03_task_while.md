@@ -28,8 +28,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+dimension_table = int(input("Введите число: "))
+rows = 1
+
+while rows <= dimension_table:
+    cols = 1
+    while cols <= dimension_table:
+        print(str(rows * cols).rjust(2), end=" ")
+        cols += 1
+    rows += 1
+    print("")
 
 ---
 
