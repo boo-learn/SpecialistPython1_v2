@@ -21,7 +21,18 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+steaks = int(input("Сколько коров? "))
+hundreds = steaks % 100
+dozens = steaks % 10
+if 11 <= hundreds <= 14:
+    how_to_say = "коров"
+elif dozens == 1:
+    how_to_say = "корова"
+elif 2<= dozens <= 4:
+    how_to_say = "коровы"
+else:
+    how_to_say = "коров"
+print("На лугу пасется", steaks, how_to_say)
 ```
 
 ---
