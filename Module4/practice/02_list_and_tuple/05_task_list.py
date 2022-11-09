@@ -6,7 +6,19 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
+fruits = ["яблоко", "банан", "киви", "арбуз", "яблоко", "банан", "киви", "арбуз", "яблоко", "банан", "киви", "арбуз"]
+max_len_word = 0
 
+for fruit in fruits:
+    if len(fruit) > max_len_word:
+        max_len_word = len(fruit)
+        
+max_string = max_len_word + len(str(len(fruits)) + ". ")
+
+for idx, fruit in enumerate(fruits, 1):
+    probels = " " * (max_string - len(str(idx)) - 2 - len(fruit))
+    print(str(idx) + "." + probels + fruit)
+    
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
