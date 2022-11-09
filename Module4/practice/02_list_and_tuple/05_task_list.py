@@ -5,7 +5,15 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+i = 1
+max_word_len = 0
+
+for fruit in fruits:
+    if max_word_len < len(fruit):
+        max_word_len = len(fruit)
+for fruit in fruits:
+    print(str(i) + ".", fruit.rjust(max_word_len))
+    i += 1
 
 # Пример вывода:
 # 1. яблоко
