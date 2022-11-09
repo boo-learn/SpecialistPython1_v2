@@ -20,6 +20,11 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
+step = 1
 
-# TODO: you code here...
+if a > b:
+    step = -1
+for i in range(a, b + step, step):
+    if i % 5 == 0:
+        print(i)
 ```
