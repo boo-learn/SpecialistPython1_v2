@@ -2,7 +2,15 @@
 # находится строго внутри окружности с центром в точке (xc, yc) и радиусом r:
 
 def point_in_circle(x, y, xc, yc, r):
-    # TODO: your code here
-    pass
+    if ((x - xc) ** 2 + (y - yc) ** 2) ** 0.5 < r:
+        print("Да")
+    else:
+        print("Нет")
+    print("-------")
+
+
+point_in_circle(3, 0, 0, 0, 2)
+point_in_circle(3, 0, 0, 0, 22)
+point_in_circle(3, 0, 0, 4, 5.01)
 
 # Не забудьте протестировать вашу функцию
