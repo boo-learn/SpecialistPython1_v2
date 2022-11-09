@@ -2,7 +2,12 @@
 
 def max4(n1, n2, n3, n4):
     # TODO: your code here
-    pass
+    tup = (n1, n2, n3, n4)
+    max_el = tup[0]
+    for el in tup:
+        if el > max_el:
+            max_el = el
+    return max_el
 
 
 # Тестируем функцию
