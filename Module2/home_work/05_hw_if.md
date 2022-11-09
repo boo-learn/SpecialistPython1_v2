@@ -23,13 +23,16 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
-c = int(input("c: "))
-
-# TODO: you code here...
-
-print(a, b, c)
+a = int(input("Первое число: "))
+b = int(input("Второе число: "))
+c = int(input("Третье число: "))
+if b < a:
+    a, b = b, a
+if c < a:
+    a, b, c = c, a, b
+if c < b:
+    b, c = c, b
+print("По возрастанию",a,b,c)
 ```
 
 ---
