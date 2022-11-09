@@ -20,6 +20,14 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
+c = 5
 
-# TODO: you code here...
+if a > b:
+    a, b = b, a
+
+counter = a
+while a <= counter <= b:
+    if counter % c == 0:
+        print(counter)
+    counter += 1
 ```
