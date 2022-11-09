@@ -17,6 +17,22 @@
 
 ### Решение задачи
 
+a = int(input("a "))
+b = int(input("b "))
+
+
+if a > b:
+    while b <= a:
+        if b % 5 == 0:
+            print(b)
+        b += 1
+else:
+    while b >= a:
+        if a % 5 == 0:
+            print(a)
+        a += 1
+
+
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
