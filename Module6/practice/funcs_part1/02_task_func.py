@@ -3,8 +3,17 @@
 # Пример палиндрома: 34543
 # * попробуйте решить данную задачу не используя строки
 
-def palindrome(number):
-    pass
+def polindrin(a):
+    n = a
+    rev = 0
+    while n:
+        r = n % 10
+        rev = rev * 10 + r
+        n = n // 10
+    return a == rev
+number = int(input())
+
+print(polindrin(number))
 
 
 # Тестируем функцию
