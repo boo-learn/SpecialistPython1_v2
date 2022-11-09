@@ -4,3 +4,10 @@
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
 # TODO: your code here
+my_list = ["яблоко", "банан", "киви", "ананас", "груша"]
+count = 1
+
+for el in my_list:
+    print(count, el)
+    count += 1
+    
