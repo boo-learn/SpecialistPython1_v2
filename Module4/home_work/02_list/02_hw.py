@@ -3,6 +3,12 @@
 # Подсказка:
 # для получения случайного числа используйте функцию randint() модуля random
 import random
-numbers = []
+
+n = int(input("Количество цифр "))
+arr = []
+for ind in range(1, n + 1):
+    arr.append(random.randint(-100, 100))
+print(arr)
+
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
 # TODO: your code here
