@@ -23,13 +23,21 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
-c = int(input("c: "))
-
-# TODO: you code here...
-
-print(a, b, c)
+a = int(input("Введите первое целое число a: "))
+b = int(input("Введите второе целое число b: "))
+c = int(input("Введите третье целое число c: "))
+if a > b > c:
+    print(c, b, a)
+elif a > c > b:
+    print(b, c, a)
+elif b > a > c:
+    print(c, a, b)
+elif b > c > a:
+    print(a, c, b)
+elif c > a > b:
+    print(b, a, c)
+else:
+    print(a, b, c)
 ```
 
 ---
