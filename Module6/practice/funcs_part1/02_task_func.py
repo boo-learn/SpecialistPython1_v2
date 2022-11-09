@@ -4,7 +4,16 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
-    pass
+    func_in = number
+    result = 0
+    while number > 0:
+        num = number % 10
+        result = result * 10 + num
+        number = number // 10
+    if func_in == result:
+        return f"Число {func_in} палиндром"
+    else:
+        return f"Число {func_in} не палиндром"
 
 
 # Тестируем функцию
