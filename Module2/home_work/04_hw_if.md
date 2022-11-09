@@ -19,7 +19,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+amount = int(input("Шариков к покупке шт. "))
+by_5 = 0
+yn = False
+while by_5<=amount and not yn:
+    if (amount - by_5) % 3 == 0:
+        yn = True
+    else:
+        by_5 += 5
+if yn:
+    print("Можно купить")
+else:
+    print("Нельзя купить")
 ```
 
 ---
