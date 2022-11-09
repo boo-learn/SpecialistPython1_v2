@@ -15,7 +15,27 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+string1 = input("string1:")
+string2 = input("string2:")
+
+# string1 = "паспорт"
+# string2 = "спорт"
+
+i = 0
+cnt = 0
+
+while i < len(string2):
+    count1 = string1.lower().count(string2[i])
+    count2 = string2.lower().count(string2[i])
+    if count2 <= count1:
+        cnt += 1
+    i += 1
+
+if cnt == len(string2):
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
