@@ -4,3 +4,6 @@
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
 # TODO: your code here
+fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
+for el in range(len(fruits)):
+    print(el + 1)
