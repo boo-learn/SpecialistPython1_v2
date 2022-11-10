@@ -36,6 +36,7 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost, n = float(input("Цена товара ")), input("Количество единиц товара ")
+list(map(lambda ind: print(f"{ind:>{len(n)}}: {cost * ind} рублей"), range(1, int(n) + 1)))
 ```
 
