@@ -2,8 +2,8 @@
 # Функция должна вызываться с любым количеством аргументов
 
 def average(*args):
-    # TODO: your code here
-    pass
+    mean = sum(args) / len(args)
+    return round(mean)
 
 
 print(average(3, 4, 8))
