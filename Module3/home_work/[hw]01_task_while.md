@@ -36,6 +36,10 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = float(input("Цена товара "))
+n = input("Количество единиц товара ")
+for ind in range(1, int(n) + 1):
+    print(f"{ind:>{len(n)}}: {cost * ind} рублей")
+
 ```
 
