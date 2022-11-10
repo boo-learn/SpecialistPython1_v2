@@ -28,7 +28,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+start_num = 1
+number = int(input("Ведите число: "))
+while start_num <= number:
+    count = start_num
+    while count <= start_num * number:
+        print("{:2}".format(count), end=" ")
+        count += start_num
+    start_num += 1
+    print()
+
 ```
 
 ---
