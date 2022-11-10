@@ -30,7 +30,14 @@ for line in f:
 print(f"Сумма чисел = {sum_numbers}")
 print(f"Среднеарифметическое = {...}")
 ```
-
+f = open('numbers.txt','r')
+lines = f.readlines()
+all_numbers = []
+for line in lines:
+    all_numbers.append(int(line.strip()))
+f.close
+print(sum(all_numbers))
+print(sum(all_numbers)/len(all_numbers))
 ---
 
 ### Подсказки
