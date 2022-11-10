@@ -27,11 +27,21 @@
 ### Решение задачи
 
 ```python
-# Совет: сначала считайте все цены из файла, сохраните в список,
-# преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
-# А затем, работам с привычным списком, выполните задания
-prices = []
-```
+path = "sold.txt"
+file = open(path, "r")
+min_price, max_price, summa = 0, 0, 0
+for for_day in file:
+    for price in for_day.split():
+        price = float(price)
+        summa += price
+        if price < min_price or min_price == 0:
+            min_price = price
+        if price > max_price:
+            max_price = price
+print("Сумма:", summa)
+print("Минимальная цена:", max_price)
+print("Максимальная цена:", min_price)
+file.close()```
 
 ---
 
