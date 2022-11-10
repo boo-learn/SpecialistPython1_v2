@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+arr_old = [3, 5, -4, 7, -33, 16]
+arr_new = []
+for ind in arr_old:
+    sqrt = ind ** 0.5
+    if ind >= 0 and sqrt % 1 == 0:
+        arr_new.append(round(sqrt))
+print("Дано:", arr_old)
+print("Результат:", arr_new)
