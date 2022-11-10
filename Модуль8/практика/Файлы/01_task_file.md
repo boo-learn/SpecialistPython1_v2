@@ -15,6 +15,20 @@
 Вывести сумму всех чисел и среднеарифметическое этих чисел.
 
 ### Решение задачи
+def everage(x):
+    mid = sum(x) / len(x)
+    return mid
+
+
+f = open("out.txt", "r")
+
+list_numb = []
+
+for line in f:
+    numb = int(line)
+    list_numb.append(numb)
+
+print(sum(list_numb), everage(list_numb))
 
 ```python
 # Задаем путь к файлу:
