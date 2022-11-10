@@ -28,7 +28,11 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+for i1 in range(n):
+    for i2 in range(n):
+        print((i2 + 1) * (i1 + 1), end=' ')
+    print()
 ```
 
 ---
