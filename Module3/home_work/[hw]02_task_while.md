@@ -21,5 +21,13 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+while a <= b:
+    if a % 5 == 0:  # Если число кратно трем
+        print(a)  # то выводим его
+    a += 1
+while b <= a:
+    if b % 5 == 0:  # Если число кратно трем
+        print(b)  # то выводим его
+    b += 1
+
 ```
