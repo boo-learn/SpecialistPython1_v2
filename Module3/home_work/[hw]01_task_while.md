@@ -36,6 +36,16 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# TODO: 
+
+cost = 9.99
+n = 12
+total = 1
+while total <= n:
+    cost1 = total * cost
+    print(total, cost1)
+    total += 1
+    
+    ...
 ```
 
