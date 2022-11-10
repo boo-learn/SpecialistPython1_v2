@@ -36,6 +36,16 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = float(input("Введите стоимость: "))
+n = int(input("Введите кол-во: "))
+count = 0
+total = 0  # Переменная для накопления суммы
+while cost <= n:
+    total += cost
+    count += 1
+    print(count, round(total, 2), "рублей")
+    if count >= n:
+        break
+
 ```
 
