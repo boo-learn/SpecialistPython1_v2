@@ -1,4 +1,20 @@
 # Даны координаты центров двух окружностей (x1; y1) (x2; y2) и и их радиусы  R1 и R2.
 # Находится ли одна окружность целиком внутри другой
 
-# TODO: your code here
+circle_x1 = int(input("Введите координату x центра  1-й окружности: "))
+circle_y1 = int(input("Введите координату y центра 1-й окружности: "))
+circle_r1 = int(input("Введите радиус 1-й окружности: "))
+circle_x2 = int(input("Введите координату x центра 2-й окружности: "))
+circle_y2 = int(input("Введите координату y центра 2-й окружности: "))
+circle_r2 = int(input("Введите радиус 2-й окружности: "))
+
+
+def circle_in_circle(r1, r2, x1, x2, y1, y2):
+    if (x1 - x2) + (y1 - y2) < (r1 - r2):
+        message = "Одна из окружностей находится целиком внутри второй"
+    else:
+        message = "Ни одна из окружностей не находится целиком внутри другой"
+    return message
+
+
+print(circle_in_circle(circle_r1, circle_r2, circle_x1, circle_y1, circle_x2, circle_y2))
