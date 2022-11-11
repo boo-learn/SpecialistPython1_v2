@@ -25,7 +25,11 @@ path = "dir/limericks.txt"  # вместо dir подставь название
 f = open(path, "r")
 # В переменную line считываем строку за стройкой из файла(f)
 for line in f:
-    ...
+with open(r"limericks.txt", encoding="utf-8") as fin, \
+        open(r"limericks_clean.txt", "w", encoding="utf-8") as fout:
+    for line in fin:
+        s, _, _ = line.partition(".")
+        print(s, file=fout)
 ```
 
 ---
