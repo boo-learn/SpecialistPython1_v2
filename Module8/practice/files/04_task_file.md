@@ -22,7 +22,25 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+salary_surpass = 60000
+f_read = open("salaries.txt", 'r', encoding="utf-8")
+first_line = True
+for line in f_read:
+    if first_line:
+        first_line = False
+    else:
+        element_list = line.split()
+        surname = element_list[0]
+        name = element_list[1]
+        second_name = element_list[2]
+        salary = element_list[3]
+
+        if float(salary) > salary_surpass:
+            f_write = open("highly_paid.txt", 'a', encoding="utf-8")
+            f_write.write(f"{surname} {name[0]}. {second_name[0]}.\n")
+            f_write.close()
+        
+f_read.close()
 ```
 
 ---
