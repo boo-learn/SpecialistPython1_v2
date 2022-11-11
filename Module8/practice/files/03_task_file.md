@@ -33,7 +33,14 @@
 prices = []
 ```
 
----
+with open(r"sold.txt", encoding="utf-8") as sol:
+    sell_list = []
+    for numbers in sol:
+        for num in numbers.split():
+            sell_list.append(float(num))
+    print(sum(sell_list))
+    print(max(sell_list))
+    print(min(sell_list))
 
 ### Подсказки
 
