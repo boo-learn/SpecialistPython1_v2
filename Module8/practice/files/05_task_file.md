@@ -30,7 +30,29 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+path = "items_sold.txt"
+with open(path, "r") as file:
+    min_price, max_price, summa, summa_by_type = 0, 0, 0, {}
+    max_price_type, dif_count = "", 0
+    for per_user in file:
+        for bill in per_user.split():
+            bill = bill.split(":")
+            item_type = bill[0]
+            price = float(bill[1])
+            summa += price
+            if item_type in summa_by_type:
+                summa_by_type[item_type] += price
+            else:
+                summa_by_type[item_type] = price
+            if price > max_price:
+                max_price = price
+                max_price_type = item_type
+    print("1. Общая выручка:", summa)
+    print("2. Выручка по каждому типу товара:", end=" ")
+    print(*[f"{el[0]} = {el[1]}" for el in summa_by_type.items()], sep="\n" + " " * 35)
+    print("3. Тип товара с самой высокой ценой:", max_price_type)
+    print("3. Различных типов товаров было продано за день:", len(summa_by_type))
+#    file.close()
 ```
 
 ---
