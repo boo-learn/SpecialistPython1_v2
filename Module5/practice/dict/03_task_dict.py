@@ -5,5 +5,9 @@ keys = ['name', 'surname', 'age', 'rate']
 values = ['Петр', 'Первый', 42, 1300]
 
 # TODO: your code here
-# Нужно получить словарь:
-# {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
+i = 0
+my_dic = {}
+while i < len(keys):
+    my_dic[keys[i]] = values[i]
+    i += 1
+print(my_dic)
