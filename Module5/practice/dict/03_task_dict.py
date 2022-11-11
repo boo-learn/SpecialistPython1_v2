@@ -4,6 +4,9 @@
 keys = ['name', 'surname', 'age', 'rate']
 values = ['Петр', 'Первый', 42, 1300]
 
+dic_people = dict(zip(keys, values))
+print(dic_people)
+
 # TODO: your code here
 # Нужно получить словарь:
 # {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
