@@ -48,3 +48,15 @@ line = "**"
 print(f"{line:^8}")
 ```
 </details>
+
+
+f = open("pyramid.txt", "w")
+lvl = int(input("lvls "))
+n = 0
+line = "*"
+while n < lvl:
+    f.write(f"{line: ^110}\n")
+    n += 1
+    line += "**"
+
+f.close()
