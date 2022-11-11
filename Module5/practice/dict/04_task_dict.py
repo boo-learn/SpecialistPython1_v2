@@ -1,4 +1,5 @@
 # Данные о сотрудниках в программе хранятся в словаре
+# Данные о сотрудниках в программе хранятся в словаре
 staff = [
     {
         'name': 'Алексей',
@@ -26,23 +27,17 @@ staff = [
         'salary': 47800
     },
 ]
-# Вычислите:
-print("Имя и Фамилию сотрудника с самой высокой зарплатой:")
+print("Имя и Фамилию сотрудника с самой высокой зарплатой: ", end="")
+print("{0[name]} {0[surname]}".format(max(staff, key=lambda x: x['salary'])))
 
-# TODO: your code here
+print("Имя и Фамилию сотрудника с самой низкой зарплатой: ", end="")
+print("{0[name]} {0[surname]}".format(min(staff, key=lambda x: x['salary'])))
 
-print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
-
-# TODO: your code here
-
-print("Среднеарифметическую зарплату всех сотрудников")
-
-# TODO: your code here
+print("Среднеарифметическую зарплату всех сотрудников: ", end="")
+print(round(sum(list(map(lambda x: x['salary'], staff))) / len(staff), 2))
 
 print("Количество однофамильцев в организации")
 
-# TODO: your code here
-
-print("*Список всех сотрудников(Имя и Фамилию) в порядке возрастания их зарплаты")
-
-# TODO: your code here
+print("*Список всех сотрудников(Имя и Фамилию) в порядке возрастания их зарплаты:")
+staff.sort(key=lambda x: x['salary'])
+print(*[("   {} {}".format(el["name"], el['surname'])) for el in staff], sep="\n")
