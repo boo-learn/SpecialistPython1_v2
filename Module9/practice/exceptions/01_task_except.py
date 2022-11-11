@@ -4,3 +4,13 @@
 # На вход программе подается строка формата nxm (x - латинская буква икс).
 # Пример входных данных: 12x6
 # Если данные вводятся в неверном формате, сообщить об этом и запросить ввод заново.
+
+while True:
+    try:
+        rectangle = input(f"Введите размер прямоугольника:")
+        sides_rectangle = list(map(int, rectangle.split("x")))
+        break
+    except ValueError:
+        print("Данные введены в неверном формате (AxB)")
+print(f"{sides_rectangle[0] / sides_rectangle[1]} квадратов со стороной {sides_rectangle[1]} можно отрезать от "
+      f"прямоугольника")
