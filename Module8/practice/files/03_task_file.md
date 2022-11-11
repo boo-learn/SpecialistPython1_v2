@@ -83,3 +83,24 @@ list1 += list2  # list1 = [2, 4, 6, "p", "l"]
 **max(prices)** - максимальный элемент списка \
 **min(prices)** - минимальные элемент списка \
 </details>
+
+```python
+# Solution
+summ = float()
+maximum = float()
+minimum = float()
+f = open("sold.txt", 'r', encoding="utf-8")
+for line in f:
+    line = line.split()
+    for l in line:
+        p = float(l)
+        summ += p
+        if p > maximum:
+            maximum = p
+        if p < minimum:
+            minimum = p
+f.close()
+print(f"Сумма проданных товаров: {summ}")
+print(f"Цена самого дорогого товара: {maximum}")
+print(f"Цена самого дешевого товара: {minimum}")
+```
