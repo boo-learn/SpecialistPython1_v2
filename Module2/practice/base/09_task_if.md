@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+month = int(input("номер месяца: "))
+if 3 <= month <= 5:
+    print("Весна")
+elif 6 <= month <= 8:
+    print("Лето")
+elif 9 <= month <= 11:
+    print("Осень")
+else:
+    print("Зима")
 ```
 
 ---
