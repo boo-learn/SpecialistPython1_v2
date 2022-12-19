@@ -15,7 +15,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+m = int(input('Число: '))
+
+if m <= 2 or m == 12:
+    print('Зима')
+elif m > 2 and m <= 5:
+    print('Весна')
+elif m > 5 and m <= 8:
+    print('Лето')
+else:
+    print('Осень')
 ```
 
 ---
