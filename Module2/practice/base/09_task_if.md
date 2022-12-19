@@ -15,7 +15,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите номер месяца")
+month = int(input("month: "))
+
+if 1 <= month <= 2 or month == 12:
+    print("Зима")
+else:
+    if 3 <= month <= 5:
+        print("Весна")
+    else:
+        if 6 <= month <= 8:
+            print("Лето")
+        else:
+            print("Осень")
+
 ```
 
 ---
