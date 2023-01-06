@@ -17,7 +17,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+s = input("Введите строку:")
+check1=s.find("id:")
+check2=s[len("id:"):]
+if check1==0 and len(s)>len("id:") and check2.isdigit():
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
