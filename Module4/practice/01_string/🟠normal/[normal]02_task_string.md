@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+text = "id:53156546"
+if text[0:3] == "id:" and text[3:].isdigit():
+    print("Yes")
+else:
+    print("No")
 ```
 
 ---
