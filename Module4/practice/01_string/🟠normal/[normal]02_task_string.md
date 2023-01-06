@@ -17,7 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+text = input("Введите строку: ")
+if text[:3] == 'id:' and text[3:].isdigit():
+    print('Norm')
+else:
+    print('bad')
+
 ```
 
 ---
