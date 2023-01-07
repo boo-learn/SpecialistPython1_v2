@@ -21,7 +21,28 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x1 = int(input('input x1: '))
+y1 = int(input('input y1: '))
+x2 = int(input('input x2: '))
+y2 = int(input('input y2: '))
+
+white1 = 0
+white2 = 0
+
+if x1 % 2 != 0 and y1 % 2 != 0:
+    white1 = 1
+elif x1 % 2 == 0 and y1 % 2 == 0:
+    white1 = 1
+
+if x2 % 2 != 0 and y2 % 2 != 0:
+    white2 = 1
+elif x2 % 2 == 0 and y2 % 2 == 0:
+    white2 = 1
+
+if white1 == white2:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
