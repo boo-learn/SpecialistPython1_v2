@@ -21,8 +21,12 @@
 ### Решение задачи
 
 ```python
-password = input("Enter password: ")
-# TODO: you code here...
+string = input("Enter password: ")
+
+if len(string) >= 6 and string.istitle() and string[0].isalpha() and string.count("#") != 0:
+    print("Безопасный")
+else:
+    print("Не безопасный")
 ```
 
 ---
