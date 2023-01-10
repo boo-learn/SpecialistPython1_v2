@@ -22,10 +22,10 @@
 
 ```python
 password = input("Enter password: ")
-# TODO: you code here...
-```
-
----
+if len(password) >= 6 and password.find("#") != -1 and password.capitalize():
+    print("безопасный")
+else:
+    print("небезопасный")
 
 ### Данные для самопроверки
 
