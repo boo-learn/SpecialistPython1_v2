@@ -22,7 +22,12 @@
 
 ```python
 password = input("Enter password: ")
-# TODO: you code here...
+if (len(password) > 6) and (password.find("#") != -1) \
+        and password[0].isupper:
+    print("OK!")
+else:
+    print("NOO!")
+
 ```
 
 ---
