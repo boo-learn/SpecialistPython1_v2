@@ -16,7 +16,15 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+
+text = text.split(" ")
+number_of_words = 0
+for word in text:
+    if len(word) > 5:
+        number_of_words += 1
+
+print(number_of_words)
+
 ```
 
 ---
