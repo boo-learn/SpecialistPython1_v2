@@ -16,7 +16,20 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+i=0
+long_word_sign=5
+word_length=0
+long_words_num=0;
+while i<len(text):
+    if text[i]!=' ':
+        word_length+=1
+    else:
+        if word_length>long_word_sign:
+            long_words_num+=1
+        word_length=0
+    i+=1
+    
+print(long_words_num)
 ```
 
 ---
