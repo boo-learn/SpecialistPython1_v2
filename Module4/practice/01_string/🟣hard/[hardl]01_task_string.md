@@ -15,8 +15,13 @@
 ### Решение задачи
 
 ```python
+#text = input("Текст: ")
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+s = text.split(' ')
+cnt = 0
+for i in s:
+    cnt += 1 if len(i)>5 else 0
+print(cnt)
 ```
 
 ---
