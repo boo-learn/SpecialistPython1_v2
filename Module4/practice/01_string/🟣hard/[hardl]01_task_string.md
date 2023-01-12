@@ -15,8 +15,8 @@
 ### Решение задачи
 
 ```python
-text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante".split()
+print (sum([1 for i in text if len(i) > 5]))
 ```
 
 ---
