@@ -15,8 +15,14 @@
 ### Решение задачи
 
 ```python
-text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+s = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
+i=0
+tot=0
+while i<len(s.split(" ")):
+    if len(s.split(" ")[i])>5:
+        tot+=1
+    i+=1
+print(tot)
 ```
 
 ---
