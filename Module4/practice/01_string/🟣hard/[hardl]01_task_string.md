@@ -16,7 +16,19 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+i = 0
+longstr_counter = 0
+while i <= len(text) - 1:
+    if text.find(" ") != -1:
+        curr_word = text[:text.find(" ")]
+        text = text[text.find(" ") + 1:]
+        if len(curr_word) > 5:
+            longstr_counter += 1
+        print(curr_word)
+        print(text)
+        i += 1
+print(longstr_counter)
+
 ```
 
 ---
