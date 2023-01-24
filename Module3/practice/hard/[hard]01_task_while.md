@@ -16,7 +16,25 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+if n == 0:
+    fibonacci_number = 0
+elif n == 1:
+    fibonacci_number = 1
+elif n == 2:
+    fibonacci_number = 1
+else:
+    previous_previous_number = 0
+    previous_number = 1
+    fibonacci_number = 1
+    current_position = 3
+    while current_position < n:
+        fibonacci_number += previous_number
+        previous_previous_number = previous_number
+        previous_number = fibonacci_number - previous_previous_number
+        current_position += 1
+print(fibonacci_number)
+
 ```
 
 ### Данные для самопроверки
