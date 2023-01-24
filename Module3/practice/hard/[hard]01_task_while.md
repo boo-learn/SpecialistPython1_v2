@@ -16,7 +16,21 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+n_fibonacсi = 0
+
+if n == 2:
+    n_fibonacсi = 1
+elif n > 2:
+    i = 1
+    n_minus1 = 0
+    n_minus2 = 1
+    while i < n:
+        n_fibonacсi = n_minus1 + n_minus2
+        i += 1
+        n_minus1, n_minus2 = n_fibonacсi, n_minus1
+
+print(n_fibonacсi)
 ```
 
 ### Данные для самопроверки
