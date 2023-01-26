@@ -2,7 +2,14 @@
 # находится строго внутри окружности с центром в точке (xc, yc) и радиусом r:
 
 def point_in_circle(x, y, xc, yc, r):
-    # TODO: your code here
-    pass
+    if ((x - xc) ** 2 + (y - yc) ** 2) <= r:
+        return True
+    else:
+        return True
 
+
+if point_in_circle(1, 1, 0, 0, 2):
+    print("Точка внутри круга")
+else:
+    print("Точка вне круга")
 # Не забудьте протестировать вашу функцию
