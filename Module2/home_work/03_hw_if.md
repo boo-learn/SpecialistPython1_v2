@@ -21,7 +21,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите координаты первой клетки")
+x1 = int(input("x: "))
+y1 = int(input("y: "))
+print("Введите координаты второй клетки")
+x2 = int(input("x: "))
+y2 = int(input("y: "))
+
+print("Да" if (x1 + y1) % 2 == (x2 + y2) % 2 else "Нет")
+
 ```
 
 ---
