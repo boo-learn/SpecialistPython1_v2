@@ -21,7 +21,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+chess_box1_x = int(input("Координата х 1-й клетки: "))
+chess_box1_y = int(input("Координата y 1-й клетки: "))
+chess_box2_x = int(input("Координата x 2-й клетки: "))
+chess_box2_y = int(input("Координата y 2-й клетки: "))
+
+if (chess_box1_x + chess_box1_y) % 2 == (chess_box2_x + chess_box2_y) % 2:
+    print("Клетки одинакового цвета")
+else:
+    print("Клетки разного цвета")
 ```
 
 ---
