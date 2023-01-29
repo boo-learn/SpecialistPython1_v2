@@ -21,7 +21,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cell1_x = int(input("cell1_x:"))
+cell1_y = int(input("cell1_y:"))
+cell2_x = int(input("cell2_x:"))
+cell2_y = int(input("cell2_y:"))
+if (cell1_x+cell1_y) % 2 == (cell2_x+cell2_y) % 2:
+    print("Одинакового цвета!")
+else:
+    print("Разного цвета!")
+
 ```
 
 ---
