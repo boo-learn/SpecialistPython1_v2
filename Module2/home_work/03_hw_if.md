@@ -21,7 +21,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+horizontal_1 = int(input("Введите значение 1 клетки по горизонтали: "))
+vertical_1 = int(input("Введите значение 1 клетки по вертикали: "))
+horizontal_2 = int(input("Введите значение 2 клетки по горизонтали: "))
+vertical_2 = int(input("Введите значение 2 клетки по вертикали: "))
+if horizontal_1 == vertical_1 and horizontal_2 == vertical_2:
+    print("Да, клетки одного цвета")
+elif (horizontal_1 + vertical_1) % 2 == 0 and (horizontal_2 + vertical_2) % 2 == 0:
+    print("Да, клетки одного цвета")
+elif (horizontal_1 + vertical_1) % 2 != 0 and (horizontal_2 + vertical_2) % 2 != 0:
+    print("Да, клетки одного цвета")
+else:
+    print("Нет, клетки разного цвета")
 ```
 
 ---
