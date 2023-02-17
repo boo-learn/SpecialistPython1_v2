@@ -16,7 +16,25 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int (input("Введите число: "))
+i = 1
+is_found_del = False
+total = 0
+if n > 2:
+    while i < n:
+        if n % i == 0:
+            is_found_del = True
+            total += i
+        i += 1
+
+    if not is_found_del:
+        print('Число простое')
+    elif total == n:
+        print('Да')
+    elif total != n:
+        print('Нет')
+else:
+    print('Число должно быть больше 2')
 ```
 
 ---
