@@ -16,7 +16,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+Count = 2
+k = 1
+sum_ = 0
+while 1 <= k < n:
+    if n % k == 0:
+        sum_ = sum_ + k
+        Count += 1
+    k += 1
+if sum_ == n:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
