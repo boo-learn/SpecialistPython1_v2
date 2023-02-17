@@ -16,7 +16,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое положительно число: "))
+
+i = 1
+total = 0
+while i < n:
+    if n % i == 0:
+        total += i
+    i += 1
+if total == n:
+    print("Совершенное число")
+else:
+    print("НЕ совершенное число")
+
 ```
 
 ---
