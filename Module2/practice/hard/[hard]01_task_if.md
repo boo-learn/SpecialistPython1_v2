@@ -18,7 +18,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input("num="))
+num_4 = num % 10
+num_3 = num // 10 % 10
+num_2 = num // 100 % 10
+num_1 = num // 1000 % 10
+# print(num_1, num_2, num_3, num_4)
+if num_1 == num_4 and num_2 == num_3:
+    print("Симметричное!")
+else:
+    print("Не симметричное!")
+
 ```
 
 ---
