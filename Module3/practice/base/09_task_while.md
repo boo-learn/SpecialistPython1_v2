@@ -16,7 +16,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Дано чиосло "))
+sum = 1
+ind = 2
+check = number // 2
+while ind <= check:
+    if number % ind == 0:
+        sum += ind
+    ind += 1
+if sum == number:
+    print("Да - число совершенное")
+else:
+    print("Нет - число не совершенное")
+
 ```
 
 ---
