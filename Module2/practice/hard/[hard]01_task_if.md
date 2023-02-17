@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите четырехзначное число: "))
+
+if number % 100 == number // 1000 + number // 100 % 10 * 10:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
