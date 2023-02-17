@@ -16,7 +16,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+
+denominator = 2
+sum_of_denominators = 1
+while denominator < int(n / 2) + 1:
+    if n % denominator == 0:
+        sum_of_denominators += denominator
+    denominator += 1
+if sum_of_denominators == n:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
