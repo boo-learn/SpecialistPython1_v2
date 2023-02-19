@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input())
+if n==5 or n%10==5: 
+    print("Yes")
+else: print("NO")
+
 ```
 
 ---
