@@ -16,12 +16,11 @@
 
 ### Решение задачи
 
-```python
-number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
+```number = int(input("Введите четырехзначное число: "))
+n1 = number % 10
+n2 = number % 100 // 10
+n3 = number % 1000 // 100
+n4 = number % 10000 // 1000
 print(n1)
 print(n2)
 print(n3)
