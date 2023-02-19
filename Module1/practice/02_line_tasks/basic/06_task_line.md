@@ -17,7 +17,9 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+flat=int(input())
+floor=(abs(-flat//5))
+print("Этаж =",floor)
 ```
 
 ---
