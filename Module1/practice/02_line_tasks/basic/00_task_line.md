@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+
+p = a + b + c
+p_half = p / 2
+s = (p_half*(p_half-a)*(p_half-b)*(p_half-c))**0.5
+
+print("S=", s)
+print("P=", p)
 ```
 
 ---
