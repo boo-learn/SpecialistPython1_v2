@@ -16,17 +16,9 @@
 
 ### Решение задачи
 
-```python
-number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
-print(n1)
-print(n2)
-print(n3)
-print(n4)
-```
-
----
+number = int(input("Введите трехзначное число: "))
+first = number//100
+last = number%10
+print("Первая цифра числа =", first)
+print("Последняя цифра числа =", last)
 
