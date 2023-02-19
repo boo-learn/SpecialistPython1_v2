@@ -15,7 +15,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input())
+if 100 < n <= 999:
+    print("YES")
+else: print ("NO")
 ```
 
 ---
