@@ -15,7 +15,7 @@
 ### Решение задачи
 
 number = int(input("Введите число: "))
-if number < 999 and number > 99:
+if number <= 999 and number > 99:
     print ("Да, число трехзначное")
 else:
     print ("Нет")
