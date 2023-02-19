@@ -18,7 +18,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+money,price = int(input()),int(input())
+if money < price:
+    print("Денег недостаточно")
+else: print(money-price)
 ```
 
 ---
