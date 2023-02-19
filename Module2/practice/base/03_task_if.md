@@ -17,9 +17,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+cost_rub = int(input("Введите стоимсоть: "))
+all_money = int(input("Введите кол-во денег: "))
+change = all_money - cost_rub
+if change >= 0:
+    print ("Сдача =", change)
+else:
+    print ("Не хватает средств")
 
 ---
 
