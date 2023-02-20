@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Shershakov Grigoriy
+a, b, c, d = int(input()), int(input()), int(input()), int(input())
+if a == c or b == d:
+    print('YES')
+else:
+    print('Нет')
 ```
 
 ---
