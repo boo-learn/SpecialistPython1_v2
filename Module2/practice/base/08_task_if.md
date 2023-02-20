@@ -21,7 +21,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Shershakov Grigoriy
+x, y, xr, yr, r = int(input()), int(input()), int(input()), int(input()), int(input())
+radius = r**2
+entry = (x - xr)**2 + (y - yr)**2
+if entry <= radius:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
