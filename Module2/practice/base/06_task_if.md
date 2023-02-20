@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Shershakov Grigoriy
+x, y, z = int(input()), int(input()), int(input())
+if x + y > z:
+    print('Сущестует')
+else:
+    print('Не существует')
 ```
 
 ---
