@@ -16,7 +16,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Shershakov Grigoriy
+x, y, z = int(input()), int(input()), int(input())
+if x + y > z:
+    if x == y or x == z or y == z:
+        print('Равнобедренный')
+    else:
+        print('Не равнобедренный')
+else:
+    print('Не существует')
 ```
 
 ---
