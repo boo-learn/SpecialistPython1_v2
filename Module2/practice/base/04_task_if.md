@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Shershakov Grigoriy
+x = int(input())
+if x % 10 == 5:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
