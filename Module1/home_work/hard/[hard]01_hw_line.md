@@ -20,7 +20,14 @@
 seconds = int(input("Прошло секунд: "))
 # TODO: you code here...
 ```
-
+seconds = int(input("Прошло секунд: "))
+minuts = seconds // 60
+hour = minuts // 60
+day = hour//24
+seconds1 = seconds%60
+minuts1 = minuts%60
+hour1 = hour%24
+print(day, "дней", hour1, "часов", minuts1, "минут", seconds1, "секунд" )
 ---
 
 ### Данные для самопроверки
