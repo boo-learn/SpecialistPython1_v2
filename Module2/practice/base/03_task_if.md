@@ -17,7 +17,13 @@
 
 ### Решение задачи
 
-```python
+`# Shershakov Grigoriy
+money, price = int(input()), int(input())
+difference = money - price
+if difference >= 0:
+    print(difference)
+else:
+    print('Денег недостаточно')``python
 # TODO: you code here...
 ```
 
