@@ -18,7 +18,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Shershakov Grigoriy
+x = int(input())
+first_num = x//100
+last_num = x%100
+last_num_1 = last_num%10
+last_num_2 = last_num//10
+revers_num = str(last_num_1)+str(last_num_2)
+if int(revers_num) == first_num:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
