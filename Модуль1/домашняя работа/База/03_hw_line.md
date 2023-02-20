@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+v=int(input("Введите скорость км/ч: "))
+t=int(input("Введите время: "))
+
+s=(v*t)%109
+	
+print(s)
 ```
 
 ---
