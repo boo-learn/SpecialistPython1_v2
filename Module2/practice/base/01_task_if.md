@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#Шершаков Григорий
+x = int(input())
+if 99 < x < 1000:
+    print('Да')
+else:
+    print('Нет'
 ```
 
 ---
