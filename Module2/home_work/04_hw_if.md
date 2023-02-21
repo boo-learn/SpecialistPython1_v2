@@ -21,7 +21,11 @@
 ```python
 # TODO: you code here...
 ```
-
+k = int(input("Количество шариков:  "))
+if k%3 == 0 or k%5 == 0:
+	print('yes')
+else:
+	print('no')
 ---
 
 ### Данные для самопроверки
