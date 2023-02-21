@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n=int(input("n: "))
+m=int(input("m: "))
+k=int(input("k: "))
+
+if 1<=k<(n*m):
+	print("Да")
+else:
+	print("Нет")
 ```
 
 ---
