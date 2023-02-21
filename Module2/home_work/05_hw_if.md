@@ -31,7 +31,23 @@ c = int(input("c: "))
 
 print(a, b, c)
 ```
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+if a < b < c:
+    print(a,b,c)
+if  a > b and b > c:
+    a, c = c, a 
+    print(a,b,c)
+    
+if b > c and a < b:
+    b, c = c, b
 
+    print(a,b,c)
+if a > b and b < c and a > c:
+    b, c = c, b 
+    a, b = b, a 
+    print(a,b,c)
 ---
 
 ### Подсказки
