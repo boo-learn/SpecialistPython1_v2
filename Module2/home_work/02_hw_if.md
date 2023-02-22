@@ -23,7 +23,14 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ```python
 # TODO: you code here...
 ```
+n = int(input("Namber cow: "))
 
+if n%10 ==1:
+	print(n,"корова")
+elif 1<n<5:
+	print(n, "коровы")
+else:
+	print(n, "коров")
 ---
 ### Подсказки
 

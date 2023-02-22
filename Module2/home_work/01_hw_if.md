@@ -20,6 +20,12 @@
 ```python
 # TODO: you code here...
 ```
-
+n =int(input("Введите число  "))
+m =int(input("Введите число  "))
+k =int(input("Введите число  "))
+if k % m == 0 and k % n == 0:
+    print("yes")
+else:
+    print("no")
 ---
 
