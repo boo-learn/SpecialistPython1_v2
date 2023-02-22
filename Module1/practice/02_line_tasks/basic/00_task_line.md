@@ -16,7 +16,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a=int(input("Введите первое число: "))
+b=int(input("Введите  <dnjhjt число: "))
+c=a+b
+print("Суммa=",c)
 ```
 
 ---
