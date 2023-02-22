@@ -21,7 +21,16 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Shershakov Grigoriy
+quantity = int(input())
+if ((quantity % 100) // 10) == 1:
+    print("На лугу пасется", quantity, "коров")
+elif (quantity % 10) == 1:
+    print("На лугу пасется", quantity, "корова")
+elif 2 <= (quantity % 10) <= 4:
+    print("На лугу пасутся", quantity, "коровы")
+else:
+    print("На лугу пасется", quantity, "коров")
 ```
 
 ---
