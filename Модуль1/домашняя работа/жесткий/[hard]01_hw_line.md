@@ -17,8 +17,13 @@
 ### Решение задачи
 
 ```python
-seconds = int(input("Прошло секунд: "))
-# TODO: you code here...
+sec=int(input("Прошло секунд: "))
+
+day=sec//86400
+hour=sec//3600-day*24
+min=sec//60-(sec//3600*60)
+sec=sec-sec//60*60
+print(day,"дней", hour,"часов" ,min,"минут" ,sec,"секунд")
 ```
 
 ---
