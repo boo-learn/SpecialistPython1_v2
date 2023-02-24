@@ -21,7 +21,18 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n=int(input("n: "))
+
+if 11<= n <=14 or (n>100 and 1 <= n % 10 <=4):
+        print(n, "коров")
+else:
+        temp = n % 10
+        if temp == 0 or (5<= temp <= 9):
+                print(n, "коров")
+        if temp == 1:
+                print(n, "корова")
+        if 2<= temp <=4:
+                print(n, "коровы")
 ```
 
 ---
