@@ -17,8 +17,12 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```biker_speed = int(input('Введите скорость байкера, км/ч:'))
+biker_driving_time = int(input('Введите время движения байкера, ч:'))
+if biker_speed>0:
+    print('Через' ,biker_driving_time, 'ч байкер остановится на отметке', (biker_speed*biker_driving_time)%109, 'км')
+else:
+    print('Через' ,biker_driving_time, 'ч байкер остановится на отметке', abs((biker_speed*biker_driving_time)%109), 'км')
 ```
 
 ---
