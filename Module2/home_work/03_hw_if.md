@@ -20,8 +20,14 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```number_1 = int(input('Введите число от 1 до 8:'))
+number_2 = int(input('Введите число от 1 до 8:'))
+number_3 = int(input('Введите число от 1 до 8:'))
+number_4 = int(input('Введите число от 1 до 8:'))
+if (number_1 + number_2) % 2 == 0 and (number_3 + number_4) % 2 == 0:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
