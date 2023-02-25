@@ -17,11 +17,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+import math
 
----
+
+
+speed = int(input("Введите скорость байкера в км/ч: "))
+time = int(input("Введите время движения байкера в часах > 0: "))
+
+point = math.floor(speed*time%109)
+print("Байкер остановится на отметке ", point)
 
 ### Подсказки
 <details>
