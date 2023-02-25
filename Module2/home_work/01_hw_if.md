@@ -18,7 +18,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#"Шоколадка"
+n = int(input("Ширина шоколадки   "))
+m = int(input("Длина шоколадки   "))
+k = int(input("Отломать долек:   "))
+
+if k<m*n and n%k==0 or m%k==0 and k>=m or k>=n:
+    print ("Да")
+else:
+    print ("Нет")
 ```
 
 ---
