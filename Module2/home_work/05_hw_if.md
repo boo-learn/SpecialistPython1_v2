@@ -22,17 +22,37 @@
 
 ### Решение задачи
 
-```python
 a = int(input("a: "))
 b = int(input("b: "))
 c = int(input("c: "))
+max_c = int
+mid_b = int
+min_a = int
 
-# TODO: you code here...
+
+if a > b and a > c:
+    max_c = a
+
+    if b > c:
+        mid_b = b
+        min_a = c
+    else:
+        mid_b = c
+        min_a = b
+else:
+    min_a = a
+    if b > c:
+        max_c = b
+        mid_b = c
+    else:
+        max_c = c
+        mid_b = b
+
+a = min_a
+b = mid_b
+c = max_c
 
 print(a, b, c)
-```
-
----
 
 ### Подсказки
 
