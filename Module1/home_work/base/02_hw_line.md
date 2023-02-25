@@ -16,10 +16,11 @@
 
 ### Решение задачи
 
-```python
+```circle_radius = float(input('Введите радиус круга:')) # Радиус круга
 import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
+pi = math.pi # Число pi из библиотеки math
+area_of_the_circle = pi*circle_radius**2 # Площадь круга
+print('Площадь круга:', area_of_the_circle)
 ```
 
 ---
