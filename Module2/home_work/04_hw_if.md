@@ -18,8 +18,11 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```number_of_balls = int(input('Введите число шариков:'))
+if number_of_balls % 5 == 0 or number_of_balls % 3 ==0:
+    print('Да')
+else:
+    print('Нет')
 ```
 
 ---
