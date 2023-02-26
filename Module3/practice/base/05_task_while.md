@@ -33,7 +33,12 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#Shershakov Grigoriy
+n = int(input("n: "))
+i = 1
+while i < n + 1 :
+    print('*' * i)
+    i += 1
 ```
 
 ---
