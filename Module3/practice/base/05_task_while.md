@@ -32,11 +32,11 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+num_steps = int(input("Ступенек: "))
+i = 0
+while i < num_steps:
+    i += 1
+    print("*" * i)
 
 ### Подсказки
 
