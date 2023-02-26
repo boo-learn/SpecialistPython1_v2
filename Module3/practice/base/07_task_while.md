@@ -21,11 +21,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+n = int(input("1 <= n <= 9: "))
+i = 0
+step_i = ""
+while i < n:
+    step_i = step_i + str(i+1)
+    print(step_i)
+    i += 1
 
 ### Подсказки
 <details>
