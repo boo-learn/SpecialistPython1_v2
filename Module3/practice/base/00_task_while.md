@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#Shershakov Grigoriy
+n = int(input('n:'))
+
+while n >= 0:
+    print(n)
+    n -= 1
 ```
 
 ---
