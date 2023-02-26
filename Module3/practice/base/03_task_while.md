@@ -19,7 +19,13 @@ _Сумма четных чисел от 0 до 7 = 12_
 ```python
 # TODO: you code here...
 ```
+n =  int(input("n: "))
 
+total = 0 
+while 0 <= n:
+     total +=n
+     n -= 1
+print("Сумма чисел =", total)
 ---
 
 ### Подсказки
