@@ -27,9 +27,18 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("Введите число от 1 до 9: "))
+i = 1
+if n < 1 or n > 10:
+    print("Не верные вводные данные!")
+else:
+    while i <= n:
+        j = 1
+        while j <= n:
+            print(i * j, end="\t")
+            j += 1
+        i += 1
+        print()
 
 ---
 
