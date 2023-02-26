@@ -20,7 +20,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#Shershakov Grigoriy
+n = int(input("n: "))
+level = 0
+sum_brick = 0
+while level < n + 1 :
+    sum_brick += level*level
+    level += 1
+print(sum_brick)
 ```
 
 ---
