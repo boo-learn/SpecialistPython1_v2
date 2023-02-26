@@ -35,7 +35,13 @@ n = 12
 ```
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+cost = input("Товар стоит: ")
+n = input("Сколько штук нужно: ")
+i = 0
+while True:
+    if int(n) == i:
+        break
+    i += 1
+    s = i * float(cost)
+    print(i, "стоит", s, "рублей")
 
