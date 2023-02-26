@@ -19,8 +19,10 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
-
-# TODO: you code here...
+#Shershakov Grigoriy
+while a <= b:
+    print(a)
+    a += 1
 ```
 
 ---
