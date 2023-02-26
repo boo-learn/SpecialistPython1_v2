@@ -16,7 +16,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n,divs = int(input("Введите число:")),""
+div = 2
+while div < n:
+    if n % div == 0:
+        divs = divs + str(div) + ' '
+    div += 1
+    if divs == "":
+        divs = "Число простое"
+print(divs)
 ```
 
 ---
