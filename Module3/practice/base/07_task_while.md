@@ -44,9 +44,12 @@
 <summary>Подсказка-3</summary>
 Вспомните, строки при сложении объединяются(склеиваются)
 
-```python
-s = "1"
-n = 2
-s = s + str(n) # s = "1" + "2" --> "12"
-```
+num_step = int(input("n:"))
+line = "1"
+step = 1
+
+while step <= num_step:
+    print(line)
+    step += 1
+    line += str(step)
 </details>
