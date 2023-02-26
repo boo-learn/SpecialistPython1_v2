@@ -20,7 +20,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Кол-во этажей:"))
+count = 1
+total = 0
+while count<=n:
+    total += count**2
+    count += 1
+print("Сумма чисел:",total)
 ```
 
 ---
