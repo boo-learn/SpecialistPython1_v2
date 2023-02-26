@@ -14,11 +14,11 @@
 
 ### Решение задачи
 
-```python
-n = int(input("n: "))
+n = int(input("Сколько раз вывести ""Я учу питон""?:  "))
 
-# TODO: you code here...
-```
+while n > 0:
+    print("Я учу питон", n)
+    n -= 1
 
 ---
 
