@@ -32,11 +32,13 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+n = int(input("Введите число n в диапазоне 1<n<20: "))
+i = 1
+star = "*"
+while i <= n:
+    stairs = star * i
+    print(stairs)
+    i += 1
 
 ### Подсказки
 
