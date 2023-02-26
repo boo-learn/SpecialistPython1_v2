@@ -19,11 +19,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+num = int(input("Уровни: "))
+i = 0
+summa = 0
+while i <= num + 1:
+    summa += i ** 2
+    i += 1
+print(summa)
 
 ### Данные для самопроверки
 
