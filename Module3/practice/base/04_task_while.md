@@ -16,11 +16,18 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+#Подсчет положительных
+n = int(input("Введите количество чисел n: "))
+i = 0
+num_positive = 0  # Счетчик положительных чисел
+while i < n:
+    number = int(input("Ещё: "))
+    if number == 0:
+        break
+    elif number > 0:
+        num_positive += 1
+    i += 1
+print("Было введено", num_positive, "положительных чисел")
 
 ### Подсказки
 
