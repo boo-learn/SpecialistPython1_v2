@@ -34,8 +34,11 @@ n = 12
 12 119.88 рублей
 ```
 ### Решение задачи
-
-```python
-# TODO: you code here...
-```
+price_good = float(input("Введите цену товара: "))
+amount_goods = int(input("Введите количество товара: "))
+i = 1
+while i <= amount_goods:
+    cost_goods = price_good * i
+    print(cost_goods, "рублей")
+    i +=1
 
