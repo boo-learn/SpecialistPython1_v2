@@ -34,7 +34,12 @@ n = 12
 12 119.88 рублей
 ```
 ### Решение задачи
-
+cost = float(input("Price: "))
+num = int(input("Number: "))
+i = 1
+while i <= num:
+    print(i, cost * i)
+    i += 1
 ```python
 # TODO: you code here...
 ```
