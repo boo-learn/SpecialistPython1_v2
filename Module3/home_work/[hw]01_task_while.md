@@ -36,6 +36,12 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#Shershakov Grigoriy
+cost, price = float(input("Введите стоимость: ")), int(input("Введите количество: "))
+counter = 0
+while counter < price:
+    counter += 1
+    print(counter , cost*counter, "рублей")
+
 ```
 
