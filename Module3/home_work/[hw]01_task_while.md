@@ -36,6 +36,11 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введи количество товара ="))
+cost = 9.99
+count = 1
+while count != n+1:
+    print(count,count*cost,"рублей")
+    count += 1
 ```
 
