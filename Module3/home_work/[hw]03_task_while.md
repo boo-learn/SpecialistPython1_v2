@@ -28,7 +28,18 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#Shershakov Grigoriy
+number = int(input("n: "))
+counter = 0
+while counter < number:
+    counter += 1
+    line = ""
+    step = 0
+    step *= counter
+    while step < number:
+        step += 1
+        line += str(step*counter)+" "
+    print(line)
 ```
 
 ---
