@@ -30,7 +30,16 @@ n = 5
 ```python
 # TODO: you code here...
 ```
-
+n = int(input('number:'))
+row = 1
+while row <= n:
+    column = 1
+    while column <= n:
+        multiply = row * column
+        print(multiply, end="\t ")
+        column += 1
+    print()
+    row += 1
 ---
 
 <details>
