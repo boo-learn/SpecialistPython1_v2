@@ -20,11 +20,16 @@
 ### Решение задачи
 
 ```python
+#Shershakov Grigoriy
 n = int(input("Количество карточек: "))
+counter = 0
+sum_all_cards = n*(n+1)/2
+sum_number = 0
 # Цикл, который выполнится n-1 раз
-while ...:
+while counter < n - 1:
     card_number = int(input("Номер карточки: "))
-    ...
-
-print("Номер потерянной карточки:", ...)
+    sum_number += card_number
+    counter += 1
+lost_card = int(sum_all_cards) - sum_number
+print("Номер потерянной карточки:", lost_card)
 ```
