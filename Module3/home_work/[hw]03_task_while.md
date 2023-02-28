@@ -28,7 +28,15 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Ввести число ="))
+count = 1
+while count <= n:
+    rows = 1
+    while rows <= n:
+        print(count*rows, end = " ")
+        rows += 1
+    count += 1
+    print("")
 ```
 
 ---
