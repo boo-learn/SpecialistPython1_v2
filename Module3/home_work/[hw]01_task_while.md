@@ -36,6 +36,12 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#Таблица стоимости
+price = float(input("Цена товара = "))
+pcs = int(input("Количество товара "))
+i=0
+while i < pcs:
+    i+=1
+    print(i, i*price)
 ```
 
