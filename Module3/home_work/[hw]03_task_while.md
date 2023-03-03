@@ -36,7 +36,6 @@ while i <= n:
     while j <= n:
         print ("\t", (i*j), end="")
         j += 1
-    print()
     i += 1
 ```
 
