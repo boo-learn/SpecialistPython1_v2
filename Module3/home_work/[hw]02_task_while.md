@@ -19,12 +19,18 @@
 
 ### Решение задачи
 
-```python
+#Потерянная карточка
 n = int(input("Количество карточек: "))
-# Цикл, который выполнится n-1 раз
-while ...:
-    card_number = int(input("Номер карточки: "))
-    ...
-
-print("Номер потерянной карточки:", ...)
+count = 0
+summa = 0
+while count <= n:
+    summa += count
+    count += 1
+print ("Сумма чисел=", summa)
+count2 = 1
+while count2 <n:
+    f = int(input("Карточки в наличии "))
+    count2 += 1
+    summa -= f
+print ("Потерянная карта=", summa)
 ```
