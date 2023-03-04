@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Shershakov Grigoriy
+number = int(input("n: "))
+divisor = 0
+line = ""
+while divisor < number:
+    divisor += 1
+    if number % divisor == 0 and divisor != 1 and divisor != number:
+        line += " " + str(divisor)
+    else:
+        line += ""
+if line == "":
+    print("Число простое")
+else:
+    print(line)
 ```
 
 ---
