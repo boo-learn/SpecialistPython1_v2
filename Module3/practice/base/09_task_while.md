@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Shershakov Grigoriy
+number = int(input("n: "))
+divisor = 0
+summ_divisors = 0
+while divisor < number:
+    divisor += 1
+    if number % divisor == 0 and divisor != number:
+        summ_divisors += divisor
+    else:
+        summ_divisors += 0
+if summ_divisors == number:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
