@@ -4,8 +4,11 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
+number = 1
+for i in fruits:
+    print(number, " ", i)
+    number += 1
 
-# TODO: your code here
 
 # Пример вывода:
 # 1. яблоко
