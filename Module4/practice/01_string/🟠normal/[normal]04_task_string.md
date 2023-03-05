@@ -22,7 +22,11 @@
 
 ```python
 password = input("Enter password: ")
-# TODO: you code here...
+is_symbol = password.find('#')
+if is_symbol != '':
+    print("не безопасный")
+else:
+    print("безопасный")
 ```
 
 ---
