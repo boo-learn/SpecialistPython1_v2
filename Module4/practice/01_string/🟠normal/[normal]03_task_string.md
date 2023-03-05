@@ -18,7 +18,12 @@
 
 ```python
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
+text = text.lower().replace(",", "").replace(".", "").split(" ")
+count = 0
+for i in text:
+    if i == "мама":
+        count += 1
+print(count)
 ```
 
 ---
