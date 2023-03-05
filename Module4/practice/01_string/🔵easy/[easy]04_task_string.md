@@ -15,8 +15,8 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
+string = input("Введите произвольный текст: ")
+print ('Количество "б" =: ', string.count("б"))
 ```
 
 ---
