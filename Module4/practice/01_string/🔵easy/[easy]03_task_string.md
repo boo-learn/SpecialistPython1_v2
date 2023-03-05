@@ -15,12 +15,12 @@
 
 ### Решение задачи
 
-```python
-text = "Вася самый умный! Вася лучше всех! И ждет его успех!"
-# TODO: you code here...
-```
+input_string = input('Введите строку: ')
 
----
+output_string = input_string.replace('!', '.')
+
+print('Результат замены:')
+print(output_string)
 
 ### Подсказки
 
