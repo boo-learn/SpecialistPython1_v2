@@ -14,10 +14,11 @@
 
 ### Решение задачи
 
-```python
-text = ...
-# TODO: you code here...
-```
+input_string = input('Введите строку: ')
+
+count = input_string.count('б')
+
+print('Количество букв "б" в строке:', count)
 
 ---
 
