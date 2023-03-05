@@ -17,7 +17,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+string = input("Введите id цифрами:")
+string_full = "id:" + string
+str_input = string_full[3: ]
+if str_input.isdigit() == True:
+    print("Да")
+    print(string_full)
+else:
+    print("Нет")
+    print(string_full)
 ```
 
 ---
