@@ -18,7 +18,9 @@
 
 ```python
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
+lower_string = text.lower()
+num_words = lower_string.count("мама")
+print(num_words)
 ```
 
 ---
