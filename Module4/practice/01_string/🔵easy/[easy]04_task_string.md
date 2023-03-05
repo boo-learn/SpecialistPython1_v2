@@ -14,9 +14,8 @@
 
 ### Решение задачи
 
-```python
-text = ...
-# TODO: you code here...
+```text = str(input('Введите текст:'))
+print(text.count("б"))
 ```
 
 ---
