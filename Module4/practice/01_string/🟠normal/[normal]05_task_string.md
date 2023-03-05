@@ -17,7 +17,13 @@
 ```python
 text = "В теории, теория и практика неразделимы. На практике это не так."
 vowels = "ауоыэяюёие"
-# TODO: you code here...
+ext = "В теории, теория и практика неразделимы. На практике это не так."
+vowels = "ауоыэяюёие"
+count = 0
+for i in ext.lower():
+    if i in vowels:
+        count += 1
+print(count)
 ```
 
 ---
