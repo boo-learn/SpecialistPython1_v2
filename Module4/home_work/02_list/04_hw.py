@@ -5,3 +5,11 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+numbers = [2, -5, 8, 9, -25, 25, 4, 25]
+summa_sq = 0
+
+numbers1 = [int(number**0.5) for number in numbers if number >= 0 and (number**0.5).is_integer()]
+
+for number1 in numbers1:
+    summa_sq += number1
+print(summa_sq)
