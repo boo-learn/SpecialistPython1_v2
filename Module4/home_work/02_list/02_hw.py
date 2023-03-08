@@ -5,4 +5,14 @@
 import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
-# TODO: your code here
+
+
+import random
+
+num_of_numbers = int(input("Введите количество чисел для добавления в список: "))
+numbers = []
+
+for number in range(1, num_of_numbers + 1):
+    numbers.append(random.randint(-100, 100))
+
+print(numbers)
