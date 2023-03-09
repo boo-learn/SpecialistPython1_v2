@@ -5,3 +5,13 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+import math
+
+numbers = [2, -5, 8, 9, -25, 25, 4]
+num_new = []
+for i in range(len(numbers)):
+    if numbers[i] > 0:
+        s = math.sqrt(numbers[i])
+        if int(s) == s:
+            num_new.append(int(s))
+print(num_new)
