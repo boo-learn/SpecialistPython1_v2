@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+speed=int(input("\nPlease enter speed value:"))
+time=int(input("\nPlease enter time value:"))
+mrr_length=109
+path=speed*time
+distance=path%mrr_length
+
+print("\nMotorcyclist is on",distance,"km MRR")
 ```
 
 ---
