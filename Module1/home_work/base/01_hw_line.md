@@ -17,7 +17,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Temperature conversion from Celsius to Fahrenheit")
+temp_cels = int(input("Please enter temperature in Celsius:"))
+temp_fahr = (temp_cels*9/5) + 32
+print("Temperature in Fahrenheit: ",temp_fahr)
 ```
 
 ---
