@@ -6,3 +6,8 @@ import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
 # TODO: your code here
+from random import randint
+num = int(input("Введите число: "))
+
+lst = [randint(-100, 100)for k in range(num)]
+print(lst)
