@@ -2,5 +2,8 @@
 # Найдите самое длинное имя, если таких имен несколько - выведи любое их них
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
-
-# TODO: your code here
+len_nms = "_"
+for i in names:
+    if len(i) >= len(len_nms):
+        len_nms = i
+print(len_nms)
