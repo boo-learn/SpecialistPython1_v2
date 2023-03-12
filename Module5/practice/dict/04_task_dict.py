@@ -26,23 +26,32 @@ staff = [
         'salary': 47800
     },
 ]
-# Вычислите:
-print("Имя и Фамилию сотрудника с самой высокой зарплатой:")
 
-# TODO: your code here
+# Имя и Фамилию сотрудника с самой высокой зарплатой:
+max_salary_employee = max(staff, key=lambda e: e['salary'])
+print(f"{max_salary_employee['name']} {max_salary_employee['surname']}")
 
-print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
+# Имя и Фамилию сотрудника с самой низкой зарплатой:
+min_salary_employee = min(staff, key=lambda e: e['salary'])
+print(f"{min_salary_employee['name']} {min_salary_employee['surname']}")
 
-# TODO: your code here
+# Среднеарифметическую зарплату всех сотрудников
+average_salary = sum(e['salary'] for e in staff) / len(staff)
+print(f"{average_salary:.2f}")
 
-print("Среднеарифметическую зарплату всех сотрудников")
+# Количество однофамильцев в организации
+surname_counts = {}
+for employee in staff:
+    surname = employee['surname']
+    if surname in surname_counts:
+        surname_counts[surname] += 1
+    else:
+        surname_counts[surname] = 1
 
-# TODO: your code here
+total_same_surname = sum(count - 1 for count in surname_counts.values())
+print(total_same_surname)
 
-print("Количество однофамильцев в организации")
-
-# TODO: your code here
-
-print("*Список всех сотрудников(Имя и Фамилию) в порядке возрастания их зарплаты")
-
-# TODO: your code here
+# Список всех сотрудников (Имя и Фамилию) в порядке возрастания их зарплаты
+sorted_staff = sorted(staff, key=lambda e: e['salary'])
+for employee in sorted_staff:
+    print(f"{employee['name']} {employee['surname']}")
