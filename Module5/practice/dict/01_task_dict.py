@@ -11,4 +11,13 @@ item_count = 8
 # Курс доллара
 dollar_rate = 74.12
 
-# TODO: your code here
+item = {"name": "Кроссовки",
+        "price": "7540.5",
+        "currency": "rub"
+        }
+item_count = 8
+dollar_rate = 74.12
+
+price_usd = float(item["price"]) / dollar_rate
+
+print(price_usd)
