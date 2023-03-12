@@ -3,7 +3,10 @@
 
 def distance(x1, y1, x2, y2):
     # TODO: your code here
-    pass
+    import math
+    from math import hypot
+    d = hypot(x2 - x1, y2 - y1)
+    return d
 
 
 # Тестируем функцию
