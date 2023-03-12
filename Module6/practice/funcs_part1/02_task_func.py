@@ -4,6 +4,21 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
+    if number < 0:  # отрицательные числа не могут быть палиндромами
+        return False
+
+    if number < 10:  # однозначные числа всегда палиндромы
+        return True
+
+    reversed_number = 0
+    original_number = number
+
+    while original_number > 0:
+        digit = original_number % 10
+        reversed_number = reversed_number * 10 + digit
+        original_number //= 10
+
+    return number == reversed_number
     pass
 
 
