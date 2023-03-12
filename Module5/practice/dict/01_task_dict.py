@@ -12,3 +12,4 @@ item_count = 8
 dollar_rate = 74.12
 
 # TODO: your code here
+print("Стоимость покупки в долларах = ",round(float(item["price"])/dollar_rate*item_count,2))
