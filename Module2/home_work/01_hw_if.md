@@ -20,6 +20,15 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("input n :"))
+m = int(input("input m :"))
+k = int(input("input k :"))
 
+if k//n == 0:
+    print("No")
+elif k//m == 0:
+    print("No")
+else:
+    print("Yes")
 ---
 
