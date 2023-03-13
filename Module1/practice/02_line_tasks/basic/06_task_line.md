@@ -19,7 +19,9 @@
 ```python
 # TODO: you code here...
 ```
-
+n = int(input())
+floor = (n+4)//5
+print(floor)
 ---
 
 ### Данные для самопроверки
