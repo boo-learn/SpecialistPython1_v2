@@ -17,7 +17,9 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+flat = int(input("Введите номер квартиры: "))
+floor = (flat+4) // 5
+print("Этаж = ", floor)
 ```
 
 ---
