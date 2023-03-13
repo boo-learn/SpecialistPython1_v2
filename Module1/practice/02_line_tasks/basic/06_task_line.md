@@ -16,11 +16,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+import math
+flat = int(input("Номер квартиры: "))
+flat_on_flor = 5
+flor = math.ceil(flat/flat_on_flor)
+print("Этаж квартиры: ", flor)
 
----
+
 
 ### Данные для самопроверки
 |   flat   | | floor    |
