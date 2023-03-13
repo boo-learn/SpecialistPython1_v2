@@ -17,9 +17,14 @@
 ### Решение задачи
 
 ```python
+#Площадь круга S=πR²
+#math.pi # Число pi из библиотеки math
+
 import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
+
+R = float(input("Введите радиус круга: "))
+S = math.pi*(R**2)
+print("Площадь круга: ", S)
 ```
 
 ---
