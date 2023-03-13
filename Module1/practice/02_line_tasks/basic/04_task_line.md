@@ -17,15 +17,14 @@
 ### Решение задачи
 
 ```python
-number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
-print(n1)
-print(n2)
-print(n3)
-print(n4)
+print("Найти все цифры четырехзначного числа, задайте четырехзначное число")
+number = int(input("Ввведите четырехзначное число:"))
+first = number // 1000
+second = number // 100 % 10
+third = number // 10 % 10
+fourth = number % 10
+print("Первое число: ", first, "\r\nВторое число: ", second, "\r\nТретье число: ", third, "\r\nЧетвертое число: ", fourth,)
+
 ```
 
 ---
