@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Котов Дмитрий
+a = int(input("a:"))
+b = int(input("b:"))
+
+p = a*2 + b*2
+print("Периметр = ", p)
+
+s = a*b
+print("Периметр = ", s)
 ```
 
 ---
