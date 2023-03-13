@@ -17,7 +17,8 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number_apart = int(input('Введите номер квартиры: '))
+print('Квартира находится на', number_apart//5, 'этаже.')
 ```
 
 ---
