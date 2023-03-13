@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a:"))
+b = int(input("b:"))
+
+s = a*b
+p = (a+b)*2
+
+print("Площадь", s)
+print("Периметр", p)
 ```
 
 ---
