@@ -15,7 +15,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# AB = √(xb - xa)2 + (yb - ya)2
+xa = int(input("xA: "))
+ya = int(input("yA: "))
+
+xb = int(input("xB: "))
+yb = int(input("yB: "))
+
+ab = ((xb - xa)**2 + (yb - ya)**2)**0.5
+
+print("AB is:",ab)
 ```
 
 ---
