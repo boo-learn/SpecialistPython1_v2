@@ -17,6 +17,15 @@
 
 ```python
 # TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+
+perimeter = a + b + c
+p = perimeter / 2
+square = int((p*(p - a)*(p - b)*(p - c))**0.5)
+print ("S:", perimeter)
+print ("P:", perimeter)
 ```
 
 ---
