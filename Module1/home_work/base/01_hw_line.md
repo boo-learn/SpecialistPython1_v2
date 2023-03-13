@@ -17,8 +17,9 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+tempC = int(input("Введите температуру="))
+tempF = tempC*(9/5)+32
+print ("Температура в Форенгейтах =", tempF)
 
 ---
 
