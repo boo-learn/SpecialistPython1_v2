@@ -19,7 +19,10 @@
 
 ```python
 # TODO: you code here...
-```
+print("Байкер")
+v = int(input("Введите скорость = "))
+t = int(input("Введите время = "))
+print("Заданная точка =", (v*t)%109)
 
 ---
 
