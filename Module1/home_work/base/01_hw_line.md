@@ -17,7 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+
+tC = int(input("Insert tC: "))
+
+tF= (tC*9/5)+32
+
+print("tF = ",tF)
 ```
 
 ---
