@@ -19,6 +19,14 @@
 ```python
 # TODO: you code here...
 ```
+import math
+
+f = int(input("Введите номер квартиры "))
+#s = (f - 1) // 5 + 1 # вариант 1
+#s = (f + 4) // 5     # вариант 2
+                      # вариант 3
+s = math.ceil(f/5)
+print(str(s) + " этаж")
 
 ---
 
