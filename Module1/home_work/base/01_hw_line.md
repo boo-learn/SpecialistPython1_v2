@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+temp_c = int(input("Температура по Цельсию: "))
+
+temp_f = (temp_c * 9/5) + 32
+
+print("Температура по Фаренгейту: ", temp_f)
 ```
 
 ---
