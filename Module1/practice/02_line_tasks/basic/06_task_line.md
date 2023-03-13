@@ -18,6 +18,10 @@
 
 ```python
 # TODO: you code here...
+number = int(input())
+
+floor = (number + 4)//5
+print(floor)
 ```
 
 ---
