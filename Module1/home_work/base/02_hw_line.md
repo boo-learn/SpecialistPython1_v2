@@ -21,7 +21,9 @@ import math
 math.pi # Число pi из библиотеки math
 # TODO: you code here...
 ```
-
+r = abs(float(input("Введите радиус окружности: ")))
+s = math.pi * r**2
+print("Площадь круга равна:", s)
 ---
 
 ### Данные для самопроверки
