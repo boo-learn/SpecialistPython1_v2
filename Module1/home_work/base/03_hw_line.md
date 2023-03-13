@@ -20,7 +20,19 @@
 ```python
 # TODO: you code here...
 ```
+import math
+distance_mcad = 109
+v = int(input("Укажите скорость байкера: "))
+t = int(input("Укажите время движения байкера: "))
 
+distance_bike = abs(v)*t
+
+if v >= 0:
+    tag_on_mcad = distance_bike % distance_mcad
+else:
+    tag_on_mcad = distance_mcad - distance_bike % distance_mcad
+
+print(tag_on_mcad)
 ---
 
 ### Подсказки
