@@ -21,7 +21,11 @@ import math
 math.pi # Число pi из библиотеки math
 # TODO: you code here...
 ```
-
+import math
+pi = math.pi
+r = float(input("Введите радиус круга: "))
+s = pi*r*r
+print("Площадь круга равна ",s)
 ---
 
 ### Данные для самопроверки
