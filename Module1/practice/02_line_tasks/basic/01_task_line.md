@@ -14,9 +14,14 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input("a: "))
+b = int(input("b: "))
+
+p = 2*a + 2*b
+s = a*b
+
+print("P =", p)
+print("S =", s)
 
 ---
 
