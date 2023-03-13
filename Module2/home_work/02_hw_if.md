@@ -23,6 +23,17 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ```python
 # TODO: you code here...
 ```
+n = int(input("введите количество коров: "))
+if 11 <= n % 100 <= 14:
+        print(n, "коров")
+else:
+        temp = n % 10
+        if temp == 0 or 5 <= temp <= 9:
+                print(n, "коров")
+        elif 2 <= temp <=4:
+                print(n, "коровы")
+        else:
+                print(n, "корова")
 
 ---
 ### Подсказки
