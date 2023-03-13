@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+
+speed = int(input("Введите скорость байкера: "))
+time = int(input("Введите введите время движения: "))
+distance = speed * time
+distance_marker = distance%108
+
+print("Остановка на отметке ", distance_marker, "км")
 ```
 
 ---
