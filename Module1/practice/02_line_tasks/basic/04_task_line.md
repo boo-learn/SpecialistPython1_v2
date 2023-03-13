@@ -18,10 +18,12 @@
 
 ```python
 number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
+n1 = number // 1000
+n2 = number // 100 - n1*10
+n4 = number % 10
+n3 = int((number % 100 -n4)/10)
+
+
 print(n1)
 print(n2)
 print(n3)
