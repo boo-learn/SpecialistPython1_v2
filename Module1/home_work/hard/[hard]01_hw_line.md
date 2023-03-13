@@ -20,7 +20,17 @@
 seconds = int(input("Прошло секунд: "))
 # TODO: you code here...
 ```
-
+inputSec = int(input("Прошло секунд: "))
+minuteInSec = 60 #кол-во секунд в часе
+hourInSec = 60*minuteInSec #Количество секунд в часе
+dayInSec = 24*hourInSec # кол-во секунд в сутках
+days = inputSec//dayInSec #Количество полных дней 
+daysInSec = days*dayInSec #кол-во полных дней в секундах
+hours = (inputSec-daysInSec)//hourInSec #кол-во полных часов
+huorsInSec = hours * hourInSec # Количество полных часов в секундах
+minutes = (inputSec-daysInSec-huorsInSec)//minuteInSec #полное количество минут
+secundes = (inputSec-daysInSec-huorsInSec)%minuteInSec     
+print(days,"дней",hours, "часов", minutes,"минут",secundes,"секунд")
 ---
 
 ### Данные для самопроверки
