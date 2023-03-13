@@ -15,9 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
 
+a = int(input("a: "))
+b = int(input("b: "))
+
+p = (a + b)*2
+s = a * b
+
+print("S=", s)
+print("P=", p)
 ---
 
 ### Данные для самопроверки
