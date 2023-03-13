@@ -16,6 +16,14 @@
 
 ```python
 # TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+
+perimeter = (a + b) * 2
+square = a * b
+
+print("S:", square)
+print("P:", perimeter)
 ```
 
 ---
