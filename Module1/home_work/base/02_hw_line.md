@@ -40,3 +40,13 @@ math.pi # Число pi из библиотеки math
 <summary>Подсказка-1</summary>
 Формулу площади круга не помните? Не знаете где найти?
 </details>
+
+
+#решение
+
+import math
+math.pi
+
+r = float(input("Введите радиус:"))
+s = math.pi * r**2
+print(s)
