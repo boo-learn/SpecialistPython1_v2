@@ -16,13 +16,11 @@
 
 ### Решение задачи
 
-```python
 import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
-```
+r = float(input("Введите радиус = "))
+s = math.pi*r**2
+print ("Площадь круга = ", round(s, 2))
 
----
 
 ### Данные для самопроверки
 
