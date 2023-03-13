@@ -17,8 +17,11 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+speed = int(input("Введите скорость байкера: "))
+time = int(input("Введите время: "))
+
+marker = (speed * time) % 109
+print("Он остановится на отметке в", marker, "км.")
 ```
 
 ---
