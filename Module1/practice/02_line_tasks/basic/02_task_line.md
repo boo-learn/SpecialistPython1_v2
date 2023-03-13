@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#AB = √((xb - xa)2 + (yb - ya)2).
+
+Xa = int(input("Xa:"))
+Xb = int(input("Xb:"))
+Ya = int(input("Ya:"))
+Yb = int(input("Yb:"))
+
+AB = ((Xb+Xa)**2+(Yb-Ya)**2)**(1/2)
+print("Расстояние = ", AB)
 ```
 
 ---
