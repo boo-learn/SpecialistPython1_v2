@@ -20,6 +20,13 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("Долект шоколадки длина: "))
+m = int(input("Долект шоколадки ширина: "))
+k = int(input("Отломили долек: "))
+if k <= m * n and ((k % m == 0) or (k % n == 0)):
+    print("ДА")
+else:
+    print("НЕТ")
 
 ---
 
