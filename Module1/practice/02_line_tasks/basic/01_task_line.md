@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#Perim and S
+a = int(input("a: "))
+b = int(input("b: "))
+
+p = (a + b) * 2
+print("P is:",p)
+
+s = a * b
+print("S is:",s)
 ```
 
 ---
