@@ -19,7 +19,9 @@
 ```python
 # TODO: you code here...
 ```
-
+flat_num = int(input("Set flat num: "))
+floor = ((flat_num - 1)// 5) + 1
+print("floor is:",floor)
 ---
 
 ### Данные для самопроверки
