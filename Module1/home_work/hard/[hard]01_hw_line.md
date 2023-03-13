@@ -17,8 +17,15 @@
 ### Решение задачи
 
 ```python
+print("Перевод времени")
 seconds = int(input("Прошло секунд: "))
-# TODO: you code here...
+
+d = seconds // 86400
+h = (seconds - d * 86400) // 3600
+m = (seconds - d * 86400 - h * 3600)  // 60
+s = seconds % 60
+
+print(d, "дней", h, "часов", m, "минут", s, "секунд")
 ```
 
 ---
