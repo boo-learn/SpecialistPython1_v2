@@ -19,6 +19,16 @@
 
 ```python
 # TODO: you code here...
+import math
+
+h = int(input())
+a = int(input())
+b = int(input())
+
+dif = a - b
+dayzzz = math.ceil((h - a)/dif + 1) #пытался без использования округления, не вышло :(
+
+print(dayzzz)
 ```
 
 ---
