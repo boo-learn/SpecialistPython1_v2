@@ -22,7 +22,14 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("n: "))
 
+i = 0
+summa = 0
+while i < n:
+    i += 1
+    summa += i * i
+print(summa)
 ---
 
 ### Данные для самопроверки
