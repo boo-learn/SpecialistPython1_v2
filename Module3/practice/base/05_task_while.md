@@ -34,6 +34,13 @@ n = 5
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+i = 1
+string = str("*")
+while n >= i:
+    print(string * i)
+    i += 1
 ```
 
 ---
