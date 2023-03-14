@@ -22,9 +22,16 @@
 
 ```python
 # TODO: you code here...
-```
-
----
+x1 = int(input("введите координаты x1 от 1-8: "))
+y1 = int(input("введите координаты y1 от 1-8: "))
+x2 = int(input("введите координаты x2 от 1-8: "))
+y2 = int(input("введите координаты y2 от 1-8: "))
+summa1 = x1 + y1
+summa2 = x2 + y2
+if summa1 % 2 == 0 and summa2 % 2 == 0 or summa1 % 2 != 0 and summa2 % 2 != 0:
+    print("Да")
+else:
+    print("Нет")
 
 ### Подсказки
 
