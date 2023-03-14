@@ -18,6 +18,28 @@
 ```python
 # TODO: you code here...
 ```
+# Делители числа
+a_value = int(input("Set a value: "))
+b_value = int(input("Set b value: "))
+
+string = ''
+
+value = a_value
+counter = 0
+while value <= b_value:
+    summ = 0
+    i = 1
+
+    while i < value:
+        if value % i == 0:
+            summ += i
+        i += 1
+    if summ == value:
+        counter += 1
+        string += str(value) + ' '
+    value += 1
+print(counter)
+print(string)
 
 ---
 
