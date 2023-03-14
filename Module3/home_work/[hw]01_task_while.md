@@ -36,6 +36,12 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("количество строк таблицы: "))
+cost = float(input("цена: "))
+count = 0
+
+while count <= n:
+    print(1+count, (1+count)*cost, " рублей")
+    count += 1
 ```
 
