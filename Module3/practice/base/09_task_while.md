@@ -18,7 +18,18 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("n: "))
 
+result = 0
+i = 1
+while i < n:
+    if n % i == 0:
+        result = result + i
+    i += 1
+if result == n:
+    print("Да")
+else:
+    print("Нет")
 ---
 
 ### Данные для самопроверки
