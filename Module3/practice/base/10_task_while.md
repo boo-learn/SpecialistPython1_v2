@@ -17,6 +17,22 @@
 
 ```python
 # TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+
+quantity = 0
+while b > a:
+    i = 1
+    summ = 0
+    while a > i:
+        if a % i == 0:
+            summ += i
+        i += 1
+    if summ == a:
+        print(a)
+        quantity += 1
+    a += 1
+print("Количество:", quantity)
 ```
 
 ---
