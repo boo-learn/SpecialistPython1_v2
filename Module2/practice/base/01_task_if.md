@@ -17,6 +17,11 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("n="))
+if n >= 100 and n <= 999:
+    print("ДА")
+else:
+    print("НЕТ")
 
 ---
 
