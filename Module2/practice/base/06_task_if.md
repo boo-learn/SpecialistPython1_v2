@@ -17,7 +17,16 @@
 ```python
 # TODO: you code here...
 ```
+# possible triangle
+a = int(input("Press A value to check: "))
+b = int(input("Press B value to check: "))
+c = int(input("Press C value to check: "))
 
+if a+b>c and a+c>b and b+c>a:
+    print("OK")
+else:
+    print("Impossible")
+    
 ---
 
 ### Данные для самопроверки
