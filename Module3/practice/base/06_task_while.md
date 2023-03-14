@@ -20,7 +20,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+lvl = int(input("Введите высоту пирамиды: "))
+summa = 1
+
+while 1 <= lvl:
+    if lvl > 1:
+        summa = summa + lvl ** 2
+    lvl -= 1
+print(summa)
+
 ```
 
 ---
