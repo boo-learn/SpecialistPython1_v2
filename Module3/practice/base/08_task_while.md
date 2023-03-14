@@ -16,7 +16,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Делители числа")
+n = int(input("Введите число: "))
+count = 2
+text = ""
+
+while count < n:
+    if n%count==0:
+        text = text + str(count)
+    count += 1
+if text =="":
+    print("Число простое")
+print(text)
 ```
 
 ---
