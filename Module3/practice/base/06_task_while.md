@@ -21,6 +21,14 @@
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+summ = 0
+i = 1
+while n >= i:
+    summ += (i**2)
+    i += 1
+print(summ)
 ```
 
 ---
