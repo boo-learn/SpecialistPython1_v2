@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число: "))
+summa = 0
+for m in range(1, number):
+    if number % m == 0:
+        summa = summa + m
+if summa == number:
+    print("Число совершенное!")
+else:
+    print("Число не совершенное!")
+
 ```
 
 ---
