@@ -18,6 +18,13 @@
 n = int(input("n: "))
 
 # TODO: you code here...
+n = int(input("n: "))
+
+i = 0
+while n > i:
+    print("Я учу питон")
+    i += 1
+
 ```
 
 ---
