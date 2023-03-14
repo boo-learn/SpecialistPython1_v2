@@ -23,6 +23,22 @@
 ```python
 # TODO: you code here...
 ```
+# point in round
+
+point_x = int(input("Press Point X value to check: "))
+point_y = int(input("Press Point Y value to check: "))
+center_x = int(input("Press Center X value to check: "))
+center_y = int(input("Press Center Y value to check: "))
+radius = int(input("Press Radius value to check: "))
+
+#AB = √(xb - xa)2 + (yb - ya)2
+
+distance = ((point_x-center_x)**2 + (point_y-center_y)**2)**0.5
+if distance <= radius:
+    print("Point In round")
+else:
+    print("Out of Round")
+
 
 ---
 
