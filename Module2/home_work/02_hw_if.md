@@ -23,6 +23,27 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ```python
 # TODO: you code here...
 ```
+# Cows
+# 1 корова ; 2, 3, 4 коровы ; 5 коров
+cows_value = int(input("Please set Cows number: "))
+
+one_last = cows_value % 10
+two_last = cows_value % 100
+print("One Last digit is:", one_last)
+print("Two Last digits is:", two_last)
+
+letter = "На лугу пасется..."
+letter += str(cows_value)+" "
+word = "коров"
+word_end = "Ы"
+
+if two_last == 1 or (two_last > 20 and one_last == 1):
+    word_end = "А"
+elif two_last % 10 == 0 or one_last >= 5:
+    word_end = "_"
+elif two_last > 10 and two_last < 20:
+    word_end = "__"
+print(letter, word+word_end)
 
 ---
 ### Подсказки
