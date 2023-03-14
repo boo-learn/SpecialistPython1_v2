@@ -23,6 +23,28 @@
 ```python
 # TODO: you code here...
 ```
+# Chess
+xa = int(input("Please set XA: "))
+ya = int(input("Please set YA: "))
+xb = int(input("Please set XB: "))
+yb = int(input("Please set YB: "))
+
+if (xa % 2) + (ya % 2) != 0:
+    a_colour = "black"
+else:
+    a_colour = "white"
+
+if (xb % 2) + (yb % 2) != 0:
+    b_colour = "black"
+else:
+    b_colour = "white"
+
+print("a_colour is:", a_colour)
+print("b_colour is:", b_colour)
+if a_colour == b_colour:
+    print("Same Colours")
+else:
+    print("Different Colours")
 
 ---
 
