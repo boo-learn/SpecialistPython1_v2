@@ -17,7 +17,12 @@
 ```python
 # TODO: you code here...
 ```
+x = int(input("Input your number: "))
 
+if x % 5 == 0 and x%10 != 0:
+    print("Yep")
+else:
+    print("Nope")
 ---
 
 ### Данные для самопроверки
