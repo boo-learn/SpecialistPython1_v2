@@ -20,7 +20,13 @@
 ```python
 # TODO: you code here...
 ```
-
+x = int(input("общая сумма: "))
+y = int(input("сумма покупки: "))
+stoimost = x - y
+if y <= x:
+    print("Денег хватает", stoimost)
+else:
+    print("Денег недостаточно", stoimost)
 ---
 
 ### Данные для самопроверки
