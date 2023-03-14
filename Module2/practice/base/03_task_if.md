@@ -20,6 +20,13 @@
 ```python
 # TODO: you code here...
 ```
+money = int(input("Press Money value: "))
+salary = int(input("Press Salary value: "))
+
+if salary > money:
+    print("Sorry, you do not have enough money. You have to add:",salary - money)
+else:
+    print("You will have after:", money % salary)
 
 ---
 
