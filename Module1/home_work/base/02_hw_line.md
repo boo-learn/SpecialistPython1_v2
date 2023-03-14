@@ -21,7 +21,11 @@ import math
 math.pi # Число pi из библиотеки math
 # TODO: you code here...
 ```
-
+import math
+# math.pi # Число pi из библиотеки math
+r = float(input("Please set Radius: "))
+s = math.pi * (r**2)
+print("S=", s)
 ---
 
 ### Данные для самопроверки
