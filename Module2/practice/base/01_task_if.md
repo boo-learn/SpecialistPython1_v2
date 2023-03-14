@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите трехзначное число:"))
+if number > 99 and number < 1000:
+    print("Введено трехзначное число")
+else:
+    print("Введено не трехзначное число")
 ```
 
 ---
