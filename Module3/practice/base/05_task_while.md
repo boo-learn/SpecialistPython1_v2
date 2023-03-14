@@ -35,6 +35,13 @@ n = 5
 ```python
 # TODO: you code here...
 ```
+step = int(input("Введите количество ступенек: "))
+count = 0
+step_img= "*"
+while count <= step:
+    print(step_img*count)
+    count += 1
+
 
 ---
 
