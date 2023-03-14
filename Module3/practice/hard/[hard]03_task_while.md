@@ -18,6 +18,32 @@
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+a = 1
+while a <= n:
+    div_summ_a = 0
+
+    i = 1
+    while i < a:
+        if a % i == 0:
+            div_summ_a += i
+        i += 1
+
+    b = 1
+    while b < a:
+        div_summ_b = 0
+
+        i2 = 1
+        while i2 < b:
+            if b % i2 == 0:
+                div_summ_b += i2
+            i2 += 1
+        if b == div_summ_a and a == div_summ_b:
+            print(a, b)
+        b += 1
+#    print(a) #просто чтобы посмотреть как возрастает сложность вычисления, забавно
+    a += 1
 ```
 
 ---
