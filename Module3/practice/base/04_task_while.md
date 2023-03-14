@@ -18,6 +18,17 @@
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+i = 0
+positive_num = 0
+while n > i:
+    number = int(input("number: "))
+    if number > 0:
+        positive_num += 1
+    i += 1
+print(positive_num)
+
 ```
 
 ---
