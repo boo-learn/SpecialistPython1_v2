@@ -20,6 +20,20 @@
 ```python
 # TODO: you code here...
 ```
+# Chocolate
+n_size = int(input("Please set n: "))
+m_size = int(input("Please set m: "))
+k_value = int(input("Please set k value: "))
+#if k_value == n_size * m_size or k_value > n_size * m_size:
+#    print("You set incorrect values")
+#elif k_value % n_size == 0 or k_value % m_size == 0:
+#    print("You are correct")
+#else:
+#   print("Incorrect, please set correct values.")
+if (k_value % n_size == 0 or k_value % m_size == 0) and k_value < (n_size * m_size):
+    print("You set Correct values")
+else:
+    print("Incorrect, please set correct values.")
 
 ---
 
