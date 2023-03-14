@@ -18,6 +18,18 @@
 ```python
 # TODO: you code here...
 ```
+# Делители числа
+value = int(input("Set value: "))
+i = 1
+summ = 0
+while i < value:
+    if value % i == 0:
+        summ += i
+    i += 1
+if summ == value:
+    print("Совершенное число")
+else:
+    print("НеСовершенное число")
 
 ---
 
