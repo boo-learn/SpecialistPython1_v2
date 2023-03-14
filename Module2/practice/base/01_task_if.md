@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число: "))
+
+if number >= 100 and number <= 999:
+    print("Число трехзначное? Да, т.к. оно равно", number)
+else:
+    print("Число трехзначное? Нет, т.к. оно равно", number)
 ```
 
 ---
