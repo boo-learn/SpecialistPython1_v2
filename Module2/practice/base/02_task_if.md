@@ -17,7 +17,11 @@
 ```python
 # TODO: you code here...
 ```
-
+k = int(input("Введите число: "))
+if k % 3 != 0 and k % 5 != 0:
+    print("НЕТ")
+else:
+    print("ДА")
 ---
 
 ### Данные для самопроверки
