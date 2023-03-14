@@ -33,7 +33,14 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Лесенка символами")
+
+n = int(input("Введите количество ступенек лесенки: "))
+count = 1
+
+while count <= n:
+    print("*" * count)
+    count += 1
 ```
 
 ---
