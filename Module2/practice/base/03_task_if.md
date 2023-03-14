@@ -20,7 +20,17 @@
 ```python
 # TODO: you code here...
 ```
+import math
 
+cache = int(input("В кошельке:"))
+price = int(input("Цена:"))
+
+total = cache - price
+
+if total >= 0:
+    print("Денег хватило, в остатке", total, "рублей")
+else:
+    print("Денег недостаточно, не хватило", abs(total), "рублей")
 ---
 
 ### Данные для самопроверки
