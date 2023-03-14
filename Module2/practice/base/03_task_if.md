@@ -18,7 +18,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Текущая сумма:"))
+cost = int(input("Стоимость товара:"))
+
+if (number > cost):
+    current_cash = number - cost
+    print("Денег достаточно, после покупки у вас останется:", current_cash)
+
+else:
+    print("Денег не достаточно")
 ```
 
 ---
