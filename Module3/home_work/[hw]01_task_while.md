@@ -36,6 +36,14 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Таблица стоимости")
+cost = float(input("Стоимость первого товара: "))
+n = int(input("Количество единиц товара: "))
+i = 1
+
+while i <= n:
+    print(i, round(cost, 2), "рублей")
+    cost = cost + 10 - 0.01
+    i += 1
 ```
 
