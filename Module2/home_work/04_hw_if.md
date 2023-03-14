@@ -21,6 +21,15 @@
 ```python
 # TODO: you code here...
 ```
+# balls
+# only 3 or 5 balls you could buy
+print("only 3 or 5 balls you could buy")
+value = int(input("Please set how much you plan to buy: "))
+
+if value in (1, 2, 4, 7):
+    print("No, you couldn't")
+else:
+    print("Yes, you could")
 
 ---
 
