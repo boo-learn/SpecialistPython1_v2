@@ -20,6 +20,12 @@
 ```python
 # TODO: you code here...
 ```
+speed = int(input("Please set speed: "))
+time = int(input("Please set time: "))
+l_round = 109
+l_distance = abs(speed * time)
+l_done = l_distance % l_round
+print("Distance is:", l_done)
 
 ---
 
