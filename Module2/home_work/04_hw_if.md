@@ -21,6 +21,15 @@
 ```python
 # TODO: you code here...
 ```
+k = int(input("Введите количество шаров: "))
+if (k - 3) % 5 == 0 or (k - 5) % 3 == 0 :
+    print("ДА")
+elif k % 3 == 0:
+    print("ДА")
+elif k % 5 == 0:
+    print("ДА")
+else:
+    print("НЕТ")
 
 ---
 
