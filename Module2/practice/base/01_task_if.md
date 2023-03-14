@@ -17,7 +17,12 @@
 ```python
 # TODO: you code here...
 ```
+number = int(input("insert your number: "))
 
+if 99 < number < 1000:
+    print("yes")
+else:
+    print("No")
 ---
 
 ### Подсказки
