@@ -38,4 +38,12 @@ n = 12
 ```python
 # TODO: you code here...
 ```
-
+n = float(input("Cost = 9.99. Number of products: "))
+cost = 9.99
+i = 0
+while n > 0:
+    i = i + 1
+    cost = cost*i
+    n = n - 1
+    print(i, cost)
+    cost = cost/i
