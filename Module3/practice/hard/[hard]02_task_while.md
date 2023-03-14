@@ -33,4 +33,18 @@ n = 3
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+row_index = 0
+while row_index < n:
+    line = ""
+    cell_index = 0
+    while cell_index < n:
+        if (cell_index == row_index) or (cell_index == (n - row_index - 1)):
+            line += "#"
+        else:
+            line += " "
+        cell_index += 1
+    print(line)
+    row_index += 1
 ```
