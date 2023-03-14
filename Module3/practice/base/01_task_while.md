@@ -17,7 +17,12 @@
 ```python
 n = int(input("n: "))
 
-# TODO: you code here...
+n = int(input("Программа выводит фразу 'Я учу питон' n раз, задайте число n:"))
+count = 0
+while count <= n:
+    print(count, "Я учу питон")
+    count += 1
+
 ```
 
 ---
