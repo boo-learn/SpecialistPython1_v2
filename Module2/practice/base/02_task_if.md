@@ -17,6 +17,12 @@
 ```python
 # TODO: you code here...
 ```
+# Дано целое число. Определите, кратно оно трем или пяти.
+value = int(input("Press value: "))
+if value % 3 == 0 or value % 5 == 0:
+    print("Yes")
+else:
+    print("No")
 
 ---
 
