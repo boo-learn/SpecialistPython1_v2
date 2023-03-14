@@ -19,7 +19,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+balloon = int(input("Введите необходимое количество шариков: "))
+
+if balloon % 3 == 0 or balloon % 5 == 0 or balloon % (3 + 5) == 0 or balloon % (3 + 5) == 3 or balloon % (3 + 5) == 5:
+    print("Да, можно купить ровно такое кол-во")
+else:
+    print("Нет, нельзя купить ровно такое кол-во")
 ```
 
 ---
