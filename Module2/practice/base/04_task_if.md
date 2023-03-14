@@ -17,6 +17,11 @@
 ```python
 # TODO: you code here...
 ```
+number = int(input("Введите число "))
+if number % 10 == 5:
+    print("Введённое число заканчивается на 5")
+else:
+    print("Введённое число заканчивается не на 5")
 
 ---
 
