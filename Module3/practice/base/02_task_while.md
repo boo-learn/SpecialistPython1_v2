@@ -20,7 +20,11 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+while a <= b:
+    if a % 2 == 0:
+        print("Число", a)
+        a += 1
+    a += 1
 ```
 
 ---
