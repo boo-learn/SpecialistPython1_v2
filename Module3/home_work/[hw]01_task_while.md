@@ -37,5 +37,10 @@ n = 12
 
 ```python
 # TODO: you code here...
-```
+n = int(input("Введите количество товаров = "))
+cost = float(input("Цена товара ="))
+start = 1
+while start <= n:
+    print(cost * start)
+    start +=1
 
