@@ -21,7 +21,28 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n1_сell_1 = int(input("Число 1 от 1 до 8: "))
+n2_cell_1 = int(input("Число 2 от 1 до 8: "))
+n1_сell_2 = int(input("Число 3 от 1 до 8: "))
+n2_cell_2 = int(input("Число 4 от 1 до 8: "))
+
+n12_cell_1 = n1_сell_1 + n2_cell_1
+n12_cell_2 = n1_сell_2 + n2_cell_2
+
+if n12_cell_1% 2 == 0:
+    cell_1 = "white"
+else:
+    cell_1 = "black"
+
+if n12_cell_2% 2 == 0:
+    cell_2 = "white"
+else:
+    cell_2 = "black"
+
+if cell_1 == cell_2:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
