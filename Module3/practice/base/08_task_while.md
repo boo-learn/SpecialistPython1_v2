@@ -18,6 +18,18 @@
 ```python
 # TODO: you code here...
 ```
+# Делители числа
+value = int(input("Set value: "))
+i = 2
+string_result = ''
+while i < value:
+    if value % i == 0:
+        string_result += ' '+ str(i)
+    i += 1
+if len(string_result) > 0:
+    print(string_result)
+else:
+    print("Число простое")
 
 ---
 
