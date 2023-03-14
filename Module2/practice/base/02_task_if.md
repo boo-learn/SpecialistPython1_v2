@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("введите число "))
+
+if n % 3 == 0 or n % 5 == 0:
+    print("Da")
+else:
+    print("Nope")
+
 ```
 
 ---
