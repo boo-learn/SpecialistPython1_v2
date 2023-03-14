@@ -14,8 +14,11 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+n = int(input("Введите цифры:"))
+if 99 < n <999:
+    print("ДА")
+else:
+    print("Нет")
 ```
 
 ---
