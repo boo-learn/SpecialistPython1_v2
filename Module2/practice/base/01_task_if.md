@@ -17,7 +17,11 @@
 ```python
 # TODO: you code here...
 ```
-
+n = int(input("Введите целое число:"))
+if len(str(n)) == 3:
+    print("Да")
+else:
+    print("Нет")
 ---
 
 ### Подсказки
