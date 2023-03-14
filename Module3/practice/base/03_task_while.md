@@ -18,6 +18,16 @@ _Сумма четных чисел от 0 до 7 = 12_
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+i = 0
+summ = 0
+while n >= i:
+    if i % 2 == 0:
+        summ += i
+    i += 1
+print(summ)
+
 ```
 
 ---
