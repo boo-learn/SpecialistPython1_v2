@@ -35,7 +35,10 @@ n = 5
 ```python
 # TODO: you code here...
 ```
+n = int(input("Количество ступеней: "))
 
+for i in range(1, n+1):
+    print("*" * i)
 ---
 
 ### Подсказки
