@@ -21,7 +21,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+chess_x1 = int(input("Введите число x1 (от 1 до 8): "))
+chess_y1 = int(input("Введите число y1 (от 1 до 8): "))
+chess_x2 = int(input("Введите число x2 (от 1 до 8): "))
+chess_y2 = int(input("Введите число y2 (от 1 до 8): "))
+
+sum_1 = chess_x1 + chess_y1
+sum_2 = chess_x2 + chess_y2
+if sum_1 % 2 == 0 and sum_2 % 2 == 0:
+    print("Да, обе клетки белого цвета")
+elif sum_1 % 2 != 0 and sum_2 % 2 != 0:
+    print("Да, обе клетки черного цвета")
+else:
+    print("Нет, клетки разного цвета")
+
 ```
 
 ---
