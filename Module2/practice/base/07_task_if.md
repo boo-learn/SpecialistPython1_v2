@@ -18,6 +18,19 @@
 ```python
 # TODO: you code here...
 ```
+# possible triangle
+a = int(input("Press A value to check: "))
+b = int(input("Press B value to check: "))
+c = int(input("Press C value to check: "))
+
+if a+b>c and a+c>b and b+c>a:
+    print("Possible triangle")
+    if a==b or a==c or b==c:
+        print("Isosceles(Равнобедренный)")
+    else:
+        print("Not Isosceles(Не равнобедренный)")
+else:
+    print("Impossible")
 
 ---
 
