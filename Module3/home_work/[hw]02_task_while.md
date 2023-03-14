@@ -30,4 +30,3 @@ while count < n-1:
 missed_card = ((1 + n) * n)/2 - control_sum
 
 print("Номер потерянной карточки:", int(missed_card))
-```
