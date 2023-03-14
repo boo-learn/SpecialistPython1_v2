@@ -20,7 +20,11 @@
 
 ```python
 # TODO: you code here...
-```
+n = int(input("Введите количество шариков = "))
+if n % 3 == 0 or n % 5 == 0 or n == 8 or n == 13:
+    print("Да")
+else:
+    print("Нет")
 
 ---
 
