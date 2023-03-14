@@ -16,6 +16,12 @@
 
 ```python
 # TODO: you code here...
+number = int(input())
+
+if (number // 100 > 0) and (number // 100 < 10):
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
