@@ -39,3 +39,12 @@ n = 12
 # TODO: you code here...
 ```
 
+cost = float(input("cost: "))
+n = int(input("quantity: "))
+
+i = 1
+while i <= n:
+    print(i, i * cost, "рублей")
+    i += 1
+
+
