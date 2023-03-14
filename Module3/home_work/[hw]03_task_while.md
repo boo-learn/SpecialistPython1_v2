@@ -30,6 +30,14 @@ n = 5
 ```python
 # TODO: you code here...
 ```
+# Выравнивание знаю только как делать через F строки, но в рамках курса мы еще это не проходили. А знаниями с курса не сообразил как выравнить
+while count_row <= digit:
+    count = 1
+    while count <= digit:
+        print(count*count_row, end=" ")
+        count += 1
+    print("")
+    count_row += 1
 
 ---
 
