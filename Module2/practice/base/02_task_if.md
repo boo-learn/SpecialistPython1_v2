@@ -16,7 +16,11 @@
 
 ```python
 # TODO: you code here...
-```
+n = int(input("n: "))
+if n // 3 and n // 5 and n // 15 :
+    print("Кратно 3 и 5")
+else:
+    print("Не кратно 3 и 5")
 
 ---
 
