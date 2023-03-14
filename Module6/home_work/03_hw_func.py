@@ -2,3 +2,8 @@
 # Находится ли одна окружность целиком внутри другой
 
 # TODO: your code here
+def circles (x1,y1, x2, y2, r1, r2):
+   
+    return ((r2 - r1) ** 2 > (x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+print(circles(40, 40, 30, 30,40,10))
