@@ -17,7 +17,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Подсчет положительных")
+
+n = int(input("Введите количество проверяемых чисел: "))
+count = 0
+amount = 0
+
+while count < n:
+    number = int(input("Введите число: "))
+    count += 1
+    if number > 0:
+        amount += 1
+
+print("Количество положительных чисел:", amount)
 ```
 
 ---
