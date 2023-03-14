@@ -17,7 +17,11 @@
 ```python
 # TODO: you code here...
 ```
-
+n = int(input("Введите число: "))
+if 99 < n < 1000:
+  print("Да")
+else:
+  print("Нет")
 ---
 
 ### Подсказки
