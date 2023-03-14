@@ -20,7 +20,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Пирамида")
+n = int(input("Введите количество уровней пирамиды: "))
+count = 1
+summa = 0
+
+while count <= n:
+    summa += count ** 2
+    count += 1
+
+print("Сумма цифр на пирамиде:", summa)
 ```
 
 ---
