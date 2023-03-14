@@ -22,7 +22,16 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("Введите количество этажей: "))
+level = 1
+sum_on_level = 0
+full_sum = 0
+while n >= level:
+    sum_on_leve = level * level
+    level += 1
+    full_sum += sum_on_level
 
+print(full_sum)
 ---
 
 ### Данные для самопроверки
