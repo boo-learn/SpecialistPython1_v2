@@ -20,7 +20,16 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+print("Задайте числовой диапазон для переменной а и b")
+a = int(input("Задайте число а:"))
+b = int(input("Задайте число b:"))
+if a < b:
+    while b >= a:
+        if a % 2 == 0:
+            print(a)
+        a += 1
+else:
+    print ("Число a больше числа b")
 ```
 
 ---
