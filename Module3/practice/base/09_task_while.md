@@ -16,7 +16,27 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Все совершенные число в диапазоне")
+a = int(input("Введите начальное число: "))
+b = int(input("Введите конечное число: "))
+
+count = 1
+summa = 0
+amount = 0
+
+while a <= b:
+    while count < a:
+        if a % count == 0:
+            summa += count
+        count += 1
+    if a == summa:
+        print(a, end=" ")
+        amount += 1
+    count = 1
+    summa = 0
+    a += 1
+
+print("Количество: ", amount)
 ```
 
 ---
