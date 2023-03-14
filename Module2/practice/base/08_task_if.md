@@ -23,7 +23,18 @@
 ```python
 # TODO: you code here...
 ```
+x = int(input("X:"))
+y = int(input("Y:"))
+xr = int(input("XR:"))
+yr = int(input("YR:"))
+r = int(input("R:"))
 
+distance = ((xr - x)**2 + (yr - y)**2)**(1/2)
+
+if distance <= r:
+    print("Да")
+else:
+    print("Нет")
 ---
 
 ### Данные для самопроверки
