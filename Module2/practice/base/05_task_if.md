@@ -21,6 +21,13 @@
 ```python
 # TODO: you code here...
 ```
+value = int(input("Press value to check: "))
+text = ''
+if value % 3 == 0:
+    text += "Foo"
+if value % 5 == 0:
+    text += "Bar"
+print(text)
 
 ---
 
