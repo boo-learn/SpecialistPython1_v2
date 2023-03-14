@@ -16,7 +16,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Задайте число:"))
+count = 1
+total = 0
+while n > count:
+    if n % count == 0:
+        total = total + count
+    count += 1
+if total == count:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
