@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите целое число: "))
+a = number
+b = 0
+while a >= b:
+    print("a =", a)
+    a -= 1
 ```
 
 ---
