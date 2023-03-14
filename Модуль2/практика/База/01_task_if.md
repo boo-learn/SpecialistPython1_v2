@@ -14,10 +14,12 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+number = int(input("Введите число: "))
 
+if 99 < number < 1000:
+    print("Да")
+else:
+    print("Нет")
 ---
 
 ### Подсказки
