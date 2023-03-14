@@ -19,6 +19,10 @@
 ```python
 # TODO: you code here...
 ```
+# tF = (tC × 9/5) + 32
+c_temperature = int(input("Please set Celsius temperature: "))
+f_temperature = (c_temperature * 9/5) + 32
+print("Farengate temperature is:", f_temperature)
 
 ---
 
