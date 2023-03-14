@@ -17,6 +17,29 @@
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+#исключения для 1ых 2х чисел
+if n != 0:
+    print(0)
+    print(1)
+else:
+    print(0)
+
+n1 = 0
+n2 = 1
+summ = 0
+i = 2
+while i < n:
+    if summ >= n:
+        break
+    summ = n1 + n2
+    print(summ)
+    n1 = n2
+    n2 = summ
+    i += 1
+
+
 ```
 
 ### Данные для самопроверки
