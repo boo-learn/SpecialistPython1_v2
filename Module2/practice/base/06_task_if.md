@@ -17,6 +17,14 @@
 ```python
 # TODO: you code here...
 ```
+a = int(input("Введите сторону треугольника A:"))
+b = int(input("Введите сторону треугольника B:"))
+c = int(input("Введите сторону треугольника C:"))
+
+if a + b > c and a + c > b and b + c > a:
+    print("Существует")
+else:
+    print("Не существует")
 
 ---
 
