@@ -22,7 +22,14 @@
 ```python
 # TODO: you code here...
 ```
-
+# Пирамида
+lines = int(input("Set How much lines is: "))
+i = 0
+summ = 0
+while i <= lines:
+    summ = summ + i * i
+    i += 1
+print(summ)
 ---
 
 ### Данные для самопроверки
