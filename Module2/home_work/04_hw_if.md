@@ -19,7 +19,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+k = int(input("Кол-во шариков: "))
+if k != 1 and k != 2 and k != 4 and k != 7:
+    print("Покупай")
+else:
+    print("Нельзя купить")
 ```
 
 ---
