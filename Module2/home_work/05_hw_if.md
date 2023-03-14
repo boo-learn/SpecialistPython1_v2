@@ -28,6 +28,11 @@ b = int(input("b: "))
 c = int(input("c: "))
 
 # TODO: you code here...
+sorting = [a,b,c]
+sorting.sort()
+a = sorting[0]
+b = sorting[1]
+c = sorting[2]
 
 print(a, b, c)
 ```
