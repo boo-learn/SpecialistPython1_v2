@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input())
+
+if (number % 3 == 0) or (number % 5 == 0):
+    print("Число кратно трем или пяти")
+else:
+    print("Нет")
 ```
 
 ---
