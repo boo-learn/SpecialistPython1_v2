@@ -16,6 +16,13 @@
 
 ```python
 # TODO: you code here...
+number = int(input())
+
+i = 0
+while number >= i:
+    print(i)
+    i += 1
+
 ```
 
 ---
