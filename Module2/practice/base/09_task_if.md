@@ -17,7 +17,21 @@
 ```python
 # TODO: you code here...
 ```
+num_month = int(input("Введите номер месяца:"))
 
+winter = (1, 2, 12)
+summer = (6, 7, 8)
+spring = (3, 4, 5)
+autumn = (9, 10, 11)
+
+if num_month in winter:
+    print("Зима")
+elif num_month in summer:
+    print("Зима")
+elif num_month in spring:
+    print("Весна")
+elif num_month in autumn:
+    print("Осень")
 ---
 
 ### Данные для самопроверки
