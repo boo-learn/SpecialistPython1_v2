@@ -35,7 +35,13 @@ n = 5
 ```python
 # TODO: you code here...
 ```
-
+n = int(input("insert n: "))
+a = "*"
+while n > 0:
+    print(a)
+    n = n - 1
+    a = a + "*"
+print()
 ---
 
 ### Подсказки
