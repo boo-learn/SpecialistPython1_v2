@@ -19,7 +19,17 @@
 ```python
 # TODO: you code here...
 ```
-
+n = int(input("insert n: "))
+total = 0
+num_positive = 0
+while total < n:
+    nx = int(input("insert nx: "))
+    n = n - 1
+    if nx > 0:
+        num_positive = num_positive + 1
+else:
+    print()
+print(num_positive)
 ---
 
 ### Подсказки
