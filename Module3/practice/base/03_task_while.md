@@ -17,7 +17,16 @@ _Сумма четных чисел от 0 до 7 = 12_
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Сумма четных чисел от 0 до n")
+n = int(input("Введите n: "))
+count = 0
+summa = 0
+
+while count <= n:
+    summa += count
+    count += 2
+
+print("Сумма: ", summa)
 ```
 
 ---
