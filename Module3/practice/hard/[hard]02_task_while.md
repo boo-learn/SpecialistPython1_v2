@@ -34,3 +34,14 @@ n = 3
 ```python
 # TODO: you code here...
 ```
+n = int(input("n: "))
+
+i = 1
+while n > 0:
+    if n > i:
+        string = " "*i + "#" + " "*(n-i) + "#"
+    else:
+        string = " "*n + "#" + " "*(i-n) + "#"
+    print(string)
+    n -= 1
+    i += 1
