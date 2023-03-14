@@ -17,6 +17,20 @@
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+i = 1
+summ = 0
+while n > i:
+    if n % i == 0:
+        summ += i
+    i += 1
+
+if summ == n:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
