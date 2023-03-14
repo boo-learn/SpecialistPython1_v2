@@ -17,7 +17,12 @@
 ```python
 # TODO: you code here...
 ```
-
+# Трехзначное ли
+value = int(input("Press 3-digits value: "))
+if 100 <= value < 1000:
+    print("Ok")
+else:
+    print("Incorrect value")
 ---
 
 ### Подсказки
