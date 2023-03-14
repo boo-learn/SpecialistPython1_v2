@@ -22,7 +22,13 @@
 ```python
 # TODO: you code here...
 ```
+number = int(input("insert the number: "))
+quantity = 0
 
+while number > 0:
+    quantity = quantity + number*number
+    number = number - 1
+print(quantity)
 ---
 
 ### Данные для самопроверки
