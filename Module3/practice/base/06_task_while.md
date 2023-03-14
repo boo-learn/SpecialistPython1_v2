@@ -20,7 +20,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Задайте количество уровней в пирамиде:"))
+count = 1
+sum_for_one_level = 0
+full_sum = 0
+while n >= count:
+    sum_for_one_level = count * count
+    count += 1
+    full_sum = full_sum + sum_for_one_level
+print(full_sum)
+
 ```
 
 ---
