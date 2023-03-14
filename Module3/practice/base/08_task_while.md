@@ -18,7 +18,18 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("n: "))
 
+result = ""
+i = 2
+while i < n:
+    if n % i == 0:
+        result = result + str(i) + " "
+    i += 1
+if result == "":
+    print("Число простое")
+else:
+    print(result)
 ---
 
 ### Данные для самопроверки
