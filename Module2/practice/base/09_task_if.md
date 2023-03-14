@@ -16,6 +16,17 @@
 
 ```python
 # TODO: you code here...
+month_number = int(input())
+
+if 1 <= month_number < 2 or month_number == 12:
+    print("Зима")
+elif 3 <= month_number < 6:
+    print("Весна")
+elif 6 <= month_number < 9:
+    print("Лето")
+else:
+    print("Осень")
+
 ```
 
 ---
