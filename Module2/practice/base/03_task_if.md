@@ -20,7 +20,14 @@
 ```python
 # TODO: you code here...
 ```
+x = int(input("You have: "))
+y = int(input("The price of the product is "))
 
+if x >= y:
+    x = x-y
+    print(x, "RUB left")
+else:
+    print("You don't have enough money")
 ---
 
 ### Данные для самопроверки
