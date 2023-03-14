@@ -17,6 +17,21 @@
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+i = 2
+result = ""
+while n > i:
+    if n % i == 0:
+        result += str(i)
+        result += " "
+    i += 1
+
+if result == "":
+    print("Число простое")
+else:
+    print(result)
+    
 ```
 
 ---
