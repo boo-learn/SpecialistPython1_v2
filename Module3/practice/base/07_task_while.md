@@ -23,6 +23,15 @@
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+i = 1
+string = str()
+while n >= i:
+    t = 1
+    string += str(i)
+    print(string)
+    i += 1
 ```
 
 ---
