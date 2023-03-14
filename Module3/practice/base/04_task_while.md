@@ -19,6 +19,18 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("n: "))
+
+count = 0
+num_positiv = 0
+while count < n:
+    number = int(input("number: "))
+    if number > 0:
+        num_positiv += 1
+    count += 1
+
+
+print("Количество положительных чисел =", num_positiv)
 
 ---
 
