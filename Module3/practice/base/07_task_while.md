@@ -24,7 +24,17 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("n: "))
 
+i = 0
+while i <= n:
+    i += 1
+    ii = 1
+    string = ""
+    while ii < i:
+        string += str(ii)
+        ii += 1
+    print(string)
 ---
 
 ### Подсказки
