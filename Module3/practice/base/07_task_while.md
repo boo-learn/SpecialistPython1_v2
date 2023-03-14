@@ -24,6 +24,13 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("Количество ступеней: "))
+
+count = 0
+while n >= count:
+    s = "*" * count
+    count += 1
+    print(s)
 
 ---
 
