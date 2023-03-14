@@ -6,8 +6,28 @@
 
 def distance(x1, y1, x2, y2):
     # TODO: тело, которое вы реализовали на практической работе
-    pass
+    def distance(x1, y1, x2, y2):
+        return ((x2 - x1) ** 2) + ((y2 - y1) ** 2) ** 0.5
 
 
 # TODO: your code here
+def distance(xa, ya, xb, yb, xc, yc):
+    AB = ((xb - xa) ** 2) + ((yb - ya) ** 2) ** 0.5
+    BC = ((xc - xb) ** 2) + ((yc - yb) ** 2) ** 0.5
+    AC = ((xc - xa) ** 2) + ((yc - ya) ** 2) ** 0.5
+    min_distance = AB
+
+    if AB > BC:
+         min_distance = BC
+
+    if BC > AC:
+        min_distance = AC
+
+
+    return min_distance
+
+
+print(distance(10,10,20,40,30,20))
+
+
 print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
