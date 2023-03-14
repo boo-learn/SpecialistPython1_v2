@@ -24,6 +24,17 @@
 ```python
 # TODO: you code here...
 ```
+#По данному числу n выведите лесенку из n ступенек. Кадлая i-я ступень состоит из чисел от 1 до i без пробелов
+lines = int(input("Set How much lines is: "))
+i = 0
+while i < lines:
+    j = 0
+    string = ''
+    while j <= i:
+        string += str(j+1)
+        j += 1
+    i += 1
+    print(string)
 
 ---
 
