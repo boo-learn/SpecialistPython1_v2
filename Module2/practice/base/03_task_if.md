@@ -18,7 +18,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Сдача")
+summa = int(input("Введите сумму, которая у вас есть: "))
+cost = int(input("Введите стоимость товара: "))
+
+if summa<cost:
+    print("Денег недостаточно")
+else:
+    dist = summa-cost
+    print("Сдача :", dist)
 ```
 
 ---
