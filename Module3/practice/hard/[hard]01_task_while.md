@@ -18,6 +18,27 @@
 ```python
 # TODO: you code here...
 ```
+# Число Фибоначчи
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711,
+
+position = int(input("Set position: "))
+pre_previous = 0
+previous = 1
+next_one = 0
+i = 3
+if position == 1:
+    print(pre_previous)
+elif position == 2:
+    print(previous)
+else:
+    while i <= position:
+        next_one = pre_previous + previous
+        pre_previous = previous
+        previous = next_one
+        i += 1
+    # print(pre_previous)
+    # print(previous)
+    print(next_one)
 
 ### Данные для самопроверки
 
