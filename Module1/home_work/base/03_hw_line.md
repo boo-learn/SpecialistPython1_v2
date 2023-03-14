@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Введите скорость движения байкера:")
+v_biker = int(input())
+print("Введите время движения байкера:")
+t_biker = int(input())
+
+biker_road_point = v_biker * t_biker % 108
+print("Байкер остановился на отметке:", biker_road_point)
 ```
 
 ---
