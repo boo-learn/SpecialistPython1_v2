@@ -40,7 +40,7 @@ n = int(input("количество строк таблицы: "))
 cost = float(input("цена: "))
 count = 0
 
-while count <= n:
+while count < n:
     print(1+count, (1+count)*cost, " рублей")
     count += 1
 ```
