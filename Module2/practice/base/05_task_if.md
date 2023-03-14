@@ -19,7 +19,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("FooBar")
+n = int(input("Введите чило: "))
+
+if n%5==0 and n%3==0:
+    print("Foobar")
+elif n%5==0:
+    print("Bar")
+elif n%3==0:
+    print("Foo")
 ```
 
 ---
