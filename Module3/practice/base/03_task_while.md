@@ -19,7 +19,17 @@ _Сумма четных чисел от 0 до 7 = 12_
 ```python
 # TODO: you code here...
 ```
+a = int(input("a: "))
+b = int(input("b: "))
+total = 0
+count = 0
+while a <= b:
+    if a % 2 == 0:
+        count += 1
+        total += a
+    a += 1
 
+print("Сумма чисел кратных двум =", total)
 ---
 
 ### Подсказки
