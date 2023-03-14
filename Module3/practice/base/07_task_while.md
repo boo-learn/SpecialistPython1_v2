@@ -22,7 +22,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Лесенка")
+n = int(input("Введите количество ступеней лесенки: "))
+count = 1
+text = ""
+
+while count <= n:
+    text = text + str(count)
+    print(text)
+    count += 1...
 ```
 
 ---
