@@ -19,6 +19,18 @@
 # TODO: you code here...
 ```
 
+n = int(input("Insert n: "))
+x = 1
+sum_all = 0
+while x < n:
+    if n % x == 0:
+        sum_all = sum_all + x
+    x = x + 1
+if sum_all == n:
+    print("Yes")
+else:
+    print("No")
+
 ---
 
 ### Данные для самопроверки
