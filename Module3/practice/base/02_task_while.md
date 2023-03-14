@@ -22,7 +22,10 @@ b = int(input("b: "))
 
 # TODO: you code here...
 ```
-
+while b >= a:
+    if a % 2 == 0:
+        print(a)
+    a += 1
 ---
 
 ### Подсказки
