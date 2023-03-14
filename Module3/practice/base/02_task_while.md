@@ -19,8 +19,10 @@
 ```python
 a = int(input("a: "))
 b = int(input("b: "))
-
-# TODO: you code here...
+i = a
+while b >= i:
+    print(i)
+    i += 1
 ```
 
 ---
