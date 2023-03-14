@@ -18,7 +18,17 @@
 ```python
 # TODO: you code here...
 ```
-
+number = int(input("number: "))
+div = 1
+summ_div = 0
+while div < number:
+    if number % div == 0:
+        summ_div += div
+    div += 1
+if summ_div == number :
+    print(f'число {number} совершенное')
+else:
+    print(f'число {number}  не совершенное')
 ---
 
 ### Данные для самопроверки
