@@ -18,6 +18,16 @@
 ```python
 # TODO: you code here...
 ```
+number = int(input("Введите число: "))
+
+count = 0
+for i in range(1, number):
+    if number % i == 0:
+        count += i
+if count == number:
+    print("Число совершенно")
+else:
+    print("Число несовершенно")
 
 ---
 
