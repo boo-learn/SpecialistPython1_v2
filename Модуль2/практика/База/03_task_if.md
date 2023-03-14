@@ -17,9 +17,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+money = int(input("Введите количество наличных: "))
+buy =  int(input("Стоимость товара: "))
+s = money - buy
+if s >= 0:
+    print("Денег осталось", s)
+else:
+    print("Денег не достаточно")
 
 ---
 
