@@ -19,6 +19,15 @@ _Сумма четных чисел от 0 до 7 = 12_
 ```python
 # TODO: you code here...
 ```
+n = int(input("n: "))
+
+const = 1
+summ = 0
+while const <= n:
+    if const % 2 == 0:
+        summ += const
+    const += 1
+print("Сумма всех чётных чисел от 0 до ", n, " равна", summ)
 
 ---
 
