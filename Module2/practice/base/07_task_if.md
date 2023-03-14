@@ -18,7 +18,18 @@
 ```python
 # TODO: you code here...
 ```
+a = int(input("Введите сторону треугольника A:"))
+b = int(input("Введите сторону треугольника B:"))
+c = int(input("Введите сторону треугольника C:"))
 
+if a + b > c and a + c > b and b + c > a:
+    print("Существует")
+    if a == b or a == c or b == c:
+        print("Равнобедренны")
+    else:
+        print("Не равнобедренный")
+else:
+    print("Не существует")
 ---
 
 ### Данные для самопроверки
