@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Совершенное число")
+n = int(input("Введите число: "))
+count = 1
+summa = 0
+
+while count < n:
+    if n % count == 0:
+        summa += count
+    count += 1
+
+if n == summa:
+    print("Число совершенное")
+else:
+    print("Число НЕ совершенное")
 ```
 
 ---
