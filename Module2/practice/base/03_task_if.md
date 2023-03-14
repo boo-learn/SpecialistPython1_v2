@@ -19,6 +19,13 @@
 
 ```python
 # TODO: you code here...
+price = int(input("Цена:"))
+wallet = int(input("В кошельке:"))
+
+if price > wallet:
+    print("Денег недостаточно")
+else:
+    print(wallet - price)
 ```
 
 ---
