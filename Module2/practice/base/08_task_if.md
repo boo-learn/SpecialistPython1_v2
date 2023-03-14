@@ -22,6 +22,17 @@
 
 ```python
 # TODO: you code here...
+dot_x = int(input())
+dot_y = int(input())
+cicle_center_x = int(input())
+cicle_center_y = int(input())
+cicle_radius = int(input())
+
+range = ((dot_x - cicle_center_x)**2 + (dot_y - cicle_center_y)**2)**0.5
+if range <= cicle_radius:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
