@@ -22,6 +22,13 @@
 ```python
 # TODO: you code here...
 ```
+level = int(input("Введите количество уровней пирамиды: "))
+summa = 0
+count_level = 1
+while count_level <= level:
+    summa = summa + count_level * count_level
+    count_level += 1
+print(summa)
 
 ---
 
