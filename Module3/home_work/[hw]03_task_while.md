@@ -29,6 +29,24 @@ n = 5
 
 ```python
 # TODO: you code here...
+n = int(input("n: "))
+
+row_index = 1
+while row_index <= n:
+    cell_index = 1
+    row_string = ""
+    while cell_index <= n:
+        cell_string = ""
+        summ = row_index * cell_index
+        if summ < 10:
+            cell_string = str(summ) + "  "
+        else:
+            cell_string = str(summ) + " "
+        cell_index += 1
+        row_string += cell_string
+    print(row_string)
+    row_index += 1
+    
 ```
 
 ---
