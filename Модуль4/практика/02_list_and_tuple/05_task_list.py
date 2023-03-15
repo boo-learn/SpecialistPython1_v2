@@ -5,7 +5,11 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+length = 7                                 
+add = " "                                  
+                                           
+for i, fruit in enumerate(fruits):         
+    print(i + 1, fruit.rjust(length, add)) 
 
 # Пример вывода:
 # 1. яблоко
