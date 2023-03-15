@@ -3,3 +3,11 @@
 # Получить и вывести на экран список координат y для данного уравнения прямой.
 
 # TODO: your code here
+x_list = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
+
+y_list = []
+
+for x in x_list:
+    y_list.append(2 * x - 4)
+
+print(y_list)
