@@ -19,7 +19,18 @@
 ```python
 # TODO: you code here...
 ```
+example = str(input("Insert your text: "))
 
+example_no_id = example[3:]
+
+example_id = example[:3]
+
+example_numbers = example_no_id.isdigit()
+
+if example_numbers == True and example[:3] == example_id:
+    print("Y")
+else:
+    print("N")
 ---
 
 ### Данные для самопроверки
