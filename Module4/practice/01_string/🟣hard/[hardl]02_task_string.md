@@ -17,6 +17,18 @@
 ```python
 # TODO: you code here...
 ```
+text = "Даны две строки s1 и s2. Определите, можно ли составить строку s2, используя только символы из строки s1 (каждую букву можно использовать только один раз)."
+text_to_find = "котопес"
 
+result = text_to_find
+i = 0
+while i < len(text):
+    result = result.replace(text[i], "", 1)
+    i += 1
+if len(result) == 0:
+    print("Possible")
+else:
+    print("Impossible. Still have:", result)
+#print(result)
 ---
 
