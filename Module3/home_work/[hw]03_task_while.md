@@ -30,7 +30,17 @@ n = 5
 ```python
 # TODO: you code here...
 ```
+n = int(input("n: "))
 
+i = 1
+while i <= n:  # внешний цикл
+    ii = 1
+    while ii <= n:  # внутренний цикл
+        result = str(ii*i)
+        print(result+"\t", end=" ")
+        ii += 1
+    print()
+    i += 1
 ---
 
 <details>
