@@ -28,3 +28,22 @@ while ...:
 
 print("Номер потерянной карточки:", ...)
 ```
+
+
+n = int(input("Количество карточек: "))
+# Цикл, который выполнится n-1 раз
+i = 1
+cards = []
+cards_template = list(range(1, n+1))
+while i < n:
+    card_number = int(input("Номер карточки: "))
+    cards.append(card_number)
+    i += 1
+cards.sort()
+
+i = 0
+while i < n-1:
+    if cards[i] != cards_template[i]:
+        print("Номер потерянной карточки:", i + 1)
+        break
+    i += 1
