@@ -19,7 +19,14 @@ text = "В теории, теория и практика неразделимы
 vowels = "ауоыэяюёие"
 # TODO: you code here...
 ```
-
+lower_text = text.lower()
+result = ""
+i = 0
+while i < len(lower_text):
+    if (lower_text[i] in vowels):
+        result = result + lower_text[i]
+    i += 1
+print(len(result))
 ---
 
 ### Подсказки
