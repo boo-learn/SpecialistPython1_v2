@@ -18,7 +18,9 @@
 text = ...
 # TODO: you code here...
 ```
+text = input('Введите текст:')
 
+print(text.count('б'))
 ---
 
 ### Подсказки
