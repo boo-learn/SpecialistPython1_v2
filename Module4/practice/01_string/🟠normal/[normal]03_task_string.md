@@ -17,8 +17,17 @@
 ### Решение задачи
 
 ```python
+print("Мама мыла раму. Устала мама, но наконец отмыла раму-)")
+find = str(input("Что будем искать? "))
+
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
+
+text = text.lower()
+find = find.lower()
+count = text.count(find)
+
+print(count)
+
 ```
 
 ---
