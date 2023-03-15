@@ -6,7 +6,16 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
-
+fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
+i = 1
+max_length = 0
+for fruit in fruits:
+     if len(fruit) > max_length:
+          max_length = len(fruit)
+add = " "
+for num, fruit in enumerate(fruits, 1):
+     print(str(i), fruit.rjust(max_length, add))
+     i += 1
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
