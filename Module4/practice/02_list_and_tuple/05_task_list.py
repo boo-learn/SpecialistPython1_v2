@@ -6,7 +6,17 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
-
+fruits = ["яблоко", "банан", "киви", "арбуз", "абырвалг"]
+max_len = 1
+for fruit in fruits:
+    if len(fruit) > max_len:
+        max_len = len(fruit)
+i = 0
+string = ''
+while i < len(fruits):
+    string = str(i+1)+" "+" "*(max_len-len(fruits[i]))+fruits[i]
+    print(string)
+    i += 1
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
