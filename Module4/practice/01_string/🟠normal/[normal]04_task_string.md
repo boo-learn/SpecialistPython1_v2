@@ -23,6 +23,12 @@
 ```python
 password = input("Enter password: ")
 # TODO: you code here...
+password = input("Enter password: ")
+
+if len(password) < 6 or password.find("#") == False or password[0].islower() == True:
+    print("не безопасный")
+else:
+    print("безопасный")
 ```
 
 ---
