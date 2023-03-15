@@ -6,3 +6,11 @@ import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
 # TODO: your code here
+import random
+
+numbers = []
+
+n = int(input("Введите кол-во целых чисел для списка: "))
+for i in range(0,n):
+    numbers.append(random.randint(-100, 100))
+print(numbers)
