@@ -20,11 +20,13 @@
 ### Решение задачи
 
 ```python
-n = int(input("Количество карточек: "))
-# Цикл, который выполнится n-1 раз
-while ...:
-    card_number = int(input("Номер карточки: "))
-    ...
+n = int(input("Кол-во карточек: "))
 
-print("Номер потерянной карточки:", ...)
+sum_lost_card, sum_card = 0, 0
+while n - 1 > 0:
+    card_number = int(input("Номер карточки: "))
+    sum_card = sum_card + card_number
+    sum_lost_card = sum_lost_card + n
+    n -= 1
+print("Номер потерянной карточки:", sum_lost_card + 1 - sum_card)
 ```
