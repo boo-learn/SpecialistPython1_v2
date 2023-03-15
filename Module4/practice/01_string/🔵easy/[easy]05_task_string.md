@@ -20,7 +20,13 @@ string1 = input("Первая строка:")
 string2 = input("Вторая строка:")
 # TODO: you code here...
 ```
+string1 = input("Первая строка: ")
+string2 = input("Вторая строка: ")
 
+if len(string1) > len(string2):
+    print(string1)
+else:
+    print(string2)
 ---
 
 ### Данные для самопроверки
