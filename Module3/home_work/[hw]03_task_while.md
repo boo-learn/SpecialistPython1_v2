@@ -28,7 +28,17 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print("Таблица умножение")
+n = int(input("Введите размер таблицы умножения : "))
+i = 1
+mn = 1
+while mn <= n:
+    while i <= n:
+        print(str(i * mn).ljust(3), end=" ")
+        i += 1
+    print()
+    i = 1
+    mn += 1
 ```
 
 ---
