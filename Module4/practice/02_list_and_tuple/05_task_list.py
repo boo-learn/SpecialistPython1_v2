@@ -6,6 +6,17 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
+max_length = 0
+
+for i_fruits in fruits:
+    if len(i_fruits) > max_length:
+        max_length = len(i_fruits)
+
+count = 1
+for i_fruits in fruits:
+    print(count, " " * (max_length + len(str(count)) - len(i_fruits)), i_fruits)
+    count += 1
+
 
 # Пример вывода:
 # 1. яблоко
