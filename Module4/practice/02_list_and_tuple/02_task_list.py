@@ -4,3 +4,9 @@
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
 # TODO: your code here
+fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
+print('1', fruits[0])
+print('2', fruits[1])
+print('3', fruits[2])
+print('4', fruits[3])
+print('5', fruits[4])
