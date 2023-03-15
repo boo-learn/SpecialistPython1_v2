@@ -24,7 +24,15 @@
 password = input("Enter password: ")
 # TODO: you code here...
 ```
+while True:
+    password = input("Enter password: ")
+    if len(password) >= 6 and password.count("#") > 0 and\
+    password[0].isupper():
+        print("Безопасен")
 
+    else:
+        print("Небезопасен")
+        break
 ---
 
 ### Данные для самопроверки
