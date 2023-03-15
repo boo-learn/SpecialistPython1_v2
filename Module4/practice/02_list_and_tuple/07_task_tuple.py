@@ -3,3 +3,6 @@
 tup = (2, 4, 6, -4, 12, 0, 5)
 
 # TODO: your code here
+tup = (-100, 2, 4, 6, -4, 12, 100, 0, 5)
+max_element = max(tup)
+print("Самый большой элемент = ", max_element)
