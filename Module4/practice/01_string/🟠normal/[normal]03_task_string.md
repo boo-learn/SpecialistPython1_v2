@@ -20,7 +20,12 @@
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
 # TODO: you code here...
 ```
+text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
 
+print(text)
+find = input("Что будем искать? ")
+count = text.lower().count(find.lower())
+print(count)
 ---
 
 ### Подсказки
