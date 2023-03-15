@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-text = ...
+text = 'бублик'
+
+result = text.count('б')
+
+print(result)
+
 # TODO: you code here...
 ```
 
