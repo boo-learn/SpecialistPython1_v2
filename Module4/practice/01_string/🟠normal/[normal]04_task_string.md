@@ -24,7 +24,12 @@
 password = input("Enter password: ")
 # TODO: you code here...
 ```
+password = input("Enter password: ")
 
+if len(password) < 6 or "#" in password == False or password.istitle() == False:
+    print("не безопасный")
+else:
+    print("безопасный")
 ---
 
 ### Данные для самопроверки
