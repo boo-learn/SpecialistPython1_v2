@@ -20,7 +20,17 @@
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
 # TODO: you code here...
 ```
-
+example = str(input("Insert your text: "))
+example_low = example.lower()
+example_find = example_low.find("мама")
+x = 0
+n = 0
+while example_find > -1:
+    n = example_find
+    example_low = example_low[n+4:]
+    x = x + 1
+    example_find = example_low.find("мама")
+print(x)
 ---
 
 ### Подсказки
