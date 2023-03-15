@@ -15,7 +15,9 @@
 ### Решение задачи
 
 ```python
-string = input("Введите произвольный текст: ")
+name = input("Введите произвольный текст: ")
+
+print(name[0], name[-1])
 # TODO: you code here...
 ```
 
