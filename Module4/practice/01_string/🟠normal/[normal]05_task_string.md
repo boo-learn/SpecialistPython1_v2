@@ -15,9 +15,20 @@
 ### Решение задачи
 
 ```python
-text = "В теории, теория и практика неразделимы. На практике это не так."
+text = input("Введите текст: ")
 vowels = "ауоыэяюёие"
-# TODO: you code here...
+n = len(vowels)
+print(n)
+i = 0
+text = text.lower()
+summa = 0
+
+while i < n:
+    amount = text.count(vowels[i])
+    i += 1
+    summa += amount
+print("Количество гласных: ", summa)
+
 ```
 
 ---
