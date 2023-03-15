@@ -18,6 +18,15 @@
 
 ```python
 # TODO: you code here...
+string = str(input())
+
+if string.startswith("id:"):
+    if string.removeprefix("id:").isdigit():
+        print("Да")
+    else:
+        print("Нет")
+else:
+    print("Нет")
 ```
 
 ---
