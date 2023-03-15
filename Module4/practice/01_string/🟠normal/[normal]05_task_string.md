@@ -19,7 +19,15 @@ text = "В теории, теория и практика неразделимы
 vowels = "ауоыэяюёие"
 # TODO: you code here...
 ```
-
+text = "В теории, теория и практика неразделимы. На практике это не так."
+vowels = "ауоыэяюёие"
+counter = 0
+j = 0
+while j < len(vowels):
+    counter += text.count(vowels[j])
+    #print(vowels[j])
+    j += 1
+print(counter)
 ---
 
 ### Подсказки
