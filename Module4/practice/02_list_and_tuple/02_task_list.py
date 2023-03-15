@@ -4,3 +4,8 @@
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
 # TODO: your code here
+fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
+value = 0
+for fruit in fruits:
+    value += 1
+    print(value,fruit)
