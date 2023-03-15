@@ -2,3 +2,13 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+
+n_list = [1, 2, 3, 4, -5]
+
+i = 0
+summ = 0
+while i < len(n_list):
+    summ += n_list[i]
+    i += 1
+
+print(summ)
