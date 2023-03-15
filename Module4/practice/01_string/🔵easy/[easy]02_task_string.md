@@ -19,6 +19,12 @@
 ```python
 name = input("Имя: ")
 surname = input("Фамилия: ")
+
+high_name = name.title()
+high_surname = surname.title()
+
+print(high_name)
+print(high_surname)
 # TODO: you code here...
 ```
 
