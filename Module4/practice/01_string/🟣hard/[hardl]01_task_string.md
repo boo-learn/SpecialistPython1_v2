@@ -16,7 +16,21 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+i = 0
+n = len(text)
+n_simbol = 0
+summa = 0
+
+while i < n:
+    if text[i] != " ":
+        n_simbol += 1
+    else:
+        n_simbol = 0
+    if n_simbol == 6:
+        summa += 1
+    i += 1
+
+print("Количество слов больше 5 символов: ", summa)
 ```
 
 ---
