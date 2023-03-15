@@ -19,7 +19,15 @@
 ```python
 # TODO: you code here...
 ```
+#str = "id:12"
+string = str(input("Please put text to check: "))
 
+if string[0:3] == "id:" and string[3:].isdigit():
+    print("YES")
+else:
+    print("NO")
+# print(string[3:])
+# print(string[0:3])
 ---
 
 ### Данные для самопроверки
