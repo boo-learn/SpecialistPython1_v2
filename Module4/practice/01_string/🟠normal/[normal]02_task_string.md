@@ -19,6 +19,13 @@
 ```python
 # TODO: you code here...
 ```
+text = "id:123456"
+text_input = "id:" + str(input("Введите id номер: "))
+text_id= text_input[4:]
+if text_id.isdigit():
+    print("Введено верно", text_input)
+else:
+    print("Error")
 
 ---
 
