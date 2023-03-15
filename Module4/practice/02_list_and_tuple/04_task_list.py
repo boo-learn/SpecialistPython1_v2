@@ -2,3 +2,11 @@
 # Вывести на экран сумму всех положительных элементов.
 
 # TODO: your code here
+my_list = [66, -5, 0, 1, 4]
+i = 0
+summa = 0
+for summ in my_list:
+    if int(my_list[i]) > 0:
+        summa = summa + int(my_list[i])
+    i = i + 1
+print(summa)
