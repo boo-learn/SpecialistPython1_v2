@@ -5,9 +5,8 @@
 
 count_elements = int(input("Количество элементов"))
 i = 0
-s = 0
 my_list = []
-while i < count_elements:
+for i in range(count_elements):
         element = int(random.randint(-10,10))
         my_list.append(element)
         print("Элемент массива", my_list[i])
