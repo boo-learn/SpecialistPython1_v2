@@ -24,7 +24,12 @@
 password = input("Enter password: ")
 # TODO: you code here...
 ```
+password = input("Enter password: ")
 
+if len(password) >= 6 and password.count("#") > 0 and password[0].isupper():
+    print("Password is OK")
+else:
+    print("Not secure password")
 ---
 
 ### Данные для самопроверки
