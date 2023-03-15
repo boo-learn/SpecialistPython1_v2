@@ -2,3 +2,9 @@
 # Вывести на экран сумму всех положительных элементов.
 
 # TODO: your code here
+numbers = [2, 5, 0, -9, 8, -5, 0, 5, -7]
+summ = 0
+for num in numbers:
+    if num > 0:
+        summ += num
+print(summ)
