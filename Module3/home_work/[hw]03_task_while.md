@@ -30,6 +30,17 @@ n = 5
 ```python
 # TODO: you code here...
 ```
+num = int(input("Set max number for table : "))
+max_size = len(str(num**2)) + 1
+i = 1
+while i <= num:
+    string = ''
+    j = 1
+    while j <= num:
+        string += str(i*j) + (max_size-len(str(i*j)))*" "
+        j += 1
+    print(string)
+    i += 1
 
 ---
 
