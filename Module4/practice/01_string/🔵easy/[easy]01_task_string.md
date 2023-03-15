@@ -16,7 +16,10 @@
 
 ```python
 string = input("Введите произвольный текст: ")
-# TODO: you code here...
+first = string[0]
+print("Первая буква, ", first)
+last = string[-1]
+print("Последняя буква, ", last)e here...
 ```
 
 ---
