@@ -16,6 +16,21 @@
 
 ```python
 # TODO: you code here...
+string1 = str(input()).lower()
+string2 = str(input()).lower()
+
+i = 0
+is_true = True
+while i < len(string1):
+    if string2.find(string1[i]) == -1:
+        is_true = False
+        break
+    i += 1
+if is_true:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
