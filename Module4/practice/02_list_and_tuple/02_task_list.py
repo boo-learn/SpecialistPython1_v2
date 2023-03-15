@@ -4,3 +4,9 @@
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
 # TODO: your code here
+# 02_task_list
+my_list = [1, "hi", 44, 4332, "word"]
+i = 0
+for item in my_list:
+    i = i + 1
+    print(i, item)
