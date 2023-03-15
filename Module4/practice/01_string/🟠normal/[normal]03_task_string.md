@@ -18,7 +18,10 @@
 
 ```python
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
+
+text_lower_case = text.lower()
+mama_count = text_lower_case.count('мама')
+print(mama_count)
 ```
 
 ---
