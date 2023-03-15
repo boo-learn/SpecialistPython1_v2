@@ -3,5 +3,7 @@
 
 first_number = int(input())     # Первое число
 second_number = int(input())    # Второе число
+for count in range(first_number, second_number):
+    if count % 3 == 0:
 
-# TODO: your code here
+    print(count)
