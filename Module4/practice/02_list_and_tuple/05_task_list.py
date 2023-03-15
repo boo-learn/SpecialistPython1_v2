@@ -6,6 +6,15 @@
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+max_long = max(fruits, key=len)
+long_dig=0
+for dig in max_long:
+    long_dig+=1
+i = 0
+for fruit in fruits:
+    i += 1
+    print(i, ".", fruit.rjust(long_dig))
 
 # Пример вывода:
 # 1. яблоко
