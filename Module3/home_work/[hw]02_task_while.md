@@ -28,3 +28,20 @@ while ...:
 
 print("Номер потерянной карточки:", ...)
 ```
+n = int(input("Количество карточек: "))
+sum_other_card = 0
+sum_all_card = 0
+i = 0
+while i < n:
+    i += 1
+    sum_all_card += i
+print("Сумма всех карточек = ", sum_all_card)
+
+while n - 1 > 0:
+    card_number = int(input("Номер карточки: "))
+    sum_all_card = sum_all_card + card_number
+    sum_other_card += n
+    n -= 1
+print("Сумма оставшихся карточек = ", sum_other_card)
+
+print("Номер потерянной карточки:", sum_all_card - sum_other_card)
