@@ -2,3 +2,5 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+numbers = [2, 5, 0, -9, 8, -5, 0, 5, -7]
+print(sum(numbers))
