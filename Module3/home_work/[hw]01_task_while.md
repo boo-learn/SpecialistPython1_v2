@@ -36,6 +36,12 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cost = float(input("Set price: "))
+qty = int(input("Set QTY: "))
+i = 1
+while i <= qty:
+    print(cost * i, "rub")
+    i += 1
+
 ```
 
