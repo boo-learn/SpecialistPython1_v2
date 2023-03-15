@@ -16,7 +16,16 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
+
+space_count = text.count(" ")
+word = text.split(" ")
+i = 0
+while i < space_count:
+    if len(word[i]) > 5:
+        print(word[i])
+    i += 1
+
 ```
 
 ---
