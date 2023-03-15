@@ -30,6 +30,17 @@ n = 5
 ```python
 # TODO: you code here...
 ```
+n = 9
+k = 0
+
+while k < n:
+    line = ""
+    i = 0
+    k += 1
+    while i < n:
+        i += 1
+        line += str(i * k) + " "
+    print(line)
 
 ---
 
