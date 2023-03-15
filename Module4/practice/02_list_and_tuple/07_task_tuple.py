@@ -2,4 +2,7 @@
 # Найдите самый большой элемент кортежа
 tup = (2, 4, 6, -4, 12, 0, 5)
 
-# TODO: your code here
+tup = (2, 4, 6, -4, 12, 0, 5)
+l_tup = list(tup)
+l_tup.sort()
+print(l_tup[-1])
