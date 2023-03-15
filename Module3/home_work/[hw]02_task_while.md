@@ -21,10 +21,14 @@
 
 ```python
 n = int(input("Количество карточек: "))
-# Цикл, который выполнится n-1 раз
-while ...:
-    card_number = int(input("Номер карточки: "))
-    ...
+count = 0
+control_sum = 0
 
-print("Номер потерянной карточки:", ...)
+while count < n-1:
+    card_number = int(input("Номер карточки: "))
+    control_sum = control_sum + card_number
+    count += 1
+missed_card = ((1 + n) * n)/2 - control_sum
+
+print("Номер потерянной карточки:", int(missed_card))
 ```
