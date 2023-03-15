@@ -22,9 +22,20 @@
 ```python
 n = int(input("Количество карточек: "))
 # Цикл, который выполнится n-1 раз
-while ...:
-    card_number = int(input("Номер карточки: "))
-    ...
+j = n - 1
+summ = 0
+while j > 0:
+    question = "Номер карточки " + str(n-j)+": "
+    card_number = int(input(question))
+    j -= 1
+    summ += card_number
+#print("summ", summ)
 
-print("Номер потерянной карточки:", ...)
+i = n
+check_summ = 0
+while i > 0:
+    check_summ += i
+    i -= 1
+#print("check_summ", check_summ)
+print("Missed card is: ", check_summ - summ)
 ```
