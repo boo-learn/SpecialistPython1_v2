@@ -16,9 +16,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+string = "id:"
+
+part1 = string[:3]
+part2 = string[3:]
+
+if part1 == "id:" and part2.isdigit():
+    print("Да")
+else:
+    print("нет")
 
 ---
 
