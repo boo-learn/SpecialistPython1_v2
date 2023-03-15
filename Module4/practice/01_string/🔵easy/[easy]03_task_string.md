@@ -16,7 +16,12 @@
 ### Решение задачи
 
 ```python
-text = "Вася самый умный! Вася лучше всех! И ждет его успех!"
+text = input("Введите произвольную строку: ")
+
+new_text = text.replace('!', '.')
+
+print(new_text)
+
 # TODO: you code here...
 ```
 
