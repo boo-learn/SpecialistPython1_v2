@@ -5,6 +5,9 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
+for element in fruits:
+    print(fruits.index(element) + 1, ".", element.rjust(6))
+
 # TODO: your code here
 
 # Пример вывода:
