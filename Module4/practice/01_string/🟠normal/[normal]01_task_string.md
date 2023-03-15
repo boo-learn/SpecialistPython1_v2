@@ -18,6 +18,10 @@
 text = "Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете."
 # TODO: you code here...
 ```
+example = str(input("Insert your text: "))
 
+example_deleted = example.replace(",", "")
+
+print(example_deleted)
 ---
 
