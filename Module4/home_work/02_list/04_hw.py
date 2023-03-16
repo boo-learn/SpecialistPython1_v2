@@ -5,3 +5,14 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+import math
+
+list = [2, -5, 8, 9, -25, 25, 4]
+new_list = []
+
+for i in list:
+
+    if i > 0 and math.sqrt(i) % 1 == 0:
+        new_list.append(int(math.sqrt(i)))
+
+print("Новый список", new_list)
