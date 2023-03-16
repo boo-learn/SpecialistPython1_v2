@@ -4,6 +4,10 @@
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
 # TODO: your code here
+for name in names:
+    print(str(name), end='')
+    if name != names[-1]:
+        print(", ", end='')
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
