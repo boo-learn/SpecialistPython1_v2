@@ -3,6 +3,9 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
+for name in names:
+    print(name+",", end = " ")
+
 # TODO: your code here
 
 # Пример вывода:
