@@ -5,3 +5,12 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+numbers = [2, -5, 8, 9, -25, 25, 4]
+
+sq_root_numbers = []
+
+for number in numbers:
+    if number > 0 and (number**.5).is_integer():
+        sq_root_numbers.append(int(number ** .5))
+
+print(sq_root_numbers)
