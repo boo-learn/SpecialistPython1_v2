@@ -10,5 +10,18 @@
 # Вывод: 1 1/3
 
 # TODO: your code here
+def nod(n, a, b, n1, a1, b1):
+    if b != 0 and b1 != 0:
+        c = (b1 * (n * b + a) + b * (n1 * b1 + a1)) / (b * b1)
 
+    return c
+def nod1(n, a, b, n1, a1, b1):
+    if b != 0 and b1 != 0:
+        c1 = (b1 * (n * b + a) - b * (n1 * b1 + a1)) / (b * b1)
+
+    return c1
+
+
+print(nod(1, 1, 2, 0, 1, 4))
+print(nod1(1, 1, 2, 0, 1, 4))
 
