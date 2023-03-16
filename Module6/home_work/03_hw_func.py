@@ -1,4 +1,10 @@
 # Даны координаты центров двух окружностей (x1; y1) (x2; y2) и и их радиусы  R1 и R2.
 # Находится ли одна окружность целиком внутри другой
+def two_circles(x1, y1, x2, y2, r1, r2):
+     return (r2-r1)**2 > (x2-x1)**2 + (y2-y1)**2
 
-# TODO: your code here
+
+
+print(two_circles(5, 5, 4, 4, 4, 2))
+print(two_circles(7, 1, 4, 3, 1, 2))
+print(two_circles(4, 1, 5, 3, 7, 2))
