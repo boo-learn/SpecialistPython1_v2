@@ -1,4 +1,11 @@
 # Дан список из n элементов, заполненный произвольными целыми числами в диапазоне от -100 до 100.
 # Вывести на экран сумму всех положительных элементов кратных двум.
 
-# TODO: your code here
+numbers = [-100, 30, 32, -7, 9, -56]
+summa = 0
+
+for element in numbers:
+    if element > 0 and element % 2 == 0:
+        summa += element
+
+print(summa)
