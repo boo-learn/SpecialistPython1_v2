@@ -23,9 +23,13 @@
 ```python
 password = input("Enter password: ")
 # TODO: you code here...
-```
-
----
+while True:
+    password = input("Enter password: ")
+    if len(password) <= 6 and password.count("#") < 1 and password.isspace:
+        print("пароль неверный")
+    else:
+        print("ОК")
+        break
 
 ### Данные для самопроверки
 
