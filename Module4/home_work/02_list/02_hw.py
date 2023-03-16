@@ -5,4 +5,7 @@
 import random
 numbers = []
 # print(random.randint(10, 20))  # раскомментируйте, чтобы посмотреть работу функции randint
-# TODO: your code here
+import random
+n = int(input("Введите количество элементов для выдачи: "))
+numbers = [random.randint(-100, 100) for value in range(n)]
+print(numbers)
