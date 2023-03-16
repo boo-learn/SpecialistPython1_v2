@@ -5,3 +5,14 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+
+numbers = [2, -5, 8, 9, -25, 25, 4]
+numbers_root = []
+
+for num in numbers:
+    if num > 0:
+        num_root = num ** 0.5
+        if num_root.is_integer():
+            numbers_root.append(int(num_root))
+print(numbers_root)
