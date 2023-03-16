@@ -19,7 +19,17 @@ text = "В теории, теория и практика неразделимы
 vowels = "ауоыэяюёие"
 # TODO: you code here...
 ```
+text = "В теории, теория и практика неразделимы. На практике это не так."
+vowels = "ауоыэяюёие"
+text.lower()
 
+summa = 0
+n = 0
+
+while n < len(vowels):
+    summa += text.count(vowels[n])
+    n += 1
+print(summa, "сумма гласных")
 ---
 
 ### Подсказки
