@@ -1,6 +1,8 @@
-def even(...):
-    ...
-    return ...
+
+def even(a):
+    if a%2==0:
+        return True
+    return False
 
 n = ...
 if even(n):
