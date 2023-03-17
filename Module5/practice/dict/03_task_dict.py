@@ -7,3 +7,6 @@ values = ['Петр', 'Первый', 42, 1300]
 # TODO: your code here
 # Нужно получить словарь:
 # {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
+people = dict(zip(keys, values))
+
+print(people)
