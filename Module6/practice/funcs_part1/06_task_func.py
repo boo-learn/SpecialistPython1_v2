@@ -3,6 +3,7 @@
 
 def point_in_circle(x, y, xc, yc, r):
     # TODO: your code here
-    pass
+    distance = ((xc - x) ** 2 + (yc - y) ** 2) ** (1 / 2)
+    return distance <= r
 
 # Не забудьте протестировать вашу функцию
