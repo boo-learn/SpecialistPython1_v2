@@ -4,7 +4,10 @@ def max2(n1, n2):
     # TODO: your code here
     pass
 
-
+def max2(n1,  n2):
+    if n1 < n2:
+        return n2
+    return n1
 # Тестируем функцию
 print(max2(5, 6))
 print(max2(-10, -12))
