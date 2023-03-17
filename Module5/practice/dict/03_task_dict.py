@@ -7,3 +7,10 @@ values = ['Петр', 'Первый', 42, 1300]
 # TODO: your code here
 # Нужно получить словарь:
 # {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
+
+d = {}
+
+for num, key in enumerate(keys):
+    d[key] = values[num]
+
+print(d)
