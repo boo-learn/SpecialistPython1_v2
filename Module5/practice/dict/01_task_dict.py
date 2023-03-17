@@ -11,4 +11,5 @@ item_count = 8
 # Курс доллара
 dollar_rate = 74.12
 
-# TODO: your code here
+# price_usd = float(item["price"]) / dollar_rate * item_count
+print(round(price_usd, 2))
