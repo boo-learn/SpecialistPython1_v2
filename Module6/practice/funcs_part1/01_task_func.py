@@ -1,8 +1,17 @@
 # Напишите функцию, возвращающую наибольшее из четырех чисел
 
 def max4(n1, n2, n3, n4):
-    # TODO: your code here
-    pass
+    if n1 > n2:
+        nx = n1
+    else:
+        nx = n2
+    if n3 > n4:
+        ny = n3
+    else:
+        ny = n4
+    if nx > ny:
+        return nx
+    return ny
 
 
 # Тестируем функцию
