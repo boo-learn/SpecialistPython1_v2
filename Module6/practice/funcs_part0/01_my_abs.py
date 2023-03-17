@@ -1,5 +1,6 @@
 def my_abs(a):
-    a = -a
+    if a < 0:
+        a = -a
     return a
 
 
