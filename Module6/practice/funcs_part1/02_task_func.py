@@ -4,8 +4,16 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
-    pass
-
+    string_number = str(number)
+    result = 0
+    i = 0
+    for num in string_number:
+        i += 1
+        if num == string_number[-i]:
+            result += 1
+        else:
+            return False
+    return True
 
 # Тестируем функцию
 print(palindrome(3454))
