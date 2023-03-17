@@ -10,3 +10,17 @@ items = [
 ...
 # 2. Выведите цену самого дешевого товара
 ...
+
+
+
+# 1. Выведите нумерованный список именований всех товаров
+for num, item in enumerate(items, 1):
+    print(f"{num}. {item['name']}")
+# 2. Выведите цену самого дешевого товара
+min_price = float(items[0]["price"])
+#print(min_price)
+for item in items:
+    #print(item)
+    if float(item["price"]) < min_price:
+        min_price = float(item["price"])
+print(min_price)
