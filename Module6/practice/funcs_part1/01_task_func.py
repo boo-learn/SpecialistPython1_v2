@@ -2,7 +2,13 @@
 
 def max4(n1, n2, n3, n4):
     # TODO: your code here
-    pass
+    def max4(n1, n2, n3, n4):
+    numbers = (n1, n2, n3, n4)
+    max_number = n1
+    for number in numbers:
+        if number > max_number:
+            max_number = number
+    return max_number
 
 
 # Тестируем функцию
