@@ -11,4 +11,6 @@ item_count = 8
 # Курс доллара
 dollar_rate = 74.12
 
-# TODO: your code here
+n=4
+cost_dollar=float(item["price"])/dollar_rate*n
+print(f"Стоимость в долларах:  {cost_dollar:.2f}")
