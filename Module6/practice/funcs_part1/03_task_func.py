@@ -2,9 +2,9 @@
 # Напишите функцию нахождения расстояния между двумя точками.
 
 def distance(x1, y1, x2, y2):
-    # TODO: your code here
-    pass
-
+def distance(x1, y1, x2, y2):
+    xy = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+    return xy
 
 # Тестируем функцию
 print(distance(2, 4, 2, 9))
