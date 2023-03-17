@@ -2,7 +2,9 @@
 
 def max4(n1, n2, n3, n4):
     # TODO: your code here
-    pass
+    result = [n1, n2, n3, n4]
+    result.sort()
+    return result[3]
 
 
 # Тестируем функцию
