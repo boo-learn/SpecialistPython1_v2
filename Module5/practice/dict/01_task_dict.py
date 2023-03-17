@@ -12,3 +12,7 @@ item_count = 8
 dollar_rate = 74.12
 
 # TODO: your code here
+
+total_cost = float(item["price"]) / dollar_rate * item_count
+
+print(f"Cтоимость покупки в долларах: {total_cost:.2f}")
