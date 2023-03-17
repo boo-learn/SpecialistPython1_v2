@@ -3,7 +3,29 @@
 # Если по заданным точкам треугольник построить нельзя, выведите соответствующее сообщение.
 # Подсказка: для нахождения площади используйте Теорему Герона
 
-# TODO: your code here
+# Для декомпозиции используются функции из предыдущих примеров
+# distance - Для вычисления длин сторон треугольника как расстояния между двумя точками
+# can_triangle - для вычисления возможности построения треугольника
 
+def distance(p1, p2):
+    distance1 = round(((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)**0.5,2)
+    return distance1
+
+def can_triangle(p1, p2, p3):
+    if distance(p1, p2) + distance(p2,p3) > distance (p1,p3):
+        return True
+    return print(("Построить треугольник нельзя"))
+
+def triangle_func(p1, p2, p3):
+    s = 0
+    p = 0
+    while can_triangle (p1, p2, p3):
+        p = distance(p1, p2) + distance(p1, p3) + distance(p2, p3)
+        p_half = p / 2
+        s = (p_half * (p_half - distance(p1, p2))*(p_half - distance(p1, p3))*(p_half - distance(p2, p3)))**0.5
+        return print(("Площадь треугольника=", round(s,2), "Периметр=", round(p,2)))
+
+# Вызов функции
+triangle_func((10, 10), (10, 10), (10, 10))
 
 # Не забудьте протестировать вашу функцию
