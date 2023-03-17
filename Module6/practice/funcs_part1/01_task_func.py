@@ -2,7 +2,12 @@
 
 def max4(n1, n2, n3, n4):
     # TODO: your code here
-    pass
+    nums = [n1, n2, n3, n4]
+    maximum = nums[0]
+    for n in nums:
+        if n > maximum:
+            maximum = n
+    return maximum
 
 
 # Тестируем функцию
