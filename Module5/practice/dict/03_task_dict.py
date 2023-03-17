@@ -4,6 +4,9 @@
 keys = ['name', 'surname', 'age', 'rate']
 values = ['Петр', 'Первый', 42, 1300]
 
-# TODO: your code here
+for i in range(0,len(keys)):
+    people[keys[i]] = values[i]
+
+print(people)
 # Нужно получить словарь:
 # {'name': 'Петр', 'surname': 'Первый', 'age': 42, 'rate': 1300}
