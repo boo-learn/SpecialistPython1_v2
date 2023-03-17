@@ -4,10 +4,20 @@
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
-def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+from lib import distance
 
+xa = int(input("xa: "))
+ya = int(input("ya: "))
+xb = int(input("xb: "))
+yb = int(input("yb: "))
+xc = int(input("xc: "))
+yc = int(input("yc: "))
 
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+a = distance(xa,ya,xb,yb)
+print(a)
+b = distance(xb,yb,xc,yc)
+print(b)
+if a > b:
+    print("Самый короткий отрезок BC")
+else:
+    print("Самый короткий отрезок AB")
