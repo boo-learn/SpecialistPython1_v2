@@ -27,9 +27,17 @@ staff = [
     },
 ]
 # Вычислите:
+high_salary = float(staff[2]['salary'])
+for item in staff:
+    if float(item['salary']) > high_salary:
+        high_salary = float(item['salary'])
 print("Имя и Фамилию сотрудника с самой высокой зарплатой:")
 
-# TODO: your code here
+low_salary = float(staff[2]['salary'])
+for item_1 in staff:
+    if float(item_1['salary']) < low_salary:
+        low_salary = float(item_1['salary'])
+
 
 print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
 
