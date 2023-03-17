@@ -3,8 +3,9 @@
 # Пример палиндрома: 34543
 # * попробуйте решить данную задачу не используя строки
 
-def palindrome(number):
-    pass
+def palindrom(number):
+    numbers = str(number)
+    return numbers == numbers[::-1]
 
 
 # Тестируем функцию
