@@ -27,7 +27,14 @@ f = open(path, "r")
 for line in f:
     ...
 ```
+file_reed = open("limericks", "r")
+file_write = open("result_limericks", "w")
 
+for line in file_reed:
+    edited_line = line.replace(",", "")
+    file_write.write(edited_line)
+
+file_reed.close()
 ---
 
 ### Подсказки
