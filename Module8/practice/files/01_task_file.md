@@ -31,6 +31,19 @@ print(f"Сумма чисел = {sum_numbers}")
 print(f"Среднеарифметическое = {...}")
 ```
 
+f = open("numbers", "r")
+sum_numbers = 0
+num = 0
+for line in f:
+    line = int(line.rstrip())
+    sum_numbers += line
+    num += 1
+
+
+f.close()
+
+print(f"Сумма чисел = {sum_numbers}")
+print(f"Среднеарифметическое = {num}")
 ---
 
 ### Подсказки
