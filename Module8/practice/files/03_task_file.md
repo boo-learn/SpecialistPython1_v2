@@ -27,10 +27,26 @@
 ### Решение задачи
 
 ```python
-# Совет: сначала считайте все цены из файла, сохраните в список,
-# преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
-# А затем, работам с привычным списком, выполните задания
-prices = []
+f = open("sold.txt", "r", encoding="utf-8")
+numbers_str = ''
+numbers = []
+for line in f:
+    numbers_str = line.split()
+    for el in numbers_str:
+        number = float(el)
+        numbers.append(number)
+f.close()
+
+summa = 0
+for number in numbers:
+    summa += number
+
+print(f"Товваров проданно на сумму: {summa:.2f}")
+print(f"Максимальная цена {max(numbers)}")
+print(f"Минимальная цена {min(numbers)}")
+
+
+
 ```
 
 ---
