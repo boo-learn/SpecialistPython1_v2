@@ -26,12 +26,33 @@
 
 ### Решение задачи
 
-```python
-# Совет: сначала считайте все цены из файла, сохраните в список,
-# преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
-# А затем, работам с привычным списком, выполните задания
+
+with open("data/sold.txt", "r") as file:
+    lines = file.readlines()
+
+
 prices = []
-```
+
+
+for line in lines:
+  
+    numbers_str = line.split()
+
+    for number_str in numbers_str:
+        prices.append(float(number_str))
+
+
+total_price = sum(prices)
+
+
+max_price = max(prices)
+min_price = min(prices)
+
+
+print(f"На сумму {total_price:.2f} было продано товаров.")
+print(f"Цена самого дорогого товара: {max_price:.2f}.")
+print(f"Цена самого дешевого товара: {min_price:.2f}.")
+
 
 ---
 
