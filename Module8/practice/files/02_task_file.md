@@ -16,16 +16,19 @@
 
 ### Решение задачи
 
-```python
-# Задаем путь к файлу:
-path = "dir/limericks.txt"  # вместо dir подставь название папки с файлом.
-# Или удалите dir, если limericks.txt в той же папке, что и питоновский файл
 
-# Открываем файл на чтение
-f = open(path, "r")
-# В переменную line считываем строку за стройкой из файла(f)
-for line in f:
-    ...
+input_path = "data/limericks.txt"
+
+
+output_path = "data/limericks_clean.txt"
+
+
+with open(input_path, "r") as f_in, open(output_path, "w") as f_out:
+    
+    for line in f_in:
+        
+        line_clean = line.replace(".", "")
+        f_out.write(line_clean)
 ```
 
 ---
