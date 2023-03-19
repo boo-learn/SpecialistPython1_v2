@@ -6,4 +6,25 @@
 # 4) все слова начинающиеся на согласную букву
 # 5) все уникальные(без дубликатов) знаки препинания
 
-text = ...
+text = "Пример произвольного предложения, содержащего знаки препинания! В нём есть слова, начинающиеся с гласных и согласных букв."
+
+# первое слово из строки
+first_word = text.split()[0]
+print("Первое слово:", first_word)
+
+# первые два символа каждого слова
+first_two_chars = [word[:2] for word in text.split()]
+print("Первые два символа каждого слова:", first_two_chars)
+
+# все слова начинающиеся на гласную букву
+vowels = "а, и, е, ё, о, у, ы, э, ю, я"
+vowel_words = [word for word in text.split() if word[0] in vowels]
+print("Слова, начинающиеся на гласную букву:", vowel_words)
+
+# все слова начинающиеся на согласную букву
+consonant_words = [word for word in text.split() if word[0] not in vowels and word[0].isalpha()]
+print("Слова, начинающиеся на согласную букву:", consonant_words)
+
+# все уникальные(без дубликатов) знаки препинания
+punctuations = set([char for char in text if char in "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"])
+print("Уникальные знаки препинания:", punctuations)
