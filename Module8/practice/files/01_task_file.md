@@ -17,18 +17,21 @@
 ### Решение задачи
 
 ```python
-# Задаем путь к файлу:
-path = "dir/numbers.txt"  # вместо dir подставь название папки с файлом.
-# Или удалите dir, если numbers.txt в той же папке, что и питоновский файл
+path = "numbers.txt"
 
-# Открываем файл на чтение
 f = open(path, "r")
-sum_numbers = 0  # Переменная для подсчета суммы
-# В переменную line считываем строку за стройкой из файла(f)
+sum_numbers = 0
+amount_num = 0
+
 for line in f:
-    ...
+    line = int(line)
+    sum_numbers += line
+    amount_num += 1
+
+average = sum_numbers/amount_num
+
 print(f"Сумма чисел = {sum_numbers}")
-print(f"Среднеарифметическое = {...}")
+print(f"Среднеарифметическое = {average}")
 ```
 
 ---
