@@ -26,9 +26,17 @@ f = open(path, "r")
 # В переменную line считываем строку за стройкой из файла(f)
 for line in f:
     ...
-```
+path = "limericks.txt"
 
----
+
+f = open(path, "r", encoding="utf-8")
+
+for line in f:
+    line = line.rstrip().replace(".", "")
+    f1 = open("limericks_clean.txt", "a", encoding="utf-8")
+    f1.write(f"{line}\n")
+
+f.close()
 
 ### Подсказки
 
