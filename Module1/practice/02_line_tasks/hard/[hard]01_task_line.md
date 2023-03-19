@@ -18,7 +18,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+import math
+
+h = float(input("h = "))
+a = float(input("a = "))
+b = float(input("b = "))
+
+days = math.ceil(float((h-a)/(a-b) + 1))
+
+print(days)
 ```
 
 ---
