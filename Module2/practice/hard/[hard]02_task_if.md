@@ -15,7 +15,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+xs = int(input("xs = "))
+ys = int(input("ys = "))
+x = int(input("x = "))
+y = int(input("y = "))
+
+if 0 < xs <= 8 and 0 < ys <= 8 and 0 < x <= 8 and 0 < y <= 8:
+    if (xs != x and ys != y) and (
+            (xs == ys and x == y) or (xs + ys == x + y) or (
+            xs > ys and xs - ys == x - y) or (ys > xs and ys - xs == y - x)):
+        print("Y")
+    else:
+        print("N")
+
+else:
+    print("Incorrect format")
+
 ```
 
 ---
