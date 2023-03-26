@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Insert A: "))
+b = int(input("Insert B: "))
+p = 2*(a+b)
+s=a*b
+print("P = ",p)
+print("S = ",s)
 ```
 
 ---
