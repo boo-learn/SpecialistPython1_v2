@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(innput("a:"))
+b = int(innput("b:"))
+c = int(innput("c:"))
+
+p = a + b + c
+p2 = p/2
+s =(p2*(p2-a)*(p2-b)*(p2-c))**0,5
+ 
+print("P=",p)
+print("S",s)
 ```
 
 ---
