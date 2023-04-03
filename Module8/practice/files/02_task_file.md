@@ -27,7 +27,19 @@ f = open(path, "r")
 for line in f:
     ...
 ```
-
+# Задаем путь к файлу:
+path = "./limericks.txt"  # вместо dir подставь название папки с файлом.
+# Или удалите dir, если limericks.txt в той же папке, что и питоновский файл
+path_clean = "./limericks_clean.txt"
+result = ''
+# Открываем файл на чтение
+f = open(path, "r", encoding="utf-8")
+# В переменную line считываем строку за стройкой из файла(f)
+for line in f:
+    line = line.replace('.', '')
+    result += line
+f = open(path_clean, "w", encoding="utf-8")
+f.write(result)
 ---
 
 ### Подсказки
