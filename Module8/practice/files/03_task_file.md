@@ -32,7 +32,18 @@
 # А затем, работам с привычным списком, выполните задания
 prices = []
 ```
+path = "./sold.txt"
+f = open(path, "r", encoding="utf-8")
 
+summ = 0
+for line in f:
+    for number in line.split(" "):
+        if number != '':
+            summ += float(number)
+            print(number)
+    # print("after line cumulative summ: ", summ)
+print("total summ: ", summ)
+```
 ---
 
 ### Подсказки
