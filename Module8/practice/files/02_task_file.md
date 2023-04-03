@@ -27,7 +27,17 @@ f = open(path, "r")
 for line in f:
     ...
 ```
+path = "limericks.txt"
 
+f = open(path, "r", encoding="utf-8")
+f_w = open("limericks_clean.txt", "w", encoding="utf-8")
+
+for line in f:
+    line = line.rstrip()
+    f_w.write(line.replace(".", "") + "\n")
+
+f.close()
+f_w.close()
 ---
 
 ### Подсказки
