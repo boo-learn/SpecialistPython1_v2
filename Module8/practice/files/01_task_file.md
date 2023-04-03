@@ -33,6 +33,17 @@ print(f"Среднеарифметическое = {...}")
 
 ---
 
+path = "numbers.txt.txt"
+f = open(path, "r")
+sum_numbers = 0
+i = 0
+for line in f:
+    sum_numbers = int(line) + sum_numbers
+    i += 1
+
+print(f"Сумма чисел = {sum_numbers}")
+print(f"Среднеарифметическое = {sum_numbers/i}")
+
 ### Подсказки
 
 <details>
