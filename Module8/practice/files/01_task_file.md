@@ -31,7 +31,22 @@ print(f"Сумма чисел = {sum_numbers}")
 print(f"Среднеарифметическое = {...}")
 ```
 
----
+# Задаем путь к файлу:
+path = "um.txt"  # вместо dir подставь название папки с файлом.
+# Или удалите dir, если numbers.txt в той же папке, что и питоновский файл
+
+# Открываем файл на чтение
+f = open(path, "r", encoding="utf-8")
+sum_numbers = 0  # Переменная для подсчета суммы
+count = 0
+# В переменную line считываем строку за стройкой из файла(f)
+for line in f:
+    sum_numbers = int(line) + sum_numbers
+    count = count + 1
+average = sum_numbers/count
+
+print(f"Сумма чисел = {sum_numbers}")
+print(f"Среднеарифметическое = {average}")
 
 ### Подсказки
 
