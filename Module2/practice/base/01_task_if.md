@@ -17,7 +17,12 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("n?"))
 
+if 99<n<1000:
+    print("Трёхзначное", n)
+else:
+    print("Не трёхзначное", n)
 ---
 
 ### Подсказки
