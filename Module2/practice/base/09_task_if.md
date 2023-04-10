@@ -15,7 +15,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+
+# 09_task_if.md
+# "Время года"
+# Определить время года по номеру месяца
+
+m = int(input("Введите номер месяца 'm': "))
+
+
+if m >= 3 and m <= 5:
+    print("Весна")
+elif m >= 6 and m <= 8:
+    print("Лето")
+elif m >= 9 and m <= 11:
+    print("Осень")
+else:
+    print("Зима")
 ```
 
 ---
