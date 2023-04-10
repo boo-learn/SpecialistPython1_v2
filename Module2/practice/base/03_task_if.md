@@ -20,7 +20,13 @@
 ```python
 # TODO: you code here...
 ```
-
+price = int(input("price?"))
+cash = int(input("cash?"))
+c=cash-price
+if c>=0:
+    print("enought", c)
+else:
+    print("not enought")
 ---
 
 ### Данные для самопроверки
