@@ -16,9 +16,14 @@
 
 ```python
 # TODO: you code here...
-```
+ax=int(input("ax?"))
+ay=int(input("ay?"))
+bx=int(input("bx?"))
+by=int(input("by?"))
 
----
+ab=((bx-ax)**2+(by-ay)**2)**0.5
+
+print(ab)
 
 ### Подсказки
 
