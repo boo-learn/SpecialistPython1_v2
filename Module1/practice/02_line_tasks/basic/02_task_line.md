@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Расстояние между 2-я точками
+a1=int(input("a1:"))
+b1=int(input("b1:"))
+a2=int(input("a2:"))
+b2=int(input("b2:"))
+s=((a2-a1)**2+(b2-b1)**2)**0.5
+
+print("s=" ,s,)
 ```
 
 ---
