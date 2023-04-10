@@ -21,7 +21,21 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# 02_hw_if.md
+# "Коровы"
+# Правильно определить окончание для слова "корова" в зависимости от их количества
+
+cows = int(input("Введите количество коров: "))
+right_word = "корова"
+
+if (11 <= cows <= 19) or (5 <= cows % 10 <= 9) or (cows % 10 == 0):
+	right_word = "коров"
+elif cows % 10 == 1:
+	right_word = "корова"
+elif cows % 10 >= 2 and cows % 10 <= 4:
+	right_word = "коровы"
+
+print(cows,right_word)
 ```
 
 ---
