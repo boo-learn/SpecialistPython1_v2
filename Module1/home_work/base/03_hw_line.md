@@ -20,7 +20,11 @@
 ```python
 # TODO: you code here...
 ```
-
+v = int(input("v?"))
+t = int(input("t?"))
+l=109
+s=(v*t)//l+(v*t)%l
+print(s)
 ---
 
 ### Подсказки
