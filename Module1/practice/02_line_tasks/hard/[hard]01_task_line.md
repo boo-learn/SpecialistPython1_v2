@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+h = int(input("h: "))
+a = int(input("a: "))
+b = int(input("b: "))
+
+d = -(-(h-a)//(a-b))+1
+
+print ("Улитка заползет на столб за : ",d, " дней: ")
 ```
 
 ---
