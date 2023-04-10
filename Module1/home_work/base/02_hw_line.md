@@ -19,7 +19,18 @@
 ```python
 import math
 math.pi # Число pi из библиотеки math
-# TODO: you code here...
+
+
+# 02_hw_line.md
+# "Площадь круга"
+# Формула для перевода: p = pi*R^2
+
+import math
+
+circle_radius = float(input("Введите радиуса круга: "))
+circle_area = math.pi * circle_radius ** 2
+
+print("Площадь круга радиусом",circle_radius,"равна",circle_area)
 ```
 
 ---
