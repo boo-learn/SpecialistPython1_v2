@@ -23,7 +23,15 @@
 ```python
 # TODO: you code here...
 ```
+x1=int(input("x1:"))
+y1=int(input("y1:"))
+x2=int(input("x2:"))
+y2=int(input("y2:"))
 
+if ((x2+x1)%2==0 and (y2+y1)%2==0)or((x2+x1)%2!=0 and (y2+y1)%2!=0):
+    print("Одинаковы")
+else:
+    print("Разные") 
 ---
 
 ### Подсказки
