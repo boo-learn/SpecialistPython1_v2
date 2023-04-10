@@ -17,7 +17,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+import math
+apartment_number = int(input())
+
+#floor_number = (apartment_number - 1) // 5 + 1
+
+#print("Квартира номер", apartment_number, "на", floor_number, "этаже")
+
+floor_number = math.ceil(apartment_number/5)
+
+print("Квартира номер", apartment_number, "на", floor_number, "этаже")
 ```
 
 ---
