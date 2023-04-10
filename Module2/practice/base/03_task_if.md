@@ -18,7 +18,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# 03_task_if.md
+# Сдача - хватит ли денег?
+
+money = int(input("Введите количество денег:"))
+price = int(input("Введите цену товара:"))
+
+if (money >= price):
+    print("После покупки останется",(money-price),"рублей!")
+else:    
+    print("Денег недостаточно!")
 ```
 
 ---
