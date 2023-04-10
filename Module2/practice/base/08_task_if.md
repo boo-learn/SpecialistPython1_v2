@@ -21,7 +21,21 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+
+# 08_task_if.md
+# "Точка в круге"
+
+point_x = int(input("Введите координату X точки: "))
+point_y = int(input("Введите координату Y точки: "))
+
+circle_x = int(input("Введите координату X центра круга: "))
+circle_y = int(input("Введите координату Y центра круга: "))
+circle_r = int(input("Введите радиус круга R : "))
+
+if abs(point_x - circle_x) <= circle_r and abs(point_y - circle_y) <= circle_r:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
