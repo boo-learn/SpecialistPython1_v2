@@ -17,7 +17,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Из цельсия в фаренгейты
+t_celsius = int(input("Температура в 'С' : "))
+t_fahrenheit = t_celsius * (9/5) + 32
+print("Темперетура в фаренгейтах: ",t_fahrenheit,)
 ```
 
 ---
