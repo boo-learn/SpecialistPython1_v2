@@ -19,7 +19,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+
+if a % 3 == 0 and a % 5 != 0:
+    print("Foo")
+elif a % 5 == 0 and a % 3 != 0:
+    print("Bar")
+elif a % 5 == 0 and a % 3 == 0:
+    print("Foobar")
 ```
 
 ---
