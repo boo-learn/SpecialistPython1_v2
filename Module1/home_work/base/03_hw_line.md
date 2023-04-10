@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#МКАД
+t = int(input("время в пути (час) : "))
+v = int(input("Скорость (км/час) : "))
+length = 109
+marking_path = v*t%length 
+print(marking_path)
 ```
 
 ---
