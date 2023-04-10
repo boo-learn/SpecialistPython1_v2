@@ -21,7 +21,10 @@ import math
 math.pi # Число pi из библиотеки math
 # TODO: you code here...
 ```
-
+r = float(input("Введите r?"))
+import math
+s=math.pi*r**2
+print(s)
 ---
 
 ### Данные для самопроверки
