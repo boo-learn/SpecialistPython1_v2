@@ -16,6 +16,7 @@
 
 ```python
 # TODO: you code here...
+решение: 
 ```
 
 ---
