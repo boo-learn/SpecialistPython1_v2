@@ -18,7 +18,17 @@
 
 ```python
 seconds = int(input("Прошло секунд: "))
-# TODO: you code here...
+
+# Вычисляем количество дней, часов, минут и секунд
+days = seconds // (24 * 3600) #дней
+seconds = seconds % (24 * 3600) 
+hours = seconds // 3600 #часов
+seconds %= 3600
+minutes = seconds // 60 #минут
+seconds %= 60
+
+print(f"{days} дней {hours} часов {minutes} минут {seconds} секунд")
+#f-строка, а фигурные скобки {} используются для вставки в эту строку переменных. 
 ```
 
 ---
