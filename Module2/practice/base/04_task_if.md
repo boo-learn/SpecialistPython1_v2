@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+
+if a % 5 == 0 and a % 10 != 0:
+    print("yes")
+else:
+    print("no")
 ```
 
 ---
