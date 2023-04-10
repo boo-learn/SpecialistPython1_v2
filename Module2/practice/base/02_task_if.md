@@ -17,7 +17,12 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("n?"))
 
+if n%3==0 or n%5==0:
+    print("Кратно 3 или 5")
+else:
+    print("Не кратно 3 или 5")
 ---
 
 ### Данные для самопроверки
