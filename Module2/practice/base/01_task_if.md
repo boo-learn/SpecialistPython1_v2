@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Проверьте, является ли данное число трехзначным.
+number = int(input("Введите число: "))
+if (number > 99 and number < 1000) or  (number < -99 and number > -1000):
+    print ("Да")
+else:
+    print ("Нет")
+
 ```
 
 ---
