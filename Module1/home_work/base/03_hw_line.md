@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+v = int(input("v: "))
+t = int(input("t: "))
+
+mark = (v * t) % 109 
+
+print("Mark = ",mark)
 ```
 
 ---
