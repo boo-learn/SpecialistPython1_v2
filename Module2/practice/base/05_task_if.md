@@ -19,7 +19,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+
+# 05_task_if.md
+# "FooBar"
+# Проверка деления на 3 и на 5
+
+num = int(input("Введите число: "))
+
+if num % 3 == 0 and num % 5 == 0:
+    print("Foobar")
+elif num % 3 == 0:    
+    print("Foo")
+elif num % 5 == 0:    
+    print("Bar")
 ```
 
 ---
