@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+available_money = int(input("Введите сумму которой распологаете: "))
+item_price = int(input("Введите стоимость товара: "))
+if available_money >= item_price: # достаточно ли средств
+    remaining_money = available_money - item_price # остаток
+    print("Остаток после покупки", remaining_money, "рублей.")
+else:
+    print("Недостаточно средств.")
 ```
 
 ---
