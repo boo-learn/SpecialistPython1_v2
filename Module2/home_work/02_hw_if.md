@@ -21,8 +21,21 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+# По данному числу n закончите фразу «На лугу пасется...»
+# одним из возможных продолжений: «n коров», «n корова», «n коровы», правильно склоняя слово «корова».
+
+cows = int(input("Количество коров: "))
+
+first_digit = cows % 10
+second_digit = cows % 100 // 10
+
+if first_digit == 1 and second_digit != 1:
+    cows_word = "корова"
+elif 1 < first_digit < 5 and second_digit != 1:
+    cows_word = "коровы"
+else: cows_word = "коров"
+
+print ("На лугу пасется", cows, cows_word)```
 
 ---
 ### Подсказки
