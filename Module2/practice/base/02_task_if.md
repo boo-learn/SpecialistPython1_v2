@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+val = int(input())
+
+if  not val % 5 or  not val % 3:
+    print ("Кратно")
+else:
+    print ("Не кратно")
 ```
 
 ---
