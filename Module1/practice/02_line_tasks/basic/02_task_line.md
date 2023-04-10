@@ -15,7 +15,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Необходимо по заданным сторонам прямоугольника a и b узнать его периметр и площадь.
+
+xa = int(input("xa: "))
+ya = int(input("ya: "))
+xb = int(input("xb: "))
+yb = int(input("yb: "))
+
+d = ((xb - xa) ** 2 + (yb - ya) ** 2) ** 0.5
+
+print("Расстояние = ", d)
+
 ```
 
 ---
