@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Шоколадка
+n = int(input("Размер n: "))
+m = int(input("Размер m: "))
+k = int(input("Размер k: "))
+if (k!=n and k!=m) and (k%n==0 or k%m==0):
+    print("Да , можно разделить")
+else:
+    print("Нет , нельзя разделить")
 ```
 
 ---
