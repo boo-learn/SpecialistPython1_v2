@@ -17,9 +17,12 @@
 ### Решение задачи
 
 ```python
+# Дан радиус круга r. Вычислите его площадь.
 import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
+math.pi
+
+r = float(input("Введите радиус окружности: "))
+print ("Площадь:",r * r * math.pi) 
 ```
 
 ---
