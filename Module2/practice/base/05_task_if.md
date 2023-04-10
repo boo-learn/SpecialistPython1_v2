@@ -20,7 +20,15 @@
 
 ```python
 # TODO: you code here...
-```
+`n = int(input("n?"))
+
+
+if n%3==0 and n%5==0:
+    print("Foobar")
+elif n%5==0:
+    print("Bar")
+elif n%3==0:
+    print("Foo")``
 
 ---
 
