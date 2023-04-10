@@ -18,7 +18,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+m = int(input("m: "))
+k = int(input("k: "))
+
+if k % n == 0:
+    print("Yes")
+elif k % m == 0:
+    print("Yes")
+else:
+    print("No")
 ```
 
 ---
