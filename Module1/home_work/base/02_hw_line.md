@@ -18,8 +18,14 @@
 
 ```python
 import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
+
+r = float(input("Введите значение радиуса: "))
+
+s = math.pi * r ** 2 # вычисляем площадь круга (S=πR²)
+
+s_round_up = round(s,2) # округляем до сотых, как в ДЗ:). (s,1)-до десятых; (s,1)-до тысячных...
+
+print("Площадь круга =: ",s_round_up)
 ```
 
 ---
