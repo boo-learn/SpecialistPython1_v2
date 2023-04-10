@@ -18,6 +18,16 @@
 
 ```python
 seconds = int(input("Прошло секунд: "))
+
+d = seconds // 86400
+h = (seconds - d * 86400) // 3600
+m = (seconds - d * 86400 - h * 3600) // 60
+s = seconds - d * 86400 - h * 3600 - m * 60
+
+print("D = ",d)
+print("H = ",h)
+print("M = ",m)
+print("S = ",s)
 # TODO: you code here...
 ```
 
