@@ -33,7 +33,12 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#Дано целое число n, количество ступенек. 1 < n < 20
+n = int(input("n: "))
+count = 0  # счетчик
+while n >= count:
+    print(count*"*")
+    count+=1
 ```
 
 ---
