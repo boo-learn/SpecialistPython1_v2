@@ -15,7 +15,10 @@
 ### Решение задачи
 
 ```python
-string = input("Введите произвольный текст: ")
+string = input('Input a string: ')
+
+print(string[0],string[-1])
+
 # TODO: you code here...
 ```
 
