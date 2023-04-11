@@ -19,7 +19,11 @@ n = int(input("n: "))
 
 # TODO: you code here...
 ```
+n = int(input("n:"))
 
+while n > 0:
+    print("Я учу питон")
+    n -= 1
 ---
 
 ### Подсказки
