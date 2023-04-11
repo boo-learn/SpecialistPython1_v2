@@ -20,6 +20,13 @@
 ```python
 # TODO: you code here...
 ```
+n = int(input("Введите n: "))
+m = int(input("Введите m: "))
+k = int(input("Введите k: "))
 
+if k % n == 0 and k // n < m or k % m == 0 and k // m < n:
+    print("Да")
+else:
+    print("Нет")
 ---
 
