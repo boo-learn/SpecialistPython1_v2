@@ -19,7 +19,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+k = int(input("Введите количество шариков: "))
+a = 5
+b = 3
+
+if k % a == 0 or k % a % b == 0 or k % b == 0 or k % b % a == 0:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
