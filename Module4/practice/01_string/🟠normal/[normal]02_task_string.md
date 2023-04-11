@@ -17,7 +17,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+id_type = input('Type id: ')
+id_prefix = 'id:'
+
+if id_type[0:3] == id_prefix and id_type[4:].isdigit() is True:
+    print('Yes.')
+else:
+    print('No.')
+
 ```
 
 ---
