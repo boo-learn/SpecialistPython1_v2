@@ -16,7 +16,23 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# "Делители числа"
+# Найдите все делители заданного числа.
+
+n = int(input("Введите значений n: "))
+count = 1
+st = ""
+
+while count <= n - 2:
+    count += 1
+    if n % count == 0:
+        st += " " + str(count)
+
+if len(st) > 0:
+    print(st)
+else:
+    print("Число простое")
+
 ```
 
 ---
