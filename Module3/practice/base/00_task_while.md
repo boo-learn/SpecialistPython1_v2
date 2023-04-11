@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое число от N до 0: "))
+
+while n >= 0:
+    print(n)
+    n -= 1
 ```
 
 ---
