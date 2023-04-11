@@ -35,7 +35,12 @@ n = 5
 ```python
 # TODO: you code here...
 ```
-
+n = int(input("n: "))
+count =0
+s="*"
+while count <= n:
+    print(s*count)
+    count += 1
 ---
 
 ### Подсказки
