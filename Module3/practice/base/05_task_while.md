@@ -33,7 +33,15 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#  Print stairs from n *
+n = int(input("n: "))
+i = 0
+stairs = '*'
+
+while i <= n:
+    print(stairs * i)
+    i += 1
+
 ```
 
 ---
