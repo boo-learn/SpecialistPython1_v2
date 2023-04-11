@@ -17,7 +17,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#  Count all positive numbers out of the n input
+n = int(input("n: "))
+i = 0
+count = 0
+
+while i < n:
+    number = int(input("number: "))
+    if number >= 0:
+        count += 1
+    i += 1
+
+print("Positive numbers count = ", count)
+
 ```
 
 ---
