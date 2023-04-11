@@ -17,7 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+text = input("Исходная строка: ")
+
+if text.startswith("id:") and text[3:].isdigit():   # Начинается с id: и, затем, начиная с 3-го элемента идут цифры
+    print ("Да")
+else:
+    print ("Нет")
 ```
 
 ---
