@@ -15,9 +15,11 @@
 ### Решение задачи
 
 ```python
-n = int(input("n: "))
+n = int(input("Введите целое число от N до 0: "))
 
-# TODO: you code here...
+while n >= 1:
+    print("Я учу питон")
+    n -= 1
 ```
 
 ---
