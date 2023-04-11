@@ -16,7 +16,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+
+flag = False
+
+count = 2
+while count < n:
+    if not n % count:
+        print(count)
+        flag = True
+    count += 1
+
+if not flag:
+    print("Число простое")
 ```
 
 ---
