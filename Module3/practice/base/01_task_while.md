@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-n = int(input("n: "))
+#  Print phrase "I love Python!" n times
+n = int(input("n= "))
+
+while n > 0:
+    print("I love Python!")
+    n -= 1
+
+print("End.")
 
 # TODO: you code here...
 ```
