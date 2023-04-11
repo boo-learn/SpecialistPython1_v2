@@ -18,7 +18,23 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите четырехзначное число: "))
+abs_number = abs(number)
+
+digit_1 = abs_number // 1000
+digit_2 = (abs_number - digit_1 * 1000) // 100
+digit_3 = (abs_number - digit_1 * 1000 - digit_2 * 100) // 10
+digit_4 = abs_number - digit_1 * 1000 - digit_2 * 100 - digit_3 * 10
+
+print(digit_1, digit_2, digit_3, digit_4)
+
+if digit_4 == digit_1 and digit_2 == digit_3:
+    print("Число симметричное.")
+elif 1000 > abs_number or abs_number > 9999:
+    print("Число не четырехзначное.")
+else:
+    print("Число не симметричное.")
+
 ```
 
 ---
