@@ -27,9 +27,21 @@ a = int(input("a: "))
 b = int(input("b: "))
 c = int(input("c: "))
 
-# TODO: you code here...
+# numbers = [a, b, c]
+# sorted_numbers = sorted(numbers)
 
-print(a, b, c)
+# a = sorted_numbers[0]
+# b = sorted_numbers[1]
+# c = sorted_numbers[2]
+
+if a > c:
+    a, c = c, a
+if a > b:
+    a, b = b, a
+if b > c:
+    b, c = c, b
+
+print("Ответ: ", a, b, c)
 ```
 
 ---
