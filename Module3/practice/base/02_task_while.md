@@ -17,10 +17,17 @@
 ### Решение задачи
 
 ```python
+#  Print all even numbers from a to b
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+while a <= b:
+    if a % 2 == 0:
+        print(a)
+    a += 1
+
+print("End.")
+
 ```
 
 ---
