@@ -21,7 +21,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x1, y1, x2, y2 = map(int, input("Введите координаты клеток: ").split())
+
+if (x1 + y1) % 2 == (x2 + y2) % 2:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
