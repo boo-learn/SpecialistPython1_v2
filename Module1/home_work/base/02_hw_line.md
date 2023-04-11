@@ -21,7 +21,12 @@ import math
 math.pi # Число pi из библиотеки math
 # TODO: you code here...
 ```
+import math
 
+r = int(input("Радиус круга: "))
+area = math.pi * r ** 2
+
+print ("Радиус круга", area)
 ---
 
 ### Данные для самопроверки
