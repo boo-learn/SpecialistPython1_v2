@@ -15,8 +15,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+# По длинам трех отрезков, определить возможность существования треугольника, составленного из этих отрезков.
+
+ab = int(input("ab: "))
+bc = int(input("bc: "))
+ac = int(input("ac: "))
+
+if ab + bc > ac and ab + ac > bc and bc + ac > ab:
+    print("Существует")
+else:
+    print("Не существует")```
 
 ---
 
