@@ -15,7 +15,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# [hard]02_task_if.md
+# "Шахматы: слон"
+# Бьёт ли слон другую фигуру?
+
+elefant_x = int(input("Введите значение X позиции слона: "))
+elefant_y = int(input("Введите значение Y позиции слона: "))
+figure_x = int(input("Введите значение X позиции второй фигуры: "))
+figure_y = int(input("Введите значение Y позиции второй фигуры: "))
+
+if abs(elefant_x - figure_x) == abs(elefant_y - figure_y):
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
