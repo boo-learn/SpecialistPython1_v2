@@ -15,7 +15,8 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+Number= int(input("Введите целое число: "))
+print("Число заканчивается 5")if Number % 10 == 5 else print("Число не заканчивается 5")
 ```
 
 ---
