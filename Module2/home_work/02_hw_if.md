@@ -21,7 +21,14 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cows = int(input("Коровки: "))
+
+if cows %10 == 1 and cows !=11:
+    print(cows," корова")
+elif (cows %10 == 2 or cows %10 == 3 or cows %10 == 4) and (cows %100 // 10) != 1:
+    print(cows," коровы")
+else:
+    print(cows," коров")
 ```
 
 ---
