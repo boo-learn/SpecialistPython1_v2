@@ -17,7 +17,19 @@ _Сумма четных чисел от 0 до 7 = 12_
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#  Print sum of all even numbers from 0 to n
+n = int(input("n: "))
+
+count = 0
+summa = 0
+
+while count <= n:
+    if count % 2 == 0:
+        summa += count
+    count += 1
+
+print("Сумма четных чисел от 0 до", n, " = ", summa)
+
 ```
 
 ---
