@@ -21,10 +21,14 @@
 
 ```python
 n = int(input("Количество карточек: "))
-# Цикл, который выполнится n-1 раз
-while ...:
-    card_number = int(input("Номер карточки: "))
-    ...
+total_sum = n * (n + 1) // 2  # используем свойство математической прогрессии, сумма чисел от 1 до n равна n*(n+1)/2
+cards_sum = 0
+i = 0
+while i < n-1: # интересный вариант --- "for i in range(n - 1):" ("i = 0" и "i += 1" за аргументировать).
 
-print("Номер потерянной карточки:", ...)
+    card_number = int(input("Номер карточки: "))
+    cards_sum += card_number
+    i += 1
+missing_card = total_sum - cards_sum
+print("Номер потерянной карточки:", missing_card)
 ```
