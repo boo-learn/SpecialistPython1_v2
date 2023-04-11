@@ -16,7 +16,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n:"))
+
+count = 2
+sum = 1
+
+while count < n:
+    if not n % count:
+         sum += count
+    count += 1
+
+print("Да") if n == sum else print("Нет")
 ```
 
 ---
