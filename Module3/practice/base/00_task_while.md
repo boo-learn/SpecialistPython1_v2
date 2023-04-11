@@ -15,7 +15,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#  Countdown from n to 0
+n = int(input("n: "))
+
+while n >= 0:
+    print(n)
+    n -= 1
+
+print("End.")
+
 ```
 
 ---
