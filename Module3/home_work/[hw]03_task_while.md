@@ -28,7 +28,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#  Print multiplication table from 1 to n
+n = int(input('n: '))
+i1 = 1
+while i1 <= n:
+    i2 = 1
+    while i2 <= n:
+        print(i1 * i2, end='\t')
+        i2 += 1
+    i1 += 1
+    print()
 ```
 
 ---
