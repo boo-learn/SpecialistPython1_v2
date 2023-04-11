@@ -18,7 +18,16 @@
 ```python
 # TODO: you code here...
 ```
+a_section = int(input("a_section: "))
+b_section = int(input("b_section: "))
+c_section = int(input("c_section: "))
 
+if a_section+b_section<=c_section or a_section+c_section<=b_section or b_section+c_section<=a_section:
+    print("Треугольник с такими сторонами не существует")
+elif a_section == b_section or a_section == c_section or b_section == c_section:
+        print("Треугольник с такими сторонами равнобедренный")
+else:
+        print("Треугольник с такими сторонами не равнобедренный")
 ---
 
 ### Данные для самопроверки
