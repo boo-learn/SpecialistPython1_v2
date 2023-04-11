@@ -20,7 +20,17 @@
 ```python
 # TODO: you code here...
 ```
+speed = int(input("Укажите скорость, км/ч: "))
+time = int(input("Укажите время. ч: "))
 
+distance = speed * time
+
+if speed > 0:
+    stop = distance % 109
+else:
+    stop = 109 - (distance % 109)
+
+print("Через ", time, "Остановится на км: ", stop)
 ---
 
 ### Подсказки
