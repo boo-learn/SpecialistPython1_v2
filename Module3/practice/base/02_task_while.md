@@ -20,7 +20,16 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+# "Четные из диапазона"
+
+a = int(input("Введите число a:"))
+b = int(input("Введите число b:"))
+
+if a <= b:
+    while a <= b:
+        if a % 2 == 0:
+            print(a)
+        a += 1
 ```
 
 ---
