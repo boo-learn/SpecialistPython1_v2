@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое положительное число: "))  # Введите целое положительное число
+count = 0  # счетчик
+while n >= count:
+    print(n-count)
+    count+=1
 ```
 
 ---
