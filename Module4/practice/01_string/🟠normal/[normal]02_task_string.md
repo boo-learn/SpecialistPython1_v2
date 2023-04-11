@@ -17,7 +17,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# "Соответствие формату"
+
+string1 = input("Введите ID: ")
+if string1[0:3] == "id:" and string1[3:].isdigit():
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
