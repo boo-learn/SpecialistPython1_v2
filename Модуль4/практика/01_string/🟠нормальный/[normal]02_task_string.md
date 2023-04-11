@@ -17,7 +17,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+string = input("введите строку: ")
+if string[0:3]=="id:":
+    if string[3:].isdigit():
+        print("строка соответствует формату ")
+    else:
+        print("строка не соответствует формату ")
 ```
 
 ---
