@@ -17,7 +17,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+string = input("Строка:")
+
+if not string[0:3] == "id:":
+    print("No")
+else:
+    text = string[3:]
+    print("Yes") if text.isdigit() else print("No")
 ```
 
 ---
