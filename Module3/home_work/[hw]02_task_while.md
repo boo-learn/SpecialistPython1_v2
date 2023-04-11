@@ -20,11 +20,14 @@
 ### Решение задачи
 
 ```python
-n = int(input("Количество карточек: "))
-# Цикл, который выполнится n-1 раз
-while ...:
-    card_number = int(input("Номер карточки: "))
-    ...
+import math
 
-print("Номер потерянной карточки:", ...)
+n = int(input("Количество карточек: "))
+i = 0
+remainder = math.factorial(n)
+while i < (n - 1):
+    card_number = int(input("Номер карточки: "))
+    remainder = remainder / card_number
+    i += 1
+print("Номер потерянной карточки:", remainder)
 ```
