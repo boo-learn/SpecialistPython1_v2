@@ -20,7 +20,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#  Count numbers, painted on n bricks
+n = int(input("n: "))
+i = 0
+count = 0
+
+while i <= n:
+    count = count + i ** 2
+    i += 1
+
+print('Count = ', count)
+
 ```
 
 ---
