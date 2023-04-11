@@ -17,7 +17,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# "Подсчет положительных"
+# Посчитайте количество положительных чисел, среди введенных.
+
+n = int(input("Введите количество вводимых значений n:"))
+count = 1
+total = 0
+
+while count <= n:
+    st = "Введите значение числа номер " + str(count) + ": "
+    current_value = int(input(st))
+    if current_value > 0:
+        total += current_value
+    count += 1
+print("Сумма всех положительных чисел из", n, "введённых:", total)
 ```
 
 ---
