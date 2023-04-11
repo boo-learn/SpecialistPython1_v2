@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Сдача
+price = int(input("стоимость покупки :"))
+cash = int(input("Наличные :"))
+if cash >= price:
+    change = cash - price
+    print("Сдача:",change,)
+else:
+    print("Недостаточно средств !",)
 ```
 
 ---
