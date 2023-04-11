@@ -22,7 +22,12 @@
 
 ```python
 password = input("Enter password: ")
-# TODO: you code here...
+string = input("Строка:")
+
+if len(string) >= 6 and string[0].istitle() and string.find("#") != -1:
+    print("Безопасный")
+else:
+    print("Не безопасный")
 ```
 
 ---
