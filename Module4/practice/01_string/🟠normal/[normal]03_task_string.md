@@ -18,7 +18,10 @@
 
 ```python
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
+
+search_key = "мама"
+print("Слово ", search_key, "встречается", text.lower().count(search_key), "раз")
+
 ```
 
 ---
