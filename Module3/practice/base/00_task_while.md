@@ -15,7 +15,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите число n:"))
+while n >= 0:
+    print(n)
+    n -= 1
 ```
 
 ---
