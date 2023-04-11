@@ -36,6 +36,13 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+#  Printing cost table of n items
+cost = float(input('Enter the cost of item: '))
+n = int(input('Enter the quantity of the item: '))
+i = 0
+summ = 0
+while i < n:
+    print(cost * (i + 1), 'currency')
+    i += 1
 ```
 
