@@ -20,7 +20,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+# Дано одно целое положительное число — количество уровней в пирамиде
+# Вывести сумму чисел написанных на кирпичах
+n = int(input("n: "))
+count = 0  # счетчик
+summa=0
+while n >= count:
+    summa = count**2+summa
+    count+=1
+print(summa)
 ```
 
 ---
