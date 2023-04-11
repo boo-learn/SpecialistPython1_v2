@@ -22,8 +22,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
-```
+n = int(input("n: "))
+i = 1
+digits = 0
+while i <= n:
+    digits = digits + i
+    print(digits)
+    digits = digits * 10
+    i += 1```
 
 ---
 
