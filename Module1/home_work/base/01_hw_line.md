@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+celcius = int(input("Введите температуру: "))
+
+fahr = celcius*9/5+32
+
+print("T: ",fahr)
 ```
 
 ---
