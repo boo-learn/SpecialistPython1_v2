@@ -24,6 +24,14 @@
 password = input("Enter password: ")
 # TODO: you code here...
 ```
+# "Проверка пароля"
+
+password = input("Enter password: ")
+
+if len(password) >= 6 and password.rfind("#") != -1 and password[0:1].isupper():
+    print("Пароль валиден")
+else:
+    print("Пароль не подходит")
 
 ---
 
