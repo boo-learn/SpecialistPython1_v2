@@ -5,7 +5,8 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+for i in range(len(fruits)):
+    print(f"{i + 1}\t{fruits[i]:>10}")
 
 # Пример вывода:
 # 1. яблоко
