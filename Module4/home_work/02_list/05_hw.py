@@ -3,4 +3,10 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+lid_name = ""
+for name in names:
+    if len(name) > len(lid_name):
+        lid_name = name
+
+print("Первое самое длинное имя:", lid_name)
+
