@@ -16,7 +16,14 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+words = text.split(" ")
+i = 0
+count = 0
+while i < len(words):
+    if len(words[i]) > 5:
+        count += 1
+    i += 1
+print("Количество слов длиной больше 5:", count)
 ```
 
 ---
