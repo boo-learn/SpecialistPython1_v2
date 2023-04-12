@@ -3,4 +3,5 @@
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
-# TODO: your code here
+for i in range(len(fruits)):
+    print(f"{i}\t{fruits[i]}")
