@@ -11,4 +11,16 @@ item_count = 8
 # Курс доллара
 dollar_rate = 74.12
 
-# TODO: your code here
+# Преобразуем цену в число с плавающей точкой
+price = float(item["price"])
+
+# Стоимость покупки в рублях
+total_rub = price * item_count
+
+# Стоимость покупки в долларах
+total_usd = total_rub / dollar_rate
+
+# Округляем
+total_usd = round(total_usd, 2)
+
+print("Стоимость покупки:", total_usd, "USD")
