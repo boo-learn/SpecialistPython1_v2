@@ -28,7 +28,18 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input())
+
+outer = 1
+inner = 1
+
+while outer <= n:
+    while inner <= n:
+        print("{:2d}".format(outer * inner), end=" ")
+        inner += 1
+    inner = 1
+    print("")
+    outer += 1
 ```
 
 ---
