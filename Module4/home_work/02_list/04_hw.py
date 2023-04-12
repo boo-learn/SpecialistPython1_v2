@@ -5,3 +5,25 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+import random
+
+n = int(input("Введите значение n: "))
+numbers = []
+for _ in range(n):
+    numbers.append(random.randint(-100, 100))
+
+squares = []
+good_numbers = []
+for number in numbers:
+    square = number ** 0.5  # странно, но извлечение квадратного корня из отрицательных чисел ошибок не вызывает
+    if number >= 0 and square % 1 == 0:
+        good_numbers.append(number)
+        squares.append(int(square))     # отсечём ".0" для красоты
+
+print("Случайно сгенерированная последовательность из", n, "чисел в диапазоне [-100:100]:")
+print(numbers)
+print("Последовательность чисел, из которых целочисленно извлекается квадратный корень: ")
+print(good_numbers)
+print("Последовательность из значений извлечения квадратного корня из предыдущей последовательности: ")
+print(squares)
