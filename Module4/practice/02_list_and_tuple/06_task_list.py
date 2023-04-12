@@ -4,4 +4,13 @@
 first_number = int(input())     # Первое число
 second_number = int(input())    # Второе число
 
-# TODO: your code here
+
+first_number = int(input("Введите первое число: "))
+second_number = int(input("Введите второе число: "))
+
+i = first_number
+while i <= second_number:
+    if i % 3 == 0:
+        print(i)
+    i += 1
+    
