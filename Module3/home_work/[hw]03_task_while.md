@@ -28,7 +28,27 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("От 1 до: "))
+
+# Выводим первую строку таблицы
+# for i in range(1, n+1):
+i = 1
+while i <= n:
+    print('{:<3}'.format(i), end='')
+    i += 1
+print()
+
+# Выводим остальные строки таблицы
+# for i in range(2, n+1):
+i = 2
+while i <= n:
+    j = 1
+    while j <= n:
+        # for j in range(1, n+1):
+        print('{:<3}'.format(i * j), end='')
+        j += 1
+    print()
+    i += 1
 ```
 
 ---
