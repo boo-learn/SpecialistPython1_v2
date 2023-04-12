@@ -3,7 +3,12 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+all_names = ""
+for name in names:
+    all_names += name + ", "
+
+print(all_names[:-2])
+
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
