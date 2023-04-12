@@ -20,11 +20,18 @@
 ### Решение задачи
 
 ```python
-n = int(input("Количество карточек: "))
-# Цикл, который выполнится n-1 раз
-while ...:
-    card_number = int(input("Номер карточки: "))
-    ...
+l = []
 
-print("Номер потерянной карточки:", ...)
-```
+n = int(input("Количество карточек: "))
+
+num = n
+
+# Цикл, который выполнится n-1 раз
+while n-1:
+    card_number = int(input("Номер карточки: "))
+    l.append(card_number)
+    n -= 1
+
+for i in range(1,num):
+        if(l.count(i)) == 0:
+            print(i)
