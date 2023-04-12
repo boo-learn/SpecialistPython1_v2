@@ -2,3 +2,8 @@
 # Вывести на экран сумму всех элементов.
 
 # TODO: your code here
+digits = [2, 7, 9, -5, 10, -10, 1]
+summ = 0
+for i in digits:
+    summ += i
+print(summ)
