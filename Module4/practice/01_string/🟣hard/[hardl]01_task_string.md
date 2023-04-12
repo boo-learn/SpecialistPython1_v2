@@ -18,6 +18,12 @@
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
 # TODO: you code here...
 ```
+count = 0
 
+for string in text.split():
+    if len(string) > 5:
+        count += 1
+
+print(count)
 ---
 
