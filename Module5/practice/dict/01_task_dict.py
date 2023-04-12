@@ -12,3 +12,8 @@ item_count = 8
 dollar_rate = 74.12
 
 # TODO: your code here
+
+item = {"name": "Кроссовки", "price": "7540.5", "currency": "rub"}
+item_count = 8
+dollar_rate = 74.12
+print(round(float(item["price"]) * float(item_count) / dollar_rate , 2))
