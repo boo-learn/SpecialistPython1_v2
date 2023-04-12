@@ -7,6 +7,21 @@ fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
 
+fruits = ["яблоко", "банан", "киви", "ананас", "груша","XXXXXXXXX"]
+
+maxlen = len(fruits[0])
+
+for elem in fruits:
+    if len(elem) > maxlen:
+        maxlen = len(elem)
+
+counter = 1
+
+for elem in fruits:
+    #print(f"{counter},{elem:>12}")
+    print(f"{counter},{elem.rjust(maxlen+1)}")
+    counter += 1
+    
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
