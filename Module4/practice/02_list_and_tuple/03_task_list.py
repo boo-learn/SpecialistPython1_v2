@@ -1,4 +1,12 @@
 # Дан список из n элементов, заполненный произвольными целыми числами в диапазоне от -10 до 10.
 # Вывести на экран сумму всех элементов.
 
-# TODO: your code here
+from random import randint
+summ=0
+numbers = []
+for i in range(20):
+    numbers.append(randint(-10, 10))
+print(numbers)
+for number in numbers:
+    summ+=number
+print(summ)
