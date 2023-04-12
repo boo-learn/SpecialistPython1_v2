@@ -7,6 +7,14 @@ fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 # TODO: your code here
 
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+max_length = 0
+for fruit in fruits:
+        if len(fruit) > max_length:
+            max_length = len(fruit)
+for num, fruit in enumerate(fruits, 1):
+        print(f'{num}. {fruit:>{max_length}}')
+    
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
