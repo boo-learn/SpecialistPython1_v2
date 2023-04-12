@@ -16,7 +16,9 @@
 
 ```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+words = text.split()
+count = sum(map(lambda x: len(x) > 5, words))
+print("В строке",count, "слов >5 символов.").
 ```
 
 ---
