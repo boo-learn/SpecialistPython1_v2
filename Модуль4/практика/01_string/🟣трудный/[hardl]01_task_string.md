@@ -15,8 +15,9 @@
 ### Решение задачи
 
 ```python
-text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
+string="Всегда пишите код так будто сопровождать его будет склонный к насилию психопат который знает где вы живете"
+string_new=string.count(" ")
+print(string_new+1)
 ```
 
 ---
