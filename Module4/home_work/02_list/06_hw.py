@@ -31,15 +31,43 @@ items = [
         "price": 1700
     },
 ]
-# Найдите:
-print("Товары на складе представлены брэндами: ")
 
-# TODO: your code here
+brands = []
+for item in items:
+    if item["brand"] not in brands:
+        brands.append(item["brand"])
+print()
+print("Товары на складе представлены брэндами: ", brands)
+print()
 
-print("На складе больше всего товаров брэнда(ов): ")
+amount = []
+i = 0
+for i in range(len(brands)):
+    amount.append(0)
+    i += 1
+for item in items:
+    amount[brands.index(item["brand"])] += 1
+for i in range(len(brands)):
+    print(f"Товаров бренда '{brands[i]}': {amount[i]} штук(а/и)")
+print()
 
-# TODO: your code here
+# Определяем максимальный объём среди брендов
+max_amount = 0
+for i in range(len(amount)):
+    if amount[i] > max_amount:
+        max_amount = amount[i]
+# Составляем список брендов с максимальным количеством товаров
+max_amount_brands = []
+for i in range(len(amount)):
+    if amount[i] == max_amount:
+        max_amount_brands.append(brands[i])
+print("На складе больше всего товаров брэнда(ов): ", max_amount_brands)
+print()
 
-print("На складе самый дорогой товар брэнда(ов): ")
-
-# TODO: your code here
+max_price = 0
+max_price_brand = ""
+for item in items:
+    if item["price"] > max_price:
+        max_price = item["price"]
+        max_price_brand = item["brand"]
+print(f"На складе самый дорогой товар - брэнда '{max_price_brand}', цена одного из товаров которого составила {max_price}")
