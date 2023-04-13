@@ -21,8 +21,21 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+input_data = "salaries.txt"
+output_data = "highly_paid.txt"
+SALARY_LIMIT = 60000
+
+f_in = open(input_data, "r", encoding="utf-8")
+f_out = open(output_data, "w", encoding="utf-8")
+
+for num, line in enumerate(f_in):
+    if num > 0:
+        temp_line = line.split()
+        if int(temp_line[3]) > SALARY_LIMIT:
+            f_out.write(f"{temp_line[0]} {temp_line[1][:1]}.{temp_line[2][:1]}.\n")
+
+f_in.close()
+f_out.close()
+
 
 ---
