@@ -5,5 +5,10 @@ names = ["Иван", "Ирина", "Вячеслав", "Василий", "Пет
 
 # TODO: your code here
 
+for i, name in enumerate(names, 1):
+    print(f"{name}", end="")
+    if i != len(names):
+        print(",", end="")
+    
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
