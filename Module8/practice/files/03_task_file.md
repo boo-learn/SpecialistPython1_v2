@@ -26,12 +26,31 @@
 
 ### Решение задачи
 
-```python
-# Совет: сначала считайте все цены из файла, сохраните в список,
-# преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
-# А затем, работам с привычным списком, выполните задания
+path = "sold.txt"  # вместо dir подставь название папки с файлом.
+
 prices = []
-```
+
+f = open(path, "r")
+
+for line in f:
+    prices += (line.split())
+
+total_price = 0
+min_price = float(prices[0])
+max_price = float(prices[0])
+
+for price in prices:
+    total_price += float(price)
+    if float(price) > max_price:
+        max_price = float(price)
+    if float(price) < min_price:
+        min_price = float(price)
+
+print("Товаров продано на общую сумму: ", total_price)
+print("Цена самого дорогого товара: ", max_price)
+print("Цена самого дешевого товара): ", min_price)
+
+f.close()
 
 ---
 
