@@ -52,15 +52,21 @@ numbers_str = line.split()  # numbers_str = ["2", "4", "6", "8"]
 Самый простой способ, для преобразования списка строк к списку чисел:
 
 ```python
-numbers_str = ["2", "4", "6", "8"]
-numbers = []
-# Пройтись по списку строк:
-for el in numbers_str:
-    # Каждый элемент списка преобразовать к строке
-    number = int(el)
-    # и добавить его в новый список
-    numbers.append(number)
-# numbers = [2, 4, 6, 8]
+with open('sold.txt', 'r') as f:
+    prices = []
+    for line in f:
+        prices.extend(map(float, line.strip().split()))
+
+# Находим сумму, максимальное и минимальное значения
+total_sum = sum(prices)
+max_price = max(prices)
+min_price = min(prices)
+
+
+# Выводим результаты
+print(f"Сумма продаж: {total_sum}")
+print(f"Самая дорогая цена: {max_price}")
+print(f"Самая дешевая цена: {min_price}")
 ```
 </details>
 
