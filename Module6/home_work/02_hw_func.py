@@ -4,10 +4,22 @@
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
-def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+def dist(x1, y1, x2, y2):
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
 
 
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+def get_min_side_name(ab, ac, bc):
+    print(locals())
+    if ab <= ac and ab <= bc:
+        return "AB"
+    elif ac <= ab and ac <= bc:
+        return "AC"
+    else:
+        return "BC"
+
+
+a = (1, 1)
+b = (1, 2)
+c = (6, 11)
+
+print("Самый короткий отрезок:", get_min_side_name(dist(*a, *b), dist(*a, *c), dist(*b, *c)))
