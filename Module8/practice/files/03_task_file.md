@@ -26,12 +26,21 @@
 
 ### Решение задачи
 
-```python
-# Совет: сначала считайте все цены из файла, сохраните в список,
-# преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
-# А затем, работам с привычным списком, выполните задания
+sold = open('sold.txt', 'w')
+prices_str = []
 prices = []
-```
+
+for line in sold:
+    prices_str += line.split()
+
+for price in prices_str:
+    prices.append(float(price))
+
+print(sum(prices))
+print(max(prices))
+print(min(prices))
+
+sold.close()
 
 ---
 
