@@ -4,7 +4,22 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
-    pass
+
+    digits = []
+
+    while number != 0:
+        digits.append(number % 10)
+        number = number // 10
+    print(digits)
+
+    while digits:
+        if digits[0] == digits[-1]:
+            digits.pop(0)
+            if len(digits) != 0:
+                digits.pop(-1)
+        else:
+            return False
+    return True
 
 
 # Тестируем функцию
