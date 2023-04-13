@@ -16,19 +16,17 @@
 
 ### Решение задачи
 
-```python
-# Задаем путь к файлу:
-path = "dir/numbers.txt"  # вместо dir подставь название папки с файлом.
-# Или удалите dir, если numbers.txt в той же папке, что и питоновский файл
-
-# Открываем файл на чтение
+path = "numbers.txt"
 f = open(path, "r")
-sum_numbers = 0  # Переменная для подсчета суммы
-# В переменную line считываем строку за стройкой из файла(f)
+sum_numbers = 0
+i = 0
 for line in f:
-    ...
+    sum_numbers += int(line)
+    i += 1
+f.close()
+average = sum_numbers / i
 print(f"Сумма чисел = {sum_numbers}")
-print(f"Среднеарифметическое = {...}")
+print(f"Среднеарифметическое = {average}")
 ```
 
 ---
