@@ -9,6 +9,50 @@
 # Ввод: -2/3 - -2
 # Вывод: 1 1/3
 
-# TODO: your code here
+def nok(x, y):
+    if x > y:
+        temp_num = x
+    else:
+        temp_num = y
+    while True:
+        if temp_num % x == 0 and temp_num % y == 0:
+            nok_res = temp_num
+            break
+        temp_num += 1
+    return nok_res
 
 
+def frac_op(operation, f1, f2):
+    """
+    :param operation: "+" - сложение или "-" - вычитание
+    :param f1: дробное число 1; формат: (целая_часть_дроби, числитель_дроби, знаменатель_дроби)
+    :param f2: дробное число 2; формат (целая_часть_дроби, числитель_дроби, знаменатель_дроби)
+    :return: результирующая дробь; формат (целая_часть_дроби, числитель_дроби, знаменатель_дроби)
+    """
+
+    # f[0] - целая часть, f[1] - числитель, f[2] - знаменатель
+    f1_up = (f1[0] * f1[2] + f1[1]) * (nok(f1[2], f2[2]) / f1[2])
+    f2_up = (f2[2] * f2[0] + f2[1]) * (nok(f1[2], f2[2]) / f2[2])
+    if operation == "+":
+        f_up_total = f1_up + f2_up     # сложение
+    else:
+        f_up_total = f1_up - f2_up     # вычитание
+    f_res = []
+    f_res.append(int(f_up_total // nok(f1[2], f2[2])))
+    f_res.append(int(f_up_total % nok(f1[2], f2[2])))
+    if f_up_total % nok(f1[2], f2[2]) != 0:
+        f_res.append(int(nok(f1[2], f2[2])))
+    else:
+        f_res.append(0)
+    return f_res
+
+
+# Тестирование
+frac1 = (0, 5, 6)
+frac2 = (0, 4, 7)
+op = "+"
+frac_res = frac_op(op, frac1, frac2)
+
+print()
+print(f"   {frac1[0]} {frac1[1]}/{frac1[2]} {op} {frac2[0]} {frac2[1]}/{frac2[2]} = "
+      f"{frac_res[0]} {frac_res[1]}/{frac_res[2]}")
