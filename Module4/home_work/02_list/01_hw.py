@@ -3,7 +3,14 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+
+names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
+names_string=names[0]
+# Пример вывода:
+# Иван, Ирина, Вячеслав, Василий, Петр
+for num, name in enumerate(names[1:]):
+    names_string = names_string+ ", " +  name
+print(names_string)
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
