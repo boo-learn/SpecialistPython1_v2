@@ -27,10 +27,25 @@
 ### Решение задачи
 
 ```python
-# Совет: сначала считайте все цены из файла, сохраните в список,
-# преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
-# А затем, работам с привычным списком, выполните задания
 prices = []
+
+sold_log = "sold.txt"
+
+sold_file = open(sold_log, "r")
+
+for line in sold_file:
+    day_sold = line.split()
+    for price in day_sold:
+        prices.append(float(price))
+
+
+print(prices)
+print(f"Продано товаров на сумму: {sum(prices):.2f}")
+print(f"Цена самого дорогого товара: {max(prices)}")
+print(f"Цена самого дешевого товара: {min(prices)}")
+
+
+sold_file.close()
 ```
 
 ---
