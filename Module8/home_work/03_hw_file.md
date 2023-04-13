@@ -33,9 +33,21 @@ n = 6
 
 ### Решение задачи
 
-```python
 n = int(input("n: "))
-# TODO: you code here...
+
+with open("pyramid.txt", "a+") as f:
+    f.seek(0)  # перемещаемся в начало файла
+    content = f.read()  # считываем содержимое файла
+    width = 2*n - 1  # ширина самой широкой строки
+    lines = []
+    for i in range(1, n+1):
+        stars = "*" * (2*i - 1)
+        line = stars.center(width)
+        lines.append(line)
+    output = "n=" +  str(n) + "\n" + "\n".join(lines)  # значение n в начало строки
+    f.write("\n\n")  # отступ
+    f.write(output)
+    print(output).
 ```
 
 ---
