@@ -21,8 +21,65 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
 
----
+
+
+# Кстати, интересно, почему задача называется "Обработка списка фруктов"? ;)
+
+OVER_MULTI = 2  # Коэффициент за переработку
+
+main_table = []
+with open("workers.txt", "r", encoding="utf-8") as f_workers:
+    """
+    Построение полной таблицы со следующими полями
+    0 - Имя; 1 - Фамилия; 2 - Номинал зарплаты; 3 - Норма; 4 - Отработано;
+    5 - Переработка; 6 - Стоимость часа; 7 - Изменение зарплаты; 8 - Зарплата к выплате
+    """
+    for num, line in enumerate(f_workers):
+        if num > 0:
+            main_table.append([line.split()[0], line.split()[1], int(line.split()[2]),
+                               int(line.split()[4]), [], [], [], [], []])
+
+time_table = []
+with open("hours_of.txt", "r", encoding="utf-8") as f_hours:
+    for num, line in enumerate(f_hours):
+        if num > 0:
+            time_table.append([line.split()[0], line.split()[1], int(line.split()[2])])
+
+for time_raw in time_table:
+    for main_raw in main_table:
+        # Поиск сотрудника в основной таблице по имени и фамилии
+        if main_raw[0] == time_raw[0] and main_raw[1] == time_raw[1]:
+            # Реально отработано
+            main_raw[4] = time_raw[2]
+            # Стоимость часа
+            main_raw[6] = main_raw[2] // main_raw[3]
+            # Оценка переработки (в часах)
+            main_raw[5] = main_raw[4] - main_raw[3]
+            # Отработал как положено
+            if main_raw[5] == 0:
+                main_raw[7] = 0
+            # Переработка
+            elif main_raw[5] > 0:
+                main_raw[7] = OVER_MULTI * main_raw[6]
+            # Недоработка
+            else:
+                main_raw[7] = - (main_raw[3] - main_raw[4]) * main_raw[6]
+            main_raw[8] = main_raw[2] + main_raw[7]
+
+for line in main_table:
+    print(line)
+
+# Результат:
+# ['Петр', 'Алексеев', 22000, 140, 120, -20, 157, -3140, 18860]
+# ['Василий', 'Иванов', 18000, 150, 180, 30, 120, 240, 18240]
+# ['Матвей', 'Бурин', 42000, 150, 160, 10, 280, 560, 42560]
+# ['Василий', 'Сидоров', 17500, 140, 122, -18, 125, -2250, 15250]
+# ['Петр', 'Дурин', 20000, 160, 80, -80, 125, -10000, 10000]
+# ['Альберт', 'Грибов', 20000, 160, 118, -42, 125, -5250, 14750]
+
+# Краткая таблица
+with open("workers_salary.txt", "w", encoding="utf-8") as f_main:
+    f_main.write("Имя, Фамилия, Зарплата к выплате" + "\n")
+    for line in main_table:
+        f_main.write(f"{str(line[1])}, {str(line[0])}, {str(line[8])}\n")
