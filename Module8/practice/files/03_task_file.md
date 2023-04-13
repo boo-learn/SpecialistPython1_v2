@@ -30,7 +30,19 @@
 # Совет: сначала считайте все цены из файла, сохраните в список,
 # преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
 # А затем, работам с привычным списком, выполните задания
-prices = []
+    file = open("sold.txt", "r")
+    strings = []
+    numbers = []
+
+    for line in file:
+        strings = (line.split())
+        for val in strings:
+            numbers.append(float(val))
+
+    print(sum(numbers))
+    print(max(numbers))
+    print(min(numbers))
+    file.close()
 ```
 
 ---
