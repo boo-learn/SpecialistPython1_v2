@@ -5,8 +5,21 @@
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
 def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+
+
+points = [3, 1, 3, 9, 1, 5]
+
+a = distance(points[0], points[1], points[2], points[3])
+b = distance(points[2], points[3], points[4], points[5])
+c = distance(points[4], points[5], points[0], points[1])
+
+if a <= b and a <= c:
+    print(f'Самый короткий отрезок АВ.')
+elif b < c:
+    print(f'Самый короткий отрезок ВC.')
+else:
+    print(f'Самый короткий отрезок CA.')
 
 
 # TODO: your code here
