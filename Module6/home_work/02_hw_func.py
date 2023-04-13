@@ -5,8 +5,23 @@
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
 def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+    return ((x2 - x1) * 2 + (y2 - y1) * 2) ** 0.5
+
+
+xa, ya = 1, 2  # xa, ya = map(int, input("Введите координаты точки A через пробел: ").split())
+xb, yb = 3, 4  # xb, yb = map(int, input("Введите координаты точки B через пробел: ").split())
+xc, yc = 5, 6  # xc, yc = map(int, input("Введите координаты точки C через пробел: ").split())
+
+AB = distance(xa, ya, xb, yb)
+BC = distance(xb, yb, xc, yc)
+AC = distance(xa, ya, xc, yc)
+
+if AB <= BC and AB <= AC:
+    print("Самый короткий отрезок: AB")
+elif BC <= AB and BC <= AC:
+    print("Самый короткий отрезок: BC")
+else:
+    print("Самый короткий отрезок: AC")
 
 
 # TODO: your code here
