@@ -23,6 +23,21 @@
 
 ```python
 # TODO: you code here...
-```
+    file = open("salaries.txt", "r", encoding='utf-8')
+    output = open("highly_paid.txt", "w", encoding='utf-8')
+    note = []
 
----
+    count = 0
+    VAL = 60000
+
+    for line in file:
+        if count:
+            note = line.split()
+            salary = int(note[3])
+            if salary > VAL:
+                output.write(f"{note[0]} {note[1][0]}.{note[2][0]}.\n")
+
+        count += 1
+
+    file.close()
+    output.close()
