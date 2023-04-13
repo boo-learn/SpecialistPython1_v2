@@ -33,10 +33,14 @@ n = 6
 
 ### Решение задачи
 
-```python
-n = int(input("n: "))
-# TODO: you code here...
-```
+n = int(input("Введите высоту 'ёлочки' n = "))
+
+with open('pyramid.txt', "w") as f:
+    i = 1
+    while i <= n:
+        st = '*' * (2 * i - 1)
+        f.write(st.center(n * 2 + 1) + "\n")
+        i += 1
 
 ---
 <details>
