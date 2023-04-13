@@ -2,3 +2,19 @@
 # Находится ли одна окружность целиком внутри другой
 
 # TODO: your code here
+
+def distance(x1, y1, x2, y2):
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+
+#           x  y  r
+circle_1 = [3, 1, 3]
+circle_2 = [3, 2, 1]
+
+diff = distance(circle_1[0], circle_1[1], circle_2[0], circle_2[1])
+
+if circle_1[2] > circle_2[2] + diff:
+    print('Вторая окружность полностью находится внутри первой.')
+elif circle_2[2] > circle_1[2] + diff:
+    print('Первая окружность полностью находится внутри второй.')
+else:
+    print('Ни одна окружность не находится внутри другой.')
