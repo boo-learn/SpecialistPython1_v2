@@ -17,9 +17,17 @@
 
 ```python
 summa = 0
-with open("data/info.txt", "r") as f:
-    pass
-
+numbers = []  # числа из файла
+with open("info.txt", "r", encoding="utf-8") as f:
+    for line in f:
+        line = line.strip()
+        try:
+            num = int(line)
+            summa += num
+            numbers.append(num)  # добавляем в список
+        except ValueError:
+            pass
+print(f"Числа: {', '.join(str(num) for num in numbers)}")
 print(f"Сумма чисел = {summa}")
 # Уточнение: в сумму добавляем только те значения, которые можно преобразовать к int'у
 # Например: int("-26") --> -26, а int("--26") --> ошибка
