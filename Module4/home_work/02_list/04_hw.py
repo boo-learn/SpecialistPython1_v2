@@ -5,3 +5,13 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+numbers = [91, -98, 46, 25, -85, 16, 30, -92, 64, -89, 49, 81, 5, -15, -87]
+roots = []
+
+for num in numbers:
+    if num >= 0:
+        root = num ** 0.5
+        if round(root) ** 2 == num:
+            roots.append(int(root))
+
+print(roots)
