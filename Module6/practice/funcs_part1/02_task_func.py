@@ -4,8 +4,15 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
-    pass
-
+    i = 0
+    sym_number = 0
+    temp_num = number
+    while temp_num > 0:
+        sym_number = sym_number * 10 + temp_num % 10
+        temp_num = temp_num // 10
+        i += 1
+    # print(sym_number)
+    return number == sym_number
 
 # Тестируем функцию
 print(palindrome(3454))
