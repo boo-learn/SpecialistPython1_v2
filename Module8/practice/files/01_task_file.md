@@ -18,17 +18,27 @@
 
 ```python
 # Задаем путь к файлу:
-path = "dir/numbers.txt"  # вместо dir подставь название папки с файлом.
-# Или удалите dir, если numbers.txt в той же папке, что и питоновский файл
+path = "data/numbers.txt"
 
-# Открываем файл на чтение
+# Открываем файл для чтения
 f = open(path, "r")
-sum_numbers = 0  # Переменная для подсчета суммы
-# В переменную line считываем строку за стройкой из файла(f)
+
+total_sum = 0
+count = 0
+
 for line in f:
-    ...
-print(f"Сумма чисел = {sum_numbers}")
-print(f"Среднеарифметическое = {...}")
+    
+    number = int(line.strip())
+    total_sum += number
+
+    count += 1
+
+f.close()
+
+average = total_sum / count
+
+print("Сумма чисел: ", total_sum)
+print("Среднее арифметическое: ", average)
 ```
 
 ---
