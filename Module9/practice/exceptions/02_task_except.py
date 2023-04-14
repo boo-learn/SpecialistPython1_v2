@@ -4,3 +4,25 @@
 # Алгоритм проверки на високосный год оформите в виде отдельной функции.
 #
 # Входная строка содержит два целых числа – номер месяца (возможно, неправильный) и номер года.
+
+
+while True:
+    sides = input("Введите номер месяца и год: ")
+    try:
+        month = int(sides.split(" ")[0])
+        year = int(sides.split(" ")[1])
+        break
+    except ValueError:
+        print("Некорректные параметры")
+
+if month == 2:
+    if year % 4 == 0:
+        total_days = 29
+    else:
+        total_days = 28
+elif month in [1, 3, 5, 7, 8, 10, 12]:
+    total_days = 31
+else:
+    total_days = 30
+
+print(f"В данном месяце {total_days} дней")
