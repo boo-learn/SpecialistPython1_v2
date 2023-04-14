@@ -15,7 +15,9 @@
 ### Решение задачи
 
 ```python
-def log(text, file="log.txt"):
+def log(message):
+    with open('log.txt', 'a') as f:
+        f.write(message + '\n')
     ...
 
 log("hello world")  # дописывает "hello world" в конец файла log.txt
