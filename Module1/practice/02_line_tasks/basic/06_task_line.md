@@ -17,7 +17,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+flat_number = int(input())
+flat_floor = (-flat_number//5)*(-1)
+
+print(flat_floor)
 ```
 
 ---
