@@ -16,7 +16,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+
+p = a + b + c
+s = (p / 2 * (p / 2 - a) * (p / 2 - b) * (p / 2 - c)) ** (1/2)
+
+print("P= ", p)
+print("S= ", s)
 ```
 
 ---
