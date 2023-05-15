@@ -16,11 +16,10 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+temperaturae_C = int(input("Введите температуру с цельссиях:"))
+temperaturae_F = (temperaturae_C*9/5)+32 
+print ( "Температура в фаренгейтах: ",temperaturae_F )
 
----
 
 ### Данные для самопроверки
 |   tC   |  |   tF   |
