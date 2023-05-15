@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+flat_number = int(input("Введите номер квартиры"))
+
+floor_number = (flat_number // 5) + (flat_number % 5)
+
+print("Квартира находится на этаже", floor_number)
 ```
 
 ---
