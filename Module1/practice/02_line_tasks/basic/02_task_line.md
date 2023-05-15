@@ -14,8 +14,7 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+test
 ```
 
 ---
