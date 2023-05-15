@@ -17,11 +17,9 @@
 ### Решение задачи
 
 ```python
-number = int(input("Введите трехзначное число: "))
-first = ...
-last = ...
-print("Первая цифра числа =", first)
-print("Последняя цифра числа =", last)
+number = int(input())
+print("Первая цифра числа =", number // 100)
+print("Последняя цифра числа =", number % 10)
 ```
 
 ---
