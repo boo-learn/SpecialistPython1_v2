@@ -16,9 +16,22 @@
 Программа должна вывести целое число от 0 до 108 — номер отметки, на которой он остановится. 
 
 ### Решение задачи
-
-```python
-# TODO: you code here...
+import math
+l = 109
+speed = float(input("Введите скорость байкера: "))
+time = float(input("Время движения: "))
+if speed > 0 and speed * time >= l:
+    mark_t = (speed * time)%l     
+    print ( "Отметка", mark_t)
+elif speed > 0 and speed * time < l:
+    mark_t = speed * time     
+    print ( "Отметка", mark_t)
+elif speed < 0 and -speed * time < l:
+    mark_t = l+ speed * time 
+    print ( "Отметка при движении против часовой стрелки", mark_t)
+elif speed < 0 and -speed * time > l:
+    mark_t = l-(-speed * time)%l 
+    print ( "Отметка при движении против часовой стрелки", mark_t)
 ```
 
 ---
