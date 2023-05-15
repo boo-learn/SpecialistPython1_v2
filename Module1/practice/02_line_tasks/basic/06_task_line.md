@@ -17,7 +17,10 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите номер квартиры: "))
+floor = number//5 + (number%5 > 0)
+
+print("Номер этажа: ", floor)
 ```
 
 ---
