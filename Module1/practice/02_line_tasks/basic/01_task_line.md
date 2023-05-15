@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = abs(int(input("Первая сторона прямоугольника: ")))
+b = abs(int(input("Вторая сторона прямоугольника: ")))
+
+p = (a + b) * 2 
+s = a * b
+
+print("p = ", p)
+print("s = ", s)
 ```
 
 ---
