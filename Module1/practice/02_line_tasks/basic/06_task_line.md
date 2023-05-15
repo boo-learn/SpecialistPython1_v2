@@ -19,7 +19,11 @@
 ```python
 # TODO: you code here...
 ```
+number = int(input("Введите номер квартиры: "))
 
+if number%5 > 0 : level = (number//5) + 1
+if number%5 == 0 : level = (number//5) 
+print("Квартира на ", level, " этаже")
 ---
 
 ### Данные для самопроверки
