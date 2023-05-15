@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input("x:"))
+y = int(input("y:"))
+x1 = int(input("x1:"))
+y1 = int(input("y1:"))
+distance = ((x - x1) ** 2 + (y - y1) ** 2) ** 0.5
+
+print ("Расстояние:", distance)
 ```
 
 ---
