@@ -17,9 +17,12 @@
 ### Решение задачи
 
 ```python
-import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
+from math import pi  # для использования функции импортировать библиотеку math
+
+radius = float(input())
+s = pi*radius**2
+
+print(s)
 ```
 
 ---
