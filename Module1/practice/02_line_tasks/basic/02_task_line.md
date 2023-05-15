@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x_a = int(input("x_a:"))
+y_a = int(input("y_a:"))
+x_b = int(input("x_b:"))
+y_b = int(input("y_b:"))
+d = ((x_a-x_b)**2+(y_a-y_b)**2)**0.5
+
+print("d=",d)
 ```
 
 ---
