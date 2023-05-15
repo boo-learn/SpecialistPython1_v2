@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+v = int(input("v= "))
+t = int(input("t= "))
+
+if v > 0:
+    s = (v * t) % 109
+else:
+    s = 109 - ((-v) * t) % 109
+print("S= ", s)
 ```
 
 ---
