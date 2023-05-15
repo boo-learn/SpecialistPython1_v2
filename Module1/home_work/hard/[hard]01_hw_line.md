@@ -17,8 +17,16 @@
 ### Решение задачи
 
 ```python
-seconds = int(input("Прошло секунд: "))
-# TODO: you code here...
+import math
+
+seconds_input = int(input("Прошло секунд: "))
+
+days = math.floor(seconds_input/60/60/24)
+hours = math.floor(seconds_input/60/60) - days * 24
+minutes = math.floor(seconds_input/60) - hours * 60 - days * 60 * 24
+seconds = math.floor(seconds_input) - minutes * 60 - hours * 60 * 60 - days * 60 * 60 * 24
+
+print (days ,"дней", hours, "часов", minutes, "минут", seconds, "секунд")
 ```
 
 ---
