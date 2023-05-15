@@ -17,7 +17,7 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+print(int((int(input()) * (9 / 5))) + 32)
 ```
 
 ---
