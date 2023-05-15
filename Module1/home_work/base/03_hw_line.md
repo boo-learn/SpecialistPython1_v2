@@ -18,7 +18,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+v = int(input("Введите скорость: "))
+t = int(input("Введите время: "))
+lenght = 109
+
+if v < 0:
+    dot =  (109 + v * t % 109) % 109
+if v >= 0:
+    dot =  v * t % 109
+
+print("километр: ", dot)
 ```
 
 ---
