@@ -16,10 +16,10 @@
 
 ### Решение задачи
 
-```python
-import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
+```
+from math import pi
+
+print(round((pi * float(input()) ** 2), 2))
 ```
 
 ---
