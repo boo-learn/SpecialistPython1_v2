@@ -16,11 +16,11 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("flat nuber: "))
 
----
+f = (n - 1) // 5 + 1
+
+print("floor: ", f)
 
 ### Данные для самопроверки
 |   flat   | | floor    |
