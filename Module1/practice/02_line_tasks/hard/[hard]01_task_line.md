@@ -17,11 +17,16 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+h = int(input("h: "))
+a = int(input("a: "))
+b = int(input("b: "))
 
----
+days = (h - b)//(a - b)
+rest = (h - b)%(a - b)
+if rest > 0 : days = days + 1
+
+print("days: ", days)
+
 
 ### Данные для самопроверки
 |   h   |   a   | b    |     |  days    |
