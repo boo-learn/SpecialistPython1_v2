@@ -17,8 +17,10 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+``
+v, t = int(input()), int(input())
+
+print((v * t) % 109)
 ```
 
 ---
