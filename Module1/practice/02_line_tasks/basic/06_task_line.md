@@ -16,9 +16,8 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+```flat_num = int(input())
+print((flat_num + 4) // 5)```
 
 ---
 
