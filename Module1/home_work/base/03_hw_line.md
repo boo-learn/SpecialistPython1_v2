@@ -17,11 +17,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+v_biker = float(input("Введите скорость байкера на МКАД (+/- по/против часовой стрелки), км/час: "))
+t_biker = float(input("Введите время в пути байкера на МКАД, час: "))
 
----
+if v_biker > 0:
+	point = (v_biker * t_biker)%109
+else:
+	point = 109 - (-v_biker * t_biker)%109
+
+print("Отметка на МКАД, км: ", point)
 
 ### Подсказки
 <details>
