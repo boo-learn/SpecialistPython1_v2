@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a:"))
+b = int(input("b:"))
+p = 2*(a + b)
+s= a*b
+print("p=",p)
+print("s=",s)
+
 ```
 
 ---
