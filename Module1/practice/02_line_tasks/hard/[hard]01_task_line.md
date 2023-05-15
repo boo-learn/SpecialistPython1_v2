@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+h = int(input("h: "))
+a = int(input("a: "))
+b = int(input("b: "))
+
+num_days = h //  (a - b)
+
+print("Количество дней: ", num_days)
 ```
 
 ---
