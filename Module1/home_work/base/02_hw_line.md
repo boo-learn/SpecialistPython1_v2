@@ -19,7 +19,13 @@
 ```python
 import math
 math.pi # Число pi из библиотеки math
-# TODO: you code here...
+import math
+
+r = float(input("Ввидите радиус круга: "))
+
+s = math.pi*r**2
+
+print("Площадь круга :", s)
 ```
 
 ---
