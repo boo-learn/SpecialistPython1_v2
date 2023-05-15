@@ -16,12 +16,14 @@
 
 ### Решение задачи
 
-```python
-seconds = int(input("Прошло секунд: "))
-# TODO: you code here...
-```
+seconds = int(input("Прошло секунд всего: "))
 
----
+days = seconds // 86400
+hours = seconds % 86400 // 3600
+minutes = seconds % 86400 % 3600 // 60
+seconds = seconds % 60
+
+print("Прошло ", days, " дней ", hours, " часов ", minutes," минут ", seconds, " секунд")
 
 ### Данные для самопроверки
 |   seconds   |  |   result   |
