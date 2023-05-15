@@ -16,17 +16,14 @@
 
 ### Решение задачи
 
-```python
-number = int(input("Введите четырехзначное число: "))
-n1 = ...
-n2 = ...
-n3 = ...
-n4 = ...
-print(n1)
-print(n2)
-print(n3)
-print(n4)
-```
+num4dig = int(input("number 4 digits: "))
 
----
+dig1 = num4dig//1000
+dig2 = (num4dig - dig1 * 1000)//100
+dig3 = (num4dig - dig1 * 1000 - dig2 * 100)//10
+dig4 = num4dig - dig1 * 1000 - dig2 * 100 - dig3 * 10
 
+print("first digit: ", dig1)
+print("second digit: ", dig2)
+print("third digit: ", dig3)
+print("fourth digit: ", dig4)
