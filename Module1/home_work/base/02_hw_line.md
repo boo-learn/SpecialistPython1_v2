@@ -15,12 +15,10 @@
 Требуется вывести площадь данной окружности.
 
 ### Решение задачи
-
-```python
 import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
-```
+radius_circle = float(input("Введите радиус круга: "))
+area_circle = math.pi * radius_circle ** 2
+print ( "Площадь круга: ",area_circle )
 
 ---
 
