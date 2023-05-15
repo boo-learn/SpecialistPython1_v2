@@ -16,15 +16,15 @@
 
 ### Решение задачи
 
-```python
-number = int(input("Введите трехзначное число: "))
-first = ...
-last = ...
-print("Первая цифра числа =", first)
-print("Последняя цифра числа =", last)
-```
+num3dig = int(input("number 3 digits: "))
 
----
+first_dig = num3dig//100
+second_dig = (num3dig - first_dig * 100)//10
+third_dig = num3dig - first_dig * 100 - second_dig * 10
+
+print("first digit: ", first_dig)
+print("third digit: ", third_dig)
+
 
 ### Данные для самопроверки
 |  number  | |   first   |  last    |
