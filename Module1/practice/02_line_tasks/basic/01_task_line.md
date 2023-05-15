@@ -14,11 +14,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input("a: "))
+b = int(input("b: "))
+p = (a+b)*2
+s = a*b
+print("P:",p)
+print("S:",s)
 
----
 
 ### Данные для самопроверки
 |   a   |   b   | |   S   |  P    |
