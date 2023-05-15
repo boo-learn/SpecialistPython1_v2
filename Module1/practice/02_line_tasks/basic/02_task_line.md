@@ -14,11 +14,14 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a1 = int(input("a1: "))
+a2 = int(input("a2: "))
+b1 = int(input("b1: "))
+b2 = int(input("b2: "))
 
----
+d = ((b1-a1)**2+(b2-a2)**2)**0.5
+
+print(d)
 
 ### Подсказки
 
