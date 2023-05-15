@@ -18,7 +18,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+v = int(input("Введите скорость: " ))
+t = int(input("Введите время: " ))
+length = 109
+
+s = v * t
+
+if v>0:
+    print(s%length)
+else:
+    print(s%length)
 ```
 
 ---
