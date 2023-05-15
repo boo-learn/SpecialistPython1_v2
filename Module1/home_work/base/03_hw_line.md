@@ -18,7 +18,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+import math
+
+v = int(input("Скорость: "))
+t = int(input("Время: "))
+
+check_mark = abs(v * t) - 109 * math.floor(abs(v * t) / 109)
+
+if abs(v * t) == 109:
+    print ("Искомая отметка МКАД: ",0)
+elif v >= 0:
+    print ("Искомая отметка МКАД: ",check_mark)
+else:
+    print ("Искомая отметка МКАД: ",109 - check_mark)
 ```
 
 ---
