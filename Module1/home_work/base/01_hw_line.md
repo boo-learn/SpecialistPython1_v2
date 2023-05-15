@@ -17,7 +17,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+сelsius = int(input("Ввидите температуру в градусах цельсия :"))
+
+fahrenheit = (сelsius*9/5)+32
+
+print("Температура в фаренгейтах :", fahrenheit)
 ```
 
 ---
