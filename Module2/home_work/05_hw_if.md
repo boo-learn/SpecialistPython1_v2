@@ -23,13 +23,20 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
-c = int(input("c: "))
+first_num = int(input("First_num: "))
+second_num = int(input("Second_num: "))
+third_num = int(input("Third_num: "))
 
-# TODO: you code here...
+if first_num > second_num:
+    first_num, second_num = second_num, first_num
+if second_num > third_num:
+    second_num, third_num = third_num, second_num
+if first_num > third_num:
+    first_num, third_num = third_num, first_num
+if first_num > second_num:
+    first_num, second_num = second_num, first_num
 
-print(a, b, c)
+print(first_num, second_num, third_num)
 ```
 
 ---
