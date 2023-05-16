@@ -15,8 +15,19 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+n = int(input("n: "))
+divider = 1
+div_sum = 0
+
+while divider < n:
+    if n % divider == 0:
+        div_sum += divider
+    divider += 1
+if div_sum == n:
+    print("YES")
+else:
+    print("NO")
 ```
 
 ---
