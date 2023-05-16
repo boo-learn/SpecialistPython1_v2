@@ -20,8 +20,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+x1, y1, x2, y2 = map(int, [input() for _ in range(4)])
+
+if (x1 % 2 == x2 % 2) and (y1 + y2) % 2 == 0:
+    print("Да")
+elif ((x1 + x2) % 2 != 0) and ((y1 + y2) % 2 != 0):
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
