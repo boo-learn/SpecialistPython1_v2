@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число: "))
+if abs(number) % 10 == 5:
+    print("Yes")
+else:
+    print("No")
 ```
 
 ---
