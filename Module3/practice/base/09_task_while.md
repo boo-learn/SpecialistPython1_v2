@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число: "))
+divisor = 1
+sum_divisor = 0
+
+while divisor < number:
+    if number % divisor == 0:
+        sum_divisor += divisor
+    divisor += 1
+
+if sum_divisor == number:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
