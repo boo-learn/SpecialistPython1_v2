@@ -15,8 +15,24 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+a, b = int(input("a: ")), int(input("b: "))
+
+div_count = 0
+div_list = ""
+
+while a < b:
+    divider = 1
+    div_sum = 0
+    while divider < a:
+        if a % divider == 0:
+            div_sum += divider
+        divider += 1
+    if div_sum == a:
+        div_list += str(a) + " "
+        div_count += 1
+    a += 1
+print(f'''Список чисел: {div_list} \n Кол-во чисел: {div_count}''')
 ```
 
 ---
