@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+amount = int(input("Введите количество денег у покупателя: "))
+cost = int(input("Введите цену товара: "))
+
+if amount < cost:
+    print("Денег недостаточно")
+else:
+    amount = amount - cost
+    print("После покупки останется: ", amount)
 ```
 
 ---
