@@ -17,7 +17,18 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите количество чисел: "))
+result = 0
+count = 0
+
+while count < number:
+    n = int(input("Введите число: "))
+    if n > 0:
+        result += 1
+    count += 1
+
+print("Среди введенных ", result, "положительных")
+
 ```
 
 ---
