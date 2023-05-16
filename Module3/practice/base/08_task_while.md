@@ -15,8 +15,19 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+n = int(input("n: "))
+divider = 2
+div_list = ''
+
+while divider < n:
+    if n % divider == 0:
+        div_list += str(divider) + " "
+    divider += 1
+if len(div_list) == 0:
+    print("Простое число")
+else:
+    print(div_list)
 ```
 
 ---
