@@ -20,11 +20,17 @@ _коров_, _корова_ или _коровы_, для заданного ч
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
 
----
+objects_name = "коров"
+
+if n % 10 == 1 and n % 100 // 10 != 1:
+    objects_name = "корова"
+elif (n % 10 == 1 or n % 10 == 2 or n % 10 == 3 or n % 10 == 4) and n % 100 // 10 != 1:
+    objects_name = "коровы"
+
+print("На лугу пасётся", n, objects_name)
+
 ### Подсказки
 
 <details>
