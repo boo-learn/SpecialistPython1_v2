@@ -14,11 +14,11 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
 
----
+print("Существует" if c < a + b and b < a + c and a < b + c else "Не существует")
 
 ### Данные для самопроверки
 
