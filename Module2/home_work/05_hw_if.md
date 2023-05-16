@@ -22,17 +22,26 @@
 
 ### Решение задачи
 
-```python
 a = int(input("a: "))
 b = int(input("b: "))
 c = int(input("c: "))
 
-# TODO: you code here...
+if a > c:
+    a += c
+    c = a - c
+    a -= c
+
+if b > c:
+    b += c
+    c = b - c
+    b -= c
+
+if a > b:
+    a += b
+    b = a - b
+    a -= b
 
 print(a, b, c)
-```
-
----
 
 ### Подсказки
 
