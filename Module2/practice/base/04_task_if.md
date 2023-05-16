@@ -15,7 +15,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("n: "))
+
+if number % 5 == 0 and number % 2 != 0:
+    print ("YES")
+else:
+    print("NO")
 ```
 
 ---
