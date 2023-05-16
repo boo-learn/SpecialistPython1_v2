@@ -31,12 +31,13 @@ n = 5
 ```
 
 ### Решение задачи
+n = int(input(" Количество ступенек n: "))
+i = 0
+while i <= n:
+     step =  "*" * i
+     print(step)
+     i=i+1
 
-```python
-# TODO: you code here...
-```
-
----
 
 ### Подсказки
 
