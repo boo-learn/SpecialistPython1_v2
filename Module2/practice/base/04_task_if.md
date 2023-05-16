@@ -14,9 +14,12 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+namber = int (input("Введите целое число: "))
+last_numeral = namber % 10
+if  last_numeral == 5 :
+     print("Заканчивается на 5")
+else :
+    print("Нет")
 
 ---
 
