@@ -17,8 +17,32 @@
 ### Решение задачи
 
 ```python
-seconds = int(input("Прошло секунд: "))
-# TODO: you code here...
+
+seconds = int(input("Ведите количество секунд :" ))
+
+one_day_second = 24*60*60 #количество секунд в одном дне
+one_hour_seconds = 60*60 #количество секунд в одном часе
+one_minute_second = 60  #количество секунд в одной минуте
+
+#найдем кол во дней
+
+day = seconds//one_day_second
+
+hour = (seconds-one_day_second*day)//one_hour_seconds
+
+minute = (seconds-one_day_second*day - one_hour_seconds*hour)//one_minute_second
+
+second = seconds-one_day_second*day - one_hour_seconds*hour - one_minute_second*minute
+
+# print ("Всего введенных секунд :", seconds)
+# print ("Количество секунд в одном дне :", one_day_second )
+# print ("Количество секунд в одном часе :", one_hour_seconds )
+# print ("Количество секунд в одной минуте :", one_minute_second )
+# print ("Количество дней :", day )
+# print ("Количество часов :", hour )
+# print ("Количество минут :", minute )
+# print ("Количество секунд :", second)
+print (day, "дней", hour, "часов", minute, "минут", second, "секунд" )
 ```
 
 ---
