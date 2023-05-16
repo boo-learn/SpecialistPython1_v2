@@ -14,13 +14,20 @@
 Вывести "Равнобедренны", "Не равнобедренный" или "Не существует".
 
 ### Решение задачи
+triangle_str1 = int(input("Введите длину стороны 1: "))
+triangle_str2 = int(input("Введите длину стороны 2: "))
+triangle_str3 = int(input("Введите длину стороны 3: "))
 
-```python
-# TODO: you code here...
-```
-
----
-
+if not (triangle_str1 + triangle_str2 > triangle_str3 and
+        triangle_str1 + triangle_str3 > triangle_str2 and
+        triangle_str2 + triangle_str3 > triangle_str1):
+    print("Не существует")
+elif (triangle_str1 == triangle_str2 or
+      triangle_str2 == triangle_str3 or
+      triangle_str1 == triangle_str3):
+    print("Равнобедренный")
+else:
+    print("Не равнобедренный")
 ### Данные для самопроверки
 
 | a | b | c | Результат |
