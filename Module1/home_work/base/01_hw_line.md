@@ -16,9 +16,9 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+tC = int(input("tC: "))
+tF = (tC * 9/5) + 32
+print(tF)
 
 ---
 
