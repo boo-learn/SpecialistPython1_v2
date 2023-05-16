@@ -17,9 +17,29 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
 ---
 
+n = int(input(" Количество долек n: "))
+m = int(input(" Количество долек m: "))
+k = int(input(" Количество долек k: "))
+if k < n* m and (k % n == 0 or k % m == 0):
+     print("Да")
+ else:
+     print("Нет")
+     
+     #вариант 2
+n = int(input(" Количество долек n: "))
+m = int(input(" Количество долек m: "))
+k = int(input(" Количество долек k: "))
+i=1
+res = "Нет"
+while i <= m-1:
+    if i*n == k:
+        res = "Да"
+    i = i+1
+i = 1
+while i <= n-1:
+    if i*m == k:
+        res = "Да"
+    i = i+1
+print (res)
