@@ -21,7 +21,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+chess_pos_one = int(input("Chess_pos_one: "))
+chess_pos_two = int(input("Chess_pos_two: "))
+chess_pos_three = int(input("Chess_pos_three: "))
+chess_pos_four = int(input("Chess_pos_four: "))
+
+color_chess_one = (chess_pos_one + chess_pos_two) % 2
+color_chess_two = (chess_pos_three + chess_pos_four) % 2
+
+if color_chess_one == color_chess_two:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
