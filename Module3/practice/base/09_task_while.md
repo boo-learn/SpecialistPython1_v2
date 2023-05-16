@@ -16,7 +16,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input("num: "))
+counter = 1
+sum_del = 0
+
+while counter<num:
+    if num%counter == 0:
+        sum_del+=counter
+    counter+=1
+
+if sum_del==num:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
