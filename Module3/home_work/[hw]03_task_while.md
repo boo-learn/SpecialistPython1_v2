@@ -27,11 +27,21 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
 
----
+i = 1
+while i <= n:
+    print(i, end=" ")
+    j = 2
+    while j <= n:
+        if i == 1:
+            print(str(j).rjust(2, " "), end=" ")
+        else:
+            print(str(i * j).rjust(2, " "), end=" ")
+        j += 1
+    print()
+    i += 1
+
 
 <details>
 <summary>Подсказка-1</summary>
