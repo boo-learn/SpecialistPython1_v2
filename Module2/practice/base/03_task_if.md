@@ -18,7 +18,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+balance, cost = int(input("Введите баланс покупателя: ")), int(input("Введите стоимость покупки: "))
+
+if balance>=cost:
+    print(balance - cost)
+else:
+    print("Денег недостаточно")
 ```
 
 ---
