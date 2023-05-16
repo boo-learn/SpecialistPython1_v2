@@ -21,7 +21,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+x = int(input("x: "))
+y = int(input("y: "))
+xr = int(input("xr: "))
+yr = int(input("yr: "))
+r = int(input("r: "))
+
+if abs(xr - x) <= r and abs(yr - y) <= r:
+    print("YES")
+else:
+    print("NO")
 ```
 
 ---
