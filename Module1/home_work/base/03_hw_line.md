@@ -17,9 +17,11 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+v = int(input("v: "))
+t = int(input("t: "))
+w = v*t
+n = w % 109
+print("Номер отметки остановки =", n)
 
 ---
 
