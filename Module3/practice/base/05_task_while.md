@@ -33,7 +33,12 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input("num: "))
+count = 1
+
+while count <= num:
+    print('*'* count)
+    count+=1
 ```
 
 ---
