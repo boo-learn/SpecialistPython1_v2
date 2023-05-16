@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+choco_len, choco_width, choco_piece = int(input()), int(input()), int(input())
+
+if choco_piece > choco_len*choco_width:
+    print("Нет")
+elif choco_piece % choco_len == 0 or choco_piece % choco_width == 0:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
