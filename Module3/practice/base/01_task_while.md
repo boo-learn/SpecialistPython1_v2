@@ -15,9 +15,13 @@
 ### Решение задачи
 
 ```python
-n = int(input("n: "))
+number = int(input("Введите целое число:"))
+count = 0
 
-# TODO: you code here...
+while count < number:
+    print("Я учу питон")
+    count += 1
+
 ```
 
 ---
