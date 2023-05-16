@@ -17,11 +17,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+have = int(input("Есть сумма: "))
+price = int(input("Стоимость: "))
+after = have - price
+if after < 0:
+    print("Денег недостаточно")
+else:
+    print("Осталось",after)
 
 ### Данные для самопроверки
 
