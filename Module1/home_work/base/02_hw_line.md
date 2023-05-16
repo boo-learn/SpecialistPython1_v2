@@ -16,11 +16,11 @@
 
 ### Решение задачи
 
-```python
 import math
-math.pi # Число pi из библиотеки math
-# TODO: you code here...
-```
+math.pi
+r = int(input("r: "))
+s = math.pi * r ** 2
+print(s)
 
 ---
 
