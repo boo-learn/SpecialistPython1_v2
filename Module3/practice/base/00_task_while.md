@@ -14,12 +14,12 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+number = int(input("Number: "))
 
----
-
+while number >= 0:
+    print("Number: ", number)
+    number -= 1
+    
 ### Подсказки
 
 <details>
