@@ -15,7 +15,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Первая сторона: "))
+b = int(input("Вторая сторона: "))
+c = int(input("Третья сторона: "))
+if a > 0 and b > 0 and c > 0:
+    if a + b > c:
+        print("Существует")
+    else:
+        print("Не существует")
+else:
+    print("Не существует")
+    
 ```
 
 ---
