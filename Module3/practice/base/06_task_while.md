@@ -20,7 +20,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+summa = 0
+while n > 0:
+    summa += n * n
+    n -= 1
+print(summa)
 ```
 
 ---
