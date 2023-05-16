@@ -19,7 +19,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+balloons = int(input("Ведем кол во шаров : "))
+
+if (balloons == 1 or balloons == 2 or balloons == 4 or balloons == 7):
+    print("Нет")
+else:
+    print("Да")  
 ```
 
 ---
