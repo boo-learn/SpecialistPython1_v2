@@ -16,11 +16,16 @@ _Сумма четных чисел от 0 до 7 = 12_
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+number = int(input("Number: "))
 
----
+count = 0
+sum = 0
+
+while count <= number:
+    if count%2 == 0: sum += count
+    count += 1
+
+print("Сумма четных чисел от 0 до ", number, " = ", sum)
 
 ### Подсказки
 
