@@ -17,8 +17,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+n, m, k = map(int, [input(":") for _ in range(3)])
+
+if (k % n == 0 or k % m == 0) and n > 1 < m and n * m > k:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
