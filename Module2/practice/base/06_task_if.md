@@ -14,8 +14,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+a, b, c = input("Введите длинны сторо через пробел: ").split()
+
+if a + b > c and b + c > a and a + c > b:
+    print("Существует")
+else:
+    print("Не существует")
 ```
 
 ---
