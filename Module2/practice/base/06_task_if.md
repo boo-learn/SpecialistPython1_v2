@@ -14,11 +14,14 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input("Сторона1: "))
+b = int(input("Сторона2: "))
+c = int(input("Сторона3: "))
+if a + b > c or a + c > b or b + c > a:
+    print("Существует")
+else:
+    print("Не существует")
 
----
 
 ### Данные для самопроверки
 
