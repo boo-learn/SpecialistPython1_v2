@@ -20,7 +20,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+num_bricks_per_line = 0
+sum_all = 0
+
+while num_bricks_per_line <= n:
+    sum_all += num_bricks_per_line ** 2
+    num_bricks_per_line += 1
+print("Сумма чисел равна", sum_all)
 ```
 
 ---
