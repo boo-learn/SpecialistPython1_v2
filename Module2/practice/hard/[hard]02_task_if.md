@@ -14,8 +14,9 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+xa = int(input("xa: "))
+ya = int(input("ya: "))
+xb = int(input("xb: "))
+yb = int(input("yb: "))
 
----
+print("ДА" if abs(xa-xb) == abs(ya-yb) else "НЕТ")
