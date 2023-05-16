@@ -13,12 +13,17 @@
 Вывести "Существует", если можно построить треугольник с заданными длинами сторон, и "Не существует", если невозможно.
 
 ### Решение задачи
+triangle_str1 = int(input("Введите длину стороны 1: "))
+triangle_str2 = int(input("Введите длину стороны 2: "))
+triangle_str3 = int(input("Введите длину стороны 3: "))
 
-```python
-# TODO: you code here...
-```
+if (triangle_str1 + triangle_str2 > triangle_str3 and
+        triangle_str1 + triangle_str3 > triangle_str2 and
+        triangle_str2 + triangle_str3 > triangle_str1):
+    print("Существует")
+else:
+    print("Не существует")
 
----
 
 ### Данные для самопроверки
 
