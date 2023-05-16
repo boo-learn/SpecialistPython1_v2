@@ -20,7 +20,11 @@
 a = int(input("a: "))
 b = int(input("b: "))
 
-# TODO: you code here...
+i = a
+while i <= b:
+    if i % 2 == 0:
+        print(i)
+    i += 1
 ```
 
 ---
