@@ -27,7 +27,37 @@ a = int(input("a: "))
 b = int(input("b: "))
 c = int(input("c: "))
 
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+
 # TODO: you code here...
+
+if  a < b and b < c:
+    t = 0
+elif a > b and b < c and a < c:
+    a, b = b, a
+   
+elif a > b and b < c and a > c:
+    a, b = b, a
+    c, b = b, c
+   
+elif a < b and b > c and a < c:
+    c, b = b, c
+   
+elif a < b and b > c and a > c:
+    a, b = b, a
+    a, c = c, a
+   
+elif a > b and b > c: 
+    a, c = c, a
+   
+else:
+    u = 0
+   
+    
+print(a, b, c)
+
 
 print(a, b, c)
 ```
