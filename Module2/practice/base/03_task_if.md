@@ -17,11 +17,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+amount = int(input("Сумма в кошельке: "))
+cost = int(input("Цена: "))
 
----
+rest = amount - cost
+
+if rest > 0:
+    print("Остаток: ", rest)
+else:
+    print("Не достаточно средств")
 
 ### Данные для самопроверки
 
