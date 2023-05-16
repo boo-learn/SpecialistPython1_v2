@@ -19,11 +19,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+n = int(input("n: "))
+i = 0
+sum = 0
+while i < n:
+    sum += (i + 1)*(i + 1)
+    i += 1
+print("Sum: ", sum)
 
 ### Данные для самопроверки
 
