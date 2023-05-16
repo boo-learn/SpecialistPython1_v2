@@ -16,11 +16,12 @@
 
 ### Решение задачи
 
-```python
-a = int(input("a: "))
-b = int(input("b: "))
+```
+a, b = int(input("a: ")), int(input("b: "))
 
-# TODO: you code here...
+while a <= b:
+    print(a)
+    a += 1 
 ```
 
 ---
