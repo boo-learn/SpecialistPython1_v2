@@ -20,8 +20,15 @@ _коров_, _корова_ или _коровы_, для заданного ч
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+n = int(input("Сколько коров?: "))
+string_end = ""
+
+if 1 < n < 5 or (n > 20 and 1 < n % 10 < 5):
+    string_end = "ы"
+elif n == 1 or (n > 20 and n % 10 == 1):
+    string_end = "а"
+print(f"""На лугу пасётся {n} коров{string_end}""")
 ```
 
 ---
