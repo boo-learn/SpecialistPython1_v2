@@ -21,11 +21,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+n = int(input("n: "))
+i = 0
+result = ""
+while i < n:
+    result += str(i + 1)
+    print(result)
+    i += 1
 
 ### Подсказки
 <details>
