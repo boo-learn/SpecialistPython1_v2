@@ -20,7 +20,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+level_num = int(input("num: "))
+counter = 0
+
+sum_level = 0
+
+while counter<=level_num:
+    sum_level = counter*counter+sum_level
+    counter += 1
+
+print(sum_level)
 ```
 
 ---
