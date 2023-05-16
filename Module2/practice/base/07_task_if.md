@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+side_a, side_b, side_c = int(input()), int(input()), int(input())
+
+sum_ab = side_a + side_b
+sum_bc = side_b + side_c
+sum_ac = side_a + side_c
+
+if not(sum_ab > side_c and sum_bc > side_a and sum_ac > side_b):
+    print("Не существует")
+elif sum_ab > side_c and sum_bc > side_a and sum_ac > side_b and (side_a == side_b or side_b == side_c or side_a == side_c):
+    print("Равнобедренный")
+else:
+    print("Существует")
+
+
 ```
 
 ---
