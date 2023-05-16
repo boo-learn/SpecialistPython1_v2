@@ -20,7 +20,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите количество рядов в пирамиде: "))
+sum_number = 0
+count = 1
+
+while count <= number:
+    sum_number += count ** 2
+    count += 1
+
+print("Сумма чисел на кирпичах = ", sum_number)
+
 ```
 
 ---
