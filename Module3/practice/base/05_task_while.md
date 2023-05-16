@@ -33,7 +33,15 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число от 1 до 20: "))
+stairs = "*"
+count = 1
+
+while count <= number:
+    print(stairs)
+    count += 1
+    stairs = "*" * count
+
 ```
 
 ---
