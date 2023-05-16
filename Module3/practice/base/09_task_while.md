@@ -15,11 +15,16 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
 
----
+i = 1
+result = 0
+
+while i < n:
+    if n%i == 0: result += i
+    i += 1
+
+print("Да" if result == n else "Нет")
 
 ### Данные для самопроверки
 
