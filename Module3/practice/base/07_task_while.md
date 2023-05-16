@@ -21,8 +21,17 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+n = int(input("n: "))
+step = 1
+
+while step <= n:
+    i = 1
+    while i <= step:
+        print(i, end='')
+        i += 1
+    step += 1
+    print()
 ```
 
 ---
