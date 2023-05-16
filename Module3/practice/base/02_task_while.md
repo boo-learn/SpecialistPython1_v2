@@ -17,10 +17,14 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
+a = int(input("Введите первое целое число:"))
+b = int(input("Введите второе целое число:"))
 
-# TODO: you code here...
+while a <= b:
+    if a % 2 == 0:
+        print(a)
+    a += 1
+
 ```
 
 ---
