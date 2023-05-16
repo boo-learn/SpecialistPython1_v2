@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number =int(input("Введите число:"))
+
+num3=number%3
+num5=number%5
+
+if num3==0 or num5==0:
+    print("Да")
+else:print("Нет")
 ```
 
 ---
