@@ -31,6 +31,15 @@ n = 3
 ```
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
+
+i = 0
+while i < n:
+    j = 0
+    buff = ""
+    while j < n:
+        if j == i or j == (n - i - 1): buff += "*"
+        else: buff += " "
+        j += 1
+    i += 1
+    print(buff)
