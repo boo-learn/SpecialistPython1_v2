@@ -17,9 +17,27 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
+m = int(input("m: "))
+k = int(input("k: "))
 
----
+# Вариант 1:
+if k % n == 0 and 0 < k // n < m:
+    print("Да")
+elif k % m == 0 and 0 < k // m < n:
+    print("Да")
+else:
+    print("Нет")
 
+# Вариант 2:
+# i = 1
+# while i <= n and k != i * m:
+#     i += 1
+#
+# if k == i * m:
+#     print("Да")
+# else:
+#     i = 1
+#     while i <= m and k != i * n:
+#         i += 1
+#     print("Да" if k == i * n else "Нет")
