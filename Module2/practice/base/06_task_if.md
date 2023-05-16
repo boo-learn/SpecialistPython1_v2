@@ -15,7 +15,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+side_a, side_b, side_c = int(input()), int(input()), int(input())
+
+sum_ab = side_a + side_b
+sum_bc = side_b + side_c
+sum_ac = side_a + side_c
+
+if sum_ab > side_c and sum_bc > side_a and sum_ac > side_b:
+    print("Существует")
+else:
+    print("Не существует")
 ```
 
 ---
