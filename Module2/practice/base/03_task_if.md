@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cash = abs(int(input("cash: ")))
+product_price = abs(int(input("product_price: ")))
+
+if cash >= product_price:
+    balance = cash - product_price
+    print("Остаток ", balance)
+else:
+    print("Денег недостаточно")
 ```
 
 ---
