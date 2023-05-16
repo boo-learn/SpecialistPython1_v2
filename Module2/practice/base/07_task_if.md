@@ -15,11 +15,17 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
 
----
+if c >= a + b or b >= a + c or a >= b + c:
+    print("Не существует")
+else:
+    if a != b and b != c and c != a:
+        print("НЕ равнобедренный")
+    else:
+        print("Равнобедренный")
 
 ### Данные для самопроверки
 
