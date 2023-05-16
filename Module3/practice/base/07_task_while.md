@@ -22,7 +22,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input())
+sum_str = ''
+counter = 1
+
+while counter <= num:
+    sum_str = sum_str + str(counter)
+    print(sum_str)
+    counter += 1
+
 ```
 
 ---
