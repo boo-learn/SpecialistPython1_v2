@@ -21,7 +21,18 @@ _коров_, _корова_ или _коровы_, для заданного ч
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите количество коров: "))
+text = "На лугу пасется " + str(number)
+penultimate_digit = number % 100 // 10
+last_digit = number % 10
+
+if penultimate_digit != 1 and last_digit % 10 == 1:
+    print(text, "корова")
+elif penultimate_digit != 1 and last_digit <= 4:
+    print(text, "коровы")
+else:
+    print(text, "коров")
+
 ```
 
 ---
