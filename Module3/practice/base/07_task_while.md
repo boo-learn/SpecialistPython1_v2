@@ -22,7 +22,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число от 1 до 9: "))
+stairs = "1"
+count = 1
+
+while count <= number:
+    print(stairs)
+    count += 1
+    stairs = stairs + str(count)
+
 ```
 
 ---
