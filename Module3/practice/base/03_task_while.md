@@ -16,8 +16,15 @@ _Сумма четных чисел от 0 до 7 = 12_
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+n = int(input("n: "))
+dig_sum = 0
+delta = 2
+
+while delta < n:
+    dig_sum += delta
+    delta += 2
+print(dig_sum)
 ```
 
 ---
