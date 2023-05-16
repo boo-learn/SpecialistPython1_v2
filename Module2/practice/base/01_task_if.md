@@ -14,12 +14,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+number = int(input("Введите число: "))
 
----
-
+if number > 999 or number < 100:
+    print("Число не 3-х значное")
+else:
+    print("Число 3-х значное")
+    
 ### Подсказки
 
 <details>
