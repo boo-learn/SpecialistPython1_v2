@@ -19,8 +19,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+n = int(input("n: "))
+stage_n = 1
+sum_nums = 0
+
+while stage_n <= n:
+    sum_nums += stage_n ** 2
+    stage_n += 1
+print(sum_nums)
 ```
 
 ---
