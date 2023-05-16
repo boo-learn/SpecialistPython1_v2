@@ -16,11 +16,28 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
 
----
+count = 0
+a = 0
+
+while a <= n:
+    i = 1
+    sum_a = 0
+    while i < a:
+        if a%i == 0: sum_a += i
+        i += 1
+    b = a + 1
+    while b <= n:
+        j = 1
+        sum_b = 0
+        while j < b:
+            if b%j == 0: sum_b += j
+            j += 1
+        if a == sum_b and b == sum_a:
+            print(a, " ", b)
+        b += 1
+    a += 1
 
 ### Данные для самопроверки
 
