@@ -15,9 +15,29 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
+
+first = 0
+second = 1
+count = 2
+result = 0
+
+if abs(n) == 1:
+    print(first)
+elif abs(n) == 2:
+    print(second)
+elif n != 0:
+    while count < abs(n):
+        if n > 0:
+            result = first + second
+            first = second
+            second = result
+        else:
+            result = first - second
+            first = second
+            second = result
+        count += 1
+    print(result)
 
 ### Данные для самопроверки
 
