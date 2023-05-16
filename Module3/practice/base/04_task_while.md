@@ -16,8 +16,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+n = int(input("n: "))
+counter = 0
+
+while n > 0:
+    if int(input()) > 0:
+        counter += 1
+    n -= 1
+print(counter)
 ```
 
 ---
