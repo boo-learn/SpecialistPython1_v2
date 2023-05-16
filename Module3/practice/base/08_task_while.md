@@ -16,7 +16,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input("num: "))
+counter = 2
+
+while counter<num:
+    if num%counter == 0:
+        print(counter)
+    counter+=1
+
 ```
 
 ---
