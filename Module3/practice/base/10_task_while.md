@@ -15,11 +15,24 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input("a: "))
+b = int(input("b: "))
 
----
+n = a
+count = 0
+
+while n <= b:
+    i = 1
+    result = 0
+    while i < n:
+        if n%i == 0: result += i
+        i += 1
+    if result == n:
+        print(n)
+        count += 1
+    n += 1
+
+print("Число совершенных чисел: ", count)
 
 ### Подсказки
 <details>
