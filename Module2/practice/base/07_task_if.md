@@ -15,8 +15,17 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+a, b, c = map(int, input("Введите длинны сторон через пробел: ").split())
+
+if  a + b <= c or a + c <= b or b + c <= a:
+    print("Не существует")
+
+elif a != b and b != c and c != a:
+    print("НЕ равнобедренный")
+
+else:
+    print("Равнобедренный")
 ```
 
 ---
