@@ -15,11 +15,16 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
 
----
+i = 2
+result = ""
+
+while i < n:
+    if n%i == 0: result += str(i)  + " "
+    i += 1
+
+print(result if result != "" else "Число простое")
 
 ### Данные для самопроверки
 
