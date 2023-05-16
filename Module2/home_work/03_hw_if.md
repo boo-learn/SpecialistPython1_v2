@@ -20,11 +20,12 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+xa = int(input("xa: "))
+ya = int(input("ya: "))
+xb = int(input("xb: "))
+yb = int(input("yb: "))
 
----
+print ("Да" if (xa + ya) % 2 == 0 and (xb + yb) % 2 == 0 else "Нет")
 
 ### Подсказки
 
