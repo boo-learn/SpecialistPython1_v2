@@ -18,7 +18,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cash = int(input("Количество денег покупателя:"))
+price = int(input("Цена товара:"))
+
+remains = cash - price
+if remains > 0:
+    print("Осталось ", remains)
+else:
+    print("Денег недостаточно")
 ```
 
 ---
