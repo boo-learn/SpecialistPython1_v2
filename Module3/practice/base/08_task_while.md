@@ -16,7 +16,19 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("Введите число: "))
+divisor = 2
+is_simple = 1
+
+while divisor < number:
+    if number % divisor == 0:
+        print(divisor)
+        is_simple = 0
+    divisor += 1
+
+if is_simple == 1:
+    print("Число простое")
+
 ```
 
 ---
