@@ -16,7 +16,20 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+
+is_triangle = (a + b) > c and (a + c) > b and (b + c) > a
+isosceles = a == b or a == c or b == c
+
+if not is_triangle:
+    print("Не существует")
+elif is_triangle and isosceles:
+    print("Равнобедренный")
+else:
+    print("Не равнобедренный")
+
 ```
 
 ---
