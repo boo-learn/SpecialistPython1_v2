@@ -20,11 +20,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+x = int(input("x: "))
+y = int(input("y: "))
+xr = int(input("xr: "))
+yr = int(input("yr: "))
+r =  int(input("r: "))
 
----
+dist = ((xr - x)**2 + (yr - y)**2)**0.5
+
+print("ДА" if dist <= r else "НЕТ")
 
 ### Данные для самопроверки
 
