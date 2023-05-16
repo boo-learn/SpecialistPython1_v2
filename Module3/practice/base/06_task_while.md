@@ -20,7 +20,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+
+sum_numbers = 0
+count_row = 1
+
+while n >= count_row:
+    sum_numbers += count_row ** 2
+    count_row += 1
+
+print("Сумма чисел на кирпичах: ", sum_numbers)
 ```
 
 ---
