@@ -15,7 +15,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input("n: "))
+
+if number % 10 == 5 and number > 0:
+    print("Да")
+else:
+    print("Нет")
+
 ```
 
 ---
