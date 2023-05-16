@@ -21,11 +21,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+n = int(input(" Количество ступеней n: "))
+i = 1
+step = ''
+while i <= n:
+    step =  step + str (i)
+    print(step)
+    i = i + 1
 
 ### Подсказки
 <details>
