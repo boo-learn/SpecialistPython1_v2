@@ -15,7 +15,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = abs(int(input("a:")))
+b = abs(int(input("b:")))
+c = abs(int(input("c:")))
+
+if a + b > c and b + c > a and c + a > b:
+    print("Существует")
+else:
+    print("Не cуществует")
 ```
 
 ---
