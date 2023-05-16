@@ -17,9 +17,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+money_wallet = int (input("Введите количество деньг в кошельке: "))
+product_price = int (input("Введите цену товара: "))
+if   money_wallet >= product_price :
+    remains_money = money_wallet - product_price
+    print("Осталось средств после покупки", remains_money)
+else :
+    print("Денег недостаточно")
 
 ---
 
