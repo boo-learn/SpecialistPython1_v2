@@ -15,7 +15,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+a = int(input("Введите первую сторону треугольника: "))
+b = int(input("Введите вторую сторону треугольника: "))
+c = int(input("Введите третью сторону треугольника: "))
+
+if a > b and a > c:
+    sign = b + c - a
+elif b > a and b > c:
+    sign = a + c - b
+else:
+    sign = a + b - c
+
+if sign > 0:
+    print("Существует")
+else:
+    print("Не существует")
+
 ```
 
 ---
