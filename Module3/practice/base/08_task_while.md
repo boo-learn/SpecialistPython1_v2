@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+i = 2
+count_div = 0
+while i < n:
+    if n % i == 0:
+        print(i)
+        count_div += 1
+    i += 1
+if count_div == 0:
+    print(n, " - простое число")
 ```
 
 ---
