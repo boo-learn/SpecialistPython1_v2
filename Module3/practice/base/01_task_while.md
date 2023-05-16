@@ -14,13 +14,13 @@
 
 ### Решение задачи
 
-```python
-n = int(input("n: "))
+number = int(input("Number: "))
 
-# TODO: you code here...
-```
+count = 0
 
----
+while count < number:
+    print("Я учу питон")
+    count += 1
 
 ### Подсказки
 
