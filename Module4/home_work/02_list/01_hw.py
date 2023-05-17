@@ -3,7 +3,13 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+first = True
+for name in names:
+    if first:
+        first = False
+    else:
+        print(",", end=" ")
+    print(name, end="")
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
