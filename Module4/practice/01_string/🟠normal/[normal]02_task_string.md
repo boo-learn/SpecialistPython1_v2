@@ -16,8 +16,14 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+string = input()
+
+if len(string) > 3 and string[:3] == 'id:' and string[3:].isdigit():
+    print("Да")
+else:
+    print("Нет")
+    
 ```
 
 ---
