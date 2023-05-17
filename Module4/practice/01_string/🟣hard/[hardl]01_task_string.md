@@ -14,10 +14,13 @@
 
 ### Решение задачи
 
-```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
-```
 
----
+count = 0
+text_rest = text.strip().replace("  ", " ")
+while text_rest.find(" ") != -1:
+    word = text_rest[:text_rest.find(" ")]
+    if len(word) > 5: count += 1
+    text_rest = text_rest[text_rest.find(" ")+1:]
 
+print("count: ", count)
