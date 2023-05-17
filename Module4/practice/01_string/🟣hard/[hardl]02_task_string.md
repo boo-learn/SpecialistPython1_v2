@@ -14,8 +14,26 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+
+s1 = input("S1: ")
+s2 = input("S2: ")
+
+s1_len = len(s1)
+i = 0
+flag = 1
+
+while i < s1_len:
+    if s2.count(s1[i]) > s1.count(s1[i]):
+        i = s1_len
+        flag = 0
+    else:
+        i += 1
+if flag == 1:
+    print("Да")
+else:
+    print("Нет")
+    
 ```
 
 ---
