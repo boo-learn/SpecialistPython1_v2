@@ -14,13 +14,17 @@
 
 ### Решение задачи
 
-```python
 text = "В теории, теория и практика неразделимы. На практике это не так."
 vowels = "ауоыэяюёие"
-# TODO: you code here...
-```
 
----
+i = 0
+count_vowels = 0
+while i < len(text):
+    if vowels.find(text[i:i+1]) != -1:
+        count_vowels += 1
+    i += 1
+
+print(count_vowels)
 
 ### Подсказки
 
