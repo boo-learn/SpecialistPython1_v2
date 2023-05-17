@@ -5,8 +5,15 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+fruits = ["яблоко", "банан", "киви", "арбуз"]
 
+max_length = 0
+for var in fruits:
+    if len(var) > max_length: max_length = len(var)
+    
+for var in fruits:
+    print(fruits.index(var) + 1, " ", var.rjust(max_length + 1, " "))
+    
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
