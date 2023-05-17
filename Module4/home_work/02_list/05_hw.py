@@ -3,4 +3,16 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+#Вариант 1
+max_length = 0
+max_name = ""
+for name in names:
+    if len(name) > max_length:
+        max_name = name
+        max_length = len(name)
+
+print(max_name)
+
+#Вариант 2
+names.sort(key=lambda x: len(x), reverse=True)
+print(names[0])
