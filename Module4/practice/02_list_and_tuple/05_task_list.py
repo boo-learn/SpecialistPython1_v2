@@ -4,8 +4,13 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
+len_word_max = 0
+for fruit in fruits:
+    if len_word_max < len(fruit):
+        len_word_max = len(fruit)
 
-# TODO: your code here
+for i, fruit in enumerate(fruits, 1):
+    print(i, fruit.rjust(len_word_max, " "))
 
 # Пример вывода:
 # 1. яблоко
