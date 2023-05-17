@@ -20,12 +20,9 @@
 
 ### Решение задачи
 
-```python
 password = input("Enter password: ")
-# TODO: you code here...
-```
 
----
+print("безопасный" if len(password) >= 6 and password.find("#") != -1 and password[0:1].isupper() else "не безопасный")
 
 ### Данные для самопроверки
 
