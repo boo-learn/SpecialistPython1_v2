@@ -5,3 +5,13 @@
 # Пример:
 # Дано: [2, -5, 8, 9, -25, 25, 4]
 # Результат: [3, 5, 2]
+
+numbers = [2, -5, 8, 9, -25, 25, 4]
+
+sqr_numbers = []
+
+for number in numbers:
+    if number >= 0 and number**0.5 % 1 == 0:
+        sqr_numbers.append(int(number**0.5))
+
+print(sqr_numbers)
