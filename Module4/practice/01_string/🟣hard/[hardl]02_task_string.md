@@ -14,9 +14,16 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+s1 = input("s1: ")
+s2 = input("s2: ")
 
----
+buff1 = s1
+buff2 = s2
+i = 0
+while i < len(s2):
+    if buff1.count(s2[i:i+1]) == buff2.count(s2[i:i+1]):
+        buff1 = buff1.replace(s2[i:i+1], "")
+        buff2 = buff2.replace(s2[i:i+1], "")
+    i += 1
 
+print("Да" if buff2 == "" else "Нет")
