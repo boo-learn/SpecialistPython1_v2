@@ -27,11 +27,17 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
-
----
+n = int(input("n: "))
+# Цикл, который выполнится n-1 раз
+index = 1
+if n > 1 and n < 9:
+    while index <= n:
+        jndex = 1
+        while jndex <= n:
+            print("%4d" % (index*jndex), end="")
+            jndex += 1
+        print()
+        index += 1-
 
 <details>
 <summary>Подсказка-1</summary>
