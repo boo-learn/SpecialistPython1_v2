@@ -15,8 +15,9 @@
 ### Решение задачи
 
 ```python
-text = ...
-# TODO: you code here...
+example_text = input("Введите текст: ")
+
+print(example_text.count('о'))
 ```
 
 ---
