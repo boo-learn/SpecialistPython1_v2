@@ -16,11 +16,12 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+text = input("Введите строку: ")
+if text[0:3] == "id:" and text[3:].isdigit() == 1:
+    print("Да")
+else:
+    print("Нет")
 
----
 
 ### Данные для самопроверки
 
