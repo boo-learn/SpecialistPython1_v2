@@ -21,7 +21,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+
+cell_x1 = int(input("Координаты первой клетки: "))
+cell_y1 = int(input("Координаты первой клетки: "))
+cell_x2 = int(input("Координаты второй клетки: "))
+cell_y2 = int(input("Координаты второй клетки: "))
+if (cell_x1 + cell_y1 + cell_x2 + cell_y2) % 2 == 0:
+    print('Да')
+else:
+    print('Нет')
+    
 ```
 
 ---
