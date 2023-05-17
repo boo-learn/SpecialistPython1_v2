@@ -2,5 +2,6 @@
 # Каждый элемент должен быть выведен с новой строки.
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
-
-# TODO: your code here
+length = len(fruits)
+for i in range(length):
+    print(str(i + 1), fruits[i])
