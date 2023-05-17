@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n: "))
+m = int(input("m: "))
+k = int(input("k: "))
+if k == n or k == m:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
