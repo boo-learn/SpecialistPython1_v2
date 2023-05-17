@@ -19,7 +19,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+k = int(input("Количество приобретаемых шариков: "))
+
+if k % 5 == 3 or k % 5 == 0 or k % 3 == 0 or k % 3 == 2:
+    print("Да")
+else:
+    print("Нет")
 ```
 
 ---
