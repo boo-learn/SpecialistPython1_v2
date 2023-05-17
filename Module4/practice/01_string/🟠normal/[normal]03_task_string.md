@@ -16,12 +16,11 @@
 
 ### Решение задачи
 
-```python
 text = "Мама мыла раму. Устала мама, но наконец отмыла раму-)"
-# TODO: you code here...
-```
+text_new = text.lower()
+str_count = text_new.count("мама")
+print(str_count)
 
----
 
 ### Подсказки
 
