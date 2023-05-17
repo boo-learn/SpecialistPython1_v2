@@ -26,23 +26,36 @@ staff = [
         'salary': 47800
     },
 ]
+
 # Вычислите:
-print("Имя и Фамилию сотрудника с самой высокой зарплатой:")
 
-# TODO: your code here
+min_salary = staff[0]["salary"]
+min_salary_idx = 0
+max_salary = staff[0]["salary"]
+max_salary_idx = 0
+sum_salary = 0
+count = 0
+namesakes = 0
+for employee in staff:
+    if employee["salary"] < min_salary:
+        min_salary = employee["salary"]
+        min_salary_idx = count
+    if employee["salary"] > max_salary:
+        max_salary = employee["salary"]
+        max_salary_idx = count
+    sum_salary += employee["salary"]
+    count += 1
+    for employee2 in staff:
+        if employee2["surname"] == employee["surname"]:
+            namesakes += 1
+    namesakes -= 1
 
-print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
-
-# TODO: your code here
-
-print("Среднеарифметическую зарплату всех сотрудников")
-
-# TODO: your code here
-
-print("Количество однофамильцев в организации")
-
-# TODO: your code here
+print("Имя и Фамилию сотрудника с самой высокой зарплатой: ", staff[min_salary_idx]["name"], staff[min_salary_idx]["surname"])
+print("Имя и Фамилию сотрудника с самой низкой зарплатой:", staff[max_salary_idx]["name"], staff[max_salary_idx]["surname"])
+print("Среднеарифметическую зарплату всех сотрудников", sum_salary / count)
+print("Количество однофамильцев в организации", namesakes)
 
 print("*Список всех сотрудников(Имя и Фамилию) в порядке возрастания их зарплаты")
-
-# TODO: your code here
+staff.sort(key=lambda x: x["salary"])
+for employee in staff:
+    print(employee["name"], employee["surname"])
