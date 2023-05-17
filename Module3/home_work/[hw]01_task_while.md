@@ -36,6 +36,13 @@ n = 12
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("В ведите количество товара : "))
+
+COAST_ONE = 9.99
+coast = 1
+
+while coast <= n:
+    print(coast ,COAST_ONE * coast)
+    coast +=1
 ```
 
