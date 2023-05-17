@@ -34,8 +34,10 @@ n = 12
 12 119.88 рублей
 ```
 ### Решение задачи
-
-```python
-# TODO: you code here...
-```
+cost = float(input("Введите цену: "))
+n = int (input("Введите количество единиц: "))
+index = 1
+while index <= n:
+    print(index,' ',cost*index, "рублей")
+    index += 1
 
