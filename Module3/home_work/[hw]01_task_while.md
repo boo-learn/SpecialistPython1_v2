@@ -35,7 +35,14 @@ n = 12
 ```
 ### Решение задачи
 
-```python
-# TODO: you code here...
+```
+cost = float(input("Cost: "))
+n = int(input("n: "))
+count = 1
+
+while n > 0:
+    print(count, cost * count, "₽")
+    n -= 1
+    count += 1
 ```
 
