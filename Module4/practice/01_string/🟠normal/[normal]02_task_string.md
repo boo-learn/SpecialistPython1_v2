@@ -16,11 +16,9 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+string = input("string: ")
 
----
+print("Да" if string[0:3] == "id:" and string[3:].isdigit() else "Нет")
 
 ### Данные для самопроверки
 
