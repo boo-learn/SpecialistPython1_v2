@@ -3,4 +3,5 @@
 
 fruits = ["яблоко", "банан", "киви", "ананас", "груша"]
 
-# TODO: your code here
+for var in fruits:
+    print(fruits.index(var) + 1, " ", var)
