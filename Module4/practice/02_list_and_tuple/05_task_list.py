@@ -5,7 +5,16 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+index = 1
+max_len = 0
+
+for word in fruits:
+    if max_len < len(word):
+        max_len = len(word)
+for word in fruits:
+    num_gaps = " " *  (max_len - len(word))
+    print(index, num_gaps, word)
+    index += 1
 
 # Пример вывода:
 # 1. яблоко
