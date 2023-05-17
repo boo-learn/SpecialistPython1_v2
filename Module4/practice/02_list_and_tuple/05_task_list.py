@@ -5,7 +5,13 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
+max_len_world = 0
+for fruit in fruits:
+    if len(fruit) > max_len_world:
+        max_len_world = len(fruit)
+for i, fruit in enumerate(fruits, 1):
+    print(i, fruit.rjust(max_len_world, ' '))
+
 
 # Пример вывода:
 # 1. яблоко
