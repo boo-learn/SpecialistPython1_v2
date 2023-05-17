@@ -10,3 +10,9 @@ items = [
 ...
 # 2. Выведите цену самого дешевого товара
 ...
+items_price = []
+
+for n, string in enumerate(items, 1):
+    print(n, string["name"])
+    items_price.append(float(string["price"]))
+print(f"Цена самого дешевого товара: {min(items_price)}₽")
