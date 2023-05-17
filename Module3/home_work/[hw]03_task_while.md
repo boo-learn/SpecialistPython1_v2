@@ -28,7 +28,17 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("Введите целое число: "))
+i = 1
+
+while i <= n:
+    j = 1
+    while j <= n:
+        print(i * j, end=" ")
+        j += 1
+    print()
+    i += 1
+
 ```
 
 ---
