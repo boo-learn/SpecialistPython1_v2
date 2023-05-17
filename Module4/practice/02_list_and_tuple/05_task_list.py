@@ -5,8 +5,21 @@
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
 
-# TODO: your code here
 
+fruits = ["яблоко", "банан", "киви", "арбуз"]
+max_len_word = 0
+for word in fruits:
+    if len(word) > max_len_word:
+        max_len_word = len(word)
+num = 1
+count_space = 0
+for fruit in fruits:
+    count_space = max_len_word - len(fruit)
+    space = " " * count_space
+    print(str(num) + ". ", space, fruit)
+    num += 1
+
+    
 # Пример вывода:
 # 1. яблоко
 # 2.  банан
