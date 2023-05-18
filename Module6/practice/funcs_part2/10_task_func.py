@@ -3,7 +3,15 @@
 
 def average(*args):
     # TODO: your code here
-    pass
+  def average(*args):
+    # TODO: your code here
+    summa = 0
+    j = 0
+    numbers = [*args]
+    for i in numbers:
+        summa = i + summa
+        j += 1
+    return summa / j
 
 
 print(average(3, 4, 8))
