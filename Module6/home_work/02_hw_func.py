@@ -4,10 +4,26 @@
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
 
-def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
 
+def distance(x1, y1, x2, y2) -> float:
+    """
+    :param x1: координата х первой точки
+    :param y1: координата у1
+    :param x2: координата х2
+    :param y2: координата у2
+    :return: расстояние между точками
+    """
+    return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
+def min_len(p1, p2, p3):
+    ab = distance(*p1, *p2)
+    ac = distance(*p1, *p3)
+    bc = distance(*p2, *p3)
+    if ab < ac and ab < bc:
+        return "AB"
+    if ac < ab and ac < bc:
+        return "AC"
+    return "BC"
 
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+res = min_len ((10, 12), (14, 8), (12, 14))
+print(f"Самый короткий отрезок: {res}")
+
