@@ -3,9 +3,14 @@
 # Пример палиндрома: 34543
 # * попробуйте решить данную задачу не используя строки
 
-def palindrome(number):
-    pass
-
+def palindrome(n):
+    temp_num = n
+    rev_num = 0
+    while(n > 0):
+        digit = n % 10
+        rev_num = rev_num * 10 + digit
+        n = n // 10 
+    return "Палиндром" if temp_num == rev_num else "Не палиндром"
 
 # Тестируем функцию
 print(palindrome(3454))
