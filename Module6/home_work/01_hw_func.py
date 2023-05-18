@@ -4,7 +4,14 @@
 
 def lucky_ticket(ticket_number):
     # TODO: your code here
-    pass
+    number = []
+    for i in str(ticket_number):
+        number.append(i)
+    left_sum_num = int(number[0]) + int(number[1]) + int(number[2])
+    right_sum_num = int(number[3]) + int(number[4]) + int(number[5])
+    if left_sum_num == right_sum_num:
+        return True
+    return False
 
 
 # Тестируем функцию
