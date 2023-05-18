@@ -2,8 +2,8 @@
 # Напишите функцию нахождения расстояния между двумя точками.
 
 def distance(x1, y1, x2, y2):
-    # TODO: your code here
-    pass
+    length = ((x2-x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+    return round(length, 2)
 
 
 # Тестируем функцию
