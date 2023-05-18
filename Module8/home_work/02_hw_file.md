@@ -15,14 +15,14 @@
 
 ### Решение задачи
 
-```python
 summa = 0
 with open("data/info.txt", "r") as f:
-    pass
+    for line in f:
+        if line.count("-") <= 1 and line.replace("-","").strip().isdigit():
+            summa += int(line)
+f.close()
 
 print(f"Сумма чисел = {summa}")
+
 # Уточнение: в сумму добавляем только те значения, которые можно преобразовать к int'у
 # Например: int("-26") --> -26, а int("--26") --> ошибка
-```
-
----
