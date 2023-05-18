@@ -1,8 +1,10 @@
 # Напишите функцию, возвращающую наибольшее из двух чисел
 
-def max2(n1, n2):
-    # TODO: your code here
-    pass
+def max2(num1: int | float, num2: int | float) -> int | float:
+    if num1 > num2:
+        return num1
+    else:
+        return num2
 
 
 # Тестируем функцию
