@@ -1,8 +1,13 @@
 # Напишите функцию, возвращающую наибольшее из четырех чисел
 
 def max4(n1, n2, n3, n4):
-    # TODO: your code here
-    pass
+    line = (n1, n2, n3, n4)
+    maxim = n1
+    for num in line:
+        if maxim < num:
+            maxim = num
+
+    return maxim
 
 
 # Тестируем функцию
@@ -11,3 +16,4 @@ print(max4(-10, -12, -4, -9))
 print(max4(2.5, 2.6, 2.6, 2.4))
 print(max4(-2.5, 0, -1.2, -0.4))
 print(max4(-2, -2, -2, -2))
+
