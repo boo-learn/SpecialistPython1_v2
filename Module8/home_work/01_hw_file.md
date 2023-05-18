@@ -14,9 +14,13 @@
 
 ### Решение задачи
 
-```python
-def log(text, file="log.txt"):
-    ...
+def log(text,file="log.txt"):
+    f= open(file,'a')
+    f.write(text)
+    return
+
+log("hello world")  # дописывает "hello world" в конец файла log.txt
+log("message", "log01.txt")
 
 log("hello world")  # дописывает "hello world" в конец файла log.txt
 log("message", "log01.txt")  # дописывает "message" в конец файла log01.txt
