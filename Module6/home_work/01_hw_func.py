@@ -3,8 +3,12 @@
 # Билет считается счастливым, если сумма его первых и последних цифр равны.
 
 def lucky_ticket(ticket_number):
-    # TODO: your code here
-    pass
+    str_number = str(ticket_number)
+    start_number1 = str_number[0]
+    start_number2 = str_number[1]
+    end_number1 = str_number[-1]
+    end_number2 = str_number[-2]
+    return start_number1 + start_number2 == end_number1 + end_number2
 
 
 # Тестируем функцию
