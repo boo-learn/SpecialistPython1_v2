@@ -1,8 +1,13 @@
 # Напишите функцию, возвращающую наибольшее из четырех чисел
 
-def max4(n1, n2, n3, n4):
-    # TODO: your code here
-    pass
+def max4(n1, n2, n3, n4: int | float) -> int | float:
+    if n1 > n2:
+        n1, n2 = n2, n1    
+    if n3 > n4:
+        n3, n4 = n4, n3
+    if n2 > n4:
+        n2, n4 = n4, n2
+    return n4
 
 
 # Тестируем функцию
