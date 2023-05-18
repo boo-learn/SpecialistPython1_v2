@@ -2,11 +2,18 @@
 # Напишите функцию, проверябщую можно ли построить треугольник, соединив данные точки отрезками
 
 def can_triangle(p1, p2, p3):
-    # TODO: your code here
-    pass
+    length12 = ((p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2) ** 0.5
+    length23 = ((p2[0] - p3[0]) ** 2 + (p2[1] - p3[1]) ** 2) ** 0.5
+    length31 = ((p3[0] - p1[0]) ** 2 + (p3[1] - p1[1]) ** 2) ** 0.5
+    if length12 + length23 <= length31 or length23 + length31 <= length12 or length31 + length12 <= length23:
+        result = 'Возможно'
+    else:
+        result = 'Не возможно'
+    return result
+
 
 
 # Пример вызова функции
-can_triangle((10, 12), (14, 18), (12, 12))
+print(can_triangle((10, 12), (14, 18), (12, 12)))
 
 # Не забудьте протестировать вашу функцию
