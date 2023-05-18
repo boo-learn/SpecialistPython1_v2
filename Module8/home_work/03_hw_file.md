@@ -33,12 +33,18 @@ n = 6
 
 ### Решение задачи
 
-```python
 n = int(input("n: "))
-# TODO: you code here...
-```
 
----
+with open("pyramid.txt", "w") as f:
+    max_length = n * 2
+    i = 1
+    while i <= n * 2:
+        line = "*" * i
+        f.write(line.center(max_length, " ") + "\n")
+        i += 2
+    f.close()
+
+
 <details>
 <summary>Подсказка-1</summary>
 Вспомните про форматирование строк
