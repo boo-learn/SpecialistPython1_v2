@@ -16,11 +16,15 @@
 
 ```python
 def log(text, file="log.txt"):
-    ...
+    f = open(file, "a", encoding="utf-8")
+    f.write(text + '\n')
+    f.close()
 
-log("hello world")  # дописывает "hello world" в конец файла log.txt
-log("message", "log01.txt")  # дописывает "message" в конец файла log01.txt
+
+log("hello world", "log.txt")  # дописывает "hello world" в конец файла log.txt
+log("message", "log.txt")  # дописывает "message" в конец файла log01.txt
 # Уточнение: функция log() все сообщения должна записывать на отдельных строках
+
 ```
 
 ---
