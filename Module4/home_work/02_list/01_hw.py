@@ -3,7 +3,19 @@
 
 names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
 
-# TODO: your code here
+
+names = ["Иван", "Ирина", "Вячеслав", "Василий", "Петр"]
+string = ""
+len = len(names)
+el = 1
+for name in names:
+    if el < len:
+        string += name + ", "
+        el += 1
+string += name
+print(string)
+
+
 
 # Пример вывода:
 # Иван, Ирина, Вячеслав, Василий, Петр
