@@ -1,4 +1,8 @@
 # Даны координаты центров двух окружностей (x1; y1) (x2; y2) и и их радиусы  R1 и R2.
 # Находится ли одна окружность целиком внутри другой
+def circle_in_circle(p1, p2, r1, r2):
+    cur_in_cur = ((p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2) ** 0.5 <= abs(r1 - r2)
+    return cur_in_cur
 
-# TODO: your code here
+print(circle_in_circle((10, 12), (14, 8), 5, 11))
+
