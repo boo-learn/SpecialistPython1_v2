@@ -21,11 +21,25 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+f = open("data/fruits.txt", "r", encoding="UTF-8")
 
----
+fruits = []
+for line in f:
+    if line.strip() != "":
+        fruits.append(line.strip())
+f.close()
+fruits.sort()
+
+first_char = ""
+for fruit in fruits:
+    if fruit[0] != first_char:
+        f.close()
+        file_name = f"fruits_{fruit[0]}.txt"
+        f = open(file_name, "a", encoding="UTF-8")
+        f.write(fruit + "\n")
+        first_char = fruit[0]
+    else:
+        f.write(fruit + "\n")
 
 ### Подсказки
 
