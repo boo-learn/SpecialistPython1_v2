@@ -1,12 +1,10 @@
-# Используя функцию average() из предыдущей задачи, найдите среднее арифметическое всех элементов списка и кортежа
+import random
 
 def average(*args):
-    # TODO: тело из предыдущей задачи
-    pass
+    return sum(args) / len(args)
 
 
 def gen_list(size, at=-10, to=10):
-    import random  # импорт в функции возможен, но не рекомендуется PEP-8
     """
     :param size: кол-во элементов списка
     :param at: минимально возможное значение элементов
@@ -21,3 +19,9 @@ def gen_list(size, at=-10, to=10):
 
 my_list = gen_list(10)
 my_tuple = 5, 7, -4, 10, 8
+
+res = average(*my_list)
+res1 = average(*my_tuple)
+
+print(res)
+print(res1)
