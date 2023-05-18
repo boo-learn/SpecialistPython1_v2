@@ -14,12 +14,22 @@
 Программа ничего не выводит в терминал, все сообщения записываются в указанный файл или в файл по умолчанию.
 
 ### Решение задачи
+def str_to_int(stroka):
+    stroka = stroka.strip()
+    if stroka[0] == "-":
+        if stroka[1:].isdigit():
+            return int(stroka[1:])*(-1)
+    elif stroka.isdigit():
+        return int(stroka)
+    return 0
 
-```python
 summa = 0
-with open("data/info.txt", "r") as f:
-    pass
-
+with open("info.txt", "r") as f:
+    for line in f:
+        #print(line)
+        #print(line.strip().isdigit())
+        summa = summa + str_to_int(line)
+print(summa)
 print(f"Сумма чисел = {summa}")
 # Уточнение: в сумму добавляем только те значения, которые можно преобразовать к int'у
 # Например: int("-26") --> -26, а int("--26") --> ошибка
