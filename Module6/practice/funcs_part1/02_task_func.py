@@ -4,8 +4,8 @@
 # * попробуйте решить данную задачу не используя строки
 
 def palindrome(number):
-    pass
-
+        line = str(number)
+    return line == line[::-1]
 
 # Тестируем функцию
 print(palindrome(3454))
