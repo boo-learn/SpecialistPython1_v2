@@ -3,8 +3,13 @@
 # Билет считается счастливым, если сумма его первых и последних цифр равны.
 
 def lucky_ticket(ticket_number):
-    # TODO: your code here
-    pass
+     b = ticket_number
+    res = 'Счастливый'
+    res1 = 'Не счастливый'
+    if (b // 100000 % 10) + b // 10000 % 10 + b // 1000 % 10 == b // 100 % 10 + b // 10 % 10 + b // 1 % 10:
+        return res
+    else:
+        return res1
 
 
 # Тестируем функцию
