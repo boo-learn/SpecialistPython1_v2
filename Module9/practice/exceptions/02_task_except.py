@@ -25,6 +25,6 @@ while True:
             print(30)
         else:
             raise ()
+        break
     except:
         print("Ошибка. Введите корректные данные")
-    break
