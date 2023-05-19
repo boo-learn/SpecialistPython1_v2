@@ -4,3 +4,27 @@
 # Алгоритм проверки на високосный год оформите в виде отдельной функции.
 #
 # Входная строка содержит два целых числа – номер месяца (возможно, неправильный) и номер года.
+
+def is_leap_year(n: int) -> bool:
+    return n % 4 == 0
+
+
+while True:
+    try:
+        month = int(input("month: "))
+        year = int(input("year: "))
+
+        if month in (1, 3, 5, 7, 8, 10, 12):
+            print(31)
+        elif month == 2:
+            if is_leap_year(year):
+                print(29)
+            else:
+                print(28)
+        elif 2 < month < 12:
+            print(30)
+        else:
+            raise ()
+    except:
+        print("Ошибка. Введите корректные данные")
+    break
