@@ -4,3 +4,17 @@
 # На вход программе подается строка формата nxm (x - латинская буква икс).
 # Пример входных данных: 12x6
 # Если данные вводятся в неверном формате, сообщить об этом и запросить ввод заново.
+
+dimension = input("dimension: ")
+
+parts = dimension.strip().lower().split("x")
+
+while True:
+    try:
+        n = float(parts[0])
+        m = float(parts[1])
+
+        print(n * m / (m * m))
+    except:
+        print("данные в неверном формате")
+    break
